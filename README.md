@@ -45,26 +45,33 @@ qual dos dois casos se aplica.
 | | |
 |---|---|
 | Documentos coletados | 154 |
-| Cópias byte-idênticas removidas | 24 |
-| **Documentos distintos analisados** | **130** |
-| Páginas | 665 |
-| Linhas de texto | 28,632 |
-| Atos da própria CEFIC | 110 |
+| Cópias byte-idênticas removidas | 25 |
+| **Documentos distintos analisados** | **129** |
+| Páginas | 663 |
+| Linhas de texto | 28.508 |
+| Atos da própria CEFIC | 109 |
 | Documentos de contexto (outros órgãos) | 20 |
 | Resoluções (números distintos) | 33 — série 1 a 33, sem lacuna |
+| Grupos de versões do mesmo documento | 9 |
 | Corte do levantamento | 15/09/2026 |
 
-A coleta reuniu 154 arquivos, dos quais 24 eram cópias exatas de outros —
+A coleta reuniu 154 arquivos, dos quais 25 eram cópias exatas de outros —
 duplicações da própria coleta, sem conteúdo novo. Contá-las infla as frequências sem
 acrescentar evidência, de modo que foram removidas e registradas em
 `dados/duplicatas_removidas.csv`. Todos os números deste repositório referem-se aos
-130 documentos distintos.
+129 documentos distintos.
 
-Dos 130, 110 são atos ou registros da própria CEFIC — resoluções e memórias
+Dos 129, 109 são atos ou registros da própria CEFIC — resoluções e memórias
 de reunião. Os outros 20 são documentos de contexto de outros órgãos (ABNT NBR 17225,
 LGPD, Lei de Acesso à Informação, Lei 14.534, decretos e portarias da SGD). Essa distinção
 importa na leitura: afirmações sobre o que a Cefic diz ou deixa de dizer dizem respeito ao
 primeiro conjunto.
+
+Nove documentos aparecem no corpus em mais de uma captura — a mesma resolução publicada no
+Diário Oficial e em arquivo próprio, ou a mesma memória de reunião em duas extrações. Os
+conteúdos não são idênticos, de modo que nenhum foi descartado; os grupos estão declarados
+em `dados/versoes_mesmo_documento.csv`, para que quem reanalisar possa contar por documento
+ou por arquivo. As contagens deste repositório são por arquivo.
 
 Os PDFs originais não são redistribuídos. `dados/sha256_pdfs.csv` traz o hash SHA-256 de
 cada um, o que permite verificar que o texto publicado aqui corresponde ao documento
@@ -189,7 +196,7 @@ README.md                         este documento — porta de entrada
 METODOLOGIA.md                    procedimento de busca, cuidados técnicos e limitações
 TERMOS_BUSCADOS.md                os 100 termos, um a um, com o resultado de cada
 DICIONARIO_DE_DADOS.md            o que significa cada coluna de cada tabela
-corpus_txt/                       os 130 documentos distintos em texto
+corpus_txt/                       os 129 documentos distintos em texto
 dados/                            tabelas de resultado, proveniência e verificação
 robustez_varredura.py             normalização, léxico e varredura
 reproduzir.py                     regenera todas as tabelas

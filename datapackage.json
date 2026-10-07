@@ -642,6 +642,39 @@
           }
         ]
       }
+    },
+    {
+      "name": "versoes-mesmo-documento",
+      "path": "dados/versoes_mesmo_documento.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "versoes_mesmo_documento.csv",
+      "description": "Grupos de arquivos que correspondem ao mesmo documento em capturas diferentes; os conteúdos não são idênticos e nenhum foi descartado.",
+      "schema": {
+        "fields": [
+          {
+            "name": "documento",
+            "type": "string",
+            "description": "Documento ao qual os arquivos do grupo correspondem"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+          },
+          {
+            "name": "chars",
+            "type": "integer",
+            "description": "Número de caracteres do texto extraído"
+          },
+          {
+            "name": "caracteres_corrompidos",
+            "type": "integer",
+            "description": "Número de caracteres que não puderam ser decodificados do PDF (U+FFFD)"
+          }
+        ]
+      }
     }
   ]
 }

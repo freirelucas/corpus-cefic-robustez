@@ -59,7 +59,7 @@ posição da ocorrência.
 
 **Dois documentos não têm camada de texto** e nenhuma busca os alcança: `Fluxo_CIN_V7` e,
 mais relevante, a **Resolução nº 23**, que entra no corpus sem conteúdo pesquisável.
-Qualquer afirmação de ausência vale para os demais 128 documentos. Ver
+Qualquer afirmação de ausência vale para os demais 127 documentos. Ver
 `dados/lacunas_cobertura.csv`.
 
 **A busca é lexical.** Encontra o termo, não a ideia expressa por outras palavras. O nível

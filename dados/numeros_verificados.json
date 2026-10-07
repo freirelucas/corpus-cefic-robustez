@@ -1,10 +1,10 @@
 {
- "documentos_canonicos": 130,
- "copias_removidas": 24,
+ "documentos_canonicos": 129,
+ "copias_removidas": 25,
  "documentos_coletados": 154,
- "paginas": 665,
- "linhas": 28632,
- "documentos_cefic": 110,
+ "paginas": 663,
+ "linhas": 28508,
+ "documentos_cefic": 109,
  "documentos_contexto": 20,
  "resolucoes_numeros_distintos": 33,
  "serie_resolucoes": "1-33",
@@ -14,5 +14,6 @@
  "familias_zeradas_recorte_original": 14,
  "familias_ainda_zeradas_nivel_ampliado": 11,
  "documentos_sem_camada_texto": 2,
+ "grupos_versoes_mesmo_documento": 9,
  "corte": "15/09/2026"
 }

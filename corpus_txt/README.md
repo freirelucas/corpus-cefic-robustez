@@ -1,13 +1,13 @@
 # Corpus em texto
 
-Os 130 documentos distintos do corpus, convertidos de PDF para texto. Um arquivo por
+Os 129 documentos distintos do corpus, convertidos de PDF para texto. Um arquivo por
 documento. Os marcadores `===== [pag N] =====` indicam onde começa cada página do PDF de
 origem, o que permite citar arquivo e página.
 
-A coleta reuniu 154 arquivos; 24 eram cópias exatas de outros e foram
+A coleta reuniu 154 arquivos; 25 eram cópias exatas de outros e foram
 removidas, com registro em [`../dados/duplicatas_removidas.csv`](../dados/duplicatas_removidas.csv).
 
-Composição: 110 atos e registros da própria CEFIC e 20 documentos de contexto de
+Composição: 109 atos e registros da própria CEFIC e 20 documentos de contexto de
 outros órgãos. A origem, o hash e o tipo documental de cada arquivo estão em
 [`../dados/proveniencia.csv`](../dados/proveniencia.csv).
 

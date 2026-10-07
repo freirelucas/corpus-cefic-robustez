@@ -51,6 +51,20 @@ def main() -> int:
         vistos[h] = nome
     print(f"  ok  nenhuma duplicata residual ({len(vistos)} conteudos distintos)")
 
+    print("Qualidade do texto")
+    corrompidos = {n: d.raw.count("\ufffd") for n, d in docs.items() if "\ufffd" in d.raw}
+    declarados = set()
+    caminho_versoes = DADOS / "versoes_mesmo_documento.csv"
+    if caminho_versoes.exists():
+        with caminho_versoes.open(encoding="utf-8-sig") as f:
+            declarados = {r["arquivo"] for r in csv.DictReader(f)
+                          if int(r["caracteres_corrompidos"]) > 0}
+    nao_declarados = set(corrompidos) - declarados
+    if nao_declarados:
+        falhas.append("texto corrompido nao declarado: " + ", ".join(sorted(nao_declarados)))
+    else:
+        print(f"  ok  {len(corrompidos)} documento(s) com caractere corrompido, todos declarados")
+
     print("Varredura")
     zerad_ampl = 0
     for fam in ZERADAS:

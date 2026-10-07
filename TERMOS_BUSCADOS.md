@@ -1,7 +1,7 @@
 # Termos buscados
 
 Todos os termos de busca em forma literal, com o resultado de cada um no corpus de
-130 documentos. **97 dos 100 termos não ocorrem em nenhum documento.**
+129 documentos. **97 dos 100 termos não ocorrem em nenhum documento.**
 
 Para conferir manualmente em um PDF, use Ctrl+F com a opção **"Palavras inteiras"
 ativada**. Sem ela, siglas curtas produzem falso positivo: `NIB` casa dentro de

@@ -106,7 +106,7 @@ Termos usados pelos próprios documentos que o recorte original não cobria.
 
 Origem, hash, tipo documental e data de coleta de cada documento do corpus.
 
-130 linhas.
+129 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -124,7 +124,7 @@ Origem, hash, tipo documental e data de coleta de cada documento do corpus.
 
 Verificação da correspondência entre cada texto e seu PDF de origem.
 
-130 linhas.
+129 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -163,7 +163,7 @@ Cópias byte-idênticas descartadas do corpus, com o arquivo canônico correspon
 
 Hash SHA-256 de cada PDF de origem.
 
-130 linhas.
+129 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -208,7 +208,7 @@ Inventário das resoluções identificadas no corpus.
 
 Inventário dos registros de reunião identificados no corpus.
 
-39 linhas.
+38 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -220,3 +220,16 @@ Inventário dos registros de reunião identificados no corpus.
 | `tipo` | texto | Natureza da reunião: ordinária ou extraordinária |
 | `data_doc` | texto | Data do documento no formato DD/MM/AAAA |
 | `ano` | número | Ano de referência da reunião |
+
+## `versoes_mesmo_documento.csv`
+
+Grupos de arquivos que correspondem ao mesmo documento em capturas diferentes; os conteúdos não são idênticos e nenhum foi descartado.
+
+18 linhas.
+
+| coluna | tipo | descrição |
+|---|---|---|
+| `documento` | texto | Documento ao qual os arquivos do grupo correspondem |
+| `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
+| `chars` | inteiro | Número de caracteres do texto extraído |
+| `caracteres_corrompidos` | inteiro | Número de caracteres que não puderam ser decodificados do PDF (U+FFFD) |
