@@ -17,10 +17,9 @@ A busca percorre o texto integral e registra arquivo e página de cada ocorrênc
 | software livre | GitHub; código aberto; licença livre; licença pública; open source; repositório público; software livre; software público | 0 | 0 | **ausente** |
 | aprisionamento tecnológico | aprisionamento; cativo; dependência de fornecedor; dependência do fornecedor; dependência tecnológica; exclusividade; fornecedor único; lock in; lock-in; monopólio; vendor lock | 0 | 0 | **ausente** |
 
-Observação sobre o terceiro item: as três ocorrências correspondem a *multifornecedor* e
-*segundo motor* — a preferência por mais de um fornecedor de algoritmos. O sintagma
-*substituição de fornecedor* e suas variantes não ocorrem no corpus. A presença, portanto, é
-de uma preferência por pluralidade de fornecedores, não de um mecanismo de substituição.
+Composição do terceiro item: as três ocorrências correspondem a *multifornecedor* e
+*segundo motor*. O sintagma *substituição de fornecedor* e suas variantes não registram
+ocorrência.
 
 ## Dimensão 2 — Desenvolvimento tecnológico nacional
 
@@ -31,7 +30,7 @@ de uma preferência por pluralidade de fornecedores, não de um mecanismo de sub
 | incentivo a empresa nacional | BNDES; FINEP; NIB; Nova Indústria Brasil; capital nacional; empresa nacional; empresas nacionais; fabricante nacional; fornecedor nacional; fornecedores nacionais; indústria nacional; pol… | 0 | 0 | **ausente** |
 
 A única ocorrência no léxico ampliado é a razão social "Empresa Brasileira de Participações
-em Energia Nuclear" em documento de outro órgão, que não sustenta a presença do conceito.
+em Energia Nuclear", em documento de outro órgão.
 
 ## Síntese
 
@@ -43,10 +42,10 @@ A ferramenta [`busca_corpus_cefic.html`](busca_corpus_cefic.html) permite verifi
 
 ## Termos buscados além do quadro
 
-O levantamento cobriu também termos que o quadro não declara, mas que sustentam afirmações
-do corpo do texto. Ficam registrados para que a correspondência entre o que se buscou e o
-que se afirma seja completa. As presenças não incorporadas ao artigo estão examinadas em
-[AGENDA_DE_PESQUISA.md](AGENDA_DE_PESQUISA.md).
+O levantamento cobriu também termos que o quadro não declara e que correspondem a
+afirmações do corpo do texto. Ficam registrados para que a correspondência entre o que se
+buscou e o que se afirma seja completa. As presenças não incorporadas ao artigo constam de
+[PRESENCAS_FORA_DO_RECORTE.md](PRESENCAS_FORA_DO_RECORTE.md).
 
 | termo | ocorrências | documentos | sustenta no texto |
 |---|---|---|---|

@@ -62,9 +62,9 @@ ampliado mitiga o problema sem eliminá-lo.
 empregam ficaram fora do recorte declarado — entre eles credenciamento, contrato, auditoria,
 dispensa, certificação, homologação e capacidade técnica.
 [`dados/sonda_vocabulario_nativo.csv`](dados/sonda_vocabulario_nativo.csv) lista os termos
-nativos não cobertos, e [AGENDA_DE_PESQUISA.md](AGENDA_DE_PESQUISA.md) examina os mais
-relevantes. Um recorte construído a partir do vocabulário dos documentos produziria mapa
-distinto, e possivelmente mais rico, da dimensão concorrência.
+nativos não cobertos, e [PRESENCAS_FORA_DO_RECORTE.md](PRESENCAS_FORA_DO_RECORTE.md) registra
+os de maior frequência. Um recorte construído a partir do vocabulário dos documentos
+produziria um conjunto distinto de resultados.
 
 **As famílias não têm forma comparável entre as dimensões.** Os termos da dimensão de
 capacidades tecnológicas são expressões de três palavras — "margem de preferência", "encomenda

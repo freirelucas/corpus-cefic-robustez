@@ -5,8 +5,17 @@ papel da Cefic"** (Boletim Radar, Ipea). Reúne o corpus documental em texto, a 
 dos termos buscados, o código que produz os resultados e o registro das limitações do
 procedimento.
 
+O artigo conclui que a regulamentação da identificação biométrica federal incorpora
+requisitos de concorrência, mas não instrumentos de desenvolvimento tecnológico nacional.
+Essa segunda conclusão apoia-se em ausências: **97 dos 100 termos buscados não ocorrem em
+nenhum dos 129 documentos do corpus**, e 11 das 14 famílias sem ocorrência permanecem sem
+ocorrência quando o léxico é ampliado com sinônimos e variantes. Este repositório publica o
+corpus e o procedimento para que essas ausências possam ser verificadas de forma
+independente.
+
 A Câmara Executiva Federal de Identificação do Cidadão (CEFIC) foi criada pelo Decreto nº
-10.900/2021 e mantida pelo Decreto nº 11.797/2023.
+10.900/2021 e mantida pelo Decreto nº 11.797/2023. O material corresponde à versão do artigo
+submetida ao Boletim Radar; o corte do levantamento é 15/09/2026.
 
 ## Busca no corpus
 
@@ -14,8 +23,12 @@ O arquivo **[`busca_corpus_cefic.html`](busca_corpus_cefic.html)** é uma ferram
 arquivo HTML, com o corpus embutido, que funciona offline em qualquer navegador, sem
 servidor, sem instalação e sem conexão. O download é feito pelo botão *Download raw file* na
 página do arquivo; a abertura, por duplo clique. Cada ocorrência é exibida com o documento, a
-página e o trecho em que consta. Há atalhos para os termos cuja ausência sustenta conclusões
-do artigo e um filtro que restringe a busca aos atos da própria CEFIC.
+página e o trecho em que consta.
+
+A ferramenta traz atalhos para os termos cuja ausência sustenta conclusões do artigo —
+*transferência de tecnologia*, *conteúdo local*, *encomenda tecnológica*, entre outros — e
+para termos presentes, como *interoperabilidade* e *território nacional*, o que permite
+comparar os dois casos. Um filtro restringe a busca aos atos da própria CEFIC.
 
 ## Orientação
 
@@ -28,20 +41,17 @@ do artigo e um filtro que restringe a busca aos atos da própria CEFIC.
 | localizar cada ocorrência com arquivo e página | [`dados/kwic_estrito.csv`](dados/kwic_estrito.csv) |
 | interpretar as colunas das tabelas | [DICIONARIO_DE_DADOS.md](DICIONARIO_DE_DADOS.md) |
 | ler os documentos originais em texto | [`corpus_txt/`](corpus_txt/) |
+| consultar termos com ocorrência fora do recorte do artigo | [PRESENCAS_FORA_DO_RECORTE.md](PRESENCAS_FORA_DO_RECORTE.md) |
 | rastrear a origem de cada documento | [`dados/proveniencia.csv`](dados/proveniencia.csv) |
 | repetir a análise | a seção *Reprodução*, adiante |
 
 ## Por que este repositório existe
 
-Parte das conclusões do artigo apoia-se na **ausência** de certos termos no corpus. Afirmar
-que a Cefic não tratou de transferência de tecnologia, conteúdo local ou encomenda
-tecnológica é uma afirmação forte, e um resultado de busca igual a zero admite duas leituras
-distintas: o assunto não aparece nos documentos, ou o procedimento de busca não era capaz de
-encontrá-lo. Uma lista de termos curta, um tratamento inadequado da acentuação ou uma janela
-de busca estreita bastam para produzir ausência artificial.
-
-O procedimento é publicado integralmente para que a distinção entre as duas leituras possa
-ser verificada de forma independente.
+Um resultado de busca igual a zero admite duas leituras: o assunto não aparece nos
+documentos, ou o procedimento de busca não era capaz de encontrá-lo. Uma lista de termos
+curta, um tratamento inadequado da acentuação ou uma janela de busca estreita bastam para
+produzir ausência artificial. O procedimento é publicado integralmente para que a distinção
+entre as duas leituras seja verificável.
 
 ## O corpus
 
@@ -159,6 +169,7 @@ busca_corpus_cefic.html          ferramenta de busca autocontida
 README.md                         este documento
 METODOLOGIA.md                    procedimento de busca, cuidados técnicos e limitações
 FUNDAMENTACAO_DO_QUADRO.md        liga cada item do quadro do artigo à evidência
+PRESENCAS_FORA_DO_RECORTE.md      termos com ocorrência fora do recorte declarado
 TERMOS_BUSCADOS.md                os 100 termos, um a um, com o resultado de cada
 DICIONARIO_DE_DADOS.md            significado de cada coluna de cada tabela
 corpus_txt/                       os 129 documentos distintos em texto
