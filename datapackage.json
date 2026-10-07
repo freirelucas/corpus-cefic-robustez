@@ -1,0 +1,647 @@
+{
+  "profile": "data-package",
+  "name": "corpus-cefic-robustez",
+  "title": "Corpus CEFIC — dados, código e verificação da análise documental",
+  "description": "Código de normalização, varredura lexical em dois níveis e verificação de robustez sobre o corpus documental da CEFIC.",
+  "version": "1.0.0",
+  "created": "2026-10-07",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Tulio Chiarini",
+      "role": "author"
+    },
+    {
+      "title": "Denise Direito",
+      "role": "author"
+    },
+    {
+      "title": "Lucas Silva",
+      "role": "author"
+    }
+  ],
+  "homepage": "https://github.com/freirelucas/corpus-cefic-robustez",
+  "resources": [
+    {
+      "name": "robustez-termos-cefic",
+      "path": "dados/robustez_termos_cefic.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "robustez_termos_cefic.csv",
+      "description": "Comparação, por família de termos, entre a varredura anterior e a varredura sobre o corpus deduplicado, nos níveis estrito e ampliado.",
+      "schema": {
+        "fields": [
+          {
+            "name": "familia",
+            "type": "string",
+            "description": "Família de termos (conceito) a que a ocorrência pertence"
+          },
+          {
+            "name": "varredura_anterior_total",
+            "type": "integer",
+            "description": "Ocorrências segundo a varredura anterior, sobre o corpus com cópias"
+          },
+          {
+            "name": "varredura_anterior_docs",
+            "type": "integer",
+            "description": "Documentos segundo a varredura anterior"
+          },
+          {
+            "name": "canonico_estrito_total",
+            "type": "integer",
+            "description": "Ocorrências no nível estrito sobre o corpus deduplicado"
+          },
+          {
+            "name": "canonico_estrito_docs",
+            "type": "integer",
+            "description": "Documentos no nível estrito sobre o corpus deduplicado"
+          },
+          {
+            "name": "canonico_ampliado_total",
+            "type": "integer",
+            "description": "Ocorrências no nível ampliado sobre o corpus deduplicado"
+          },
+          {
+            "name": "canonico_ampliado_docs",
+            "type": "integer",
+            "description": "Documentos no nível ampliado sobre o corpus deduplicado"
+          },
+          {
+            "name": "zerada_no_recorte_original",
+            "type": "boolean",
+            "description": "Indica se a família tinha contagem zero no recorte original da pesquisa"
+          },
+          {
+            "name": "veredito",
+            "type": "string",
+            "description": "Interpretação do resultado da família após o teste de robustez"
+          }
+        ]
+      }
+    },
+    {
+      "name": "freq-termos-robusto",
+      "path": "dados/freq_termos_robusto.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "freq_termos_robusto.csv",
+      "description": "Contagens por família nos dois níveis de busca, sobre o corpus canônico.",
+      "schema": {
+        "fields": [
+          {
+            "name": "familia",
+            "type": "string",
+            "description": "Família de termos (conceito) a que a ocorrência pertence"
+          },
+          {
+            "name": "estrito_total",
+            "type": "integer",
+            "description": "Ocorrências no nível estrito de busca"
+          },
+          {
+            "name": "estrito_docs",
+            "type": "integer",
+            "description": "Documentos distintos no nível estrito"
+          },
+          {
+            "name": "ampliado_total",
+            "type": "integer",
+            "description": "Ocorrências no nível ampliado, com sinônimos e variantes"
+          },
+          {
+            "name": "ampliado_docs",
+            "type": "integer",
+            "description": "Documentos distintos no nível ampliado"
+          },
+          {
+            "name": "zerada_no_recorte_original",
+            "type": "boolean",
+            "description": "Indica se a família tinha contagem zero no recorte original da pesquisa"
+          }
+        ]
+      }
+    },
+    {
+      "name": "freq-termos-varredura-anterior",
+      "path": "dados/freq_termos_varredura_anterior.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "freq_termos_varredura_anterior.csv",
+      "description": "Contagens da varredura anterior, preservadas para comparação.",
+      "schema": {
+        "fields": [
+          {
+            "name": "familia",
+            "type": "string",
+            "description": "Família de termos (conceito) a que a ocorrência pertence"
+          },
+          {
+            "name": "total",
+            "type": "integer",
+            "description": "Ocorrências contadas"
+          },
+          {
+            "name": "docs",
+            "type": "integer",
+            "description": "Documentos distintos"
+          }
+        ]
+      }
+    },
+    {
+      "name": "kwic-cefic-corrigido",
+      "path": "dados/kwic_cefic_corrigido.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "kwic_cefic_corrigido.csv",
+      "description": "Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e contexto.",
+      "schema": {
+        "fields": [
+          {
+            "name": "familia",
+            "type": "string",
+            "description": "Família de termos (conceito) a que a ocorrência pertence"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+          },
+          {
+            "name": "pagina",
+            "type": "integer",
+            "description": "Página do documento em que a ocorrência aparece"
+          },
+          {
+            "name": "termo",
+            "type": "string",
+            "description": "Trecho exato do documento que casou com o padrão de busca"
+          },
+          {
+            "name": "trecho",
+            "type": "string",
+            "description": "Janela de contexto ao redor da ocorrência, no texto original acentuado"
+          }
+        ]
+      }
+    },
+    {
+      "name": "kwic-cefic-ampliado",
+      "path": "dados/kwic_cefic_ampliado.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "kwic_cefic_ampliado.csv",
+      "description": "Uma linha por ocorrência encontrada no nível ampliado.",
+      "schema": {
+        "fields": [
+          {
+            "name": "familia",
+            "type": "string",
+            "description": "Família de termos (conceito) a que a ocorrência pertence"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+          },
+          {
+            "name": "pagina",
+            "type": "integer",
+            "description": "Página do documento em que a ocorrência aparece"
+          },
+          {
+            "name": "termo",
+            "type": "string",
+            "description": "Trecho exato do documento que casou com o padrão de busca"
+          },
+          {
+            "name": "trecho",
+            "type": "string",
+            "description": "Janela de contexto ao redor da ocorrência, no texto original acentuado"
+          }
+        ]
+      }
+    },
+    {
+      "name": "termos-buscados-conferencia",
+      "path": "dados/termos_buscados_conferencia.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "termos_buscados_conferencia.csv",
+      "description": "Os termos de busca em forma literal, com o resultado de cada um, para conferência manual.",
+      "schema": {
+        "fields": [
+          {
+            "name": "conceito",
+            "type": "string",
+            "description": "Nome legível da família de termos"
+          },
+          {
+            "name": "termo",
+            "type": "string",
+            "description": "Trecho exato do documento que casou com o padrão de busca"
+          },
+          {
+            "name": "situacao",
+            "type": "string",
+            "description": "Resultado da verificação de integridade: ok ou sem camada de texto"
+          },
+          {
+            "name": "ocorrencias",
+            "type": "integer",
+            "description": "Número de ocorrências no corpus"
+          },
+          {
+            "name": "documentos",
+            "type": "integer",
+            "description": "Número de documentos distintos em que o termo ocorre"
+          },
+          {
+            "name": "aviso",
+            "type": "string",
+            "description": "Observação sobre como conferir o termo manualmente"
+          }
+        ]
+      }
+    },
+    {
+      "name": "sonda-vocabulario-nativo",
+      "path": "dados/sonda_vocabulario_nativo.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "sonda_vocabulario_nativo.csv",
+      "description": "Termos usados pelos próprios documentos que o recorte original não cobria.",
+      "schema": {
+        "fields": [
+          {
+            "name": "termo",
+            "type": "string",
+            "description": "Trecho exato do documento que casou com o padrão de busca"
+          },
+          {
+            "name": "ocorrencias",
+            "type": "integer",
+            "description": "Número de ocorrências no corpus"
+          },
+          {
+            "name": "docs_cefic",
+            "type": "integer",
+            "description": "Número de documentos da própria CEFIC em que o termo ocorre"
+          }
+        ]
+      }
+    },
+    {
+      "name": "proveniencia",
+      "path": "dados/proveniencia.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "proveniencia.csv",
+      "description": "Origem, hash, tipo documental e data de coleta de cada documento do corpus.",
+      "schema": {
+        "fields": [
+          {
+            "name": "arquivo_repo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão"
+          },
+          {
+            "name": "arquivo_origem",
+            "type": "string",
+            "description": "Nome do arquivo PDF de origem"
+          },
+          {
+            "name": "sha256",
+            "type": "string",
+            "description": "Hash SHA-256 do arquivo PDF de origem, em hexadecimal"
+          },
+          {
+            "name": "bytes",
+            "type": "integer",
+            "description": "Tamanho do arquivo em bytes"
+          },
+          {
+            "name": "tipo_documental",
+            "type": "string",
+            "description": "Classificação do documento: resolucao, registro_reuniao, portaria, norma_externa ou contexto"
+          },
+          {
+            "name": "numero",
+            "type": "string",
+            "description": "Número da norma, quando aplicável"
+          },
+          {
+            "name": "data_documento",
+            "type": "string",
+            "description": "Data do documento no formato DD/MM/AAAA, quando identificada"
+          },
+          {
+            "name": "data_coleta",
+            "type": "string",
+            "description": "Data em que o arquivo foi coletado, em ISO 8601"
+          },
+          {
+            "name": "fonte",
+            "type": "string",
+            "description": "Origem declarada do documento"
+          }
+        ]
+      }
+    },
+    {
+      "name": "integridade-texto",
+      "path": "dados/integridade_texto.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "integridade_texto.csv",
+      "description": "Verificação da correspondência entre cada texto e seu PDF de origem.",
+      "schema": {
+        "fields": [
+          {
+            "name": "arquivo_repo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão"
+          },
+          {
+            "name": "sha256_pdf",
+            "type": "string",
+            "description": "Hash SHA-256 do PDF de origem correspondente ao texto"
+          },
+          {
+            "name": "texto_presente",
+            "type": "boolean",
+            "description": "Indica se há arquivo de texto correspondente"
+          },
+          {
+            "name": "chars_uteis",
+            "type": "integer",
+            "description": "Número de caracteres não brancos no texto extraído"
+          },
+          {
+            "name": "paginas",
+            "type": "integer",
+            "description": "Número de páginas detectadas no texto extraído"
+          },
+          {
+            "name": "situacao",
+            "type": "string",
+            "description": "Resultado da verificação de integridade: ok ou sem camada de texto"
+          }
+        ]
+      }
+    },
+    {
+      "name": "lacunas-cobertura",
+      "path": "dados/lacunas_cobertura.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "lacunas_cobertura.csv",
+      "description": "Documentos sem camada de texto, inalcançáveis por qualquer busca.",
+      "schema": {
+        "fields": [
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+          },
+          {
+            "name": "chars_uteis",
+            "type": "integer",
+            "description": "Número de caracteres não brancos no texto extraído"
+          },
+          {
+            "name": "problema",
+            "type": "string",
+            "description": "Natureza da lacuna identificada no documento"
+          }
+        ]
+      }
+    },
+    {
+      "name": "duplicatas-removidas",
+      "path": "dados/duplicatas_removidas.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "duplicatas_removidas.csv",
+      "description": "Cópias byte-idênticas descartadas do corpus, com o arquivo canônico correspondente.",
+      "schema": {
+        "fields": [
+          {
+            "name": "arquivo_removido",
+            "type": "string",
+            "description": "Nome do arquivo descartado por ser cópia byte-idêntica de outro"
+          },
+          {
+            "name": "identico_a",
+            "type": "string",
+            "description": "Arquivo canônico cujo conteúdo é idêntico ao removido"
+          },
+          {
+            "name": "sha256",
+            "type": "string",
+            "description": "Hash SHA-256 do arquivo PDF de origem, em hexadecimal"
+          }
+        ]
+      }
+    },
+    {
+      "name": "sha256-pdfs",
+      "path": "dados/sha256_pdfs.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "sha256_pdfs.csv",
+      "description": "Hash SHA-256 de cada PDF de origem.",
+      "schema": {
+        "fields": [
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+          },
+          {
+            "name": "sha256",
+            "type": "string",
+            "description": "Hash SHA-256 do arquivo PDF de origem, em hexadecimal"
+          }
+        ]
+      }
+    },
+    {
+      "name": "mapa-arquivos",
+      "path": "dados/mapa_arquivos.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "mapa_arquivos.csv",
+      "description": "Correspondência entre nomes encurtados e nomes originais.",
+      "schema": {
+        "fields": [
+          {
+            "name": "arquivo_repo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão"
+          },
+          {
+            "name": "arquivo_original",
+            "type": "string",
+            "description": "Nome do arquivo tal como coletado, antes do encurtamento"
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario-resolucoes",
+      "path": "dados/inventario_resolucoes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "inventario_resolucoes.csv",
+      "description": "Inventário das resoluções identificadas no corpus.",
+      "schema": {
+        "fields": [
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+          },
+          {
+            "name": "sha12",
+            "type": "string",
+            "description": "Primeiros 12 caracteres do hash SHA-256 do arquivo, usado como identificador curto"
+          },
+          {
+            "name": "paginas",
+            "type": "integer",
+            "description": "Número de páginas detectadas no texto extraído"
+          },
+          {
+            "name": "bytes",
+            "type": "integer",
+            "description": "Tamanho do arquivo em bytes"
+          },
+          {
+            "name": "num",
+            "type": "string",
+            "description": "Número da resolução"
+          },
+          {
+            "name": "data_doc",
+            "type": "string",
+            "description": "Data do documento no formato DD/MM/AAAA"
+          },
+          {
+            "name": "sem_texto",
+            "type": "string",
+            "description": "Marca os documentos cujo PDF não possui camada de texto"
+          },
+          {
+            "name": "minuta",
+            "type": "string",
+            "description": "Marca os documentos em versão de minuta, não publicada"
+          },
+          {
+            "name": "dou",
+            "type": "string",
+            "description": "Data de publicação no Diário Oficial da União"
+          },
+          {
+            "name": "dou_edicao",
+            "type": "number",
+            "description": "Número da edição do Diário Oficial da União"
+          },
+          {
+            "name": "dou_secao",
+            "type": "number",
+            "description": "Seção do Diário Oficial da União"
+          },
+          {
+            "name": "dou_pagina",
+            "type": "number",
+            "description": "Página do Diário Oficial da União"
+          },
+          {
+            "name": "ementa_raw",
+            "type": "string",
+            "description": "Ementa da norma, transcrita do documento"
+          },
+          {
+            "name": "signatario",
+            "type": "string",
+            "description": "Autoridade signatária da norma"
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario-atas",
+      "path": "dados/inventario_atas.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "inventario_atas.csv",
+      "description": "Inventário dos registros de reunião identificados no corpus.",
+      "schema": {
+        "fields": [
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+          },
+          {
+            "name": "sha12",
+            "type": "string",
+            "description": "Primeiros 12 caracteres do hash SHA-256 do arquivo, usado como identificador curto"
+          },
+          {
+            "name": "paginas",
+            "type": "integer",
+            "description": "Número de páginas detectadas no texto extraído"
+          },
+          {
+            "name": "bytes",
+            "type": "integer",
+            "description": "Tamanho do arquivo em bytes"
+          },
+          {
+            "name": "ordinal",
+            "type": "number",
+            "description": "Número ordinal da reunião no ano, quando identificado"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Natureza da reunião: ordinária ou extraordinária"
+          },
+          {
+            "name": "data_doc",
+            "type": "string",
+            "description": "Data do documento no formato DD/MM/AAAA"
+          },
+          {
+            "name": "ano",
+            "type": "number",
+            "description": "Ano de referência da reunião"
+          }
+        ]
+      }
+    }
+  ]
+}

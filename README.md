@@ -1,160 +1,214 @@
-# Corpus CEFIC — dados, código e teste de robustez da análise documental
+# Corpus CEFIC — dados, código e verificação da análise documental
 
-Material de verificação do artigo **"Identidade digital e desenvolvimento tecnológico:
-o papel da Cefic"** (Radar / Ipea). Contém o corpus em texto, o código da varredura de
-termos e os resultados do teste de robustez que sustenta as afirmações de **ausência**
-feitas no artigo.
+Material de verificação do artigo **"Identidade digital e desenvolvimento tecnológico: o
+papel da Cefic"** (Boletim Radar, Ipea). Reúne o corpus documental em texto, a lista
+completa dos termos buscados, o código que produz os resultados e o registro das
+limitações do procedimento.
 
-A Câmara Executiva Federal de Identificação do Cidadão (CEFIC) foi criada pelo Decreto
-nº 10.900/2021 e mantida pelo Decreto nº 11.797/2023.
+Não é preciso programar para usar este repositório. Se você chegou aqui vindo do artigo,
+comece pela pergunta que o trouxe:
+
+| Se você quer... | vá para |
+|---|---|
+| entender por que a ausência de termos é confiável | [METODOLOGIA.md](METODOLOGIA.md) |
+| conferir os termos buscados, um a um | [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md) |
+| ver cada ocorrência com arquivo e página | [`dados/kwic_cefic_corrigido.csv`](dados/kwic_cefic_corrigido.csv) |
+| saber o que significa cada coluna das tabelas | [DICIONARIO_DE_DADOS.md](DICIONARIO_DE_DADOS.md) |
+| ler os documentos originais em texto | [`corpus_txt/`](corpus_txt/) |
+| rastrear a origem de cada documento | [`dados/proveniencia.csv`](dados/proveniencia.csv) |
+| repetir a análise do zero | a seção *Como reproduzir*, abaixo |
+
+A Câmara Executiva Federal de Identificação do Cidadão (CEFIC) foi criada pelo Decreto nº
+10.900/2021 e mantida pelo Decreto nº 11.797/2023.
+
+---
 
 ## Por que este repositório existe
 
-Parte das conclusões do artigo repousa sobre a *não ocorrência* de certos termos no
-corpus — dizer que a CEFIC não tratou de transferência de tecnologia, conteúdo local ou
-encomenda tecnológica é uma afirmação forte. Um zero de busca, porém, pode medir o
-corpus ou pode medir o método: basta uma normalização de texto malfeita, uma janela de
-busca estreita ou uma lista de termos curta para produzir ausência artificial. Este
-repositório publica o procedimento inteiro para que o leitor possa distinguir os dois
-casos por conta própria.
+Uma parte das conclusões do artigo apoia-se na **ausência** de certos termos no corpus.
+Afirmar que a Cefic não tratou de transferência de tecnologia, conteúdo local ou encomenda
+tecnológica é uma afirmação forte, e um resultado de busca igual a zero pode significar
+duas coisas muito diferentes: que o assunto realmente não aparece nos documentos, ou que o
+procedimento de busca não era capaz de encontrá-lo. Basta uma lista de termos curta demais,
+um tratamento inadequado de acentuação ou uma janela de busca estreita para fabricar
+ausência.
 
-## Corpus
+O repositório publica o procedimento inteiro para que o leitor decida por conta própria
+qual dos dois casos se aplica.
 
-| Item | Valor |
+---
+
+---
+
+## O corpus
+
+| | |
 |---|---|
-| Documentos (PDF → texto) | 154 |
-| Hashes SHA-256 distintos | 130 |
-| Páginas | 805 |
-| Linhas de texto | 32.170 |
+| Documentos coletados | 154 |
+| Cópias byte-idênticas removidas | 24 |
+| **Documentos distintos analisados** | **130** |
+| Páginas | 665 |
+| Linhas de texto | 28,632 |
+| Atos da própria CEFIC | 110 |
+| Documentos de contexto (outros órgãos) | 20 |
 | Resoluções (números distintos) | 33 — série 1 a 33, sem lacuna |
 | Corte do levantamento | 15/09/2026 |
 
-Os PDFs originais não são redistribuídos aqui; `dados/sha256_pdfs.csv` traz o hash
-SHA-256 de cada um, o que permite conferir que o texto publicado em `corpus_txt/`
-corresponde ao documento oficial de origem. Os textos são atos normativos e documentos
-administrativos públicos.
+A coleta reuniu 154 arquivos, dos quais 24 eram cópias exatas de outros —
+duplicações da própria coleta, sem conteúdo novo. Contá-las infla as frequências sem
+acrescentar evidência, de modo que foram removidas e registradas em
+`dados/duplicatas_removidas.csv`. Todos os números deste repositório referem-se aos
+130 documentos distintos.
 
-## Método
+Dos 130, 110 são atos ou registros da própria CEFIC — resoluções e memórias
+de reunião. Os outros 20 são documentos de contexto de outros órgãos (ABNT NBR 17225,
+LGPD, Lei de Acesso à Informação, Lei 14.534, decretos e portarias da SGD). Essa distinção
+importa na leitura: afirmações sobre o que a Cefic diz ou deixa de dizer dizem respeito ao
+primeiro conjunto.
 
-A varredura percorre cada documento procurando famílias de termos — conjuntos de padrões
-que representam um mesmo conceito — e registra cada ocorrência em formato **KWIC**
-(*key word in context*): família, arquivo, página e o trecho de texto ao redor. Toda
-afirmação do artigo baseada no corpus pode ser rastreada até uma linha desses arquivos e,
-daí, até a página do PDF.
+Os PDFs originais não são redistribuídos. `dados/sha256_pdfs.csv` traz o hash SHA-256 de
+cada um, o que permite verificar que o texto publicado aqui corresponde ao documento
+oficial de origem. Os textos são atos normativos e documentos administrativos públicos.
 
-### Normalização
+---
 
-O texto extraído do PDF passa por uma normalização que remove diacríticos, uniformiza a
-caixa e converte pontuação em espaço. Três cuidados são decisivos e estão implementados
-em `robustez_varredura.py`:
+---
 
-1. **Ligaduras tipográficas.** PDFs representam "fi" e "fl" como caractere único
-   (U+FB01, U+FB02). Uma normalização que descarte caracteres não-ASCII parte a palavra
-   ao meio: "grá**ﬁ**cas" vira "grá cas" e deixa de ser encontrada. Há 1.260 ligaduras em
-   72 dos 154 documentos. A normalização aqui expande essas ligaduras (NFKD).
-2. **Hifenização de quebra de linha.** "inte-\ninteroperabilidade" é costurado antes da
-   busca.
-3. **Janela de busca.** A varredura corre sobre o documento inteiro, não página a página,
-   de modo que expressões que atravessam a quebra de página sejam encontradas. A página
-   é recuperada depois, pelo deslocamento da ocorrência.
+## O que foi encontrado
 
-A normalização preserva um mapa de posições de volta ao texto original, de forma que o
-trecho KWIC exibido é o texto real, acentuado, e não a versão achatada usada na busca.
+### 5.1 Famílias das duas dimensões do artigo
 
-### Léxico em dois níveis
+| família | ocorrências | documentos | situação |
+|---|---|---|---|
+| Território nacional | 38 | 16 | presente; contagem anterior inflada por copias redundantes |
+| Interoperabilidade | 34 | 19 | presente; contagem anterior inflada por copias redundantes |
+| Preferência normativa | 12 | 10 | familia acrescentada no teste (fora do recorte original) |
+| Multifornecedor / segundo motor | 3 | 3 | presente |
+| Soberania | 3 | 2 | presente |
+| Concorrência | 3 | 2 | presente |
+| Propriedade intelectual | 0 | 0 | ausencia do sintagma; termos vizinhos presentes, marginais |
+| Capacitação tecnológica | 0 | 0 | ausencia do sintagma; termos vizinhos presentes, marginais |
+| Aprisionamento / lock-in | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Empresa/indústria nacional | 0 | 0 | ausencia do sintagma; termos vizinhos presentes, marginais |
+| Código-fonte | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Conteúdo local | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Software livre / código aberto | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Padrão aberto | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Nova Indústria Brasil | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Margem de preferência | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Encomenda tecnológica | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Desenvolvimento nacional | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Substituição de fornecedor | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Transferência de tecnologia | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
 
-Cada família é buscada duas vezes. O nível **estrito** contém o sintagma tal como
-definido no desenho da pesquisa. O nível **ampliado** acrescenta variantes morfológicas,
-sinônimos e termos vizinhos — por exemplo, a família `aprisionamento_lockin` admite
-"lock-in", "vendor lock", "dependência de fornecedor", "fornecedor único",
-"exclusividade" e "monopólio". O objetivo do nível ampliado não é inflar contagens: é
-testar se um zero resiste a um recorte lexical deliberadamente mais generoso.
+### 5.2 Demais famílias do levantamento
 
-## Resultado do teste de robustez
+Estas famílias pertencem ao estudo paralelo sobre os certames do Serviço Biométrico Federal
+e não respondem às dimensões analíticas do artigo. Ficam registradas por transparência.
 
-`dados/robustez_termos_cefic.csv` traz, para cada família, a contagem original, a
-contagem estrita corrigida, a contagem ampliada e um veredito.
+| família | ocorrências | documentos |
+|---|---|---|
+| Gráficas | 57 | 29 |
+| NIST / NFIQ | 16 | 8 |
+| Fala.BR | 7 | 1 |
+| Bancos / sistema financeiro | 6 | 2 |
+| Blockchain | 6 | 3 |
+| Acurácia | 5 | 5 |
+| Fomento | 4 | 3 |
+| Polícia Federal / aditivo | 3 | 3 |
+| Sítios operacionais | 2 | 2 |
+| Tier III | 2 | 2 |
 
-- **11 das 14 famílias com contagem zero continuam em zero** mesmo com a normalização
-  corrigida e o léxico ampliado: padrão aberto, substituição de fornecedor,
-  desenvolvimento nacional, Nova Indústria Brasil, margem de preferência, conteúdo local,
-  encomenda tecnológica, software livre e código aberto, código-fonte, transferência de
-  tecnologia e aprisionamento/*lock-in*. A ausência é propriedade do corpus, não do
-  método.
-- **3 famílias saem do zero apenas por termos vizinhos marginais**, que não sustentam a
-  presença do conceito: uma "patente" em relatório de visita técnica a gráfica, menção a
-  direitos de patente em norma ABNT do corpus de contexto, e a razão social "Empresa
-  Brasileira" em documento de outro órgão.
-- **Duas famílias que não eram zero estavam subcontadas** pela varredura original, por
-  efeito das ligaduras: `graficas` passa de 51 para 72 ocorrências (de 24 para 35
-  documentos). Das 21 ocorrências recuperadas, **20 estão em resoluções** e 1 na memória
-  de reunião de 09/12/2025.
+### 5.3 O teste de ausência
 
-### Limites conhecidos
+Das 14 famílias com contagem zero no recorte original, **11 continuam em zero** depois de
+corrigida a normalização e de ampliado o léxico. A ausência, nesses casos, é propriedade do
+corpus e não do método: padrão aberto, substituição de fornecedor, desenvolvimento nacional,
+Nova Indústria Brasil, margem de preferência, conteúdo local, encomenda tecnológica,
+software livre e código aberto, código-fonte, transferência de tecnologia e
+aprisionamento/*lock-in*.
 
-- **4 documentos não têm camada de texto** e nenhuma busca os alcança: três cópias de
-  `Fluxo_CIN_V7` e a **Resolução nº 23**, que entra no corpus sem conteúdo pesquisável.
-  Estão listados em `dados/lacunas_cobertura.csv`. Reconhecê-los é condição para que a
-  afirmação de ausência valha sobre os demais 150.
-- A busca é lexical. Ela encontra o termo, não a ideia expressa por outras palavras —
-  daí o nível ampliado, que mitiga mas não elimina o problema.
-- O número de **atas** depende do critério de deduplicação adotado (arquivos, hashes
-  distintos ou datas de reunião distintas) e não é unívoco nos inventários; o número de
-  **resoluções** é firme em 33.
+Três famílias saem do zero apenas por termos vizinhos isolados, que não sustentam a presença
+do conceito: uma menção a "patente" em relatório de visita técnica, quatro a "capacitação"
+em contexto de divulgação da CIN e uma a "treinamento". Estão nas tabelas da seção 8.
+
+Em termos literais — a forma em que o leitor pode conferir manualmente —, **97 dos
+100 termos buscados não ocorrem em nenhum documento do corpus**.
+
+---
+
+---
+
+## O que a ausência autoriza concluir
+
+Há uma leitura que a evidência sustenta e outra que ela não sustenta.
+
+O corpus mostra que os instrumentos clássicos da política industrial de compras não
+aparecem nas deliberações nem nas normas da Cefic. Mostra também **por que**: a Câmara não
+opera por contratação. O termo "licitação" aparece 3 vezes no corpus e em nenhum documento
+da própria Cefic. O instrumento pelo qual ela regula quem pode operar na infraestrutura é
+outro — o **credenciamento**, que ocorre 81 vezes em 26 documentos da Câmara, em passagens
+como "credenciamento de instituições públicas e empresas privadas para atuarem como
+Gráficas da CIN".
+
+A ausência, portanto, indica menos uma omissão da Cefic do que o alcance do instrumento de
+que ela dispõe. Concluir que a Câmara "ignora o desenvolvimento tecnológico" iria além do
+que os documentos permitem; concluir que ela não maneja os instrumentos de compra que
+poderiam induzi-lo é o que a evidência sustenta.
+
+Vale igualmente registrar o que o corpus **não** pode demonstrar: ele é composto de normas e
+registros de deliberação, não de dados de mercado. Requisitos que favorecem a
+contestabilidade — interoperabilidade, preferência por mais de um fornecedor — não
+equivalem a efeitos observados sobre a concorrência.
+
+---
+
+O procedimento que sustenta essas afirmações, com os cuidados técnicos que ele exige, está
+descrito em [METODOLOGIA.md](METODOLOGIA.md); as limitações conhecidas, na seção final
+daquele documento.
+
+---
 
 ## Como reproduzir
 
 ```bash
-python reproduzir.py
+python reproduzir.py        # refaz as buscas e reescreve as tabelas de dados/
+python teste_reproducao.py  # confere os números-âncora e falha se algum divergir
+python verificar_checksums.py
 ```
 
-Sem dependências além da biblioteca padrão do Python (3.10+). O script relê
-`corpus_txt/`, refaz a varredura nos dois níveis e reescreve os CSVs de `dados/`.
-`varredura_original_referencia.py` é o script da primeira varredura, mantido para que a
-diferença entre os dois procedimentos possa ser inspecionada.
+Não há dependências além da biblioteca padrão do Python (3.10 ou superior). A verificação
+roda automaticamente a cada alteração enviada ao repositório.
+
+---
 
 ## Estrutura
 
 ```
-corpus_txt/                       154 documentos em texto, um por PDF
+README.md                         este documento — porta de entrada
+METODOLOGIA.md                    procedimento de busca, cuidados técnicos e limitações
+TERMOS_BUSCADOS.md                os 100 termos, um a um, com o resultado de cada
+DICIONARIO_DE_DADOS.md            o que significa cada coluna de cada tabela
+corpus_txt/                       os 130 documentos distintos em texto
+dados/                            tabelas de resultado, proveniência e verificação
 robustez_varredura.py             normalização, léxico e varredura
-varredura_original_referencia.py  procedimento anterior, para comparação
-reproduzir.py                     regenera os resultados
-dados/
-  robustez_termos_cefic.csv       tabela do teste: original × estrito × ampliado
-  kwic_cefic_corrigido.csv        KWIC do nível estrito
-  kwic_cefic_ampliado.csv         KWIC do nível ampliado
-  lacunas_cobertura.csv           documentos sem camada de texto
-  sha256_pdfs.csv                 hash de cada PDF de origem
-  numeros_verificados.json        números-âncora do corpus
-  inventario_*.csv                inventários por tipo documental
+reproduzir.py                     regenera todas as tabelas
+teste_reproducao.py               confere os números-âncora
+verificar_checksums.py            confere a integridade das tabelas publicadas
+varredura_original_referencia.py  procedimento anterior, mantido para comparação
+CITATION.cff                      como citar
+datapackage.json / codemeta.json  metadados legíveis por máquina
+CHECKSUMS.sha256                  hash de cada tabela publicada
 ```
 
-## Diagnóstico do vocabulário
+---
 
-`dados/diagnostico_vocabulario.md` examina se o léxico está alinhado ao objetivo da
-análise e registra quatro ressalvas: a assimetria formal entre as dimensões (sintagmas de
-três palavras de um lado, palavras isoladas do outro); a presença de 22 documentos que não
-são atos da CEFIC no denominador; a ausência, no léxico, de termos nativos do corpus — em
-especial **credenciamento**, que ocorre 108 vezes em 30 documentos da CEFIC e é o
-instrumento pelo qual a Câmara regula a entrada de operadores; e a mistura de níveis de
-abstração entre as famílias. `dados/sonda_vocabulario_nativo.csv` lista os termos nativos
-não cobertos.
+## Como citar
 
-## Conferência manual
-
-`dados/termos_buscados_conferencia.md` traz os 100 termos em forma literal, sem expressão
-regular, para quem quiser conferir com Ctrl+F no PDF. Ative "Palavras inteiras": sem isso,
-`NIB` casa dentro de *disponibilidade*, `ETEC` dentro de *detecção* e `cativo` dentro de
-*aplicativo*. Dos 100 termos, 97 não ocorrem em nenhum documento.
-
-## Nomes de arquivo
-
-Seis arquivos de nome muito longo foram encurtados para que o repositório funcione em
-Windows sem configuração adicional. `dados/mapa_arquivos.csv` dá a correspondência entre o
-nome no repositório e o nome original.
+Ver [CITATION.cff](CITATION.cff). O GitHub gera a citação formatada a partir desse arquivo,
+pelo botão *Cite this repository*.
 
 ## Licença
 
-Código sob licença MIT. Dados e textos derivados de documentos oficiais, sob
-CC BY 4.0. Ver `LICENSE`.
+Código sob licença MIT. Dados e textos derivados de documentos oficiais, sob CC BY 4.0.
+Ver [LICENSE](LICENSE).

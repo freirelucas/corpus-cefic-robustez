@@ -1,0 +1,22 @@
+name: Verificacao da reproducao
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  reproduzir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Regenerar as tabelas a partir do corpus
+        run: python reproduzir.py
+      - name: Conferir os numeros-ancora
+        run: python teste_reproducao.py
+      - name: Verificar integridade das saidas
+        run: python verificar_checksums.py

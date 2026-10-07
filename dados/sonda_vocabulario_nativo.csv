@@ -1,30 +1,22 @@
-﻿termo,ocorrencias,docs,docs_cefic,no_lexico
-dados pessoais,332,17,13,False
-credenciamento,108,32,30,False
-custo,61,18,13,False
-contrato,52,20,15,False
-auditoria,45,23,20,False
-exterior,41,14,11,False
-infraestrutura,38,19,16,False
-dispensa,28,11,5,False
-orcamento,22,12,10,False
-contratacao,17,15,14,True
-certificacao,16,8,6,False
-convenio,16,11,7,False
-homologacao,14,11,10,False
-estrangeir,10,7,3,False
-autonomia,10,4,1,True
-investimento,7,5,5,False
-acordo de cooperacao,7,5,4,False
-nuvem,5,1,0,False
-capacidade tecnica,5,5,5,False
-importac,4,2,2,False
-licitacao,3,2,0,False
-compras publicas,0,0,0,False
-poder de compra,0,0,0,False
-inexigibilidade,0,0,0,False
-termo de referencia,0,0,0,False
-edital,0,0,0,False
-pregao,0,0,0,True
-especificacao tecnica,0,0,0,True
-requisito tecnico,0,0,0,False
+﻿termo,ocorrencias,docs_cefic
+dados pessoais,324,10
+credenciamento,81,26
+custo,58,10
+contrato,49,12
+exterior,41,11
+auditoria,40,17
+infraestrutura,28,11
+dispensa,28,5
+orcamento,19,8
+certificacao,14,5
+convenio,14,5
+homologacao,13,9
+contratacao,12,9
+estrangeir,10,3
+autonomia,10,1
+acordo de cooperacao,7,4
+investimento,6,4
+nuvem,5,0
+licitacao,3,0
+capacidade tecnica,3,3
+importac,2,1

@@ -1,31 +1,31 @@
-﻿familia,orig_total,orig_docs,estrito_total,estrito_docs,ampl_total,ampl_docs,zerada_orig,delta_estrito,delta_ampliado,veredito
-capacitacao_tecnologica,0,0,0,0,5,5,True,0,5,ausencia do sintagma; termos vizinhos presentes (marginais)
-propriedade_intelectual,0,0,0,0,3,3,True,0,3,ausencia do sintagma; termos vizinhos presentes (marginais)
-empresa_industria_nacional,0,0,0,0,1,1,True,0,1,ausencia do sintagma; termos vizinhos presentes (marginais)
-aprisionamento_lockin,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-codigo_fonte,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-conteudo_local,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-desenvolvimento_nacional,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-encomenda_tecnologica,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-margem_preferencia,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-nova_industria_brasil,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-padrao_aberto,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-software_livre_codigo_aberto,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-substituicao_fornecedor,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-transferencia_tecnologia,0,0,0,0,0,0,True,0,0,ausencia confirmada (robusta a sinonimos)
-fala_brasil,5,1,7,1,541,95,False,2,534,PERDA na varredura original: +2 ocorrencias recuperadas
-graficas,51,24,72,35,194,46,False,21,122,PERDA na varredura original: +21 ocorrencias recuperadas
-policiafederal_aditivo,4,4,4,4,103,49,False,0,99,contagem original correta; vocabulario vizinho amplia o quadro
-multifornecedor_segundo_motor,3,3,3,3,50,23,False,0,47,contagem original correta; vocabulario vizinho amplia o quadro
-interoperabilidade,45,24,45,24,45,24,False,0,0,contagem original correta e estavel
-territorio_nacional,39,17,39,17,39,17,False,0,0,contagem original correta e estavel
-preferencia_normativa,0,0,12,10,19,10,False,12,7,familia nova (nao estava no recorte)
-nist_nfiq,16,8,16,8,18,8,False,0,2,contagem original correta; vocabulario vizinho amplia o quadro
-bancos,16,4,16,4,16,4,False,0,0,contagem original correta e estavel
-blockchain,6,3,6,3,6,3,False,0,0,contagem original correta e estavel
-concorrencia,3,2,3,2,6,5,False,0,3,contagem original correta; vocabulario vizinho amplia o quadro
-acuracia,5,5,5,5,5,5,False,0,0,contagem original correta e estavel
-fomento,4,3,4,3,4,3,False,0,0,contagem original correta e estavel
-soberania,3,2,3,2,3,2,False,0,0,contagem original correta e estavel
-sitios_operacionais,2,2,2,2,2,2,False,0,0,contagem original correta e estavel
-tier_iii,2,2,2,2,2,2,False,0,0,contagem original correta e estavel
+﻿familia,varredura_anterior_total,varredura_anterior_docs,canonico_estrito_total,canonico_estrito_docs,canonico_ampliado_total,canonico_ampliado_docs,zerada_no_recorte_original,veredito
+capacitacao_tecnologica,0,0,0,0,5,5,True,"ausencia do sintagma; termos vizinhos presentes, marginais"
+propriedade_intelectual,0,0,0,0,2,2,True,"ausencia do sintagma; termos vizinhos presentes, marginais"
+empresa_industria_nacional,0,0,0,0,1,1,True,"ausencia do sintagma; termos vizinhos presentes, marginais"
+aprisionamento_lockin,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+codigo_fonte,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+conteudo_local,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+desenvolvimento_nacional,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+encomenda_tecnologica,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+margem_preferencia,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+nova_industria_brasil,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+padrao_aberto,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+software_livre_codigo_aberto,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+substituicao_fornecedor,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+transferencia_tecnologia,0,0,0,0,0,0,True,ausencia confirmada (robusta a sinonimos)
+fala_brasil,5,1,7,1,485,83,False,presente
+graficas,51,24,57,29,148,37,False,presente
+policiafederal_aditivo,4,4,3,3,64,33,False,presente; contagem anterior inflada por copias redundantes
+territorio_nacional,39,17,38,16,38,16,False,presente; contagem anterior inflada por copias redundantes
+interoperabilidade,45,24,34,19,34,19,False,presente; contagem anterior inflada por copias redundantes
+multifornecedor_segundo_motor,3,3,3,3,34,16,False,presente
+preferencia_normativa,0,0,12,10,19,10,False,familia acrescentada no teste (fora do recorte original)
+nist_nfiq,16,8,16,8,18,8,False,presente
+bancos,16,4,6,2,6,2,False,presente; contagem anterior inflada por copias redundantes
+blockchain,6,3,6,3,6,3,False,presente
+acuracia,5,5,5,5,5,5,False,presente
+concorrencia,3,2,3,2,5,4,False,presente
+fomento,4,3,4,3,4,3,False,presente
+soberania,3,2,3,2,3,2,False,presente
+sitios_operacionais,2,2,2,2,2,2,False,presente
+tier_iii,2,2,2,2,2,2,False,presente

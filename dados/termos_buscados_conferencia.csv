@@ -33,10 +33,10 @@ Empresa/indústria nacional,fornecedores nacionais,ausente,0,0,
 Empresa/indústria nacional,capital nacional,ausente,0,0,
 Empresa/indústria nacional,sediada no país,ausente,0,0,
 Nova Indústria Brasil,Nova Indústria Brasil,ausente,0,0,
-Nova Indústria Brasil,NIB,ausente,0,0,sigla curta — ativar 'Palavras inteiras' no leitor
+Nova Indústria Brasil,NIB,ausente,0,0,sigla curta — ativar 'Palavras inteiras'
 Nova Indústria Brasil,política industrial,ausente,0,0,
-Nova Indústria Brasil,BNDES,ausente,0,0,sigla curta — ativar 'Palavras inteiras' no leitor
-Nova Indústria Brasil,FINEP,ausente,0,0,sigla curta — ativar 'Palavras inteiras' no leitor
+Nova Indústria Brasil,BNDES,ausente,0,0,sigla curta — ativar 'Palavras inteiras'
+Nova Indústria Brasil,FINEP,ausente,0,0,sigla curta — ativar 'Palavras inteiras'
 Margem de preferência,margem de preferência,ausente,0,0,
 Margem de preferência,margens de preferência,ausente,0,0,
 Margem de preferência,critério de desempate,ausente,0,0,
@@ -45,13 +45,13 @@ Conteúdo local,conteúdo local,ausente,0,0,
 Conteúdo local,conteúdo nacional,ausente,0,0,
 Conteúdo local,índice de nacionalização,ausente,0,0,
 Conteúdo local,processo produtivo básico,ausente,0,0,
-Conteúdo local,PPB,ausente,0,0,sigla curta — ativar 'Palavras inteiras' no leitor
+Conteúdo local,PPB,ausente,0,0,sigla curta — ativar 'Palavras inteiras'
 Encomenda tecnológica,encomenda tecnológica,ausente,0,0,
 Encomenda tecnológica,encomenda pública,ausente,0,0,
-Encomenda tecnológica,ETEC,ausente,0,0,sigla curta — ativar 'Palavras inteiras' no leitor
+Encomenda tecnológica,ETEC,ausente,0,0,sigla curta — ativar 'Palavras inteiras'
 Encomenda tecnológica,Lei de Inovação,ausente,0,0,
 Encomenda tecnológica,contratação de solução inovadora,ausente,0,0,
-Encomenda tecnológica,CPSI,ausente,0,0,sigla curta — ativar 'Palavras inteiras' no leitor
+Encomenda tecnológica,CPSI,ausente,0,0,sigla curta — ativar 'Palavras inteiras'
 Software livre / código aberto,software livre,ausente,0,0,
 Software livre / código aberto,software público,ausente,0,0,
 Software livre / código aberto,código aberto,ausente,0,0,
@@ -70,10 +70,10 @@ Código-fonte,escrow,ausente,0,0,
 Propriedade intelectual,propriedade intelectual,ausente,0,0,
 Propriedade intelectual,propriedade industrial,ausente,0,0,
 Propriedade intelectual,direitos patrimoniais,ausente,0,0,
-Propriedade intelectual,patente,presente,2,2,
+Propriedade intelectual,patente,presente,1,1,
 Propriedade intelectual,titularidade dos direitos,ausente,0,0,
 Propriedade intelectual,titularidade dos resultados,ausente,0,0,
-Propriedade intelectual,INPI,ausente,0,0,sigla curta — ativar 'Palavras inteiras' no leitor
+Propriedade intelectual,INPI,ausente,0,0,sigla curta — ativar 'Palavras inteiras'
 Propriedade intelectual,licenciamento,ausente,0,0,
 Transferência de tecnologia,transferência de tecnologia,ausente,0,0,
 Transferência de tecnologia,transferência tecnológica,ausente,0,0,

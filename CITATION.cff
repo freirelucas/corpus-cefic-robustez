@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Corpus CEFIC — dados, código e verificação da análise documental"
+message: "Se utilizar este material, cite-o conforme os metadados abaixo."
+type: dataset
+authors:
+  - family-names: Chiarini
+    given-names: Tulio
+  - family-names: Direito
+    given-names: Denise
+  - family-names: Silva
+    given-names: Lucas
+repository-code: "https://github.com/freirelucas/corpus-cefic-robustez"
+url: "https://github.com/freirelucas/corpus-cefic-robustez"
+abstract: >-
+  Corpus documental da Câmara Executiva Federal de Identificação do Cidadão (CEFIC),
+  código de varredura lexical e teste de robustez das afirmações de ausência que
+  sustentam o artigo "Identidade digital e desenvolvimento tecnológico: o papel da
+  Cefic" (Boletim Radar, Ipea). Reúne 130 documentos distintos,
+  665 páginas, com corte em 15/09/2026.
+keywords:
+  - identidade digital
+  - infraestrutura pública digital
+  - política industrial
+  - análise documental
+  - CEFIC
+license: CC-BY-4.0
+license-url: "https://github.com/freirelucas/corpus-cefic-robustez/blob/main/LICENSE"
+version: "1.0.0"
+date-released: "2026-10-07"
