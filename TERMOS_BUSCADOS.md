@@ -3,16 +3,17 @@
 Todos os termos de busca em forma literal, com o resultado de cada um no corpus de
 129 documentos. **97 dos 100 termos não ocorrem em nenhum documento.**
 
-Para conferir manualmente em um PDF, use Ctrl+F com a opção **"Palavras inteiras"
-ativada**. Sem ela, siglas curtas produzem falso positivo: `NIB` casa dentro de
-*disponibilidade*, `ETEC` dentro de *detecção* e `cativo` dentro de *aplicativo*.
+A conferência manual em um PDF requer a opção **"Palavras inteiras"** ativada. Sem ela,
+siglas curtas produzem falso positivo: `NIB` casa no interior de *disponibilidade*, `ETEC` no
+de *detecção* e `cativo` no de *aplicativo*.
 
 O travessão (—) indica que o termo não ocorre em nenhum documento.
 
 A mesma informação em formato tabular está em
-[`dados/termos_buscados_conferencia.csv`](dados/termos_buscados_conferencia.csv). Para ver
-onde cada ocorrência aparece, com arquivo e página, consulte
-[`dados/kwic_cefic_corrigido.csv`](dados/kwic_cefic_corrigido.csv).
+[`dados/termos_buscados_conferencia.csv`](dados/termos_buscados_conferencia.csv). A
+localização de cada ocorrência dos termos presentes, com arquivo e página, está em
+[`dados/kwic_estrito.csv`](dados/kwic_estrito.csv). A ferramenta
+[`busca_corpus_cefic.html`](busca_corpus_cefic.html) permite verificar qualquer termo diretamente no corpus.
 
 **Padrão aberto**
 
@@ -183,41 +184,42 @@ onde cada ocorrência aparece, com arquivo e página, consulte
 | monopólio | — |
 | fornecedor único | — |
 | exclusividade | — |
+
 ---
 
 ## Contagens por família
 
-As famílias agrupam termos que designam o mesmo conceito. Abaixo, o resultado consolidado.
+As famílias agrupam termos que designam o mesmo conceito.
 
-### Famílias das duas dimensões do artigo
+### Famílias das duas dimensões analíticas do artigo
 
 | família | ocorrências | documentos | situação |
 |---|---|---|---|
-| Território nacional | 38 | 16 | presente; contagem anterior inflada por copias redundantes do corpus |
-| Interoperabilidade | 34 | 19 | presente; contagem anterior inflada por copias redundantes do corpus |
-| Preferência normativa | 12 | 10 | familia acrescentada no teste (fora do recorte original) |
+| Território nacional | 38 | 16 | presente |
+| Interoperabilidade | 34 | 19 | presente |
+| Preferência normativa | 12 | 10 | presente; família acrescentada ao léxico no teste de robustez |
 | Multifornecedor / segundo motor | 3 | 3 | presente |
 | Soberania | 3 | 2 | presente |
 | Concorrência | 3 | 2 | presente |
-| Propriedade intelectual | 0 | 0 | ausencia do sintagma; termos vizinhos presentes, marginais |
-| Capacitação tecnológica | 0 | 0 | ausencia do sintagma; termos vizinhos presentes, marginais |
-| Aprisionamento / lock-in | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Empresa/indústria nacional | 0 | 0 | ausencia do sintagma; termos vizinhos presentes, marginais |
-| Código-fonte | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Conteúdo local | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Software livre / código aberto | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Padrão aberto | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Nova Indústria Brasil | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Margem de preferência | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Encomenda tecnológica | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Desenvolvimento nacional | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Substituição de fornecedor | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
-| Transferência de tecnologia | 0 | 0 | ausencia confirmada (robusta a sinonimos) |
+| Propriedade intelectual | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
+| Capacitação tecnológica | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
+| Aprisionamento / lock-in | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Empresa/indústria nacional | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
+| Código-fonte | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Conteúdo local | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Software livre / código aberto | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Padrão aberto | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Nova Indústria Brasil | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Margem de preferência | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Encomenda tecnológica | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Desenvolvimento nacional | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Substituição de fornecedor | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Transferência de tecnologia | 0 | 0 | ausência robusta a sinônimos e variantes |
 
 ### Demais famílias do levantamento
 
-Pertencem ao estudo paralelo sobre os certames do Serviço Biométrico Federal e não
-respondem às dimensões analíticas do artigo. Ficam registradas por transparência.
+Pertencem ao estudo paralelo sobre os certames do Serviço Biométrico Federal e não respondem
+às dimensões analíticas do artigo.
 
 | família | ocorrências | documentos |
 |---|---|---|
@@ -231,3 +233,6 @@ respondem às dimensões analíticas do artigo. Ficam registradas por transparê
 | Polícia Federal / aditivo | 3 | 3 |
 | Sítios operacionais | 2 | 2 |
 | Tier III | 2 | 2 |
+
+Fonte: corpus documental da CEFIC.
+Elaboração dos autores.

@@ -1,28 +1,10 @@
 # Dicionário de dados
 
-Descrição de cada tabela publicada em `dados/` e de cada uma de suas colunas.
+Significado de cada tabela publicada em `dados/` e de cada uma de suas colunas.
 
-## `robustez_termos_cefic.csv`
+## `resultados_por_familia.csv`
 
-Comparação, por família de termos, entre a varredura anterior e a varredura sobre o corpus deduplicado, nos níveis estrito e ampliado.
-
-30 linhas.
-
-| coluna | tipo | descrição |
-|---|---|---|
-| `familia` | texto | Família de termos (conceito) a que a ocorrência pertence |
-| `varredura_anterior_total` | inteiro | Ocorrências segundo a varredura anterior, sobre o corpus com cópias |
-| `varredura_anterior_docs` | inteiro | Documentos segundo a varredura anterior |
-| `canonico_estrito_total` | inteiro | Ocorrências no nível estrito sobre o corpus deduplicado |
-| `canonico_estrito_docs` | inteiro | Documentos no nível estrito sobre o corpus deduplicado |
-| `canonico_ampliado_total` | inteiro | Ocorrências no nível ampliado sobre o corpus deduplicado |
-| `canonico_ampliado_docs` | inteiro | Documentos no nível ampliado sobre o corpus deduplicado |
-| `zerada_no_recorte_original` | booleano | Indica se a família tinha contagem zero no recorte original da pesquisa |
-| `veredito` | texto | Interpretação do resultado da família após o teste de robustez |
-
-## `freq_termos_robusto.csv`
-
-Contagens por família nos dois níveis de busca, sobre o corpus canônico.
+Resultado por família de termos nos dois níveis de busca, com a situação de cada uma.
 
 30 linhas.
 
@@ -33,21 +15,25 @@ Contagens por família nos dois níveis de busca, sobre o corpus canônico.
 | `estrito_docs` | inteiro | Documentos distintos no nível estrito |
 | `ampliado_total` | inteiro | Ocorrências no nível ampliado, com sinônimos e variantes |
 | `ampliado_docs` | inteiro | Documentos distintos no nível ampliado |
-| `zerada_no_recorte_original` | booleano | Indica se a família tinha contagem zero no recorte original da pesquisa |
+| `no_recorte_declarado_sem_ocorrencia` | booleano | Indica que a família não registrou ocorrência no recorte de termos declarado na pesquisa |
+| `situacao` | texto | Interpretação do resultado da família após o teste de robustez |
 
-## `freq_termos_varredura_anterior.csv`
+## `contagens_por_familia.csv`
 
-Contagens da varredura anterior, preservadas para comparação.
+Contagens por família nos níveis estrito e ampliado.
 
-29 linhas.
+30 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
 | `familia` | texto | Família de termos (conceito) a que a ocorrência pertence |
-| `total` | inteiro | Ocorrências contadas |
-| `docs` | inteiro | Documentos distintos |
+| `estrito_total` | inteiro | Ocorrências no nível estrito de busca |
+| `estrito_docs` | inteiro | Documentos distintos no nível estrito |
+| `ampliado_total` | inteiro | Ocorrências no nível ampliado, com sinônimos e variantes |
+| `ampliado_docs` | inteiro | Documentos distintos no nível ampliado |
+| `sem_ocorrencia_no_recorte_declarado` | booleano | Indica que a família não registrou ocorrência no recorte de termos declarado na pesquisa |
 
-## `kwic_cefic_corrigido.csv`
+## `kwic_estrito.csv`
 
 Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e contexto.
 
@@ -61,7 +47,7 @@ Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e c
 | `termo` | texto | Trecho exato do documento que casou com o padrão de busca |
 | `trecho` | texto | Janela de contexto ao redor da ocorrência, no texto original acentuado |
 
-## `kwic_cefic_ampliado.csv`
+## `kwic_ampliado.csv`
 
 Uma linha por ocorrência encontrada no nível ampliado.
 
@@ -77,7 +63,7 @@ Uma linha por ocorrência encontrada no nível ampliado.
 
 ## `termos_buscados_conferencia.csv`
 
-Os termos de busca em forma literal, com o resultado de cada um, para conferência manual.
+Os termos de busca em forma literal, com o resultado de cada um.
 
 100 linhas.
 
@@ -85,14 +71,32 @@ Os termos de busca em forma literal, com o resultado de cada um, para conferênc
 |---|---|---|
 | `conceito` | texto | Nome legível da família de termos |
 | `termo` | texto | Trecho exato do documento que casou com o padrão de busca |
-| `situacao` | texto | Resultado da verificação de integridade: ok ou sem camada de texto |
+| `situacao` | texto | Interpretação do resultado da família após o teste de robustez |
 | `ocorrencias` | inteiro | Número de ocorrências no corpus |
 | `documentos` | inteiro | Número de documentos distintos em que o termo ocorre |
 | `aviso` | texto | Observação sobre como conferir o termo manualmente |
 
+## `fundamentacao_do_quadro.csv`
+
+Liga cada item do quadro de dimensões analíticas do artigo aos termos buscados e ao resultado obtido.
+
+9 linhas.
+
+| coluna | tipo | descrição |
+|---|---|---|
+| `dimensao` | texto | Dimensão analítica do artigo |
+| `item_do_quadro` | texto | Item tal como declarado no quadro de dimensões |
+| `termos_buscados` | texto | Termos literais efetivamente buscados |
+| `n_termos` | inteiro | Quantidade de termos buscados para o item |
+| `ocorrencias` | inteiro | Número de ocorrências no corpus |
+| `ocorrencias_lexico_ampliado` | inteiro | Ocorrências sob o léxico ampliado, com sinônimos |
+| `documentos` | inteiro | Número de documentos distintos em que o termo ocorre |
+| `resultado` | texto | Se o item ocorre ou não no corpus |
+| `onde_conferir` | texto | Arquivo em que a evidência pode ser inspecionada |
+
 ## `sonda_vocabulario_nativo.csv`
 
-Termos usados pelos próprios documentos que o recorte original não cobria.
+Termos empregados pelos próprios documentos que o recorte declarado não cobria.
 
 21 linhas.
 
@@ -122,7 +126,7 @@ Origem, hash, tipo documental e data de coleta de cada documento do corpus.
 
 ## `integridade_texto.csv`
 
-Verificação da correspondência entre cada texto e seu PDF de origem.
+Correspondência entre cada texto e o PDF de origem.
 
 129 linhas.
 
@@ -133,7 +137,7 @@ Verificação da correspondência entre cada texto e seu PDF de origem.
 | `texto_presente` | booleano | Indica se há arquivo de texto correspondente |
 | `chars_uteis` | inteiro | Número de caracteres não brancos no texto extraído |
 | `paginas` | inteiro | Número de páginas detectadas no texto extraído |
-| `situacao` | texto | Resultado da verificação de integridade: ok ou sem camada de texto |
+| `situacao` | texto | Interpretação do resultado da família após o teste de robustez |
 
 ## `lacunas_cobertura.csv`
 
@@ -147,9 +151,9 @@ Documentos sem camada de texto, inalcançáveis por qualquer busca.
 | `chars_uteis` | inteiro | Número de caracteres não brancos no texto extraído |
 | `problema` | texto | Natureza da lacuna identificada no documento |
 
-## `duplicatas_removidas.csv`
+## `copias_identicas.csv`
 
-Cópias byte-idênticas descartadas do corpus, com o arquivo canônico correspondente.
+Cópias byte-idênticas descartadas na constituição do corpus, com o arquivo canônico correspondente.
 
 24 linhas.
 
@@ -158,6 +162,19 @@ Cópias byte-idênticas descartadas do corpus, com o arquivo canônico correspon
 | `arquivo_removido` | texto | Nome do arquivo descartado por ser cópia byte-idêntica de outro |
 | `identico_a` | texto | Arquivo canônico cujo conteúdo é idêntico ao removido |
 | `sha256` | texto | Hash SHA-256 do arquivo PDF de origem, em hexadecimal |
+
+## `versoes_mesmo_documento.csv`
+
+Grupos de arquivos correspondentes ao mesmo documento em capturas distintas; os conteúdos diferem e nenhum foi descartado.
+
+18 linhas.
+
+| coluna | tipo | descrição |
+|---|---|---|
+| `documento` | texto | Documento ao qual os arquivos do grupo correspondem |
+| `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
+| `chars` | inteiro | Número de caracteres do texto extraído |
+| `caracteres_corrompidos` | inteiro | Número de caracteres que não puderam ser decodificados do PDF (U+FFFD) |
 
 ## `sha256_pdfs.csv`
 
@@ -220,34 +237,3 @@ Inventário dos registros de reunião identificados no corpus.
 | `tipo` | texto | Natureza da reunião: ordinária ou extraordinária |
 | `data_doc` | texto | Data do documento no formato DD/MM/AAAA |
 | `ano` | número | Ano de referência da reunião |
-
-## `versoes_mesmo_documento.csv`
-
-Grupos de arquivos que correspondem ao mesmo documento em capturas diferentes; os conteúdos não são idênticos e nenhum foi descartado.
-
-18 linhas.
-
-| coluna | tipo | descrição |
-|---|---|---|
-| `documento` | texto | Documento ao qual os arquivos do grupo correspondem |
-| `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
-| `chars` | inteiro | Número de caracteres do texto extraído |
-| `caracteres_corrompidos` | inteiro | Número de caracteres que não puderam ser decodificados do PDF (U+FFFD) |
-
-## `fundamentacao_do_quadro.csv`
-
-Liga cada item do quadro de dimensões analíticas do artigo aos termos buscados e ao resultado obtido.
-
-9 linhas.
-
-| coluna | tipo | descrição |
-|---|---|---|
-| `dimensao` | texto | Dimensão analítica do artigo |
-| `item_do_quadro` | texto | Item tal como declarado no quadro de dimensões |
-| `termos_buscados` | texto | Termos literais efetivamente buscados |
-| `n_termos` | inteiro | Quantidade de termos buscados para o item |
-| `ocorrencias` | inteiro | Número de ocorrências no corpus |
-| `ocorrencias_lexico_ampliado` | inteiro | Ocorrências sob o léxico ampliado, com sinônimos |
-| `documentos` | inteiro | Número de documentos distintos em que o termo ocorre |
-| `resultado` | texto | Se o item ocorre ou não no corpus |
-| `onde_conferir` | texto | Arquivo em que a evidência pode ser inspecionada |

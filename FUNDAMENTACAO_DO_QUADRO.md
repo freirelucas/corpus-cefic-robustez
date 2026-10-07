@@ -1,8 +1,7 @@
 # Fundamentação do quadro de dimensões
 
 Este documento liga cada item do quadro de dimensões analíticas do artigo aos termos
-efetivamente buscados no corpus e ao resultado obtido. Serve para que o leitor verifique,
-item a item, em que a afirmação do texto se apoia.
+efetivamente buscados no corpus e ao resultado obtido. Permite verificar, item a item, em que a afirmação do texto se apoia.
 
 Corpus: 129 documentos distintos, 663 páginas, corte em 15/09/2026.
 A busca percorre o texto integral e registra arquivo e página de cada ocorrência.
@@ -39,14 +38,15 @@ em Energia Nuclear" em documento de outro órgão, que não sustenta a presença
 Dos nove itens do quadro, **sete não ocorrem no corpus** e dois ocorrem. Os 97 termos
 ausentes, de um total de 100 buscados, estão listados um a um em
 [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md); cada ocorrência dos itens presentes está em
-[`dados/kwic_cefic_corrigido.csv`](dados/kwic_cefic_corrigido.csv), com arquivo e página.
-A ferramenta de busca permite conferir qualquer termo diretamente no corpus.
+[`dados/kwic_estrito.csv`](dados/kwic_estrito.csv), com arquivo e página.
+A ferramenta [`busca_corpus_cefic.html`](busca_corpus_cefic.html) permite verificar qualquer termo diretamente no corpus.
 
 ## Termos buscados além do quadro
 
 O levantamento cobriu também termos que o quadro não declara, mas que sustentam afirmações
 do corpo do texto. Ficam registrados para que a correspondência entre o que se buscou e o
-que se afirma seja completa.
+que se afirma seja completa. As presenças não incorporadas ao artigo estão examinadas em
+[AGENDA_DE_PESQUISA.md](AGENDA_DE_PESQUISA.md).
 
 | termo | ocorrências | documentos | sustenta no texto |
 |---|---|---|---|

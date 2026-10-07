@@ -54,8 +54,8 @@ def main() -> None:
     est = varre(docs, "estrito")
     amp = varre(docs, "ampliado")
     campos = ["familia", "arquivo", "pagina", "termo", "trecho"]
-    escreve("kwic_cefic_corrigido.csv", est, campos)
-    escreve("kwic_cefic_ampliado.csv", amp, campos)
+    escreve("kwic_estrito.csv", est, campos)
+    escreve("kwic_ampliado.csv", amp, campos)
 
     def agrega(linhas):
         tot, dd = {}, {}
@@ -68,10 +68,10 @@ def main() -> None:
     ta, da = agrega(amp)
     freq = [{"familia": f, "estrito_total": te.get(f, 0), "estrito_docs": len(de.get(f, ())),
              "ampliado_total": ta.get(f, 0), "ampliado_docs": len(da.get(f, ())),
-             "zerada_no_recorte_original": f in ZERADAS} for f in LEXICO]
-    escreve("freq_termos_robusto.csv", freq,
+             "sem_ocorrencia_no_recorte_declarado": f in ZERADAS} for f in LEXICO]
+    escreve("contagens_por_familia.csv", freq,
             ["familia", "estrito_total", "estrito_docs", "ampliado_total", "ampliado_docs",
-             "zerada_no_recorte_original"])
+             "sem_ocorrencia_no_recorte_declarado"])
 
     paginas = sum(len(re.findall(r"===== \[pag \d+\] =====", d.raw)) or 1 for d in docs.values())
     linhas_txt = sum(d.raw.count("\n") + 1 for d in docs.values())
@@ -80,8 +80,6 @@ def main() -> None:
               "familias_zeradas_no_recorte_original": len(ZERADAS),
               "familias_que_seguem_zeradas_no_nivel_ampliado":
                   sum(1 for f in ZERADAS if ta.get(f, 0) == 0)}
-    (DADOS / "resumo_reproducao.json").write_text(
-        json.dumps(resumo, indent=1, ensure_ascii=False), encoding="utf-8")
     for k, v in resumo.items():
         print(f"{k}: {v}")
 

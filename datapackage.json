@@ -29,71 +29,13 @@
   "homepage": "https://github.com/freirelucas/corpus-cefic-robustez",
   "resources": [
     {
-      "name": "robustez-termos-cefic",
-      "path": "dados/robustez_termos_cefic.csv",
+      "name": "resultados-por-familia",
+      "path": "dados/resultados_por_familia.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "title": "robustez_termos_cefic.csv",
-      "description": "Comparação, por família de termos, entre a varredura anterior e a varredura sobre o corpus deduplicado, nos níveis estrito e ampliado.",
-      "schema": {
-        "fields": [
-          {
-            "name": "familia",
-            "type": "string",
-            "description": "Família de termos (conceito) a que a ocorrência pertence"
-          },
-          {
-            "name": "varredura_anterior_total",
-            "type": "integer",
-            "description": "Ocorrências segundo a varredura anterior, sobre o corpus com cópias"
-          },
-          {
-            "name": "varredura_anterior_docs",
-            "type": "integer",
-            "description": "Documentos segundo a varredura anterior"
-          },
-          {
-            "name": "canonico_estrito_total",
-            "type": "integer",
-            "description": "Ocorrências no nível estrito sobre o corpus deduplicado"
-          },
-          {
-            "name": "canonico_estrito_docs",
-            "type": "integer",
-            "description": "Documentos no nível estrito sobre o corpus deduplicado"
-          },
-          {
-            "name": "canonico_ampliado_total",
-            "type": "integer",
-            "description": "Ocorrências no nível ampliado sobre o corpus deduplicado"
-          },
-          {
-            "name": "canonico_ampliado_docs",
-            "type": "integer",
-            "description": "Documentos no nível ampliado sobre o corpus deduplicado"
-          },
-          {
-            "name": "zerada_no_recorte_original",
-            "type": "boolean",
-            "description": "Indica se a família tinha contagem zero no recorte original da pesquisa"
-          },
-          {
-            "name": "veredito",
-            "type": "string",
-            "description": "Interpretação do resultado da família após o teste de robustez"
-          }
-        ]
-      }
-    },
-    {
-      "name": "freq-termos-robusto",
-      "path": "dados/freq_termos_robusto.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8-sig",
-      "title": "freq_termos_robusto.csv",
-      "description": "Contagens por família nos dois níveis de busca, sobre o corpus canônico.",
+      "title": "resultados_por_familia.csv",
+      "description": "Resultado por família de termos nos dois níveis de busca, com a situação de cada uma.",
       "schema": {
         "fields": [
           {
@@ -122,21 +64,26 @@
             "description": "Documentos distintos no nível ampliado"
           },
           {
-            "name": "zerada_no_recorte_original",
+            "name": "no_recorte_declarado_sem_ocorrencia",
             "type": "boolean",
-            "description": "Indica se a família tinha contagem zero no recorte original da pesquisa"
+            "description": "Indica que a família não registrou ocorrência no recorte de termos declarado na pesquisa"
+          },
+          {
+            "name": "situacao",
+            "type": "string",
+            "description": "Interpretação do resultado da família após o teste de robustez"
           }
         ]
       }
     },
     {
-      "name": "freq-termos-varredura-anterior",
-      "path": "dados/freq_termos_varredura_anterior.csv",
+      "name": "contagens-por-familia",
+      "path": "dados/contagens_por_familia.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "title": "freq_termos_varredura_anterior.csv",
-      "description": "Contagens da varredura anterior, preservadas para comparação.",
+      "title": "contagens_por_familia.csv",
+      "description": "Contagens por família nos níveis estrito e ampliado.",
       "schema": {
         "fields": [
           {
@@ -145,25 +92,40 @@
             "description": "Família de termos (conceito) a que a ocorrência pertence"
           },
           {
-            "name": "total",
+            "name": "estrito_total",
             "type": "integer",
-            "description": "Ocorrências contadas"
+            "description": "Ocorrências no nível estrito de busca"
           },
           {
-            "name": "docs",
+            "name": "estrito_docs",
             "type": "integer",
-            "description": "Documentos distintos"
+            "description": "Documentos distintos no nível estrito"
+          },
+          {
+            "name": "ampliado_total",
+            "type": "integer",
+            "description": "Ocorrências no nível ampliado, com sinônimos e variantes"
+          },
+          {
+            "name": "ampliado_docs",
+            "type": "integer",
+            "description": "Documentos distintos no nível ampliado"
+          },
+          {
+            "name": "sem_ocorrencia_no_recorte_declarado",
+            "type": "boolean",
+            "description": "Indica que a família não registrou ocorrência no recorte de termos declarado na pesquisa"
           }
         ]
       }
     },
     {
-      "name": "kwic-cefic-corrigido",
-      "path": "dados/kwic_cefic_corrigido.csv",
+      "name": "kwic-estrito",
+      "path": "dados/kwic_estrito.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "title": "kwic_cefic_corrigido.csv",
+      "title": "kwic_estrito.csv",
       "description": "Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e contexto.",
       "schema": {
         "fields": [
@@ -196,12 +158,12 @@
       }
     },
     {
-      "name": "kwic-cefic-ampliado",
-      "path": "dados/kwic_cefic_ampliado.csv",
+      "name": "kwic-ampliado",
+      "path": "dados/kwic_ampliado.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "title": "kwic_cefic_ampliado.csv",
+      "title": "kwic_ampliado.csv",
       "description": "Uma linha por ocorrência encontrada no nível ampliado.",
       "schema": {
         "fields": [
@@ -240,7 +202,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "title": "termos_buscados_conferencia.csv",
-      "description": "Os termos de busca em forma literal, com o resultado de cada um, para conferência manual.",
+      "description": "Os termos de busca em forma literal, com o resultado de cada um.",
       "schema": {
         "fields": [
           {
@@ -256,7 +218,7 @@
           {
             "name": "situacao",
             "type": "string",
-            "description": "Resultado da verificação de integridade: ok ou sem camada de texto"
+            "description": "Interpretação do resultado da família após o teste de robustez"
           },
           {
             "name": "ocorrencias",
@@ -277,13 +239,71 @@
       }
     },
     {
+      "name": "fundamentacao-do-quadro",
+      "path": "dados/fundamentacao_do_quadro.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "fundamentacao_do_quadro.csv",
+      "description": "Liga cada item do quadro de dimensões analíticas do artigo aos termos buscados e ao resultado obtido.",
+      "schema": {
+        "fields": [
+          {
+            "name": "dimensao",
+            "type": "string",
+            "description": "Dimensão analítica do artigo"
+          },
+          {
+            "name": "item_do_quadro",
+            "type": "string",
+            "description": "Item tal como declarado no quadro de dimensões"
+          },
+          {
+            "name": "termos_buscados",
+            "type": "string",
+            "description": "Termos literais efetivamente buscados"
+          },
+          {
+            "name": "n_termos",
+            "type": "integer",
+            "description": "Quantidade de termos buscados para o item"
+          },
+          {
+            "name": "ocorrencias",
+            "type": "integer",
+            "description": "Número de ocorrências no corpus"
+          },
+          {
+            "name": "ocorrencias_lexico_ampliado",
+            "type": "integer",
+            "description": "Ocorrências sob o léxico ampliado, com sinônimos"
+          },
+          {
+            "name": "documentos",
+            "type": "integer",
+            "description": "Número de documentos distintos em que o termo ocorre"
+          },
+          {
+            "name": "resultado",
+            "type": "string",
+            "description": "Se o item ocorre ou não no corpus"
+          },
+          {
+            "name": "onde_conferir",
+            "type": "string",
+            "description": "Arquivo em que a evidência pode ser inspecionada"
+          }
+        ]
+      }
+    },
+    {
       "name": "sonda-vocabulario-nativo",
       "path": "dados/sonda_vocabulario_nativo.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "title": "sonda_vocabulario_nativo.csv",
-      "description": "Termos usados pelos próprios documentos que o recorte original não cobria.",
+      "description": "Termos empregados pelos próprios documentos que o recorte declarado não cobria.",
       "schema": {
         "fields": [
           {
@@ -369,7 +389,7 @@
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
       "title": "integridade_texto.csv",
-      "description": "Verificação da correspondência entre cada texto e seu PDF de origem.",
+      "description": "Correspondência entre cada texto e o PDF de origem.",
       "schema": {
         "fields": [
           {
@@ -400,7 +420,7 @@
           {
             "name": "situacao",
             "type": "string",
-            "description": "Resultado da verificação de integridade: ok ou sem camada de texto"
+            "description": "Interpretação do resultado da família após o teste de robustez"
           }
         ]
       }
@@ -434,13 +454,13 @@
       }
     },
     {
-      "name": "duplicatas-removidas",
-      "path": "dados/duplicatas_removidas.csv",
+      "name": "copias-identicas",
+      "path": "dados/copias_identicas.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8-sig",
-      "title": "duplicatas_removidas.csv",
-      "description": "Cópias byte-idênticas descartadas do corpus, com o arquivo canônico correspondente.",
+      "title": "copias_identicas.csv",
+      "description": "Cópias byte-idênticas descartadas na constituição do corpus, com o arquivo canônico correspondente.",
       "schema": {
         "fields": [
           {
@@ -457,6 +477,39 @@
             "name": "sha256",
             "type": "string",
             "description": "Hash SHA-256 do arquivo PDF de origem, em hexadecimal"
+          }
+        ]
+      }
+    },
+    {
+      "name": "versoes-mesmo-documento",
+      "path": "dados/versoes_mesmo_documento.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "title": "versoes_mesmo_documento.csv",
+      "description": "Grupos de arquivos correspondentes ao mesmo documento em capturas distintas; os conteúdos diferem e nenhum foi descartado.",
+      "schema": {
+        "fields": [
+          {
+            "name": "documento",
+            "type": "string",
+            "description": "Documento ao qual os arquivos do grupo correspondem"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+          },
+          {
+            "name": "chars",
+            "type": "integer",
+            "description": "Número de caracteres do texto extraído"
+          },
+          {
+            "name": "caracteres_corrompidos",
+            "type": "integer",
+            "description": "Número de caracteres que não puderam ser decodificados do PDF (U+FFFD)"
           }
         ]
       }
@@ -639,97 +692,6 @@
             "name": "ano",
             "type": "number",
             "description": "Ano de referência da reunião"
-          }
-        ]
-      }
-    },
-    {
-      "name": "versoes-mesmo-documento",
-      "path": "dados/versoes_mesmo_documento.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8-sig",
-      "title": "versoes_mesmo_documento.csv",
-      "description": "Grupos de arquivos que correspondem ao mesmo documento em capturas diferentes; os conteúdos não são idênticos e nenhum foi descartado.",
-      "schema": {
-        "fields": [
-          {
-            "name": "documento",
-            "type": "string",
-            "description": "Documento ao qual os arquivos do grupo correspondem"
-          },
-          {
-            "name": "arquivo",
-            "type": "string",
-            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
-          },
-          {
-            "name": "chars",
-            "type": "integer",
-            "description": "Número de caracteres do texto extraído"
-          },
-          {
-            "name": "caracteres_corrompidos",
-            "type": "integer",
-            "description": "Número de caracteres que não puderam ser decodificados do PDF (U+FFFD)"
-          }
-        ]
-      }
-    },
-    {
-      "name": "fundamentacao-do-quadro",
-      "path": "dados/fundamentacao_do_quadro.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8-sig",
-      "title": "fundamentacao_do_quadro.csv",
-      "description": "Liga cada item do quadro de dimensões analíticas do artigo aos termos buscados e ao resultado obtido.",
-      "schema": {
-        "fields": [
-          {
-            "name": "dimensao",
-            "type": "string",
-            "description": "Dimensão analítica do artigo"
-          },
-          {
-            "name": "item_do_quadro",
-            "type": "string",
-            "description": "Item tal como declarado no quadro de dimensões"
-          },
-          {
-            "name": "termos_buscados",
-            "type": "string",
-            "description": "Termos literais efetivamente buscados"
-          },
-          {
-            "name": "n_termos",
-            "type": "integer",
-            "description": "Quantidade de termos buscados para o item"
-          },
-          {
-            "name": "ocorrencias",
-            "type": "integer",
-            "description": "Número de ocorrências no corpus"
-          },
-          {
-            "name": "ocorrencias_lexico_ampliado",
-            "type": "integer",
-            "description": "Ocorrências sob o léxico ampliado, com sinônimos"
-          },
-          {
-            "name": "documentos",
-            "type": "integer",
-            "description": "Número de documentos distintos em que o termo ocorre"
-          },
-          {
-            "name": "resultado",
-            "type": "string",
-            "description": "Se o item ocorre ou não no corpus"
-          },
-          {
-            "name": "onde_conferir",
-            "type": "string",
-            "description": "Arquivo em que a evidência pode ser inspecionada"
           }
         ]
       }
