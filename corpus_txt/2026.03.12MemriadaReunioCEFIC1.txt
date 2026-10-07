@@ -1,0 +1,158 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião  
+ 
+2ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) de 2026.  
+Data Horário Local 
+12/03/2026 17h Palácio do Planalto – sala 407 
+ 
+2. Participantes  
+Nome Órgão  Cargo  
+Pedro Helena Pontual 
+Machado 
+Casa Civil da Presidência da República - 
+CC-PR  Secretário Adjunto 
+Beatriz Vasconcellos de 
+Araújo SAM-CC/PR  Secretária Adjunta 
+Carlos Antônio Lopes de 
+Araújo SAM-CC/PR Assessor 
+Sylvio Cezar Koury Musolino 
+Filho SAM-CC/PR Gerente de Projeto 
+Nicolas Wulk SAM-CC/PR Assessor 
+Rogério Souza Mascarenhas Secretaria de Governo Digital - SGD/MGI Secretário-Executivo 
+Hudson Vinícius Mesquita Secretaria de Governo Digital - SGD/MGI Diretor   
+Paulo Ayran da Silva Bezerra Secretaria de Governo Digital - SGD/MGI Coordenador-Geral  
+Thalita Knupp A. de Carvalho Secretaria de Governo Digital - SGD/MGI Especialista 
+Daniela Roscoe Secretaria de Governo Digital - SGD/MGI Administradora  
+Ana Maria Costa Candido 
+Lacerda 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Assessora Técnica 
+Enylson Flávio Martinez 
+Camolesi 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor-presidente  
+Eder Eustaquio Alves Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor 
+Katia Macarini Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenadora-Geral 
+Isabel Seixas de Figueiredo Ministério da Justiça e Segurança Pública 
+- MJSP Diretora 
+Beatriz Marques de Jesus 
+Figueiredo 
+Ministério da Justiça e Segurança Pública 
+- MJSP Coordenadora-Geral 
+Ronei Maia Salvatori Ministério da Justiça e Segurança Pública 
+- MJSP Coordenador 
+Victor Durigan Ministério da Justiça e Segurança Pública 
+- MJSP Diretor 
+Reriton Weldert Gomes Receita Federal do Brasil - RFB Coordenador-Geral  
+Rafael Neves Receita Federal do Brasil - RFB Coordenador-Geral  
+Ana Estela Haddad* Ministério da Saúde – MS  Secretária-Executiva 
+Tula Vieira Brasileiro Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora-Geral 
+Damaris Campos Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora 
+*online 
+3. Pauta  
+ 
+3.1. Aprovação de Resolução instituindo o GTT1 
+3.2. Monitoramento Entregas 2026 
+3.3. Informes Gerais 
+ 
+ 
+4. Relato  
+ 
+Iniciou-se a reunião, tendo como primeiro item da pauta a apresentação da minuta da Resolução que institui o 
+Grupo de Trabalho Técnico 1 (GTT1) com o objetivo de elaborar o planejamento estruturado, monitorar atividades 
+e subsidiar decisões no âmbito da Cefic. Informou-se, ainda, a manutenção dos órgãos participantes no respectivo 
+===== [pag 2] =====
+Grupo de Trabalho, bem como a vigência pelo prazo de seis meses. Submetida à apreciação, a minuta da Resolução 
+foi posta em votação, sendo aprovada por unanimidade. 
+ 
+Na sequência, apresentou-se o monitoramento das entregas referentes ao planejamento 2026, destacando-se 
+os seguintes itens: 
+• Serviço de Controle de Fluxos ( SCF-CIN) – relatou-se que as reuniões técnicas têm avançado  sem 
+intercorrências. O cronograma prevê que , até agosto de 2026, o SCF -CIN esteja em operação. A meta 
+subsequente consiste na integração dos  Estados ao SCF-CIN – com estimativa inicial de inclusão de dez 
+estados até o final de 2026. 
+ 
+• Modelo Informacional (MI) – Atualmente, o Modelo Informacional encontra-se na etapa de implementação 
+na base de dados do MJSP. Considerando que houve recente mudança na gestão do Ministério, apontou-se 
+a necessidade de a  Casa Civil reunir-se com a Secretaria Executiva do MJSP com o intuito  alinharem o 
+cronograma de entregas.   
+ 
+• Serviço Biométrico Federal (SBF) - informou-se que está em fase de teste para verificação da performance 
+do SBF. A etapa atual consiste em uma pactuação com os estados federados para que enviem as informações 
+para o Serviço Biométrico Federal (SBF). Destaca-se que o estado do Piauí e da Bahia estão com os registros 
+bem avançados, sendo que outros seis estados (TO, DF , MT , PR, AP , CE) já assinaram o termo de compromisso 
+e existe a perspectiva de início da inclusão de dados nos próximos dias. Estima -se que a fase de teste com 
+cinco estados pilotos será concretizada até o dia 30/04/2026. Com o avanço do projeto, c ogitou-se que, 
+provavelmente, será necessário revisar a Resolução nº 21/2025, para ajustes. A implantação do SBF continua 
+prevista para agosto de 2026. 
+ 
+• Protocolo de Cancelamento – encontra-se em fase de análise nos Grupos de Trabalho Técnicos (GTTs), com 
+previsão de aprovação na reunião da Cefic que ocorrerá em abril de 2026. Mencionou-se a importância de 
+aprovar o Protocolo de Cancelamento antes do início da operação do Serviço Biométrico Federal (SBF). 
+ 
+• Monitoramento dos padrões de impressões da CIN  – informou-se que o trabalho de monitoramento dos 
+padrões de impressões da CIN foi desenvolvido em duas frentes de atuação: 1) solicitação de amostras das 
+CINs dos 27 estados federados, tendo como devolutiva a resposta de 24 estados. Desta forma, foi realizada 
+a análise manual pela equipe da Diretoria de Tecnologias de Identificação (DITI/ITI).  2) estudos para gerar 
+uma automação desse processo de monitoramento em parceria com a UNB. Os resultados foram 
+considerados satisfatórios, uma vez que não foram encontradas inconformidades nos documentos emitidos. 
+Estima-se que o s relatórios  contendo dados detalhados  referentes aos  trabalhos executados serão 
+apresentados na reunião da Cefic que ocorrerá em abril de 2026. 
+ 
+• Integração com a Declaração de Nascido Vivo (DNV) e com o Sistema de Informação sobre Mortalidade 
+(SIM) – enfatizou-se a importância das entregas do Ministério da Saúde em relação à Declaração de Nascido 
+Vivo como, também, de Óbito. Definiu-se que, até 20/03/2026, o Ministério da Saúde  atualizará o estado 
+das entregas.  A Casa Civil fará uma reunião com o Ministério da Saúde.  
+ 
+• Credenciamento Definitivo de Gráficas e Personalizadoras – previsão de realização de consulta pública em 
+abril de 2026 e deliberação da resolução na reunião da Cefic de junho de 2026. 
+ 
+• Proteção à testemunha (Provida) – o assunto está em estudo pelo MDHC para produção de nota técnica.  
+ 
+• Recepção das decadactilates – será realizada reunião com os novos gestores do MJSP para alinhamento de 
+cronograma. 
+ 
+• Auditoria e Fiscalização de Gráficas e Personalizadoras – comentou-se que devem ser analisadas as opções 
+de fiscalização que serão realizadas nos estados e nas gráficas, considerando o âmbito de competência , o 
+objeto e as particularidades das auditorias. O tema será discutido ao longo do 2º semestre, após a definição 
+do credenciamento definitivo. A previsão é que seja apresentada minuta para deliberação da Cefic em 
+novembro de 2026. 
+ 
+• Ajustes na integração para reimpressão da CIN – pontuou-se que os testes com o Piauí e Santa Catarina  
+serão iniciados até abril de 2026.  
+ 
+• Definição de indicadores sobre a emissão da CIN – estima-se que haverá previsão de apresentação de uma 
+proposta na próxima reunião da Cefic.  Será avaliada a possibilidade de parceria com  outras entidades . 
+===== [pag 3] =====
+Ressaltou-se que é necessário definir um parâmetro nacional a ser utilizado na tomada de decisões sobre a 
+emissão da CIN, a despeito as particularidades de cada estado federado. 
+ 
+Seguindo com a pauta, no item Informes Gerais destacou-se:  
+• A apresentação do gráfico de emissão de CINs por Unidades Federativas, com cobertura de 22% da 
+população, cuja fonte dos dados foi o sítio eletrônico do Ministério da Justiça e Segurança Pública; 
+• Será desativado o último posto de atendimento que emitia RG em Roraima. Desta forma, o único documento 
+emitido para identificação do cidadão no estado será a Carteira de Identidade Nacional (CIN); 
+• Sobre a emissão d a Carteira de Identidade Nacional (CIN)  no exterior, foi informado que houve a 
+implantação de um marcador para diferenciar o número de documentos emitidos no Distrito Federal e o 
+número de documentos emitidos no exterior. Os dois totens para testes estão sob responsabilidade do  
+Ministério de Relações Exteriores (MRE), para encaminhamento para Portugal e para o Paraguai; 
+• Quanto aos Órgãos de Identificação Civil (OIC) foi informado que: será agendada uma reunião técnica, 
+online, com o OIC do Pará em março de 2026; foram realizadas conversas online com o OIC de Minas Gerais; 
+e o OIC do estado do Maranhão será visitado em abril de 2026. Quanto ao estado do Maranhão será decidido 
+se haverá encontros online, para alinhamentos necessários, antes do encontro presencial; 
+• O ProCIN 2026 foi publicado em 06/03/2026, e os OICs podem submeter suas propostas por meio do sistema 
+Transferegov. 
+ 
+Finalizada a pauta, a reunião foi encerrada. 
+ 
+5. Encaminhamentos: 
+• Publicar a resolução aprovada sobre o GTT1; 
+• Agendar reunião entre a Casa Civil e a Secretaria Executiva do MJSP para alinhamento de cronograma; 
+• Atualizar estado das entregas do Ministério da Saúde até 20/03/2026; 
+• Agendar reunião entre a Casa Civil e o Ministério da Saúde. 

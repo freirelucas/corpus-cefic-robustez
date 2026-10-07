@@ -1,0 +1,176 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+ 
+1. Identificação da Reunião 
+1ª Reunião Extraordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) no ano de 
+2024. 
+Data Horário Local 
+15/05/2024 16h30 Casa Civil 
+ 
+2. Pauta 
+2.1 Abertura 
+2.2 Informes sobre o Rio Grande do Sul 
+2.3 Novo Alinhamento Estratégico da CEFIC 
+2.4 Status da emissão da CIN  
+2.5 Deliberações e Informes Gerais 
+- Reporte do GTT de Segurança  
+ - Reporte Orçamentário  
+ - Congresso da Cidadania Digital  
+ - Previsão Calendário da CEFIC   
+2.6 Encerramento 
+ 
+3. Participantes 
+PARTICIPANTES CARGO/POSIÇÃO ÓRGÃO 
+Pedro Helena Pontual 
+Machado 
+Titular CEFIC 
+Secretário-Executivo Adjunto 
+da CC 
+Casa Civil da Presidência da 
+República (CC-PR) 
+Carlos Antônio Lopes de 
+Araújo 
+ 
+Assessor Especial 
+ 
+Enylson Camolesi Instituto Nacional de 
+Tecnologia da Informação 
+Rogério Souza Mascarenhas Secretário-Executivo da 
+CEFIC  
+Secretário de Governo 
+Digital  
+Ministério da Gestão e da 
+Inovação em Serviços 
+Públicos (MGI) / Secretaria 
+de Governo Digital (SGD)  
+MGI/SGD  Eduardo Magalhães de 
+Lacerda Filho 
+Secretário-Executivo Adjunto 
+da CEFIC 
+===== [pag 2] =====
+Coordenador-Geral de 
+Identificação Civil  
+Simone Cabanelas Martinez Assessora Técnica 
+Ana Maria Costa Cândido 
+Lacerda 
+Analista Técnica de Políticas 
+Sociais 
+Rafael Neves Carvalho Coordenador Operacional de 
+Cadastros e Benefícios Fiscais 
+Secretaria Especial da 
+Receita Federal do Brasil 
+(RFB) Rerinton Weldert Gomes Suplente CEFIC 
+Coordenador-Geral de 
+Gestão de Cadastro e 
+Benefícios Fiscais 
+Solange Berto de Medeiros Subsecretário de Tecnologia 
+da Informação e 
+Comunicação 
+Ministério da Justiça e 
+Segurança Pública (MJSP) 
+Vanessa Fusco Nogueira 
+Simões 
+Diretor de Gestão e 
+Integração de Informações 
+Marivaldo Pereira Secretário-Executivo Adjunto 
+Ana Estela Haddad Secretária de Informação e 
+Saúde Digital do Brasil 
+Ministério da Saúde 
+Caroline Dias dos Reis Secretária-Executiva Adjunta Ministério dos Direitos 
+Humanos e da Cidadania 
+(MDHC) 
+ 
+4. Relato 
+Na abertura da reunião, Pedro Pontual destaca que o ano de 2023 foi de aprendizado sobre a melhor 
+forma de avançar com os trabalhos da CEFIC na estrutura do Governo. Neste sentido, observa que, 
+em 2024, foi necessário dedicar tempo para estabelecer a forma de desenvolvimento dos trabalhos, 
+permitindo a definição de metas concretas. 
+Rogério Mascarenhas informa que a Secretaria de Governo Digital (SGD) tem trabalhado em ações no 
+Rio Grande do Sul (RS), incluindo: a) reemissão, inclusive em abrigos, de Carteira de Identidade 
+Nacional (CIN), viabilizada pelo fato de o estado já ter emitido mais de um milhão destes documentos; 
+b) uso da API com aproximadamente 7 milhões de registros de CIN para identificação de mortos. 
+Sinaliza que o Ministério da Gestão e da Inovação em Serviços Públicos (MGI) solicitou 14 milhões de 
+reais, por meio de Junta de Execução Orçamentária (JEO), para auxiliar o Instituto de Identificação do 
+RS a reimprimir as identidades e mitigar os prejuízos de equipamentos. A solicitação será analisada no 
+âmbito do Ministério do Planejamento e Orçamento (MPO). 
+Pedro Pontual contextualiza historicamente a identificação no país e o projeto da CIN. Apresenta os 
+números relacionados à emissão deste documento por Unidade Federativa (UF) e no país, que, 
+atualmente, totaliza 6,9 milhões de CIN’s emitidas. Observa que a  meta é que todas as UF’s emitam 
+CIN, pois, atualmente, 24 UF’s emitem o documento. O estado da Bahia (BA) confirmou que iniciará a 
+emissão em junho, mas Amapá (AP) e Roraima (RR) ainda não possuem datas definidas. Além disso, 
+há estados híbridos, ou seja, que emitem CIN e o Registro Geral antigo, como, por exemplo, São Paulo 
+(SP).  
+===== [pag 3] =====
+Na sequência, Pedro Pontual apresenta a estrutura da CEFIC e coloca em relevo os eixos estratégicos, 
+a saber: identificação de cidadãos, identificação para serviços e qualificação de cadastros 
+administrativos. A partir destes eixos, apresenta a proposta de  que a estruturação do 
+programa/atuação da CEFIC se dê por grupos de trabalhos que tenham o diagnóstico do que precisa 
+ser feito, construam como serão atendidas as demandas e que apresentem resultados/produtos. 
+Eduardo Lacerda esclarece que a proposta é que sejam constituídos três Grupos de Trabalhos Técnicos 
+(GTT’s): 1) Planejamento: dedicado à pactuação do planejamento estruturado, ao monitoramento e à 
+articulação de resolução de problemas e ao relato executivo  à CEFIC; 2) Estados: dedicado ao 
+acompanhamento e à implementação da CIN nos Estados, à identificação de problemas e ao 
+alinhamento de proposta de normas que afetem aos estados; 3) Técnico: dedicado ao 
+compartilhamento/alinhamento dos trabalhos técnicos d os diferentes órgãos e à preparação de 
+resoluções técnicas da CEFIC. 
+Pedro Pontual complementa informando que após várias reuniões entre Ministério da Gestão e da 
+Inovação em Serviços Públicos (MGI) e Casa Civil da Presidência da República (CC -PR) foi entendido 
+que o trabalho da CEFIC dever ser orientado a resultados. Neste sentido, é necessário propor um loco 
+específico para discussões voltadas para o planejamento, para a autonomia e articulação entre os 
+estados e para os aspectos técnicos. 
+Caroline Reis indica que foi feito o pleito de participação do Ministério dos Direitos Humanos e da 
+Cidadania (MDHC) na CEFIC, contudo, foi entendido que não era o momento de inserção de novos 
+membros na Câmara. Considerando este fato, ela questiona se o MDHC poderia participar como 
+convidado nos Grupos.  
+Pedro Pontual concorda com a participação do MDHC. 
+Lacerda apresenta a proposta de Cronograma para 2024:  
+- Julho: reuso de biometria em emissão de segunda via e CIN emergencial; 
+- Agosto: incorporar o serviço de controle de emissão ao fluxo de emissão e padronização de 
+informações de identificação; 
+- Setembro: credenciamento de instituições públicas e empresas privadas para atuarem como 
+Gráficas da CIN; 
+- Outubro: regras de captura/coleta e armazenamento de dados biométricos para a CIN; 
+auditoria e fiscalização de instituições públicas e empresas privadas credenciadas para operar 
+no contexto da CIN. 
+- Dezembro: parametrização do processo biométrico federal, regras de divergência e 
+incorporação ao fluxo de emissão, assinatura de ACT sobre registro do civil (CEFIC – CNJ) e 
+revisão do decreto nº 11.797/23. 
+Enylson Camolesi diz que importante pactuar com os estados a auditoria. Rogério Mascarenhas 
+concorda com a colocação, destaca que há um pleito de aporte de verba federal, que, até o 
+momento, não foi aprovada e reforça o papel dos GTT’s. 
+Pedro Pontual destaca a importância dos representantes que irão constituir os GTT’s. 
+A reunião segue para a parte de Deliberações e informes. 
+Sobre elementos de segurança, Rafael Carvalho pontua que a Secretaria Especial da Receita Federal 
+do Brasil (RFB) já realiza reuniões com os institutos de identificação dos estados e que nestas são 
+===== [pag 4] =====
+tratadas questões técnicas. Rerinton Gomes sinaliza que já foram identificados pontos para melhorias 
+no processo. 
+Sobre a situação orçamentária, Rogério Mascarenhas ressalta que para os estados emitirem mais 
+CIN’s, eles precisam de mais recursos; ainda que tenha sido solicitado 14 milhões de reais, por meio 
+de Junta de Execução Orçamentária (JEO), a destinação seria apenas para o RS. Pedro Pontual destaca 
+que há expectativa da Secretaria Nacional de Segurança Pública (SENASP) estudar o uso do Fundo 
+Nacional de Segurança Pública (FNSP) para fins de implementação da CIN. Marivaldo Pereira diz que 
+a nova direção do SENASP  está se dedicando ao tema, que é prioritário no Ministério da Justiça e 
+Segurança Pública (MJSP). Vanessa Simões informa que teve uma reunião com Camila Pintarelli, do 
+SENASP, e que ela se mostrou empenhada a destinar e executar o fundo para implementação da CIN. 
+Solange Medeiros diz que as minutas sobre a normatização do assunto já estão prontas. Marivaldo 
+Pereira observa que, uma vez aprovado o uso do FNSP para emissão da CIN, será necessária estratégia 
+de comunicação. 
+Sobre o App de leitura de QR Code - CIN Física, Solange Medeiros informa que a fábrica de software 
+foi contratada pelo MJSP e que o App está quase pronto e pede 90 dias para apresentar o resultado. 
+Deste modo, Pedro Pontual define que 15/08/2024 será a data de entrega do App. 
+Fica acordado que até a próxima reunião da CEFIC já terão sido instalados os 3 GTT’s e que a Secretaria-
+Executiva da CEFIC irá enviar o calendário das próximas reuniões, sendo estabelecidos como dias de 
+reuniões a primeira terça-feira de cada mês (02/07, 06/08, 03/09, 01/10, 05/11 e 03/12/2024). 
+ 
+5. Encaminhamentos:  
+1. Elaboração, submissão para votação e publicação de resoluções CEFIC que instituem os três 
+GTT’s.  
+2. Início dos trabalhos de planejamento, monitoramento e produção de trabalhos técnicos 
+pactuados para o ano de 2024.   
+3. Inclusão das datas nas ações apresentadas no planejamento. 
+4. Envio do calendário das próximas reuniões. 
+5. Minuta da proposta de MP que prorroga a Lei nº 14.534/23. 
+ 
+ 

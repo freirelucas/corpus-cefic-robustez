@@ -1,0 +1,95 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+ 
+1. Identificação da Reunião 
+5ª Reunião Extraordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) no ano de 2024. 
+Data Horário Local 
+01/10/2024 17h00 Casa Civil 
+ 
+2. Pauta 
+2.1. Informes 
+• Lei 14.973/24 
+• Congresso da Cidadania Digital 
+• Campanha publicitária da CIN 
+2.2. Relato dos trabalhos dos GTT em agosto e setembro/2024 
+2.3. Planejamento dos trabalhos dos GTT para outubro/2024 
+2.4. Acompanhamento sobre a situação atual de emissões da CIN 
+3. Participantes 
+PARTICIPANTES CARGO/POSIÇÃO ÓRGÃO 
+Pedro Helena Pontual Machado Titular CEFIC 
+Secretário-Executivo Adjunto da Casa Civil 
+Casa Civil da Presidência da 
+República (CC-PR) 
+Carlos Antônio Lopes de Araújo Assessor Especial SE/CC 
+Rogério Souza Mascarenhas Titular CEFIC  
+Secretário-Executivo da CEFIC  
+Secretário de Governo Digital  
+Secretaria de Governo Digital 
+(SGD) / Ministério da Gestão e 
+da Inovação em Serviços 
+Públicos (MGI) Eduardo Magalhães de Lacerda 
+Filho 
+Coordenador-Geral de Identificação Civil  
+Mauricio Augusto Coelho Diretor de Infraestrutura de Chaves Públicas Instituto Nacional de 
+Tecnologia da Informação (ITI) 
+/ Ministério da Gestão e da 
+Inovação em Serviços Públicos 
+(MGI) 
+Katia Macarini Gonçalves Coordenadora Geral de Tecnologias de 
+Identificação 
+Gabriella Nunes Neves Coordenadora de Monitoramento 
+Juliano Brito da Justa Neves Titular CEFIC  
+Subsecretário de Gestão Corporativa 
+Secretaria Especial da Receita 
+Federal do Brasil (RFB) 
+Rafael Neves Carvalho Coordenador Operacional de Cadastros e 
+Benefícios Fiscais 
+Secretaria Especial da Receita 
+Federal do Brasil (RFB) 
+Lílian Manoela Monteiro Cintra 
+de Melo 
+Titular CEFIC  
+Secretária de Direito Digital - SEDIGI/MJSP 
+Ministério da Justiça e 
+Segurança Pública (MJSP) 
+Camila Pintarelli Diretora -DGFNSP/SENASP/MJSP; 
+Vanessa Fusco Nogueira Simões Diretora de Gestão e Integração de 
+Informações 
+Jose Rocha de Carvalho Filho Coordenador-Geral de Planejamento, 
+Inovação e Integração de Tecnologia da 
+===== [pag 2] =====
+Informação e Comunicação para Segurança 
+Pública 
+Ronei Maia Salvatori Coordenador-Geral Substituto 
+Paula Xavier dos Santos Suplente CEFIC 
+Diretora DATASUS 
+Ministério da Saúde (MS) 
+José Eduardo Bueno de Oliveira Diretor de Programa da Secretaria Executiva 
+Fábio Mariano da Silva Diretor de Promoção dos Direitos Humanos Ministério dos Direitos 
+Humanos e da Cidadania 
+(MDHC) 
+ 
+4. Relato 
+4.1. Informes: 
+Foi informado sobre a sanção da Lei 14.973, de 16 de setembro de 2024, que determina o registro biométrico 
+da CIN, ICN  ou da CNH ao requerente d e benefícios sociais. A API de consulta já está funcionando, e dessa 
+forma iniciou-se o processo de utilização da CIN para as bases de benefícios. 
+Foi elogiada a  participação dos representantes da CEFIC no Congresso da Cidadania Digital  com emissão de 
+mais de 500 unidades de CIN, durante o evento.  
+A campanha publicitária da CIN, produzida no final de 2023, foi retomada e terá duração até dezembro. 
+4.2. Relato dos trabalhos dos Grupos Técnicos (GTTs) em agosto e setembro/2024. 
+4.3. Planejamento dos trabalhos dos GTTs em outubro/2024. 
+4.4. Acompanhamento sobre situação atual de emissões: o  número de CINs emitidas  já supera 13 milhões, 
+com média mensal de 1,5 milhões.  
+4.6. Próxima reunião CEFIC: será no dia 05/11/2024. 
+ 
+5. Encaminhamentos:  
+5.1 -SGD a presentará diagnóstico das necessidades dos órgãos para implementar  CPF, previsto na Lei 
+14.534/2023, na CEFIC de novembro. 
+5.2 -SGD irá propor alteração de prazos da Lei 14.534/2023 na CEFIC de novembro. 
+5.3 - SGD encaminhará pauta de Segurança da Informação da CIN para o GTT3. 
+5.4 - SGD encaminhará pauta de etnia indígena, no Modelo Informacional, para o GTT3. 
+5.5 - SGD irá encaminhar antecipadamente as alterações do Modelo Informacional para deliberação aos 
+membros CEFIC. 
+5.6 - MJSP disponibilizará o BI das informações sobre as emissões da CIN de forma pública. 

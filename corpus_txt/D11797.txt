@@ -1,0 +1,308 @@
+
+===== [pag 1] =====
+Presidência da República
+Casa Civil
+Secretaria Especial para Assuntos Jurídicos
+DECRETO Nº 11.797, DE 27 DE NOVEMBRO DE 2023
+Dispõe  sobre  o  Serviço  de  Identificação  do  Cidadão  e
+sobre a governança da identificação das pessoas naturais
+no  âmbito  da  administração  pública  federal  direta,
+autárquica  e  fundacional,  institui  a  Câmara-Executiva
+Federal de Identificação do Cidadão - Cefic.
+O PRESIDENTE DA REPÚBLICA, no uso das atribuições que lhe confere o art. 84, caput, incisos IV e VI,
+alínea “a”, da Constituição, e tendo em vista o disposto na Lei nº 7.116, de 29 de agosto de 1983, na Lei nº 9.049, de
+18 de maio de 1995, na Lei nº 9.454, de 7 de abril de 1997, e na Lei nº 13.444, de 11 de maio de 2017,
+DECRETA:
+Objeto e âmbito de aplicação
+Art. 1º  Este Decreto:
+I - dispõe sobre o Serviço de Identificação do Cidadão;
+II - institui a Câmara-Executiva Federal de Identificação do Cidadão - Cefic; e
+III - dispõe sobre a governança da identificação das pessoas naturais no âmbito da administração pública
+federal direta, autárquica e fundacional.
+Serviço de Identificação do Cidadão
+Art. 2 º  O Serviço de Identificação do Cidadão é o conjunto de procedimentos e operações de gestão e
+verificação da identidade das pessoas naturais, por meio dos dados de identificação e dos dados cadastrais, perante a
+administração pública federal direta, autárquica e fundacional.
+Parágrafo único.  O Serviço de Identificação do Cidadão será utilizado para expedição da Carteira de Identidade
+pelos órgãos de identificação dos Estados e do Distrito Federal, nos termos do disposto no art. 1º da Lei nº 7.116, de
+29 de agosto de 1983.
+Art. 3º  O Serviço de Identificação do Cidadão é de uso:
+I - facultativo para:
+a) identificação criminal; e
+b) procedimentos de identificação realizados em sistemas relacionados à defesa nacional e à segurança do
+Estado; e
+II - obrigatório para as demais hipóteses.
+§ 1º  A obrigatoriedade de que trata o inciso II do caput inclui os processos de composição de dados no modelo
+da Carteira de Identidade.
+§ 2º  O Serviço de Identificação do Cidadão terá interface de comunicação eletrônica com os dados:
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+1 of 10 4/27/2026, 2:51 PM
+===== [pag 2] =====
+I - da declaração de nascido vivo e da declaração de óbito emitidas, respectivamente, pelos estabelecimentos
+de saúde e pelas unidades notificadoras;
+II - do registro civil, conforme acordo estabelecido com as serventias extrajudiciais; e
+III - da Identificação Civil Nacional, conforme acordo estabelecido com o Tribunal Superior Eleitoral.
+Art. 4º  O Serviço de Identificação do Cidadão:
+I - não utilizará dados protegidos por sigilo legal; e
+II - observará o disposto na Lei nº 13.709, de 14 de agosto de 2018 , e as normas estabelecidas pela Autoridade
+Nacional de Proteção de Dados - ANPD, a fim de assegurar a privacidade e a proteção dos dados pessoais.
+Art. 5º  O número de inscrição no Cadastro de Pessoas Físicas - CPF é a chave de vinculação dos dados da
+pessoa natural no Serviço de Identificação do Cidadão.
+Parágrafo único.  O Serviço de Identificação do Cidadão abrangerá as funcionalidades de inscrever, alterar e
+cancelar por motivo de óbito o número de inscrição no CPF da pessoa natural.
+Finalidades do Serviço de Identificação do Cidadão
+Art. 6º  O Serviço de Identificação do Cidadão possui as seguintes finalidades na administração pública federal
+direta, autárquica e fundacional:
+I - possibilitar o acesso aos dados das bases biográficas e biométricas aprovadas pela Cefic;
+II - autenticar os dados de identificação e os dados cadastrais da pessoa natural; e
+III - viabilizar meio unificado de identificação da pessoa natural e atualização de dados de identificação nos
+cadastros administrativos.
+Orientações para o compartilhamento de dados pessoais
+Art. 7 º  O compartilhamento de dados pessoais entre órgãos e entidades da administração pública direta,
+autárquica e fundacional no âmbito do Serviço de Identificação do Cidadão observará as seguintes orientações:
+I - existência de finalidades legítimas, específicas e explícitas, nos termos do disposto no inciso I do caput do
+art. 6º da Lei nº 13.709, de 2018;
+II - compatibilidade entre o tratamento do dado com as finalidades informadas, na forma do inciso I, observado o
+disposto no inciso II do caput do art. 6º da Lei nº 13.709, de 2018;
+III - limitação do compartilhamento de dados ao mínimo necessário para o atendimento da finalidade informada,
+na forma do inciso I e observado o disposto no inciso III do caput do art. 6º da Lei nº 13.709, de 2018;
+IV - cumprimento integral dos requisitos, das garantias e dos procedimentos estabelecidos na Lei nº 13.709, de
+2018, no que for compatível com o setor público;
+V - publicidade, por meio do sítio eletrônico da Cefic e do órgão controlador do cadastro administrativo, do
+compartilhamento  de  dados,  e  do  fornecimento  de  informações  claras  e  atualizadas  sobre  a  previsão  legal,  a
+finalidade, os procedimentos e as práticas utilizadas para esse compartilhamento, observado o disposto no inciso I do
+caput do art. 23 da Lei nº 13.709, de 2018;
+VI - mecanismos de controle de acesso ao Serviço de Identificação do Cidadão e aos cadastros administrativos,
+com possibilidade de auditoria e rastreamento dos registros dos acessos;
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+2 of 10 4/27/2026, 2:51 PM
+===== [pag 3] =====
+VII - limitação do compartilhamento do dado apenas a órgãos e entidades que comprovarem necessidade de
+acesso aos dados de identificação e aos dados cadastrais, nos termos do disposto nos  incisos II e III do caput do art.
+7º, nas alíneas “a” e “b” do inciso II do caput do art. 11 e no inciso I do caput do art. 23 da Lei nº 13.709, de 2018; e
+VIII  -  na  hipótese  de  inclusão  de  novos  dados  de  identificação  e  de  dados  cadastrais,  apresentação  de
+justificativa prévia da Cefic e dos órgãos gestores dos cadastros administrativos, observado o disposto na Lei  nº
+13.709, de 2018, os princípios da proporcionalidade e da razoabilidade e os princípios gerais de proteção dos dados.
+Cadastros administrativos
+Art. 8º  Os cadastros administrativos existentes na administração pública federal direta, autárquica e fundacional
+deverão obter obrigatoriamente do Serviço de Identificação do Cidadão os seguintes dados de identificação de pessoa
+natural:
+I - nome;
+II - nome social, caso exista;
+III - data de nascimento;
+IV - filiação;
+V - naturalidade;
+VI - nacionalidade;
+VII - sexo;
+VIII - número de inscrição no CPF;
+IX - número de inscrição no CPF da filiação;
+X - data de óbito, caso exista; e
+XI - imagem da face do titular do número de inscrição no CPF.
+§ 1º  Caso a inscrição no CPF esteja com a situação cadastral suspensa, cancelada ou nula, ou indique titular
+falecido, a situação e os motivos da situação cadastral serão informados pelo Serviço de Informação do Cidadão aos
+cadastros administrativos de que trata o caput.
+§ 2º  Os dados não elencados no caput obtidos nos cadastros administrativos deverão ser disponibilizados ao
+Serviço de Identificação do Cidadão.
+§ 3º  Não será necessário criar novos campos para inclusão dos dados de identificação de que trata o caput
+nos cadastros que não contarem com os referidos campos.
+Câmara-Executiva Federal de Identificação do Cidadão - Cefic
+Art. 9º  A Cefic atuará na governança:
+I  -  da  identificação  da  pessoal  natural  no  âmbito  da  administração  pública  federal  direta,  autárquica  e
+fundacional; e
+II - da expedição da Carteira de Identidade junto aos Estados e ao Distrito Federal.
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+3 of 10 4/27/2026, 2:51 PM
+===== [pag 4] =====
+Art. 10.  Compete à Cefic editar normas sobre:
+I - aprimoramento da identificação das pessoas naturais no âmbito da administração pública federal direta,
+autárquica e fundacional;
+II - uso do Serviço de Identificação do Cidadão, de modo a observar:
+a) critérios de sigilo previstos em lei; e
+b) proteção de dados pessoais, conforme estabelecido na Lei nº 13.709, de 2018 , e nas normas editadas pela
+ANPD;
+III - cooperação:
+a) com o Tribunal Superior Eleitoral, quando envolver matéria afeta à Identificação Civil Nacional; e
+b) com o Conselho Nacional de Justiça, quanto envolver matéria afeta a registro civil;
+IV - padrões técnicos das bases e dos dados de identificação de pessoas naturais;
+V - padrões e especificações técnicas de documentos de segurança vinculados à identificação de pessoas
+naturais;
+VI - cooperação com entidades públicas e privadas na identificação das pessoas naturais;
+VII  -  transparência  pública  e  proteção  de  dados  pessoais  do  Serviço  de  Identificação  do  Cidadão,  em
+conformidade com normas editadas pela ANPD; e
+VIII - a Carteira de Identidade de que trata a Lei nº 7.116, de 1983, notadamente:
+a) o detalhamento dos padrões de expedição em formatos físico e digital;
+b) o detalhamento dos procedimentos nacionais de verificação biográfica e biométrica na expedição do modelo
+do documento;
+c) os requisitos de segurança, integridade e interoperabilidade;
+d) os padrões biométricos a serem utilizados;
+e) as informações sobre saúde a serem disponibilizadas;
+f) o credenciamento, a homologação, a auditoria e a fiscalização de entidades públicas e privadas quanto ao
+procedimento e à confecção dos modelos da Carteira;
+g) a autorização de envio de insumos do modelo da Carteira restritos e de segurança nacional às entidades
+públicas e privadas;
+h) o procedimento e a forma de acesso à base do CPF, observadas as normas editadas pela Secretaria
+Especial da Receita Federal do Brasil do Ministério da Fazenda; e
+i) a integração da Carteira em formato digital ao Serviço de Identificação do Cidadão, assessorada tecnicamente
+pela Secretaria de Governo Digital do Ministério da Gestão e da Inovação em Serviços Públicos.
+Parágrafo único.  Os atos normativos editados pela Cefic terão a forma de resolução.
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+4 of 10 4/27/2026, 2:51 PM
+===== [pag 5] =====
+Art. 11.  A Cefic é composta por representantes dos seguintes órgãos:
+I - Casa Civil da Presidência da República, que a coordenará;
+II - Secretaria Especial da Receita Federal do Brasil do Ministério da Fazenda;
+III - Secretaria de Governo Digital do Ministério da Gestão e da Inovação em Serviços Públicos;
+IV - Ministério da Justiça e Segurança Pública; e
+V - Ministério da Saúde.
+§ 1º  Cada membro da Cefic terá um suplente, que o substituirá em suas ausências e seus impedimentos.
+§  2º   Os  membros  da  Cefic  e  os  respectivos  suplentes  serão  indicados  pelos  titulares  dos  órgãos  que
+representam e designados em ato do Secretário de Governo Digital do Ministério da Gestão e da Inovação em
+Serviços Públicos.
+§ 3º  Os membros titulares e suplentes da Cefic deverão ocupar Cargo Comissionado Executivo - CCE igual ou
+superior ao nível 15, ou equivalente.
+§ 4 º  O Coordenador da Cefic poderá convidar representantes de outros órgãos e entidades, públicas ou
+privadas, e pesquisadores e representantes da sociedade civil com notório saber, para participar de suas reuniões,
+sem direito a voto.
+Art. 12.  A Cefic se reunirá, em caráter ordinário, mensalmente, e, em caráter extraordinário, quando convocada
+por seu Coordenador.
+§ 1º  O quórum de reunião da Cefic é de maioria absoluta e o quórum de aprovação é de maioria simples.
+§ 2º  O Coordenador da Cefic poderá cancelar as reuniões ordinárias na hipótese de não haver matéria a ser
+deliberada.
+Art.  13.   As  resoluções  da  Cefic  que  tratarem  de  compartilhamento  de  dados,  no  âmbito  da  proteção  e
+privacidade de dados da pessoa natural, serão objeto de consulta pública.
+Art. 14.  A CEFIC poderá instituir grupos técnicos com o objetivo de assessorá-la em questões específicas.
+Art. 15.  Os grupos técnicos da Cefic:
+I - serão instituídos e compostos na forma de ato da Cefic;
+II - serão compostos por, no máximo, seis membros;
+III - terão caráter temporário e duração não superior a um ano; e
+IV - estarão limitados a, no máximo, três em operação simultânea.
+Parágrafo único.  Poderão ser convidados representantes de outros órgãos e entidades, públicas ou privadas, e
+pesquisadores e representantes da sociedade civil com notório saber, para participar dos grupos técnicos.
+Art. 16.  A Secretaria-Executiva da Cefic será exercida pela Secretaria de Governo Digital do Ministério da
+Gestão e da Inovação em Serviços Públicos.
+Art. 17.  Os membros da Cefic e dos grupos técnicos que se encontrarem no Distrito Federal se reunirão
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+5 of 10 4/27/2026, 2:51 PM
+===== [pag 6] =====
+presencialmente ou por videoconferência e os membros que se encontrarem em outros entes federativos participarão
+da reunião por meio de videoconferência.
+Art. 18.  A participação na Cefic e nos grupos técnicos será considerada prestação de serviço público relevante,
+não remunerada.
+Órgãos executores do Serviço de Identificação do Cidadão
+Art. 19.  Compete ao Ministério da Gestão e da Inovação em Serviços Públicos:
+I - a gestão e a articulação técnica, operacional e procedimental dos órgãos e das entidades públicos e
+privados, de outros Poderes e dos entes federativos, para o aprimoramento da identificação das pessoas naturais e
+para a implementação do Serviço de Identificação do Cidadão, conforme o disposto neste Decreto, observadas as
+competências específicas dos órgãos executores; e
+II - a implementação, a gestão e a sustentação operacional e tecnológica da Plataforma gov.br e da Carteira de
+Identidade em formato digital.
+Art. 20.  Compete ao Instituto Nacional de Tecnologia da Informação:
+I - propor à Cefic a regulamentação dos processos de credenciamento, homologação, auditoria e fiscalização
+dos entes públicos e privados sobre sistemas biométricos, de personalização e de gráficas no âmbito da expedição da
+Carteira de Identidade;
+II - operacionalizar os processos previstos no inciso I;
+III - disponibilizar infraestrutura para integração de dados biométricos e biográficos do Serviço de Identificação
+do Cidadão, em apoio ao Ministério da Gestão e da Inovação em Serviços Públicos;
+IV - monitorar e dar suporte técnico para implementação do disposto neste Decreto, em apoio ao Ministério da
+Gestão e da Inovação em Serviços Públicos;
+V - propor à Cefic estudos e procedimentos no âmbito das tecnologias de identificação; e
+VI - operacionalizar outras demandas relacionadas à identificação civil quando apresentadas pela Cefic ou pelo
+Ministério da Gestão e da Inovação em Serviços Públicos.
+Art. 21.  Compete ao Ministério da Justiça e Segurança Pública:
+I - a implementação, a gestão e a sustentação operacional e tecnológica da base de dados de identificação e de
+dados  cadastrais  obtidos  nos  órgãos  de  identificação  dos  entes  federativos  e  nos  órgãos  e  nas  entidades  da
+administração pública federal direta, autárquica e fundacional;
+II - a implementação, a gestão e a sustentação operacional e tecnológica na confecção e na leitura do código de
+barras bidimensional no padrão QR (quick response code) e dos formulários nos modelos físicos da Carteira de
+Identidade; e
+III - a coordenação, por meio da Secretaria Nacional de Segurança Pública, com auxílio da Cefic, da aquisição
+dos objetos necessários à aplicação do disposto neste Decreto junto aos entes federativos, com recursos do Fundo
+Nacional de Segurança Pública - FNSP ou provenientes de outras fontes de financiamento da segurança pública.
+Parágrafo  único.   A  tecnologia  no  padrão  QR  (quick  response  code)  implementada  nas  Carteiras  de
+Identidade poderá ser utilizada por outras entidades ou órgãos públicos no âmbito da identificação de pessoa natural.
+Art. 22.  Compete à Polícia Federal, no âmbito do Serviço de Identificação do Cidadão:
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+6 of 10 4/27/2026, 2:51 PM
+===== [pag 7] =====
+I - propor à Cefic:
+a) padrões técnicos das bases e dos dados biométricos para identificação de pessoas naturais;
+b) padrões e especificações técnicos de documentos de segurança vinculados à identificação de pessoas
+naturais; e
+c) a regulamentação do procedimento a ser adotado em caso de divergência na verificação dos dados da
+pessoa natural;
+II - assessorar na definição de padrões e especificações técnicos de componentes eletrônicos e aplicativos de
+identificação digital;
+III - subsidiar técnica e operacionalmente os processos de identificação inequívoca da pessoa natural nos
+bancos de dados biométricos;
+IV - disponibilizar os subsídios procedimentais e técnicos necessários para o acesso à sua base biométrica,
+garantida a segurança técnica e jurídica das transações e fluxo de dados; e
+V  -  apoiar  tecnicamente  os  processos  de  auditoria  e  fiscalização  dos  sistemas  biométricos  utilizados  na
+expedição da Carteira de Identidade.
+Art. 23.  Compete à Secretaria Especial da Receita Federal do Brasil do Ministério da Fazenda gerir, disciplinar,
+monitorar e estabelecer padrões, critérios e normas para a prática dos seguintes atos cadastrais no CPF por meio do
+Serviço de Identificação do Cidadão:
+I - inscrição da pessoa física;
+II - alteração dos dados cadastrais;
+III - suspensão da inscrição da pessoa física;
+IV - regularização da situação cadastral da pessoa física;
+V - cancelamento da inscrição da pessoa física;
+VI - anulação da inscrição da pessoa física; e
+VII  -  demais  atos  que  envolvam  a  integração  com  as  outras  administrações  tributárias  e  os  organismos
+internacionais.
+§ 1º  A Secretaria Especial da Receita Federal do Brasil do Ministério da Fazenda assessorará tecnicamente a
+CEFIC quanto às questões relativas ao CPF.
+§ 2º  A Secretaria Especial da Receita Federal do Brasil do Ministério da Fazenda analisará e decidirá sobre
+eventuais divergências relativas aos dados cadastrais da base do CPF.
+§ 3º  Compete à Secretaria Especial da Receita Federal do Brasil do Ministério da Fazenda a gestão e a
+sustentação operacional e tecnológica que permitirá a integração dos dados para emissão da Carteira de Identidade
+com os da inscrição no CPF.
+Disposições finais
+Art. 24.  O Decreto nº 10.977, de 23 de fevereiro de 2022, passa a vigorar com as seguintes alterações:
+“Art. 3º  .......................................................................................................
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+7 of 10 4/27/2026, 2:51 PM
+===== [pag 8] =====
+Parágrafo único.   Na hipótese de o requerente da Carteira de Identidade não estar
+inscrito no CPF, o órgão de identificação realizará, de ofício, a sua inscrição, de acordo com
+as  normas  estabelecidas  pela  Secretaria  Especial  da  Receita  Federal  do  Brasil  do
+Ministério da Fazenda e observado o disposto no art. 21.” (NR)
+“Art. 20.  A aplicação do disposto no § 5º do art. 11 e no art. 12 fica condicionada à
+existência de integração entre os processos de expedição da Carteira de Identidade e o
+Serviço de Identificação do Cidadão, observado o disposto no Decreto nº 11.797, de 27 de
+novembro de 2023.” (NR)
+“Art. 21 .  O acesso dos órgãos de identificação ao banco de dados do CPF será
+efetuado a pedido do ente federativo, dispensada a celebração de convênio ou instrumento
+congênere,  e  operacionalizado  por  meio  de  solução  tecnológica  disponibilizada  pelo
+Governo federal, observadas as normas pertinentes à segurança da informação editadas
+pela Secretaria Especial da Receita Federal do Brasil do Ministério da Fazenda.” (NR)
+“Art. 22.  Para fins do disposto neste Decreto, o Serviço de Identificação do Cidadão,
+instituído pelo Decreto nº 11.797, de 2023 , substituirá o Sistema Nacional de Registro de
+Identificação Civil.” (NR)
+“Art. 24.  A partir de 11 de janeiro de 2024, em acordo com a Lei nº 14.534, de 11 de
+janeiro de 2023, os órgãos expedidores ficarão obrigados a adotar os padrões da Carteira
+de Identidade estabelecidos neste Decreto.” (NR)
+Art. 25.  Os documentos de identificação de pessoas naturais expedidos em formato digital pela administração
+pública federal direta, autárquica e fundacional serão disponibilizados na Plataforma gov.br.
+Art. 26.  Os novos acordos ou prorrogações entre os órgãos e as entidades da administração pública federal
+direta,  autárquica  e  fundacional  e  o  Tribunal  Superior  Eleitoral  referentes  à  Identificação  Civil  Nacional  serão
+submetidos à Cefic para avaliação e ratificação, a partir da entrada em vigor deste Decreto.
+Art. 27.  Será observado o prazo de vinte e quatro meses para o cumprimento do disposto no art. 8º, contado da
+data de entrada em vigor deste Decreto.
+Art. 28.  Ficam revogados:
+I - o Decreto nº 10.900, de 17 de dezembro de 2021;
+II - o art. 18 do Decreto nº 10.977, de 23 de fevereiro de 2022; e
+III - o Decreto nº 11.429, de 3 de março de 2023.
+Art. 29.  Este Decreto entra em vigor na data de sua publicação.
+Brasília, 27 de novembro de 2023; 202º da Independência e 135º da República.
+LUIZ INÁCIO LULA DA SILVA
+Esther Dweck
+Este texto não substitui o publicado no DOU de 28.11.2023 - Edição extra.
+*
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+8 of 10 4/27/2026, 2:51 PM
+===== [pag 9] =====
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+9 of 10 4/27/2026, 2:51 PM
+===== [pag 10] =====
+D11797 https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11...
+10 of 10 4/27/2026, 2:51 PM

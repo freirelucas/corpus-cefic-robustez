@@ -1,0 +1,154 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+ 
+1. Identificação da Reunião 
+ 
+ 1ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão de 2025. 
+ 
+Data Horário Local 
+11/03/2025 16h30 Palácio do Planalto – sala 96 e videoconferência 
+ 
+ 
+2. Participantes 
+ 
+PARTICIPANTES  CARGO/POSIÇÃO  ÓRGÃO  
+Pedro Helena Pontual Machado Titular CEFIC 
+Secretário-Executivo Adjunto da Casa Civil  
+Casa Civil da Presidência da 
+República (CC-PR)  
+Carlos Antônio Lopes de 
+Araújo 
+Assessor Especial 
+Rogério Souza Mascarenhas Titular CEFIC 
+Secretário-Executivo da CEFIC 
+Secretário de Governo Digital 
+Secretaria de Governo Digital 
+(SGD) / Ministério da Gestão e 
+da Inovação em Serviços 
+Públicos (MGI)  Eduardo Magalhães de Lacerda 
+Filho 
+Diretor de Programa 
+Daniel de Souza Rosa Assessor Técnico 
+Enylson Camolesi Presidente Instituto Nacional de 
+Tecnologia da Informação (ITI) 
+/ Ministério da Gestão e da 
+Inovação em Serviços Públicos 
+(MGI)  
+Mauricio Augusto Coelho Diretor de Tecnologias de Identificação 
+Katia Macarini Gonçalves 
+  
+Coordenadora Geral   
+de Tecnologias de Identificação  
+Ana Maria Costa Cândido Lacerda  Assessora da Diretoria de Tecnologias de 
+Identificação  
+Rafael Neves Carvalho Coordenador Operacional de Cadastros e 
+Benefícios Fiscais  
+Secretaria Especial da Receita 
+Federal do Brasil (RFB)  
+Paula Xavier Suplente CEFIC 
+Diretora do DataSUS  
+Ministério da Saúde (MS) 
+Solange Berto de Medeiros  Suplente CEFIC 
+Subsecretária de Tecnologia da Informação e 
+Comunicação - STI/MJSP  
+ 
+ 
+Ministério da Justiça e 
+Segurança Pública (MJSP)  Camila Pintarelli Diretora do Fundo Nacional de Segurança Pública 
+-FNSP/MJSP  
+Isabel Seixas de Figueiredo  Diretora do Sistema Único de Segurança Pública 
+Jose Rocha de Carvalho Filho  Coordenador-Geral de Planejamento, Inovação e 
+Integração de Tecnologia da Informação e 
+Comunicação para Segurança Pública - STI/MJSP 
+Beatriz Figueiredo  Coordenadora-Geral de Modernização 
+Tecnológica SENASP  
+Fernando Ferreira Rezende Diretor do Instituto Nacional de Identificação - 
+INI/DPA/PF  
+Tula Vieira Brasileiro Coordenadora-Geral de Promoção do Registro 
+Civil de Nascimento 
+Ministério dos Direitos 
+Humanos e da Cidadania 
+(MDHC)  
+ 
+ 
+  
+===== [pag 2] =====
+3. Pauta 
+3.1. Informes:   
+a. Status do Projeto: Emissão de CIN por Unidades Federativas 
+b. Execução orçamentária do Fundo Nacional de Segurança Pública para  emissão da CIN por 
+UF (2024 a 02/2025) 
+c. Auditoria Biométrica – CIN 
+d. Consulta Pública Modelo Informacional - CIN  
+e. Relatório de Acompanhamento do Programa Nacional de Identificação Civil – Acórdão 
+nº1226/2024 – TCU  
+f. Implantação de funcionalidade “Comunicação de extravio/furto CIN” no aplicativo GOV.BR 
+g. Plano de Comunicação CIN – Colaboração com a Secretaria de Comunicação Social 
+h. Congresso Nacional da Cidadania Digital – 2025: 23 a 25 de setembro de 2025 
+3.2. Serviço Biométrico Federal – Minuta do Plano de Implementação  
+3.3. Planejamento CEFIC 2025 
+ 
+4. Relato 
+ 
+Inicia-se com apresentação do quantitativo de CIN emitidas, e destaca-se a solicitação de apoio da SENASP 
+para garantir que os estados aumentem o número de emissões de CIN e atinjam a universalização. 
+Apresentada a avaliação que nem todos os estados encontram-se integrados ao B-Cadastro, o que acarreta 
+sobrecarga da capacidade operacional de atendimento da RFB para realizar as inscrições no CPF. Solicitação 
+de apoio para que os estados atendam o preconizado no Decreto Lei 14.534/2023 e realizem a inscrição e 
+alteração do CPF por meio da integração sistêmica. Avaliadas alternativas de estímulo aos estados para 
+realização de ajustes em seus sistemas com interoperabilidade com o B-Cadastro para possibilitar a inscrição 
+e alteração de CPF, tais como: tratativas com a rede bancária, setor terciário, Febraban, Serasa  e outros 
+atores importantes. 
+O colegiado sugere um a articulação e  diagnóstico dos estados quanto à identificação de dificuldades e 
+limitações administrativas, contratuais e financeiras à interoperabilidade dos sistemas.  
+Foi apresentada pelo MJSP, uma planilha de  “Dados do Fundo Nacional de Segurança Pública – Recursos 
+usados por ente federativo” (Anexo 6.1), com situação de cada UF em termos de utilização de recursos , 
+sejam eles próprios ou oriundos  do Fundo Nacional de Segurança Pública (FNSP). Ademais foi esclarecido 
+que, até o momento, apenas seis estados enviaram os planos de ação ao FNSP, entretanto, o prazo para 
+apresentação dos planos ainda não está encerrado. Diante dos valores exibidos, segundo avaliação do MJSP 
+não se observa a falta de recursos. Há, no entanto, limites contratuais, e outras questões de demandas e de 
+sistemas a serem superadas.  
+Foi proposto a realização de um diagnóstico nos estados, onde sugeriu-se o levantamento de informações 
+para possibilitar um modelo eficiente de emissão da CIN, apurando -se qual a melhor opção: terceirização 
+do serviço ou serviço próprio de gráfica, inclusive com a análise de eficiência na aplicação dos recursos. 
+Anunciado que o Modelo Informacional - MI segue em consulta pública, recebidas, até o momento, quinze 
+contribuições.  
+Informado que foi enviado ao TCU, o relatório semestral acerca do acompanhamento do Programa Nacional 
+de Identificação do Cidadão, com cronograma e as respectivas ações a serem realizadas, para atendimento 
+à Auditoria em curso.  
+Esclarecido que a funcionalidade do “roubo/extravio” está concluída no aplicativo GOV.BR. Quanto  ao 
+aplicativo de leitura do QR Code, que está ao encargo do Ministério da Justiça e Segurança Pública (MJSP) e 
+em fase de testes, foi sugerida a realização de um teste beta com uma amostragem de cem pessoas com 
+menor familiaridade com tecnologia. Para o lançamento, que poderá ser realizado de forma escalonada, o 
+MJSP fará a proposição de uma data para o evento, com participação de Ministros.  
+===== [pag 3] =====
+Proposta a realização de uma reunião com a SECOM e estabelecimento de ações publicitárias para avanço 
+no plano de comunicação da CIN.  
+Em relação ao Sistema Biométrico Federal (SBF), na próxima reunião da CEFIC será apresentada uma minuta 
+do plano de implementação: API Gráficas; Motor Biométrico ABIS; Integração PCIN x SBP; PCIN receberá CIN 
+vindas do SBF;  e Integração com biometrias TSE, PF e Senatran . Destacaram na reunião  os benefícios no 
+processo de emissão da CIN, e para o cidadão, uma identificação mais segura . Destaca-se que o sistema 
+bancário tem interesse  na evolução do projeto e futuras integrações. Nesse sentido, foi recomendada a  
+inclusão do tópico de articulação com a Febraban, no cronograma.  
+ 
+5. Encaminhamentos 
+ 
+5.1. A proposta do Planejamento CEFIC para 2025 será enviad a por e -mail aos membros, para 
+deliberação na próxima reunião. 
+5.2. O MGI realizará tratativas com o Banco Mundial, visando celebrar acordos de cooperação para 
+avaliação em relação ao projeto da CIN. 
+5.3. A SENASP irá liderar o diálogo junto às 27 Unidades Federativas, com participação da SGD, ITI e RFB, 
+para formulação de diagnóstico da emissão de CIN nas UFs. 
+5.4. Após o diagnóstico, definir cinco estados para expansão do projeto  no período de dois meses, 
+inclusive com edição de portaria do FNSP, específica, para desenvolvimento de ações voltadas às situações 
+identificadas. 
+5.5. Apresentação do plano de implementação do SBF na próxima reunião da CEFIC.  
+5.6. Promover articulação junto a o estado de SP  para inscrição e alteração do CPF por meio da 
+integração ao B-Cadastro.  
+6.  
+ 
+Anexo 6. 1- Dados do Fundo Nacional de Segurança Pública – Recursos usados por ente federativo 
+===== [pag 4] =====
+ 
+Anexo 6. 2- Fluxo de ativação/desativação do QR Code da CIN 

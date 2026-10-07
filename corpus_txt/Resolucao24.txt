@@ -1,0 +1,716 @@
+
+===== [pag 1] =====
+DIÁRIO OFICIAL DA UNIÃO
+Publicado em: 15/09/2025 | Edição: 175 | Seção: 1 | Página: 5
+Órgão: Presidência da República/Casa Civil/Câmara-Executiva Federal de Identiﬁcação do Cidadão
+RESOLUÇÃO Nº 24, DE 8 DE SETEMBRO DE 2025
+Institui o Modelo Informacional da Carteira de Identidade
+Nacional - MI-CIN, no âmbito dos Órgãos de Identiﬁcação Civil -
+OICs das unidades federativas e dos órgãos federais executores
+do Serviço de Identiﬁcação do Cidadão - SIC; Revoga o art. 2º
+da Resolução nº 9, de 7 de novembro de 2022, Câmara
+Executiva Federal de Identiﬁcação do Cidadão - Ceﬁc, a
+Resolução nº 20, de 9 de setembro de 2024, da Ceﬁc, a
+Resolução nº 23, de 5 de maio de 2025, da Ceﬁc;
+O COORDENADOR DA CÂMARA-EXECUTIVA FEDERAL DE IDENTIFICAÇÃO DO CIDADÃO -
+CEFIC, no uso das atribuições que lhe confere o art. 6º, § 1º, inciso IV, do Regimento Interno da Ceﬁc,
+aprovado pela Resolução nº 10, de 6 de abril de 2023, e considerando o disposto no art. 10 do Decreto nº
+11.797, de 27 de novembro de 2023, bem como a deliberação da Ceﬁc em reunião realizada em 15 de
+agosto de 2025, resolve:
+Art. 1º Fica instituído o Modelo Informacional da Carteira de Identidade Nacional - MI-CIN, como
+requisito de segurança, integridade e interoperabilidade do Serviço de Identiﬁcação do Cidadão - SIC.
+Parágrafo único. O conteúdo e as estruturas das informações que compõem o MI-CIN constam
+do Anexo desta resolução.
+Art. 2º O MI-CIN será de adoção obrigatória e atuação integrada para o compartilhamento de
+dados entre os Órgãos de Identiﬁcação Civil - OICs das unidades federativas e os órgãos executores do
+Serviço de Identiﬁcação do Cidadão - SIC.
+Art. 3º O MI-CIN será de adoção obrigatória e atuação integrada para o compartilhamento de
+dados entre os Órgãos de Identiﬁcação Civil - OICs das unidades federativas e os órgãos executores do
+Serviço de Identiﬁcação do Cidadão - SIC.
+§ 1º A Secretaria-Executiva da Ceﬁc prestará apoio técnico e fará o monitoramento da execução
+do cronograma de que trata o caput.
+§ 2º O cronograma de implementação deverá ser executado na data limite de 5 de novembro
+de 2025, para cumprimento do disposto no art. 2º.
+Art. 4º Art. 4º Ficam revogados:
+I - o art. 2º da Resolução nº 9, de 7 de novembro de 2022, da Ceﬁc;
+II - a Resolução nº 20, de 9 de setembro de 2024, da Ceﬁc; e
+III - a Resolução nº 23, de 5 de maio de 2025, da Ceﬁc.
+Art. 5º Esta Resolução entra em vigor na data da sua publicação.
+PEDRO HELENA PONTUAL MACHADO
+ANEXO
+MODELO INFORMACIONAL DA CARTEIRA DE IDENTIDADE NACIONAL - MI-CIN - Versão 1.0
+Tabela I - Modelo Informacional da Carteira de Identidade Nacional - MI-CIN - Versão 1.0
+Nível OcorrênciaSeção/Item Tipo de Dado Conceito/Observações/Regrasde negócio CIN física -papele cartãoCIN digital -Wallet Gov.br
+1 [1..1] Identiﬁcaçãodo órgãoexpedidor Seção
+
+===== [pag 2] =====
+2 [1..1] ÓrgãoExpedidor /Card
+TextoCodiﬁcado
+Indica o nome do órgão queexpede a CIN, conformepadrão da coluna"Representação
+Texto variável,37 caracterespor linha,máximo 2linhas;
+Texto variável,37 caracterespor linha,máximo 2linhas;
+Issuer na CIN" da Tabela II. Fonte: TahomaBold 5pt; CorPreta.
+Fonte: TahomaBold 4.8pt; CorPreta.
+2 [0..1]
+Cargo dodirigente doórgãoexpedidor
+Caracteresalfanuméricos Nome do cargo do dirigente doórgão expedidor.
+Texto variável,máximo 18caracteres;Fonte: ArialRegular 5pt;Cor Preta.
+Texto variável,máximo 18caracteres;Fonte: ArialRegular 3.5pt;Cor Preta.
+2 [1..1] Assinatura doExpedidor Imagem Imagem da assinatura dodirigente responsável peloórgão expedidor (Tabela
+Imagembase64; Cor 500.000caracteres
+/ Card IssuerSignature II). Preta. (png embase64).
+1 [1..1] Caracterizaçãoda expediçãoSeção
+2 [1..1] Entefederativo Textocodiﬁcado
+Indica o ente federativo queexpediu a CIN, conformepadrão da coluna"Representação
+Texto variável,máximo 29caracteres;Fonte:
+Texto variável,máximo 29caracteres;Fonte:
+na CIN" da Tabela III. Arial Bold 6pt,Cor Preta. Arial Bold 6pt,Cor Preta.
+2 [1..1] Data deEmissão /Issue Data Data de emissão/expedição daCIN, no
+Texto variável,no formatoDD/MM/AAAA,máximo 10caracteres;
+Texto variável,no formatoDD/MM/AAAAmáximo 10caracteres;
+Date formato AAAA/MM/DD,conforme ISO 8601.
+Fonte: TahomaBold 5.5pt(papel); 5pt(cartão); CorPreta.
+Fonte: TahomaBold 5pt; CorPreta.
+2 [1..1] Local / Placeof Issue Textocodiﬁcado
+Código de 7 dígitos domunicípio de expedição,conforme IBGE.
+Semrepresentação. Semrepresentação.
+3 [1..1] Nome domunicípio deTextocodiﬁcado Nome do município deexpedição sem
+Texto variável,máximo 36caracteres, ematé 2 linhas;Fonte: TahomaBold; Tamanhoda Fonte:
+Texto variável,máximo 36caracteres, ematé 2 linhas;Fonte: TahomaBold 5pt; CorPreta.
+expedição referência à UF, conformedescrição do código na Tabelado IBGE.
+5pt; CorPreta.Paramunicípioscom mais de36 caracteres,o elementodeve serabreviado.
+2 [0..1] Data deValidade /Date Data
+Data de validade dodocumento, no formatoAAAA/MM/DD, conforme ISO8601.Regra Negocial: A data devalidade deve ser veriﬁcadacom a data de nascimento.Para
+Texto variável,no formatoDD/MM/AAAA,máximo 14caracteres;Fonte: TahomaBold;
+Texto variável,no formatoDD/MM/AAAAmáximo 14caracteres;Fonte: TahomaBold
+
+===== [pag 3] =====
+of Expiry
+titulares maiores de 60(sessenta) anos, indicarvalidade como"Indeterminada".Para os casosde "Inexistência de Data deNascimento na Certidão", seráindicada a validade de 5 anos.
+Tamanho daFonte: 5pt; CorPreta. 5pt; Cor Preta.
+3 [0..1] ValidadeIndeterminadaBooleano Indica a validadeindeterminada para o titularmaior de 60 (sessenta) anos.
+Texto variável,máximo 14caracteres;Fonte: TahomaBold 5pt; CorPreta.
+Texto variável,máximo 14caracteres;Fonte: TahomaBold 5pt; CorPreta.
+2 [1..1] Identiﬁcadordo Espelho Caracteresnuméricos Identiﬁcador da CIN física, porum
+Texto variável,máximo 12caracteres;Fonte:
+Semrepresentação.
+sequencial alfanumérico decontrole. Arial Bold 5pt;Cor Preta.
+1 [1..1] Identiﬁcadornacional Seção
+2 [1..1] RegistroGeral-CPF / Caracteresnuméricos
+O identiﬁcador do cidadão é onúmero de inscrição do titularno CPF.
+Texto variável,máximo 14caracteres;Fonte: TahomaBold 7.5pt; CorPreta.
+Texto variável,máximo 14caracteres,Fonte: TahomaBold 7.5pt; CorPreta.
+PersonalNumber
+Regra Negocial: Caso ocidadão não tenha CPF, ounecessita atualizar seus dadosbiográﬁcos, os órgãos deidentiﬁcação civil deveminscrever ou alterar CPF noCadastro.
+CPF - Dígitoscommascaramento:xxx.xxx.xxx-xx
+CPF - Dígitoscommascaramentoxxx.xxx.xxx-xx
+1 [1..1] Informaçõesbiográﬁcas dotitular Seção
+2 [1..1] Prenome /Given names
+Caracteresalfanuméricos,alfabetolatino, padrão
+Indica o "nomeindividual" dotitular.RegrasNegociais:- Oconjunto decaracteres válidospara nome constana Tabela IV;
+Representaçãodo nomecompleto.
+Representação donome completo.
+ICAO 930do Decret10.977/20Lei nº 6.0
+HTML UTF-8(CapitalLetter),conformeTabela IV
+- Os nomes quecontêm caracteresnão incluídos naTabela IV deverãosofrertransliteração;- Emcaso de algarismosarábicos no nome,registrar porextenso ou romano.
+ISO 9:199
+2 [0..1] Sobrenome /Surname
+Caracteresalfanuméricos,alfabetolatino, padrãoHTML UTF-8(CapitalLetter),conformeTabela IV
+Indica osobrenome.Mesmasregras negociais doPrenome.
+Representaçãodo nomecompleto.
+Representação donome completo.
+ICAO 930do Decret10.977/2010.406/2Civil).
+2 [1..1] Nomecompleto Caracteresalfanuméricos,
+Indica o prenome,sobrenome eagnome, se
+Representaçãodo nomecompleto(prenome +sobrenome).Textovariável, 37
+Representação donome completo(prenome +sobrenome).Sequênciade
+Lei nº7.116/19810.977/20
+
+===== [pag 4] =====
+alfabetolatino, padrãoHTML UTF-8(Capital
+houver, do titular,até o limite de 255caracteres.
+caracteres porlinha, máximo 2linhas; Fonte:Tahoma Bold 5pt;Cor Preta.
+caracteresalfanuméricos, comlimite de 74, máximo 2linhas; Fonte: TahomaBold 4.8 pt.Paraemissão da CIN
+Letter),conformeTabela
+física e digital, casoultrapasse o limite decaracteres
+Para emissão daCIN física edigital, caso
+determinado, seguirregras de abreviação
+IV Mesmas regrasnegociais doPrenome.
+ultrapasse olimite decaracteresdeterminado,seguir regras deabreviação
+da Resolução CEFIC nº15, 01/11/2023.
+da ResoluçãoCEFIC nº 15,01/11/2023.
+3 [0..1] Nome Social/ Social Caracteresalfanuméricos,
+Nome designadopela pessoa travestiou Texto variável, 37Sequência decaracteres Art. 13 do10.977/20
+caracteres porlinha, máximo 2linhas.
+alfanuméricos, comlimite de 37 caracterespor linha, máximo 2
+Decreto n8.727/201Resoluçã
+Name alfabetolatino, padrão
+transexual que seidentiﬁca e ésocialmente
+Fonte: TahomaBold; Tamanhoda Fonte: 5pt; CorPreta.
+linhas.Fonte: TahomaBold; Tamanho daFonte: 4.8 pt.
+CEFIC nº 01/11/20
+HTML UTF-8(CapitalLetter),conformeTabela
+reconhecida, até olimite de 255caracteres.
+Para emissão daCIN física edigital, casoultrapasse olimite decaracteres
+Para emissão da CINfísica e digital, casoultrapasse o limite decaracteres
+IV Mesmas regrasnegociais doPrenome.
+determinado,seguir regras deabreviação daResolução CEFICnº 15,01/11/2023.
+determinado, seguirregras de abreviaçãoda Resolução CEFIC nº15, 01/11/2023.
+2 [0..N]Filiação /Filiation Caracteresalfanuméricos,
+Indica o nomecompleto daﬁliação do
+Texto variável,para 4 ﬁliações,uma ﬁliação porlinha até o limitede 37 caracterespor linha;Paramenos de 4
+Sequência decaracteresalfanuméricos, comlimite de 37 caracterespor linha, máximo 4linhas;
+Art. 13 do10.977/20nº 8.727/2Resoluçãde
+alfabetolatino, padrãotitular.
+ﬁliações: em casode ﬁliação termenos de 37caracteres,utilizar uma porlinha, se
+Fonte: Tahoma Bold4.8pt.Para emissão daCIN 01/11/20
+houver mais de37 caracteres,deve ser usadamais de uma
+física e digital, casoultrapasse o limite decaracteres
+HTML UTF-8(Capital
+linha, até o limitede 4 linhas;Fonte:Tahoma Bold5pt;Cor Preta.Paraemissão da CIN
+determinado, seguirregras de abreviaçãoda Resolução CEFIC nº15, 01/11/2023.
+
+===== [pag 5] =====
+Letter),conformeTabela IV
+Mesmas regrasnegociais do campoPrenome.
+física e digital,caso ultrapasse olimite decaracteresdeterminado,seguir regras deabreviação daResolução CEFICnº 15,01/11/2023.
+3 [0..N]CPF daFiliação Caracteresnuméricos
+Identiﬁcador,máximo 14caracteres, daﬁliação da criança edo adolescente,menor de 16 anos,para gestão da CINdigital na Carteirade documentosdigitais doaplicativo Gov.br.
+Semrepresentação. Sem representação.
+2 [1..1] Sexo / Sex TextocodiﬁcadoICAO
+Indica o sexo dotitular, conformepadronização daICAO, 1 caractere,M, F ou X(Masculino;Feminino;Indeterminado /Não especiﬁcado).
+Texto variável,máximo 1caracter; Fonte:Tahoma Bold5.5pt; Cor Preta.
+Texto variável, máximo1 caracter;Fonte:Tahoma Bold 5.5pt;Cor Preta.
+Art. 5º da 7.116/198Decreto n10.977/209303-4.
+2 [1..1] Nacionalidade/
+TextocodiﬁcadoIBGE
+Indica anacionalidade dotitular, brasileiro
+Texto variável,máximo Texto variável, máximo
+Art. 5º da 7.116/198Decreto n10.977/20Constituiç
+Nationality Países (ISO3166-1) e
+nato, brasileironaturalizado ouportuguêsequiparado, sendopermitido somenteas
+3 caracteres; 3 caracteres; Federal dda Lei nº 
+padrão ISOALPHA-3
+opções BRA ou PRT(brasileira;português
+Fonte: TahomaBold Fonte: Tahoma Bold Art. 248 aDecreto n
+equiparado). 5.5pt; Cor Preta. 5.5pt; Cor Preta. 9.199/20Interminis03/05/2
+2 [0..1] Naturalidade/ Place of Subseção Indica o local denascimento dotitular. Texto variável, 19 Texto variável, 19 Art. 3º, alínº 7.116/8Decreto
+Birth caracteres porlinha, caracteres por linha,
+nº10.977/20CCGD/M25/08/20Constituiç
+máximo 2 linhas;Fonte: TahomaBold
+máximo 2 linhas;Fonte: Tahoma Bold Federal dda Lei nº 
+5,5pt; CorPreta. 5pt; CorPreta. Art. 248 a 253 do Decreto nº 9.199/2017;Portaria
+Interministerial nº 11, de 03/05/2018;Convenção para a Redução dosCasos de
+Apatridia, promulgada pelo Decreto nº 8.501/2015.
+3 [0..1]CódigoMunicípio Textocodiﬁcado
+Código do município do titular,de 7 dígitos, conforme IBGE.
+Regras Negociais:
+Semrepresentação. Semrepresentação.
+
+===== [pag 6] =====
+- Para nome de local denascimento que não exista natabela de municípios do IBGE,realizar dois registros: 1) indicarcódigo IBGE atual do municípioque corresponde ao local denascimento no campo atual; e2) indicar,
+Naturalidade
+em texto livre, no campo"Naturalidade conformeCertidão" o local conformeconsta na Certidão deNascimento/Casamento;- Noscasos de naturalidade embranco na Certidão deNascimento/Casamento, esse
+campo deverá ﬁcar em brancoe o campo "Inexistência deNaturalidade na Certidão"deverá ser marcado.
+3 [0..1]UFNaturalidadeTextocodiﬁcado
+Código da Unidade daFederação, de 2 dígitos,conforme IBGE.RegrasNegociais:- Nos casos denaturalidade em branco na
+Semrepresentação. Semrepresentação.
+Certidão deNascimento/Casamento, essecampo deverá ﬁcar em brancoe o campo "Inexistência deNaturalidade na Certidão"deverá ser marcado.
+3 [0..1] Caracteresalfanuméricos
+Nome do município (cidade),conforme código do IBGE.
+Regras Negociais:
+Semrepresentação. 50 caracteres.
+MunicípioNaturalidade
+- Nos casos de naturalidade embranco na Certidão deNascimento/Casamento, essecampo deverá ﬁcar em brancoe o campo "Inexistência deNaturalidade na Certidão"deverá ser marcado.
+3 [0..1]País deNaturalidadeTextocodiﬁcado
+Indica o país de nascimento dotitular, conforme IBGEPaíses.Regras Negociais:- Noscasos de titular nascido fora doterritório nacional (estrangeironaturalizado,
+3 caracteres. 3 caracteres.
+brasileiro nascido fora doterritório nacional, ouportuguês equiparado,obrigatoriamente, deve serindicado o país de nascimentopela tabela atualizada dePaíses IBGE.- Para brasileirosnascidos fora do território
+nacional e em país nãoreconhecido pelo Brasil, deve-se registrar o país reconhecidopelo Brasil em que a cidadeestá contida. Exemplo: Pristina,Sérvia; Taipé, China.
+- Nos casos de naturalidade embranco na Certidão deNascimento/Casamento, essecampo deverá ﬁcar em brancoe o campo "Inexistência deNaturalidade na Certidão"deverá ser marcado.
+- Código identiﬁcador do país -Especiﬁcado pela norma IBGEPaíses, que deﬁne oidentiﬁcador do país usando 3letras.
+
+===== [pag 7] =====
+3 [0..1]Naturalidadeconforme Caracteresalfanuméricos
+Local de nascimento conformeconsta na Certidão deNascimento/Casamentoquando o nome de local denascimento não existir
+Essainformaçãodeveprevalecer naCIN física.
+50 caracteres.
+Certidão
+na tabela de Municípios doIBGE; caso exista, esse camponão deve serpreenchido.Regras Negociais:-Para nome de local denascimento que não
+exista na tabela de Municípiosdo IBGE, realizar dois registros:1) indicar, em texto livre, nestecampo o local conforme constana Certidão deNascimento/Casamento; e 2)indicar o código IBGE atual domunicípio que
+corresponde ao local denascimento no campo CódigoMunicípio Naturalidade.- Noscasos de naturalidade embranco na Certidão deNascimento/Casamento, essecampo deverá ﬁcar em brancoe o campo "Inexistência deNaturalidade na Certidão"deverá ser marcado.
+3 [0..1]Inexistênciade Booleano
+Indica a inexistência denaturalidade na Certidão deNascimento/Casamento. RegraNegocial:
+Deve serrepresentada aexpressão: "nãoconsta".
+Deve serrepresentada aexpressão: "nãoconsta".
+Naturalidadena Certidão
+Se não houver registro denaturalidade na Certidão, estecampo deve ser marcado etodos os demais camposreferentes à naturalidadedevem ﬁcar em branco.
+2 [0..1] Data
+Identiﬁca a data denascimento do titular,conforme apresentado pelacertidão de nascimento ou decasamento em formato físicoou digital, no formatoAAAA/MM/DD,
+Texto variável,no formatoDD/MM/AAAA,máximo 10caracteres;
+Texto variável,no formatoDD/MM/AAAA,máximo 10caracteres;Fonte: TahomaBold 5pt; CorPreta.
+Data deNascimento /
+conforme ISO 8601.RegrasNegociais:- Não será permitidadata anterior a 01/01/1901;
+Fonte: TahomaBold 5.5pt(papel); 5pt(cartão); CorPreta.
+Date of Birth
+- Será permita dataincompleta, como mês e ano(MM/AAAA) ou somente ano(AAAA);- Não será permitidodia e mês;- Caso conste datafora do padrão ISO8601, essecampo não deve serpreenchido e o
+campo de inexistência deveser marcado. Exemplo:DD/MM ou DD ou MM não sãopermitidos;- Nos casos dedata de nascimento embranco na Certidão deNascimento/
+Casamento, o campo"Inexistência de Data deNascimento na Certidão" deveser marcado e o campo atualdeve ﬁcar em branco.
+
+===== [pag 8] =====
+3 [0..1]Inexistênciade Data de Booleano
+Indica a inexistência da datade nascimento na Certidão deNascimento/Casamento.RegraNegocial:
+Deve serrepresentada aexpressão:"não consta".
+Deve serrepresentada aexpressão:"não consta".
+Nascimentona Certidão
+Se não houver registro de datade nascimento na Certidão, ocampo atual deve ser marcadoindicando a inexistência dedata e o campo "data denascimento" deve ﬁcar embranco.
+3 [1..1] CPF dorepresentante Caracteresalfanuméricos
+Indica, máximo 14 caracteres(dígitos com mascaramento:xxx.xxx.xxx-xx), o CPF dorepresentante legal da criançae do adolescente, menor de 16anos, ou incapaz,
+Semrepresentação. Semrepresentação.
+Anexo IV eInstrução RFB nº 2.109/01/20
+legal
+para inscrição e/ou alteraçãodo CPF no processo deemissão da CIN.RegrasNegociais:Em se tratando deguardião institucional
+atualizadaPortaria C05/08/20e 5º da Le10.406/20
+(art. 92, § 1º, do Estatuto daCriança e do Adolescente), énecessária a apresentação dedocumentação que comproveo acolhimento institucional dacriança ou do adolescente (ex.Guia de Acolhimento
+(Código C§1°, da Lei 13.709/20(LGPD);Pro61/2017;
+Institucional - modelo do CNJ,Instrução Normativa CNJ nº03/2009) e documento quecomprove que o solicitante édirigente da entidade deabrigo.Em se tratando decriança e adolescente em
+Art. 92, § 18.069/199da CriançaAdolescenNormativa
+unidade socioeducativa deinternação, deverá serobservado o ﬂuxo de exceçãoprevisto no Anexo V daInstrução Normativa RFB nº2.172/2024, atualizado pelaPortaria Cocad nº 67/2024.
+CNJ n° 03
+4 [1..1] Vínculo dorepresentante
+Textocodiﬁcado:1 -uma dasﬁliações; 2 -tutor; 3 -curador;
+Indica o vínculo dorepresentante legal da criançae do adolescente, menor de 16anos,
+Semrepresentação. Semrepresentação.
+Anexo IV dNormativa2.172, de09/01/20Lei nº 10.4(Código
+legal
+4 - guardião;5-representantepor decisãojudicial.
+ou incapaz,para inscriçãoe/ou alteraçãodo CPF noprocesso deemissão da CIN.
+Civil);Art. 14, §1°, daLei nº13.709/2018(LGPD);Provimentonº 61/2017.
+2 [1..1] Endereço dotitular Subseção
+Identiﬁca oendereço dedomicílio dotitular
+Semrepresentação.
+Representaçãosomente doendereço dotitular portadorde Ciptea.Exemplo:AvenidaAlameda dasTravessas, nº111, EdifícioBosque do
+InstruçãoNormativa RFB nº2172/2024;
+Lei nº13.977/2020.
+Cerrado, 2222- Bairro dosBarris.CEP:40000-000.Salvador/BA.
+
+===== [pag 9] =====
+Texto variável,máximo 255caracteres;Fonte: Tahoma12pt.
+no Brasil ou noexterior parainscrição noCPF e se titularportador deCarteira deIdentiﬁcação daPessoa comTranstorno doEspectroAutista (Ciptea).
+3 [0..1]CEPResidência Caracteresnuméricos
+Código deendereçamentopostal (08dígitos).
+Semrepresentação.
+Texto variável,máximo 8caracteres;Fonte: Tahoma12pt.
+3 [1..1] CódigoMunicípioResidência
+Textocodiﬁcado
+Código domunicípio nabase de dadosde municípiodo IBGE.
+Semrepresentação.
+Texto variável,máximo 7caracteres;Fonte: Tahoma12pt.
+3 [1..1] UF ResidênciaTextocodiﬁcado
+Sigla daUnidade daFederação.
+Semrepresentação.
+Texto variável,máximo 2caracteres;Fonte: Tahoma12pt.
+3 [1..1] MunicípioResidência Caracteresalfanuméricos
+Nome domunicípio(cidade).
+Semrepresentação.
+Texto variável,máximo 50caracteres;Fonte: Tahoma12pt.
+3 [1..1] Bairro Caracteres
+Comunidade ouregião dentrode uma cidadeoumunicípio.Paraos endereçoslocalizados noDistrito Federal,utiliza-se omodelo dedivisãoterritorialutilizado peloIBGE, queestabeleceBrasília comoúnicomunicípio.
+Semrepresentação.
+Texto variável,máximo 50caracteres;Fonte: Tahoma12pt.
+alfanuméricos
+Dessa forma,para as regiõesadministrativas(RA) nãodivididas embairros, esteslocais devemser informadoscomo bairro. Nocaso das RAsubdividas embairros,informar obairro e a RAentreparênteses. Ex.:Veredas(Brazlândia).
+
+===== [pag 10] =====
+3 [1..1] Logradouro Caracteresalfanuméricos
+Logradouro(empregadopara se referir auma localidade,tal como rua,praça, avenidaou um espaçopúblico quecompõe umacidade).
+Semrepresentação.
+Texto variável,máximo 100caracteres;Fonte: Tahoma12pt.
+3 [0..1]Número Caracteresalfanuméricos Número doEndereço. Semrepresentação.
+Texto variável,máximo 20caracteres;Fonte: Tahoma12pt.
+3 [0..1]Complemento Caracteresalfanuméricos Complementodo endereço. Semrepresentação.
+Texto variável,máximo 50caracteres;Fonte: Tahoma12pt.
+3 [0..1] País deresidênciano
+Textocodiﬁcado
+Indica país deresidência dotitular se domicíliofora do Brasil,conforme IBGEPaíses alpha3.Regranegocial:Realizar oregistro do códigodo país no
+Semrepresentação.
+Texto variável,máximo 3caracteres;Fonte: Tahoma12pt.
+exterior
+campo atual e oregistro doendereçocompleto em textolivre no campo"Endereçoresidência noexterior".Códigoidentiﬁcador dopaís - Especiﬁcadopela norma IBGEPaíses, que deﬁneo identiﬁcador dopaís usando 3letras.
+4 [0..1] Endereço deresidênciano exterior
+Caracteresalfanuméricos
+Descrição doendereço deresidência quandono exterior.
+Semrepresentação.
+Texto variável,máximo 200caracteres;Fonte: Tahoma12pt.
+2 [1..1] Documentode origem Caracteresalfanuméricos
+Número damatrícula de 32dígitos da Certidãode Nascimento ouda Certidão deCasamento válida(com Averbação,quando for o caso),ou do Certiﬁcadode Naturalizaçãodo titular.
+Semrepresentação.
+Texto variável,máximo 120caracteres
+Art. 3º, e, da Lei nº7.116/83;Art. 11, VI, doDecreto nº10.977/2022;Provimennº 63, de 14/11/2017(DJe de
+Regra Negocial:-Se certidão denascimento oucasamento nãoestiver em formatode matrículaindicar,excepcionalmente,em texto livre,comarca, cartório,livro, folha enúmero doregistro.
+17/11/2017).
+
+===== [pag 11] =====
+3 [0..1] Data deemissão doData
+Data de emissãodo documento deorigem do titular,no formatoAAAA/MM/DD,conforme ISO8601.
+Semrepresentação. Semrepresentação.
+Art. 3º, e, da Lei nº7.116/83;Art. 11, VI, doDecreto nº 10.977/202
+documentode origem
+Atenção: Estainformação serefere a data deemissão dodocumento e nãoa data denascimento oucasamento.
+Provimento nº 63, de14/11/2017 (DJe de17/11/2017).
+2 [0..1] Estado Civil
+Textocodiﬁcado:1 -solteiro2 -casado
+Indica o estadocivil dotitular.Observação:união estável nãose conﬁgura
+Semrepresentação.
+Texto variável,máximo 25caracteres;Fonte:
+Código Civil;ProvimentoCNJ 61 - praticar oato;Art. 1.571 da Lei nº10.406/2002 (CódigoCivil);
+3 - separado/desquitado4 -divorciado5 -viúvo
+como estado civil.Caso sejaapresentada eescritura de uniãoestável, o registrodeve ser desolteiro.
+Tahoma 12pt.
+Art. 315 da Lei nº3.071/1916 (Código Civde 1916);Lei nº6.515/1977 (Lei doDivórcio).
+2 [0..N]Documentosadicionaisdo titular Subseção
+Informações dedocumentosadicionais dotitular.
+3 [0..1] PIS / PASEP Caracteresalfanuméricos
+Número deinscrição do titularno Programa deIntegração Social(PIS) e noPrograma deFormação doPatrimônio doServidor Público(PASEP), de acordocom adocumentaçãoapresentada pelotitular.
+Semrepresentação.
+Texto variável,máximo 14caracteres;Fonte: Tahoma12pt.
+Art. 4º da Lei nº7.116/83.
+3 [0..1] NIS Caracteresalfanuméricos
+Número deIdentiﬁcaçãoSocial (NIS), de
+Semrepresentação. Texto variável,máximo
+Art. 14 do Decreto nº10.977/2022;Art. 1º, ite1, da Lei
+acordo com adocumentaçãoapresentada pelotitular.
+14 caracteres;Fonte: Tahoma12pt.
+nº 9.049/95;§1º, art. 4º,da Lei nº 7.116/83.
+3 [0..1] NIT Caracteresnuméricos
+Número deInscrição doTrabalhador (NIT),
+Semrepresentação. Texto variável,máximo
+Art. 14 do Decreto nº10.977/2022;Art. 1º, ite1, da Lei
+de acordo com adocumentaçãoapresentada pelotitular.
+14 caracteres;Fonte: Tahoma12pt.
+nº 9.049/95;§1º, art. 4º,da Lei nº 7.116/83.
+3 [0..1] CTPS Caracteresalfanuméricos
+Número daCarteira deTrabalho ePrevidência Social(CTPS), de acordocom adocumentaçãoapresentada pelotitular.
+Semrepresentação.
+Texto variável,máximo 22caracteres;Fonte: Tahoma12pt.
+Art. 14 do Decreto nº10.977/2022;Art. 1º, ite1, da Lei nº 9.049/95;§1art. 4º, da Lei nº7.116/83.
+3 [0..1] Título deEleitor Caracteresalfanuméricos
+Indica o númerode inscriçãoeleitoral do
+Semrepresentação. Texto variável,máximo
+Art. 14 do Decreto nº10.977/2022;Art. 1º, ite1, da Lei nº 9.049/95;
+titular, de acordocom adocumentaçãoapresentada pelotitular.
+14 caracteres;Fonte: Tahoma12pt.
+§1º, art. 4º, da Lei7.116/83.Resolução TSEnº 23.659, de26/10/2021.
+
+===== [pag 12] =====
+3 [0..1] CNH Caracteresnuméricos
+Número doRegistro Nacionaldo condutor,
+Semrepresentação. Texto variável,máximo
+Art. 14 do Decreto nº10.977/2022;
+Art. 1º, item 1, da Lei nº9.049/95;
+de acordo com aCarteira Nacionalde Habilitação(CNH) apresentadapelo titular.
+18 caracteres;Fonte: Tahoma12pt.
+§1º, art. 4º, da Lei nº7.116/83.ResoluçãoCONTRAN nº 886, de13/12/2021.
+4 [1..1] Data devalidade daCNH Data
+Data de validadeda CarteiraNacional deHabilitação, noformatoAAAA/MM/DD,conforme ISO8601.
+Semrepresentação.
+Texto variável,no formatoDD/MM/AAAA,
+Art. 14 do Decreto nº10.977/22;Art. 1º, item 1da Lei nº 9.049/95;
+Regra Negocial: Asinformações daCNH devem sercoletadassomente se a dataestiver dentro doprazo de validade,no momento dasolicitação dotitular.
+máximo 10caracteres;Fonte: Tahoma12pt.
+§1º, art. 4º, da Lei nº7.116/83.ResoluçãoCONTRAN nº 886, de13/12/2021.
+5 [1..1] Categoria daCNH
+Textocodiﬁcado: A,B, C,
+Indica letra(s)correspondenteà(s) categoria(s)na(s) qual(is) ocondutor for
+Semrepresentação. Texto variável,máximo
+Art. 14 do Decreto nº10.977/22;Art. 1º, item 1da Lei nº 9.049/95;
+D, E, X, AB, AC,AD, AE, XB,XC, XD, XE
+habilitado naCarteira Nacionalde Habilitação(CNH), conformeTabela V.
+4 caracteres;Fonte: Tahoma12pt.
+§1º, art. 4º, da Lei nº7.116/83.ResoluçãoCONTRAN nº 886, de13/12/2021.
+3 [0..N]IdentidadeFuncional ouCaracteresalfanuméricos
+Número, UnidadeFederativa e órgãoemissor daCarteira deIdentidade
+Semrepresentação. Texto variável,máximo
+Art. 14 do Decreto nº10.977/2022;Art. 1º, ite1, da Lei
+CarteiraProﬁssional
+Proﬁssionalemitido/registradonos sistemaspróprios dascategoriasproﬁssionais.
+28 caracteres;Fonte: Tahoma12pt.
+nº 9.049/95;§1º, art. 4º,da Lei 7.116/83.
+3 [0..1] CertiﬁcadoMilitar Caracteresalfanuméricos
+Certiﬁcado Militardo titular quecomprove a
+Semrepresentação.
+Texto variável,máximo 14caracteres;Fonte:
+Art. 14 do Decreto nº10.977/2022;Art. 1º, ite1, da Lei
+quitação com oserviço militarobrigatório. Tahoma 12pt. nº 9.049/95;§1º, art. 4º,da Lei nº 7.116/83.
+1 [1..1] Informaçõesbiométricasdo titular Seção
+2 [1..1] Fotograﬁa daface Imagem facial
+Apresenta afotograﬁa dotitular de acordocom os requisitospara captura ecodiﬁcação deimagens faciais,padrão ICAO,especiﬁcados naISO/IEC 39794-5.
+Resolução300 dpi;tamanhomáximo de200 kb;FormatoMínimo de640x480 PNGOU JPEG;Papel:imagemcolorida;
+Formato: PNGouJPEG;Resoluçãomínima: 250 x250pixels.Resoluçãodesejável: 750 x750 pixels.
+Art. 3º, f, da L7.116/83;Art. do Decreto n10.977/2022Doc 9303, MReadable
+
+===== [pag 13] =====
+Cartão:imagem empreto ebranco.
+Tamanhomáximo dobase64:500.000caracteres.Imagemcolorida.
+TravelDocuments;"Quality (RefeFacial ImageMRTD)" (ISO/JTC1 SC17 W
+2 [1..1] Impressãodigital Booleano Indica se o titularpossui impressãodigital.
+Semrepresentação. Semrepresentação.
+Art. 3º, f, da L7.116/83;Art. do Decreto n10.977/2022
+3 [1..N]Posição do dedoda
+Texto codiﬁcado:0 -posição do dedodesconhecida;1 -polegar direito;2 -indicador direito;3 -médio direito;
+Indica a posiçãodo dedo daimpressão digitalcontida na ﬁchadecadactilar,conformeespeciﬁcaçãoISO/IEC 19794-2:2011.
+Semrepresentação. Semrepresentação.
+Art. 3º, f, da L7.116/83; Artdo Decreto n10.977/2022
+impressão digital
+4 - anelar direito;5 -mínimo direito;6 -polegar esquerdo;7- indicadoresquerdo;8 - médioesquerdo;9 - anelaresquerdo;10 -mínimo esquerdo.
+4 [1..N]Fotograﬁa daimpressão Imagem
+Apresenta até 10(dez) fotograﬁas,uma para cadadedo daimpressãodigital.Regrasnegociais:- Todasas dezimpressõesdigitais devemser coletadas, noentanto, se umou mais dedos
+Semrepresentação.
+Formato: WSQou PNG ouJPEG; Resolução500 DPI;Dimensão: 640 x600 pixels(altura xlargura);Tamanhomáximo dobase64:
+Art. 3º, f, da L7.116/83; Artdo Decreto n10.977/22.
+digital
+não estiveremdisponíveis (porexemplo, devidoa amputação),deverão sercoletados osdedosdisponíveis.-Quando menosde dez dedosforem coletados,será requerido ocampo"indisponibilidadeda impressãodigital".
+500.000caracteres.
+5 [0..N]Indisponibilidadeda Texto codiﬁcado:
+Indica, máximo 2caracteres, osdedos que foramamputados oudedos que nãoestavamdisponíveis, nomomento dacaptura,conforme padrãoANSI/NIST-ITL
+Semrepresentação. Semrepresentação.
+Art. 3º, f, da L7.116/83; Artdo Decreto n10.977/2022
+XX: Leitura parcialou indisponível poramputação/Amputated;
+1-2011.Regrasnegociais:-Campoobrigatórioquando houvermenos de 10fotograﬁas deimpressão digital;
+
+===== [pag 14] =====
+impressão digitalUP: Dedotemporariamente
+- O campo écomposto pelajunção de doisitens deinformação:Posição do dedo+ código deamputado ou detemporariamenteindisponível.
+indisponível/Unableto Print
+Exemplo:Dedomédio direitoamputado: 3XX;dedo mínimoesquerdoenfaixado poracidente: 10UP.
+2 [0..1]Assinaturado titular / Imagem
+Indica a assinatura dotitular, representadopor um gestográﬁco.Regrasnegociais:- Para casosde não alfabetizadosou impossibilitados deassinatura (por
+Formato PNGou JPEG;Resolução300dpi;tamanhomínimo300KB;tamanhomáximo1024KB.
+500.000caracteres(PNG embase64).Aassinaturaprecisa estarcentralizada,ter o fundotransparentee tamanho285x70
+Art. 3º, alínea 'f',da Lei nº7.116/83; Art. 11,VII, do Decretonº 10.977/2022.
+Cardholder'sSignature
+deﬁciência ou perda defunção momentânea),registrar a justiﬁcativa eapresentar na CIN aexpressão "Nãoassinou nesse ato";-Caso o titular possuanome social, aassinatura poderá serdo nome social.
+pixels.
+3 [0..1]
+Justiﬁcativade ausênciadaassinatura
+Textocodiﬁcado:1 -Nãoalfabetizado;2 -Impossibilitado.
+Indica a justiﬁcativa donão envio da assinaturado titular.
+"Não assinounesse ato".
+"Nãoassinounesse ato".
+1 [0..1]Informaçõesde saúde dotitular Seção
+2 [0..1]Observaçõesde Saúde Caracteresalfanuméricos
+Informações sobrecondições especíﬁcasde saúde cujadivulgação possacontribuir parapreservar a saúde dotitular ou salvar a suavida.Regra Negocial:
+Semrepresentação.
+Textovariável 50caracteres;Fonte:Tahoma 12pt.
+Art. 14, § 2º, doDecreto nº10.977/2022;Art. 2º da Lei nº9.049/95; §1º,art. 4º, da Lei nº
+Se solicitado pelotitular, é possível incluircódigo e descrição daClassiﬁcaçãoEstatísticaInternacional deDoenças e ProblemasRelacionados com aSaúde (CID).
+7.116/83; ABNTNBR9050:2020.
+Atenção à descrição dedoenças, pois trata-sede dado pessoalsensível e pode geraralgum tipo dediscriminação.Exemplo:CID M79.7:Fibromialgia.
+
+===== [pag 15] =====
+2 [0..1]Tiposanguíneo /Fator
+Textocodiﬁcado:A+;A-; B+; B-; AB+;AB-;
+Tipo sanguíneo e fatorRH positivo (+) ounegativo (-) dotitular.A+; A-; B+; B-;AB+; AB-; O+; O-, deacordo
+Semrepresentação.
+Textovariável,máximo 3caracteres;
+Art. 14, § 2º, doDecreto nº10.977/2022;Art.2º da Lei nº
+RH O+; O-. com a documentaçãoapresentada pelotitular.
+Fonte:Tahoma12pt.
+9.049/95; §1º,art. 4º, da Lei nº7.116/83.
+2 [0..1]Doador deÓrgãos Booleano Disposição do titular adoar órgãos em casoSemrepresentação.
+Textovariável,máximo 3caracteres;
+Art. 14, § 2º, doDecreto nº10.977/2022;Art.2º da Lei nº
+de morte. Fonte:Tahoma12pt.
+9.049/95; §1º,art. 4º, da Lei nº7.116/83.
+2 [0..1]DeﬁciênciaFísica Booleano Identiﬁca a pessoacom deﬁciência física aPictograma -Imagem Imagembase64; Cor
+Art. 14, § 2º, doDecreto nº10.977/2022;Art. 2º da Lei nº
+partir do SímboloInternacional deAcesso (SIA).
+base64; CorPreta. Preta.
+9.049/95; §1º,art. 4º, da Lei nº7.116/83; ABNTNBR9050:2020.
+2 [0..1]DeﬁciênciaAuditiva Booleano
+Identiﬁca a pessoacom deﬁciênciaauditiva, a partir dosímbolo internacionalde pessoas
+Pictograma -Imagem Imagembase64; Cor
+Art. 14, § 2º, doDecreto nº10.977/2022;Art.2º da Lei nº
+com deﬁciênciaauditiva. base64; CorPreta. Preta.
+9.049/95;§1º,art. 4º, da Lei nº7.116/83;ABNTNBR9050:2020.
+2 [0..1] DeﬁciênciaIntelectual/Booleano Identiﬁca a pessoacom deﬁciência Pictograma -Imagem Imagem base64;Cor
+Art. 14, § 2º, doDecreto nº10.977/2022;Art.2º da Lei nº
+Psicossocial intelectual /psicossocial. base64; CorPreta. Preta. 9.049/95;§1º,art. 4º, da Lei nº7.116/83.
+2 [0..1] DeﬁciênciaVisual Booleano Identiﬁca a pessoacom deﬁciênciavisual, a
+Pictograma -Imagem Imagem base64;Cor
+Art. 14, § 2º, doDecreto nº10.977/2022;Art.2º da Lei nº
+partir do símbolointernacional depessoas comdeﬁciência visual.
+base64; CorPreta. Preta.
+9.049/95;§1º,art. 4º, da Lei nº7.116/83;ABNTNBR9050:2020.
+2 [0..1] Autismo Booleano Identiﬁca a pessoacom Transtorno doEspectro Autista.
+Pictogramaﬁta - Imagembase64, CorPreta.
+Imagem base64;Cor Preta.
+Art. 14, III, doDecreto nº10.977/2022;Art.3º-A, § 1º, IV, daLei nº13.977/2020.
+3 [0..1] Ciptea Booleano
+Identiﬁca a pessoacom Transtorno doEspectro Autistaque possui aCarteira deIdentiﬁcação daPessoa comTranstorno doEspectro Autista(Ciptea).
+Semrepresentação. Semrepresentação. Lei nº13.977/2020.
+4 [0..1] Validade daCiptea Data
+Data deemissão/expediçãodo documento, noformatoAAAA/MM/DD,conforme ISO 8601.
+Semrepresentação.
+Texto variável, noformatoDD/MM/AAAA,máximo 10caracteres;Fonte:Tahoma 12pt.
+Art. 3º-A, § 1º, III,da Lei nº13.977/2020.
+
+===== [pag 16] =====
+4 [0..N]Código dodiagnóstico
+Textocodiﬁcadoporterminologiaexterna: cid-9;cid-10; cid-11
+Código dodiagnósticorelacionado àcondição de saúdedo titular.
+Semrepresentação. 6 caracteres. Art. 3º-A, § 1º, III,da Lei nº13.977/2020.
+4 [0..1] Telefone dotitular comTEA
+Caracteresalfanuméricos Indica o telefone dotitular com TEA. Semrepresentação.
+Texto variável,máximo 14caracteres;Fonte:Tahoma 12pt.
+Art. 3º-A, § 1º, III,da Lei nº13.977/2020.
+4 [0..1] CPF doresponsável Caracteresnuméricos
+Identiﬁca oresponsável legalou cuidador dotitular comTranstorno doEspectro Autista.
+Semrepresentação.
+Texto variável,máximo 11caracteres;Fonte: Tahoma12pt.
+Art. 3º-A, § 1º, III,da Lei nº13.977/2020.
+4 [0..1] Nome doresponsável Caracteresalfanuméricos
+Nome completo doresponsável legalou cuidador.
+Semrepresentação.
+Sequência decaracteresalfanuméricos,com limite de255 caracteres;Fonte: Tahoma12pt.
+Art. 3º-A, § 1º, III,da Lei nº13.977/2020.
+4 [0..1] Endereçodoresponsável
+Caracteresalfanuméricos
+Endereçoresidencial doresponsável legalou cuidador, nomesmo padrão deendereço dedomicílio do titularno Brasil ou noexterior.
+Semrepresentação.
+Texto variável,máximo 255caracteres;Fonte: Tahoma12pt.
+Art. 3º-A, § 1º, III,da Lei nº13.977/2020.
+4 [0..1] E-mail doresponsável Caracteresalfanuméricos
+E-mail doresponsável legalou cuidador.
+Semrepresentação.
+Texto variável,máximo 80caracteres;Fonte: Tahoma12pt.
+Art. 3º-A, § 1º, III,da Lei nº13.977/2020.
+4 [0..1] Telefone doresponsável Caracteresalfanuméricos
+Telefone doresponsável legalou cuidador.
+Semrepresentação.
+Texto variável,máximo 14caracteres;Fonte: Tahoma12pt.
+Art. 3º-A, § 1º, III,da Lei nº13.977/2020.
+Tabela 2 - Órgãos de Identiﬁcação Civil no Brasil
+UFÓrgão deIdentiﬁcação Representação na CIN CNPJ - NomeFantasia CNPJ - NomeEmpresarial CNPJ
+AC
+Instituto deIdentiﬁcaçãoRaimundoHermínio deMelo
+INSTITUTO DEIDENTIFICAÇÃORAIMUNDOHERMÍNIO DE MELO - IIRHM
+POLÍCIA CIVILDO ESTADODO ACRE -PCAC
+POLÍCIA CIVILDO ESTADODO ACRE -PCAC
+10.584.440/0001-97
+AL Instituto deIdentiﬁcação deAlagoas
+INSTITUTO DE IDENTIFICAÇÃO
+DEL. MÁRIO PEDRO DOSSANTOS
+POLÍCIACIENTIFICADO ESTADODE ALAGOAS
+PERÍCIAOFICIAL DOESTADO DEALAGOAS
+13.898.581/0001-72
+AMInstituto de IdentiﬁcaçãoAderson Conceição de Melo
+INSTITUTO DEIDENTIFICAÇÃOADERSONCONCEIÇÃO DE MELO -IIACM
+SSP
+SECRETARIA DEESTADO DESEGURANCAPUBLICA
+01.804.0153
+AP Departamento deIdentiﬁcação Civil e CriminalPOLÍCIA CIENTÍFICA DOAMAPÁ POLITEC POLÍCIA TECNICOCIENTIFICA 34.943.4846
+BA Instituto de IdentiﬁcaçãoPedro Mello SSP/BA BAHIA SSPGABINETE DOSECRETARIO
+BAHIA SECRETARIADA SEGURANCAPUBLICA
+13.937.14943
+CE Coordenadoria deIdentiﬁcação Humana ePerícia Biométrica
+PERÍCIA FORENSE DOESTADO DOCEARÁCOORDENADORIA DEIDENTIFICAÇÃO-CIHPB
+PERÍCIAFORENSE DOESTADO DOCEARA
+PERÍCIA FORENSEDO ESTADO DOCEARA
+10.263.8252
+DF Instituto de Identiﬁcação INSTITUTO DEIDENTIFICAÇÃO PCDF POLÍCIA CIVIL POLÍCIA CIVIL DODISTRITO FEDERAL37.115.48235
+
+===== [pag 17] =====
+ES Instituto de Identiﬁcação daPolícia Cientíﬁca INSTITUTO DEIDENTIFICAÇÃO / PCIES PCIES POLÍCIA CIENTÍFICADO ESTADO DOESPÍRITO SANTO
+53.542.0283
+GO
+Superintendência deIdentiﬁcação Humana -Polícia Civil do Estado deGoiás
+POLÍCIA CIVIL DE GOIÁS -SIH
+POLÍCIA CIVILDO ESTADO DEGOIAS POLÍCIA CIVIL 37.014.12391
+MAInstituto de Identiﬁcação doMaranhão
+INSTITUTO DEIDENTIFICAÇÃODOMARANHÃO
+ESTADO DOMARANHAO -SECRETARIA DEESTADO DASEGURANCAPUBLICA
+06.354.5008
+MGInstituto de Identiﬁcação deMinas Gerais POLÍCIA CIVILDO ESTADODE MINAS GERAIS
+POLÍCIA CIVILDO ESTADO DEMINAS GERAIS
+POLÍCIA CIVIL DOESTADO DE MINASGERAIS
+18.715.53270
+MS Instituto de IdentiﬁcaçãoGonçalo Pereira
+INSTITUTO DEIDENTIFICAÇÃO
+GONÇALO PEREIRA - IIGP
+SEJUSP
+SECRETARIA DEESTADO DEJUSTICA ESEGURANCAPUBLICA - MS
+03.015.4740
+MT Instituto de Identiﬁcação deMato Grosso Aroldo Mendesde Paiva
+INSTITUTO DEIDENTIFICAÇÃO/MTPOLITEC
+PERÍCIAOFICIAL EIDENTIFICACAOTECNICA -POLITEC
+ESTADO DE MATOGROSSO 03.507.41589
+PA Identiﬁcação da Polícia Civildo Pará Enéas Martins
+DIRETORIA DEIDENTIFICAÇÃOENÉASMARTINS
+POLÍCIA CIVILDO PARA POLÍCIA CIVIL DOESTADO DO PARA 00.368.1006
+PB Núcleo de Identiﬁcação CivileCriminal/IPC/DG/SESDS/PB
+POLÍCIA CIVIL DO ESTADODA PARAÍBA
+POLÍCIA CIVIL DOESTADO DAPARAIBA
+22.404.2541
+PE Instituto de IdentiﬁcaçãoTavares Buril
+INSTITUTO DEIDENTIFICAÇÃOTAVARESBURIL
+INSTITUTO DEIDENTIFICACAOTAVARESBURIL - IITB
+POLÍCIA CIVIL DEPERNAMBUCO 10.572.0632
+PI Instituto de IdentiﬁcaçãoDigital Félix Pacheco
+INSTITUTO DEIDENTIFICAÇÃODIGITAL"FÉLIX PACHECO" -IIDFP
+PI SECGABINETE DOSECRETARIO
+SECRETARIA DESEGURANCA 06.553.5490
+PR Instituto de Identiﬁcação doParaná INSTITUTO DEIDENTIFICAÇÃO DO PARANÁ
+PR SSPGABINETE DOSECRETARIO
+SECRETARIA DEESTADO DASEGURANCAPUBLICA
+76.416.93281
+RJ Diretoria de IdentiﬁcaçãoCivil DETRAN RJ DETRAN RJ DETRAN RJ
+DEPARTAMENTO DETRÂNSITO DOESTADO DO RIO DEJANEIRO
+30.295.5138
+RN Instituto Técnico-Cientíﬁcode Perícia do Rio Grande doNorte ITEP/RN ITEP
+INSTITUTOTECNICO-CIENTÍFICO DEPERÍCIA DO RIOGRANDE DO NORTE-ITEP/RN
+05.067.8189
+RO Instituto de Identiﬁcação Civile Criminal Engrácia da CostaFrancisco
+INSTITUTO DEIDENTIFICAÇÃOENGRÁCIADA COSTAFRANCISCO - IICCECF/PCRO
+SESP
+SECRETARIA DEESTADO DASEGURANA, DEFESAE CIDADANIA
+04.793.0557
+RR Instituto de IdentiﬁcaçãoOdílio Cruz
+INST. DE IDENTIFICAÇÃOODÍLIO CRUZSECRETARIADE SEGURANÇA PÚBLICADE RR
+FUNDESPOL -RR
+FUNDO DEMODERNIZACAO,MANUTENCAO EDESENVOLVIMENTODA POLÍCIA CIVILDO ESTADO DERORAIMA -FUNDESPOL - RR
+29.827.2399
+RS
+Departamentode Identiﬁcaçãodo InstitutoGeral dePerícias-RS
+INSTITUTO-GERAL DEPERÍCIAS/RS I G P INSTITUTOGERAL DEPERÍCIAS
+02.626.165/0001-07
+
+===== [pag 18] =====
+SC Polícia Cientíﬁcado Estado deSanta Catarina
+POLÍCIA CIENTÍFICA DESANTA CATARINA (PCISC)
+POLICIACIENTIFICA DOESTADO DESANTA CATARINA(PCISC)
+POLÍCIACIENTIFICADO ESTADODE SANTACATARINA
+36.127.642/0001-01
+SE Instituto deIdentiﬁcação deSergipe
+INSTITUTO DEIDENTIFICAÇÃO DESERGIPEPAP. WENDEL DASILVA GONZAGA - IIWSG
+SECRETARIA DEESTADO DASEGURANCAPUBLICA
+SECRETARIADE ESTADODASEGURANCAPUBLICA
+34.841.214/0001-02
+SP
+Instituto deIdentiﬁcaçãoRicardoGlumbletonDaunt
+INSTITUTO DEIDENTIFICAÇÃORICARDOGUMBLETON DAUNT -IIRGD
+INSTITUTO DEIDENTIFICACAORICARDOGUMBLETONDAUNT
+POLÍCIA CIVILDO ESTADODE SAOPAULO
+04.236.548/0008-62
+TO Instituto deIdentiﬁcação doTocantins
+INSTITUTO DEIDENTIFICAÇÃO SSPTO
+SECRETARIA DASEGURANCAPUBLICA - S.S.P.
+SECRETARIADASEGURANCAPUBLICA -S.S.P.
+25.053.109/0001-18
+
+===== [pag 19] =====
+
+===== [pag 20] =====
+
+===== [pag 21] =====
+Este conteúdo não substitui o publicado na versão certiﬁcada.

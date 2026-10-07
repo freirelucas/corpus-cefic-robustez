@@ -1,0 +1,69 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião  
+7ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) de 2026.  
+Data Horário Local 
+11/08/2026 17h30 Palácio do Planalto – sala 407 
+ 
+2. Participantes  
+Nome Órgão  Cargo  
+Pedro Helena Pontual Machado Casa Civil da Presidência da República - CC-PR Assessor 
+Carlos Antônio Lopes de Araújo Casa Civil da Presidência da República - CC-PR Assessor 
+Sylvio Cezar Koury Musolino Filho Secretaria de Articulação e Monitoramento - 
+SAM-CC/PR Gerente de projeto 
+Hudson Vinícius Mesquita Secretaria de Governo Digital -SGD/MGI Diretor 
+Paulo Ayran da Silva Bezerra Secretaria de Governo Digital -SGD/MGI Coordenador-Geral  
+Heliene Chaves Nagasava Secretaria de Governo Digital -SGD/MGI Coordenadora 
+Thalita Knupp A. de Carvalho Secretaria de Governo Digital -SGD/MGI Especialista 
+Enylson Flávio Martinez Camolesi Instituto Nacional de Tecnologia da Informação - 
+ITI/MGI Diretor-presidente 
+Eder Eustaquio Alves Instituto Nacional de Tecnologia da Informação - 
+ITI/MGI Diretor 
+Ana Maria Costa Candido Lacerda Instituto Nacional de Tecnologia da Informação - 
+ITI/MGI Assessora Técnica 
+Francisco Lucas Costa Veloso Ministério da Justiça e Segurança Pública - MJSP Secretário 
+Solange Berto de Medeiros Ministério da Justiça e Segurança Pública - MJSP Subsecretária 
+José Rocha de Carvalho Filho Ministério da Justiça e Segurança Pública - MJSP Coordenador-Geral 
+Flávio Soares da Silva Ministério da Justiça e Segurança Pública - MJSP Servidor 
+Tula Vieira Brasileiro Ministério dos Direitos Humanos e da Cidadania 
+- MDHC Coordenadora-Geral 
+Giuliana Redin Ministério dos Direitos Humanos e da Cidadania 
+- MDHC Coordenadora 
+Reriton Weldert Gomes Receita Federal do Brasil - RFB Coordenador-Geral 
+Rafael Neves de Carvalho Receita Federal do Brasil - RFB Coordenador-Geral  
+Ana Estela Haddad  Ministério da Saúde – MS Secretária 
+Robson Willian de Melo Matos Ministério da Saúde – MS Diretor 
+ 
+ 
+3. Pauta  
+ 
+3.1. Monitoramento do cronograma Cefic 2026 
+3.2. Informes Gerais 
+ 
+ 
+ 
+===== [pag 2] =====
+4. Relato  
+A reunião foi iniciada com a apresentação do monitoramento das entregas do planejamento 2026. Os seguintes 
+itens foram destacados: 
+• Serviço de Controle de Fluxos (SCF-CIN) – O desenvolvimento da ferramenta e a preparação dos ambientes 
+para integração estão em andamento.  
+• Serviço Biométrico Federal (SBF) – O motor biométrico e o console de divergências  estão em processo de 
+homologação.  
+• Integração com DNV e DO – Foi informado que nos dias 11 e 12 de agosto de 2026 ocorreu uma  oficina 
+organizada pelo Tribunal de Contas da União (TCU) com representantes do MS, do MGI, do MDHC, da RFB 
+e dos cartórios sobre a integração da Declaração de Nascido Vivo (DNV) e Declaração de óbito (DO) com os 
+sistemas federais. 
+• Credenciamento definitivo de gráficas e personalizadoras – A minuta da resolução está em análise jurídica 
+no ITI. 
+ 
+Com relação aos informes gerais, foi destacado: 
+• Planejamento 2027 – Será elaborada uma proposta nas próximas reuniões do Grupo de Trabalho Técnico 1 
+(GTT1). 
+• Emissões de CIN  – Quase 61 milhões de CINs foram emitidas, com 10 estados que já superaram mais de 
+33% da população e emissão média de 2,7 milhões por mês.  
+• Emissão de RG  – Roraima passou a emitir exclusivamente a CIN  e a inscrever e alterar o CPF para toda 
+população. 
+ 
+Finalizada a pauta, a reunião foi encerrada. 

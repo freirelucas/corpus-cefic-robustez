@@ -1,0 +1,287 @@
+
+===== [pag 1] =====
+RELATÓRIO DEVISITA TÉCNICA
+JULHO DE 2023
+COORDENAÇÃO-GERAL DE IDENTIFICAÇÃO DO CIDADÃO CGGCI/SGD/MGI
+PREPARADO E APRESENTADO POR
+CÂMARA-EXECUTIVA FEDERAL DE IDENTIFICAÇÃO DO CIDADÃO
+
+===== [pag 2] =====
+O presente documento consiste em relatório técnico sobre a visita realizada
+às gráficas ICE Cartões Especiais e CONTIPLAN, localizadas no Estado de
+São Paulo, que possuem credenciamento provisório, junto à Câmara-
+Executiva Federal de Identificação do Cidadão, para emissão da Carteira de
+Identidade Nacional - CIN.
+A visita  ocorreu no período de 20 a 21 de julho de 2023, em uma ação da
+Câmara-Executiva Federal de Identificação do Cidadão - CEFIC, e teve como
+objetivo subsidiar, com informações complementares, a análise do parecer
+técnico, elaborado pelo Serviço de Perícias Documentoscópicas do Instituto
+Nacional de Criminalística da Diretoria Técnico-Científica da Polícia
+Federal.
+A equipe composta pelos servidores Acir Oliveira, Perito Criminal Federal,
+Alessandra Nepomuceno, Perita Criminal Federal, lotados no Serviço de
+Perícias Documentoscópicas da Polícia Federal, Ana Maria Candido Lacerda
+e Simone Cabanelas Martinez, Assessoras Técnicas na Coordenação-Geral de
+Identificação do Cidadão, da Secretaria de Governo Digital do Ministério da
+Gestão e Inovação em Serviços Públicos, visitou as empresas: ICE Cartões
+Especiais e CONTIPLAN, na cidade de São Paulo. 
+01
+INTRODUÇÃO
+ CÂMARA-EXECUTIVA FEDERAL DE IDENTIFICAÇÃO DO CIDADÃO 
+===== [pag 3] =====
+02
+METODOLOGIA
+Foi elaborado um check-list para
+verificação dos pontos que não
+puderam ser esclarecidos durante
+a realização dos exames
+preliminares realizados pelo
+Serviço de Perícias
+Documentoscópicas nos
+modelos/amostras encaminhados
+previamente pelas empresas com
+credenciais provisórias.
+Assim, no dia 23 de junho, foi
+enviado Ofício as empresas
+credenciadas provisoriamente
+comunicando sobre a visita
+técnica e o seu roteiro (Anexo 01),
+conforme realizado
+anteriormente com as demais
+empresas.
+O roteiro mencionado apresenta os
+tópicos abordados, os documentos
+que devem ser apresentados e a
+solicitação de indicação de pessoa
+com conhecimento técnico para
+acompanhar a equipe durante a
+visita. 
+Dessa forma, para atender ao
+princípio da publicidade e sem
+ferir a Lei Geral de Proteção de
+Dados Pessoais, Lei nº 13.709/2018,
+foi solicitada autorização para
+realizar registros fotográficos nas
+dependências das empresas
+visitadas, cujas imagens se
+destinam à elaboração de parecer
+técnico para subsidiar a CEFIC no
+credenciamento das referidas
+gráficas.
+Nesse contexto, destaca-se que
+ainda no sentido de subsidiar a
+decisão da CEFIC foi solicitada a
+apresentação de nota fiscal dos
+equipamentos utilizados no
+atendimento das demandas de
+impressão da Carteira de
+Identidade Nacional. 
+
+===== [pag 4] =====
+03
+ICE CARTÕES ESPECIAIS
+A equipe da Coordenação Geral de Identificação
+Civil e os Peritos Criminais Federais   
+compareceram no dia 20 de julho às
+dependências da empresa ICE Cartões Especiais,
+onde foram recebidos pelas senhoras Marisa
+Aparecida Horto, gerente de novos negócios,
+Camila Barreto, Coordenadora de qualidade e
+pelos Senhores Alexandre Ribeiro Marrone,
+gerente de sistemas, Roberto Stein Sane, gerente
+gráfico e Nélio Bezerra da Silva, coordenador
+operacional de offset. Após uma breve
+apresentação da empresa, realizada pela Camila,
+onde foi relatado que desde 1996 a empresa atua
+no mercado nacional com soluções em impressos
+de segurança, soluções biométricas e
+gerenciamento eletrônico de dados. 
+Ressaltaram que a gráfica tem diversos
+certificados, dentre eles o ISO 9001 e o ISO 27001;
+que descrevem como colocar em prática um
+sistema de gestão de segurança da informação; o
+ISO 27701 que é uma extensão para privacidade de
+dados; a ISO 14298 que  especifica requisitos para
+um sistema de gestão de impressão de segurança
+para gráficas; e a certificação NBR 15540, que
+preconiza que procedimentos de produção de
+impressos de segurança/documentos confidenciais
+são padronizados. Nesse sentido, esclareceram
+que essa norma cuida da segurança da informação
+desde o fornecedor de materiais até a entrega do
+produto ao cliente.
+Por fim, antes de apresentarem os equipamentos e
+iniciarem a visita foram entregues equipamentos
+de segurança para acesso a área de produção. 
+===== [pag 5] =====
+04
+Durante a visita foi possível verificar equipamentos/máquinas imprimindo
+espelhos da carteira de identidade em formulário contínuo, seus
+elementos de segurança como a impressão serigráfica, a aposição de
+tintas especiais como a anti-stoke invisível, OVI e UV e o processo de
+secagem.
+Foram apresentados amostras e materiais impressos de cada fase da
+produção em apartado para análise posterior.
+===== [pag 6] =====
+05
+Em sequência foi possível verificar equipamentos/máquinas de impressão
+calcográfica. Verificou-se ainda que as duas cores da matriz calcográfica
+são impressas simultaneamente no papel e que não havia impressão
+calcográfica anterior à entrada do papel na rolaria em que se encontra a
+matriz calcográfica. Destaca-se que foi concedido livre acesso aos
+equipamentos/maquinários e cilindros montados com as chapas de
+impressão, tendo sido inclusive franqueado o acesso para o registro
+fotográfico.
+Registra-se que foi apresentada nota fiscal da máquina impressora talho
+doce com duas cores (Anexo 02), em consonância com o número de série
+(imagem abaixo). A empresa apresentou ainda a Nota 225 -  da máquina
+Offset 6 cores (IFC 520) e a Nota 265 - Offset extensão para 8 cores (2
+castelos - Complemento da IFC 520).
+===== [pag 7] =====
+06
+ICE CARTÕESESPECIAIS
+Tendo em vista o credenciamento para cartão publicado no Diário
+Oficial da União Nº 136, de 19 de julho de 2023, a equipe acompanhou
+a impressão de uma identidade funcional com os elementos de
+segurança idênticos aos presentes na CIN. Não foi possível verificar a
+impressão da CIN tendo em vista que a compra do insumo DOV está
+condicionada ao credenciamento, o que ocorreu um dia antes da
+visita. 
+Dessa forma foi solicitado a empresa o envio de amostras de CIN em
+policarbonato para análise. As amostras foram recebidas pela Polícia
+Federal, responsável pela análise técnica, em 15 de setembro de 2023. 
+===== [pag 8] =====
+08
+CONTIPLAN
+A equipe da Coordenação Geral de Identificação
+Civil e os Peritos Criminais Federais  compareceram
+no dia 21 de julho às dependências da empresa
+CONTIPLAN, onde foram recebidos pelo Senhores
+Gelson Kazuyuki Tomita, João Pinto Rosa e as
+senhoras Josiana Gonzaga e Andrea Morelato. Após  
+apresentação da empresa, realizada pelo Sr. Tomita,
+onde foi relatado que desde 1996 a empresa atua no
+mercado nacional com soluções em impressos de
+segurança, soluções biométricas e gerenciamento
+eletrônico de dados. 
+Ressaltaram que a gráfica tem diversos certificados,
+dentre eles o ISO 9001 e o ISO 27001; que
+descrevem como colocar em prática um sistema de
+gestão de segurança da informação; o ISO 27701
+que é uma extensão para privacidade de dados; a
+ISO 14298 que especifica requisitos para um sistema
+de gestão de impressão de segurança para gráficas;
+e a certificação NBR 15540, que preconiza que
+procedimentos de produção de impressos de
+segurança/documentos confidenciais são
+padronizados. Nesse sentido, esclareceram que essa
+norma cuida da segurança da informação desde o
+fornecedor de materiais até a entrega do produto
+ao cliente.
+Por fim, antes de apresentarem os equipamentos e
+iniciarem a visita foram entregues equipamentos de
+segurança para acesso a área de produção. 
+A visita iniciou verificando os equipamentos de
+impressão dos formulários contínuos, no entanto
+não estava imprimindo CIN no momento. A empresa
+justificou que a impressão estava sendo realizada
+em outra máquina tendo em vista que o estado com
+o qual tem contrato ainda não está produzindo CIN.
+Dessa forma, a equipe foi conduzida para avaliação
+da impressão de modelos de forma a verificar os
+elementos necessários para a impressão da CIN.
+===== [pag 9] =====
+09
+Em sequência foi possível verificar equipamentos/máquinas de impressão
+calcográfica. Verificou-se ainda que as duas cores da matriz calcográfica
+são impressas simultaneamente no papel e que não havia impressão
+calcográfica anterior à entrada do papel na rolaria em que se encontra a
+matriz calcográfica. Destaca-se que foi concedido livre acesso aos
+equipamentos/maquinários e cilindros montados com as chapas de
+impressão, tendo sido inclusive franqueado o acesso para o registro
+fotográfico.
+===== [pag 10] =====
+07
+Registra-se que foi apresentada nota fiscal da máquina impressora talho
+doce com duas cores (Anexo 03), em consonância com o número de série.
+===== [pag 11] =====
+07
+PONTOS DE ATENÇÃO
+DIVERGÊNCIAS
+BRASÃO
+NITIDEZ
+UV
+IMPRESSÃO
+Durante as visitas técnicas
+algumas divergências foram
+encontradas nas amostras/
+modelos que estavam sendo
+impressos. 
+Destaca-se a ausência de nitidez
+na impressão do brasão. A
+discrepância foi relatada à gráfica
+que realizou ajustes no
+equipamento e novas amostras
+foram impressas com nitidez no
+elemento. 
+Outro ponto de atenção, a
+impressão UV, foi relatado. 
+No contexto da visita técnica
+observou-se que todas as
+empresas visitadas cumpriram o
+solicitado no checklist, conforme
+as Atas de Visita Técnica que
+acompanham este relatório
+(Anexo.04). No entanto, foram
+apontados pontos de atenção e as
+empresas se comprometeram a
+enviar modelos para o análise até
+setembro/2023
+Ressalta-se que os pontos de
+atenção são esperados e não
+comprometem a capacidade
+técnica para produção da CIN.
+BRASÃO
+NITIDEZ
+===== [pag 12] =====
+ANEXOS
+CGGCI/SGD/MGI PÁGINA 13
+ CÂMARA-EXECUTIVA FEDERAL DE IDENTIFICAÇÃO DO CIDADÃO
+===== [pag 13] =====
+ANEXO 01
+ROTEIRO
+===== [pag 14] =====
+ANEXO 01
+ROTEIRO
+===== [pag 15] =====
+ANEXO 02
+NOTA FISCAL
+ICE CARTÕES
+===== [pag 16] =====
+ANEXO 02
+NOTA FISCAL
+ICE CARTÕES
+===== [pag 17] =====
+ANEXO 02
+NOTA FISCAL
+ICE CARTÕES
+===== [pag 18] =====
+ANEXO 03
+NOTA FISCAL
+CONTIPLAN
+===== [pag 19] =====
+ANEXO 03
+NOTA FISCAL
+CONTIPLAN
+===== [pag 20] =====
+ANEXO 04
+ATAS DE VISITA TÉCNICA 
+===== [pag 21] =====
+ANEXO 04
+ATAS DE VISITA TÉCNICA 
+===== [pag 22] =====
+ANEXO 04
+ATAS DE VISITA TÉCNICA 
+===== [pag 23] =====
+ANEXO 04
+ATAS DE VISITA TÉCNICA 

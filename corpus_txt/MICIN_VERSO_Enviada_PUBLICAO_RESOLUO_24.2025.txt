@@ -1,0 +1,821 @@
+
+===== [pag 1] =====
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+A B C D E F G H
+Nível Ocorrência Seção/Item Tipo de Dado Conceito/Observações/Regras de negócio CIN física - papel e cartão CIN digital - Carteira de documentos digitais do 
+aplicativo Gov.br Bases Legais
+1 [1..1] Identificação do órgão expedidor Seção
+2 [1..1] Órgão Expedidor / Card Issuer Texto Codificado Indica o nome do órgão que expede a CIN, conforme padrão da coluna “Representação na 
+CIN” da Tabela II.
+Texto variável, 37 caracteres por linha, 
+máximo 2 linhas; Fonte: Tahoma Bold 5pt; Cor 
+Preta.
+Texto variável, 37 caracteres por linha, máximo 2 
+linhas; Fonte: Tahoma Bold  4.8pt; Cor Preta.
+Art. 3º, c, da Lei nº 7.116/83;
+Art. 11, III, do Decreto nº 10.977/2022; 
+Art. 8°, III, da Lei Complementar nº 123/2006.
+2 [0..1] Cargo do dirigente do órgão expedidor Caracteres alfanuméricos Nome do cargo do dirigente do órgão expedidor. Texto variável, máximo 18 caracteres; Fonte: 
+Arial Regular 5pt; Cor Preta.
+Texto variável, máximo 18 caracteres; Fonte: Arial 
+Regular 3.5pt; Cor Preta.
+2 [1..1] Assinatura do Expedidor / Card Issuer Signature Imagem Imagem da assinatura do dirigente responsável pelo órgão expedidor (Tabela II). Imagem base64; Cor Preta. 500.000 caracteres (png em base64).
+Art. 3º, g, da Lei nº 7.116/83;
+Art. 11, VIII, do Decreto nº 10.977/22;
+Art. 3º-A, § 1º, IV, da Lei nº 13.977/2020.
+1 [1..1] Caracterização da expedição Seção
+2 [1..1] Ente federativo Texto codificado Indica o ente federativo que expediu a CIN, conforme padrão da coluna “Representação 
+na CIN” da Tabela III. 
+Texto variável, máximo 29 caracteres; Fonte: 
+Arial Bold 6pt, Cor Preta.
+Texto variável, máximo 29 caracteres; Fonte: Arial 
+Bold 6pt, Cor Preta.
+Art. 3º, b, da Lei nº 7.116/83;
+Art. 11, II, do Decreto nº 10.977/2022;
+Art. 3º-A, § 1º, IV, da Lei nº 13.977/2020. 
+2 [1..1] Data de Emissão / Issue Date Data Data de emissão/expedição da CIN, no formato AAAA/MM/DD, conforme ISO 8601.
+Texto variável, no formato DD/MM/AAAA, 
+máximo 10 caracteres; Fonte: Tahoma Bold 
+5.5pt (papel); 5pt (cartão); Cor Preta.
+Texto variável, no formato DD/MM/AAAA, máximo 
+10 caracteres; Fonte: Tahoma Bold 5pt; Cor Preta.
+Art. 3º, d, da Lei nº 7.116/83; 
+Art. 11, X, do Decreto nº 10.977/2022.
+2 [1..1] Local / Place of Issue Texto codificado Código de 7 dígitos do município de expedição, conforme IBGE. Sem representação. Sem representação. Art 3º, d, da Lei nº 7.116/1983; 
+Art. 11, X do Decreto nº 10.977/2022. 
+3 [1..1] Nome do município de expedição Texto codificado Nome do município de expedição sem referência à UF, conforme descrição do código na 
+Tabela do IBGE.
+Texto variável, máximo 36 caracteres, em até 
+2 linhas; Fonte: Tahoma Bold; Tamanho da 
+Fonte: 5pt; Cor Preta. 
+Para municípios com mais de 36 caracteres, o 
+elemento deve ser abreviado.
+Texto variável, máximo 36 caracteres, em até 2 
+linhas; Fonte: Tahoma Bold 5pt; Cor Preta.
+Art 3º, d, da Lei nº 7.116/1983; 
+Art. 11, X, do Decreto nº 10.977/2022. 
+2 [0..1] Data de Validade / Date of Expiry Data
+Data de validade do documento, no formato AAAA/MM/DD, conforme ISO 8601.
+Regra Negocial: A data de validade deve ser verificada com a data de nascimento. Para 
+titulares maiores de 60 (sessenta) anos, indicar validade como "Indeterminada".
+Para os casos de “Inexistência de Data de Nascimento na Certidão”, será indicada a 
+validade de 5 anos.
+Texto variável,  no formato DD/MM/AAAA, 
+máximo 14 caracteres; Fonte: Tahoma Bold; 
+Tamanho da Fonte: 5pt; Cor Preta.
+Texto variável, no formato DD/MM/AAAA, máximo 
+14 caracteres; Fonte: Tahoma Bold 5pt; Cor Preta.
+Art. 3º, d, da Lei nº 7.116/1983; 
+Art. 11, X, do Decreto nº 10.977/2022.
+3 [0..1] Validade Indeterminada Booleano Indica a validade indeterminada para o titular maior de 60 (sessenta) anos. Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma Bold 5pt; Cor Preta.
+Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma Bold 5pt; Cor Preta.
+Art. 3º, d, da Lei nº 7.116/1983; 
+Art. 11, X, do Decreto nº 10.977/2022.
+2 [1..1] Identificador do Espelho Caracteres numéricos Identificador da CIN física, por um sequencial alfanumérico de controle. ​ Texto variável, máximo 12 caracteres; Fonte: 
+Arial Bold 5pt; Cor Preta. Sem representação.
+Manual da Carteira de Identidade Nacional - Projeto 
+Gráfico e Elementos de Segurança - Ministério da 
+Justiça e Segurança Pública.
+1 [1..1] Identificador nacional Seção
+2 [1..1] Registro Geral-CPF / Personal Number Caracteres numéricos
+O identificador do cidadão é o número de inscrição do titular no CPF.
+Regra Negocial: Caso o cidadão não tenha CPF, ou necessita atualizar seus dados 
+biográficos, os órgãos de identificação civil devem inscrever ou alterar CPF no Cadastro.
+Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma Bold 7.5pt; Cor Preta.
+CPF - Dígitos com mascaramento: xxx.xxx.xxx-
+xx
+Texto variável, máximo 14 caracteres, Fonte: 
+Tahoma Bold 7.5pt; Cor Preta.
+CPF - Dígitos com mascaramento: xxx.xxx.xxx-xx
+Art.3º, h e seu § 1º, da Lei nº 7.116/83; 
+Art. 3º do Decreto nº 10.977/2022; 
+Art.5° do Decreto nº 11.797/2023.
+1 [1..1] Informações biográficas do titular Seção
+2 [1..1] Prenome / Given names
+Caracteres alfanuméricos, alfabeto latino, 
+padrão HTML UTF-8 (Capital Letter), 
+conforme Tabela IV 
+Indica o "nome individual" do titular.
+Regras Negociais:
+- O conjunto de caracteres válidos para nome consta na Tabela IV;
+- Os nomes que contêm caracteres não incluídos na Tabela IV deverão sofrer 
+transliteração;
+- Em caso de algarismos arábicos no nome, registrar por extenso ou romano.
+Representação do nome completo. Representação do nome completo. 
+ICAO 9303-4;
+Art. 11, XII, do Decreto nº 10.977/2022;
+Art. 148 da Lei nº 6.015/1973;
+ISO 9:1995.
+Tabela I - Modelo Informacional da Carteira de Identidade Nacional - MI-CIN
+===== [pag 2] =====
+19
+20
+21
+22
+23
+24
+25
+A B C D E F G H
+2 [0..1] Sobrenome / Surname
+Caracteres alfanuméricos, alfabeto latino, 
+padrão HTML UTF-8 (Capital Letter), 
+conforme Tabela IV 
+Indica o sobrenome.
+Mesmas regras negociais do Prenome. 
+Representação do nome completo. Representação do nome completo. 
+ICAO 9303-4;
+Art. 11, XII, do Decreto nº 10.977/2022; 
+Lei nº 10.406/2002 (Código Civil).
+2 [1..1] Nome completo
+Caracteres alfanuméricos, alfabeto latino, 
+padrão HTML UTF-8 (Capital Letter), 
+conforme Tabela IV 
+Indica o prenome, sobrenome e agnome, se houver, do titular, até o limite de 255 
+caracteres. 
+Mesmas regras negociais do Prenome. 
+Representação do nome completo (prenome 
++ sobrenome). 
+Texto variável, 37 caracteres por linha, 
+máximo 2 linhas; Fonte: Tahoma Bold 5pt; Cor 
+Preta.
+Para emissão da CIN física e digital, caso 
+ultrapasse o limite de caracteres 
+determinado, seguir regras de abreviação da 
+Resolução CEFIC nº 15, 01/11/2023.
+Representação do nome completo (prenome + 
+sobrenome). 
+Sequência de caracteres alfanuméricos, com limite 
+de 74, máximo 2 linhas; Fonte: Tahoma Bold 4.8 pt.
+Para emissão da CIN física e digital, caso 
+ultrapasse o limite de caracteres determinado, 
+seguir regras de abreviação da Resolução CEFIC nº 
+15, 01/11/2023.
+Lei nº 7.116/1983;
+Decreto nº 10.977/2022.
+3 [0..1] Nome Social / Social Name
+Caracteres alfanuméricos, alfabeto latino, 
+padrão HTML UTF-8 (Capital Letter), 
+conforme Tabela IV 
+Nome designado pela pessoa travesti ou transexual que se identifica e é socialmente 
+reconhecida, até o limite de 255 caracteres.
+Mesmas regras negociais do Prenome. 
+Texto variável, 37 caracteres por linha, 
+máximo 2 linhas.
+Fonte: Tahoma Bold; Tamanho da Fonte: 5pt; 
+Cor Preta.
+Para emissão da CIN física e digital, caso 
+ultrapasse o limite de caracteres 
+determinado, seguir regras de abreviação da 
+Resolução CEFIC nº 15, 01/11/2023.
+Sequência de caracteres alfanuméricos, com limite 
+de 37 caracteres por linha, máximo 2 linhas.
+Fonte: Tahoma Bold; Tamanho da Fonte: 4.8 pt.
+Para emissão da CIN física e digital, caso 
+ultrapasse o limite de caracteres determinado, 
+seguir regras de abreviação da Resolução CEFIC nº 
+15, 01/11/2023.
+Art. 13 do Decreto nº 10.977/2022; 
+Decreto nº 8.727/2016; 
+Art. 2° da Resolução CEFIC nº 15, 01/11/2023.
+2 [0..N] Filiação / Filiation
+Caracteres alfanuméricos, alfabeto latino, 
+padrão HTML UTF-8 (Capital Letter), 
+conforme Tabela IV 
+Indica o nome completo da filiação do titular.
+Mesmas regras negociais do campo Prenome. 
+Texto variável, para 4 filiações, uma filiação 
+por linha até o limite de 37 caracteres por 
+linha;
+Para menos de 4 filiações: em caso de filiação 
+ter menos de 37 caracteres, utilizar uma por 
+linha, se houver mais de 37 caracteres, deve 
+ser usada mais de uma linha, até o limite de 4 
+linhas; 
+Fonte: Tahoma Bold 5pt; Cor Preta.
+Para emissão da CIN física e digital, caso 
+ultrapasse o limite de caracteres 
+determinado, seguir regras de abreviação da 
+Resolução CEFIC nº 15, 01/11/2023.
+Sequência de caracteres alfanuméricos, com limite 
+de 37 caracteres por linha, máximo 4 linhas; 
+Fonte: Tahoma Bold 4.8pt.
+Para emissão da CIN física e digital, caso 
+ultrapasse o limite de caracteres determinado, 
+seguir regras de abreviação da Resolução CEFIC nº 
+15, 01/11/2023.
+Art. 13 do Decreto nº 10.977/2022; 
+Decreto nº 8.727/2016; 
+Art. 2° da Resolução CEFIC nº 15, de 01/11/2023.
+3 [0..N] CPF da Filiação Caracteres numéricos
+Identificador, máximo 14 caracteres, da filiação da criança e do adolescente, menor de 
+16 anos, para gestão da CIN digital na Carteira de documentos digitais do aplicativo 
+Gov.br.
+Sem representação. Sem representação.
+2 [1..1] Sexo / Sex Texto codificado ICAO Indica o sexo do titular, conforme padronização da ICAO, 1 caractere, M, F ou X 
+(Masculino; Feminino; Indeterminado / Não especificado).
+Texto variável, máximo 1 caracter; Fonte: 
+Tahoma Bold 5.5pt; Cor Preta.
+Texto variável, máximo 1 caracter;
+Fonte: Tahoma Bold 5.5pt; Cor Preta.
+Art. 5º da Lei nº 7.116/1983; 
+Art. 11, V, do Decreto nº 10.977/2022; 
+ICAO 9303-4.
+2 [1..1] Nacionalidade /  Nationality Texto codificado IBGE Países (ISO 3166-1) e 
+padrão ISO ALPHA-3
+Indica a nacionalidade do titular, brasileiro nato, brasileiro naturalizado ou português 
+equiparado, sendo permitido somente as opções BRA ou PRT (brasileira; português 
+equiparado). 
+Texto variável, máximo 3 caracteres; 
+Fonte: Tahoma Bold 5.5pt; Cor Preta.
+Texto variável, máximo 3 caracteres;
+Fonte: Tahoma Bold 5.5pt; Cor Preta.
+Art. 5º da Lei nº 7.116/1983; 
+Art. 11, V, do Decreto nº 10.977/2022;
+Art. 12 da Constituição Federal de 1988; 
+Art. 75 da Lei nº 13.445/2017; 
+Art. 248 a 253 do Decreto nº 9.199/2017; 
+Portaria Interministerial nº 11, de 03/05/2018.
+===== [pag 3] =====
+26
+27
+28
+29
+30
+A B C D E F G H
+2 [0..1] Naturalidade / Place of Birth Subseção Indica o local de nascimento do titular.
+Texto variável, 19 caracteres por linha, 
+máximo 2 linhas; Fonte: Tahoma Bold 5,5pt; 
+Cor Preta.
+Texto variável, 19 caracteres por linha, máximo 2 
+linhas; Fonte: Tahoma Bold 5pt; Cor Preta.
+Art. 3º, alínea 'e', da Lei nº 7.116/83; 
+Art. 11, V, do Decreto nº 10.977/2022; 
+Resolução CCGD/ME nº 6,  25/08/2021.
+Art. 12 da Constituição Federal de 1988; 
+Art. 75 da Lei nº 13.445/2017; 
+Art. 248 a 253 do Decreto nº 9.199/2017; 
+Portaria Interministerial nº 11, de 03/05/2018;
+Convenção para a Redução dos Casos de Apatridia, 
+promulgada pelo Decreto nº 8.501/2015.
+3 [0..1]  Código Município Naturalidade  Texto codificado
+	
+Código do município do titular, de 7 dígitos, conforme IBGE.
+Regras Negociais:
+- Para nome de local de nascimento que não exista na tabela de municípios do IBGE, 
+realizar dois registros: 1) indicar código IBGE atual do município que corresponde ao local 
+de nascimento no campo atual; e 2) indicar, em texto livre, no campo "Naturalidade 
+conforme Certidão" o local conforme consta na Certidão de Nascimento/Casamento;
+- Nos casos de naturalidade em branco na Certidão de Nascimento/Casamento, esse 
+campo deverá ficar em branco e o campo "Inexistência de Naturalidade na Certidão" 
+deverá ser marcado.
+Sem representação. Sem representação.
+3 [0..1]  UF Naturalidade Texto codificado
+	
+Código da Unidade da Federação, de 2 dígitos, conforme IBGE.
+Regras Negociais:
+- Nos casos de naturalidade em branco na Certidão de Nascimento/Casamento, esse 
+campo deverá ficar em branco e o campo "Inexistência de Naturalidade na Certidão" 
+deverá ser marcado.
+Sem representação. Sem representação.
+3 [0..1]  	
+Município Naturalidade Caracteres alfanuméricos
+Nome do município (cidade), conforme código do IBGE.
+Regras Negociais:
+- Nos casos de naturalidade em branco na Certidão de Nascimento/Casamento, esse 
+campo deverá ficar em branco e o campo "Inexistência de Naturalidade na Certidão" 
+deverá ser marcado.
+Sem representação. 50 caracteres.
+3 [0..1]  País de Naturalidade Texto codificado
+Indica o país de nascimento do titular, conforme IBGE Países.
+Regras Negociais:
+- Nos casos de titular nascido fora do território nacional (estrangeiro naturalizado, 
+brasileiro nascido fora do território nacional, ou português equiparado, obrigatoriamente, 
+deve ser indicado o país de nascimento pela tabela atualizada de Países IBGE.
+- Para brasileiros nascidos fora do território nacional e em país não reconhecido pelo 
+Brasil, deve-se registrar o país reconhecido pelo Brasil em que a cidade está contida. 
+Exemplo: Pristina, Sérvia; Taipé, China.
+- Nos casos de naturalidade em branco na Certidão de Nascimento/Casamento, esse 
+campo deverá ficar em branco e o campo "Inexistência de Naturalidade na Certidão" 
+deverá ser marcado.
+- Código identificador do país - Especificado pela norma IBGE Países, que define o 
+identificador do país usando 3 letras.
+3 caracteres. 3 caracteres.
+===== [pag 4] =====
+31
+32
+33
+34
+35
+36
+A B C D E F G H
+3 [0..1]  Naturalidade conforme Certidão Caracteres alfanuméricos
+Local de nascimento conforme consta na Certidão de Nascimento/Casamento quando o 
+nome de local de nascimento não existir na tabela de Municípios do IBGE; caso exista, 
+esse campo não deve ser preenchido.
+Regras Negociais: 
+- Para nome de local de nascimento que não exista na tabela de Municípios do IBGE, 
+realizar dois registros: 1) indicar, em texto livre, neste campo o local conforme consta na 
+Certidão de Nascimento/Casamento; e 2) indicar o código IBGE atual do município que 
+corresponde ao local de nascimento no campo Código Município Naturalidade.
+- Nos casos de naturalidade em branco na Certidão de Nascimento/Casamento, esse 
+campo deverá ficar em branco e o campo "Inexistência de Naturalidade na Certidão" 
+deverá ser marcado.
+Essa informação deve prevalecer na CIN 
+física. 
+50 caracteres.
+3 [0..1]  	
+Inexistência de Naturalidade na Certidão  Booleano 
+	
+Indica a inexistência de naturalidade na Certidão de Nascimento/Casamento.  
+Regra Negocial: 
+Se não houver registro de naturalidade na Certidão, este campo deve ser marcado e todos 
+os demais campos referentes à naturalidade devem ficar em branco.
+Deve ser representada a expressão: "não 
+consta". Deve ser representada a expressão: "não consta".
+2 [0..1] 	  Data de Nascimento / Date of Birth Data 
+	
+Identifica a data de nascimento do titular, conforme apresentado pela certidão de 
+nascimento ou de casamento em formato físico ou digital, no formato AAAA/MM/DD, 
+conforme ISO 8601. 
+ 
+Regras Negociais: 
+- Não será permitida data anterior a 01/01/1901;
+- Será permita data incompleta, como mês e ano (MM/AAAA) ou somente ano (AAAA); 
+- Não será permitido dia e mês;
+- Caso conste data fora do padrão ISO8601, esse campo não deve ser preenchido e o 
+campo de inexistência deve ser marcado. Exemplo: DD/MM ou DD ou MM não são 
+permitidos;
+- Nos casos de data de nascimento em branco na Certidão de Nascimento/ Casamento, o 
+campo "Inexistência de Data de Nascimento na Certidão" deve ser marcado e o campo 
+atual deve ficar em branco.
+Texto variável, no formato DD/MM/AAAA, 
+máximo 10 caracteres; Fonte: Tahoma Bold 
+5.5pt (papel); 5pt (cartão); Cor Preta.
+Texto variável, no formato DD/MM/AAAA, máximo 
+10 caracteres; Fonte: Tahoma Bold 5pt; Cor Preta.
+3 [0..1] Inexistência de Data de Nascimento na Certidão   Booleano
+Indica a inexistência da data de nascimento na Certidão de Nascimento/Casamento.  
+Regra Negocial: 
+Se não houver registro de data de nascimento na Certidão, o campo atual deve ser 
+marcado indicando a inexistência de data e o campo "data de nascimento" deve ficar em 
+branco. 
+Deve ser representada a expressão: "não 
+consta". Deve ser representada a expressão: "não consta".
+3 [1..1] CPF do representante legal Caracteres alfanuméricos
+Indica, máximo 14 caracteres (dígitos com mascaramento: xxx.xxx.xxx-xx),  o CPF do 
+representante legal da criança e do adolescente, menor de 16 anos, ou incapaz, para 
+inscrição e/ou alteração do CPF no processo de emissão da CIN,
+Regras Negociais:
+Em se tratando de guardião institucional (art. 92, § 1º, do Estatuto da Criança e do 
+Adolescente), é necessária a apresentação de documentação que comprove o 
+acolhimento institucional da criança ou do adolescente (ex. Guia de Acolhimento 
+Institucional – modelo do CNJ, Instrução Normativa CNJ nº 03/2009) e documento que 
+comprove que o solicitante é dirigente da entidade de abrigo.
+Em se tratando de criança e adolescente em unidade socioeducativa de internação, 
+deverá ser observado o fluxo de exceção previsto no Anexo V da Instrução Normativa RFB 
+nº 2.172/2024,  atualizado pela Portaria Cocad nº 67/2024.
+Sem representação. Sem representação.
+Anexo IV e V da Instrução Normativa RFB nº 2.172, 
+de 09/01/2024, atualizada pela Portaria Cocad nº 
+67, 05/08/2024;
+Art. 3°, 4º e 5º da Lei nº 10.406/2002 (Código Civil);
+Art. 14, §1°, da Lei nº 13.709/2018 (LGPD);
+Provimento nº 61/2017;
+Art. 92, § 1º, da Lei nº 8.069/1990 (Estatuto da 
+Criança e do Adolescente);
+Instrução Normativa CNJ n° 03/2009.
+4 [1..1] Vínculo do representante legal
+Texto codificado:
+1 - uma das filiações; 
+2 -tutor; 
+3 -curador; 
+4 -guardião; 
+5-representante por decisão judicial.
+Indica o vínculo do representante legal da criança e do adolescente, menor de 16 anos, 
+ou incapaz, para inscrição e/ou alteração do CPF no processo de emissão da CIN. Sem representação. Sem representação.
+Anexo IV da Instrução Normativa RFB nº 2.172, de 
+09/01/2024;
+Art. 3° da Lei nº 10.406/2002 (Código Civil);
+Art. 14, §1°, da Lei nº 13.709/2018 (LGPD);
+Provimento nº 61/2017.
+===== [pag 5] =====
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+A B C D E F G H
+2 [1..1] Endereço do titular Subseção
+Identifica o endereço de domicílio do titular no Brasil ou no exterior para inscrição no CPF 
+e se titular portador de Carteira de Identificação da Pessoa com Transtorno do Espectro 
+Autista (Ciptea).
+Sem representação.
+Representação somente do endereço do titular 
+portador de Ciptea. Exemplo: Avenida Alameda das 
+Travessas, nº 111, Edifício Bosque do Cerrado, 
+2222 - Bairro dos Barris.
+CEP: 40000-000. Salvador/BA.
+Texto variável, máximo 255 caracteres; Fonte: 
+Tahoma 12pt.
+Instrução Normativa RFB nº 2172/2024;
+Lei nº 13.977/2020.
+3  [0..1]  CEP Residência Caracteres numéricos  Código de endereçamento postal (08 dígitos).  Sem representação. Texto variável, máximo 8 caracteres; Fonte: Tahoma 
+12pt.
+3  [1..1]  Código Município Residência  Texto codificado  Código do município na base de dados de município do IBGE.  Sem representação.
+Texto variável, máximo 7 caracteres; Fonte: Tahoma 
+12pt.
+3  [1..1]  UF Residência Texto codificado  Sigla da Unidade da Federação.  Sem representação.
+Texto variável, máximo 2 caracteres; Fonte: Tahoma 
+12pt.
+3  [1..1]  Município Residência Caracteres alfanuméricos  Nome do município (cidade).  Sem representação.
+Texto variável, máximo 50 caracteres; Fonte: 
+Tahoma 12pt.
+3  [1..1]  Bairro  Caracteres alfanuméricos 
+Comunidade ou região dentro de uma cidade ou município.
+Para os endereços localizados no Distrito Federal, utiliza-se o modelo de divisão territorial 
+utilizado pelo IBGE, que estabelece Brasília como único município. Dessa forma, para as 
+regiões administrativas (RA) não divididas em bairros, estes locais devem ser informados 
+como bairro. No caso das RA subdividas em bairros, informar o bairro e a RA entre 
+parênteses. Ex.: Veredas (Brazlândia).
+Sem representação.
+Texto variável, máximo 50 caracteres; Fonte: 
+Tahoma 12pt.
+3  [1..1]  Logradouro Caracteres alfanuméricos  Logradouro (empregado para se referir a uma localidade, tal como rua, praça, avenida ou 
+um espaço público que compõe uma cidade). Sem representação.
+Texto variável, máximo 100 caracteres; Fonte: 
+Tahoma 12pt.
+3  [0..1]  Número   Caracteres alfanuméricos  Número do Endereço. Sem representação. Texto variável, máximo 20 caracteres; Fonte: 
+Tahoma 12pt.
+3  [0..1]  Complemento  Caracteres alfanuméricos  Complemento do endereço. Sem representação.
+Texto variável, máximo 50 caracteres; Fonte: 
+Tahoma 12pt.
+3 [0..1]  País de residência no exterior  Texto codificado
+Indica país de residência do titular se domicílio fora do Brasil, conforme IBGE Países 
+alpha 3.
+Regra negocial:
+Realizar o registro do código do país no campo atual e o registro do endereço completo 
+em texto livre no campo "Endereço residência no exterior".
+Código identificador do país - Especificado pela norma IBGE Países, que define o 
+identificador do país usando 3 letras.
+Sem representação.
+Texto variável, máximo 3 caracteres; Fonte: Tahoma 
+12pt.
+4 [0..1]  Endereço de residência no exterior  Caracteres alfanuméricos  Descrição do endereço de residência quando no exterior.  Sem representação. Texto variável, máximo 200 caracteres; Fonte: 
+Tahoma 12pt.
+2 [1..1] Documento de origem Caracteres alfanuméricos
+Número da matrícula de 32 dígitos da Certidão de Nascimento ou da Certidão de 
+Casamento válida (com Averbação, quando for o caso), ou do Certificado de 
+Naturalização do titular.
+Regra Negocial:
+- Se certidão de nascimento ou casamento não estiver em formato de matrícula indicar, 
+excepcionalmente, em texto livre, comarca, cartório, livro, folha e número do registro.
+Sem representação. Texto variável, máximo 120 caracteres
+Art. 3º, e, da Lei nº 7.116/83;
+Art. 11, VI, do Decreto nº 10.977/2022;  
+Provimento nº 63, de 14/11/2017 (DJe de 
+17/11/2017).
+3 [0..1] Data de emissão do documento de origem Data
+Data de emissão do documento de origem do titular, no formato AAAA/MM/DD, conforme 
+ISO 8601.
+Atenção: Esta informação se refere a data de emissão do documento e não a data de 
+nascimento ou casamento. 
+Sem representação. Sem representação.
+Art. 3º, e, da Lei nº 7.116/83;
+Art. 11, VI, do Decreto nº 10.977/2022; 
+Provimento nº 63, de 14/11/2017 (DJe de 
+17/11/2017).
+2 [0..1] Estado Civil
+Texto codificado:
+1 - solteiro
+2 - casado
+3 - separado/desquitado
+4 - divorciado
+5 - viúvo
+Indica o estado civil do titular.
+Observação: união estável não se configura como estado civil. Caso seja apresentada e 
+escritura de união estável, o registro deve ser de solteiro. 
+Sem representação. Texto variável, máximo 25 caracteres; Fonte: 
+Tahoma 12pt.
+Código Civil;
+Provimento CNJ 61 - praticar o ato;
+Art. 1.571 da Lei nº 10.406/2002 (Código Civil);
+Art. 315 da Lei nº 3.071/1916 (Código Civil de 1916);
+Lei nº 6.515/1977 (Lei do Divórcio).
+2 [0..N] Documentos adicionais do titular Subseção Informações de documentos adicionais do titular.
+===== [pag 6] =====
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+A B C D E F G H
+3 [0..1] PIS / PASEP Caracteres alfanuméricos
+Número de inscrição do titular no Programa de Integração Social (PIS) e no Programa de 
+Formação do Patrimônio do Servidor Público (PASEP), de acordo com a documentação 
+apresentada pelo titular. 
+Sem representação. Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma 12pt. Art. 4º da Lei nº 7.116/83.
+3 [0..1] NIS Caracteres alfanuméricos Número de Identificação Social (NIS), de acordo com a documentação apresentada pelo  
+titular. Sem representação. Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma 12pt.
+Art. 14 do Decreto nº 10.977/2022; 
+Art. 1º, item 1, da Lei nº 9.049/95;
+§1º, art. 4º, da Lei nº 7.116/83.
+3 [0..1] NIT Caracteres numéricos Número de Inscrição do Trabalhador (NIT), de acordo com a documentação apresentada 
+pelo titular. Sem representação. Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma 12pt.
+Art. 14 do Decreto nº 10.977/2022; 
+Art. 1º, item 1, da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei nº 7.116/83.
+3 [0..1] CTPS Caracteres alfanuméricos Número da Carteira de Trabalho e Previdência Social (CTPS), de acordo com a 
+documentação apresentada pelo titular. Sem representação. Texto variável, máximo 22 caracteres; Fonte: 
+Tahoma 12pt.
+Art. 14 do Decreto nº 10.977/2022; 
+Art. 1º, item 1, da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei nº 7.116/83.
+3 [0..1] Título de Eleitor Caracteres alfanuméricos Indica o número de inscrição eleitoral dotitular, de acordo com a documentação 
+apresentada pelo titular. Sem representação. Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma 12pt.
+Art. 14 do Decreto nº 10.977/2022; 
+Art. 1º, item 1, da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei 7.116/83.
+Resolução TSE nº 23.659, de 26/10/2021.
+3 [0..1] CNH Caracteres numéricos Número do Registro Nacional do condutor, de acordo com a Carteira Nacional de 
+Habilitação (CNH) apresentada pelo titular. Sem representação. Texto variável, máximo 18 caracteres; Fonte: 
+Tahoma 12pt.
+Art. 14 do Decreto nº 10.977/2022; 
+Art. 1º, item 1, da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei nº 7.116/83.
+Resolução CONTRAN nº 886, de 13/12/2021.
+4 [1..1] Data de validade da CNH Data
+Data de validade da Carteira Nacional de Habilitação, no formato AAAA/MM/DD, 
+conforme ISO 8601.
+Regra Negocial: As informações da CNH devem ser coletadas somente se a data estiver 
+dentro do prazo de validade, no momento da solicitação do titular.
+Sem representação. Texto variável, no formato DD/MM/AAAA, máximo 
+10 caracteres; Fonte: Tahoma 12pt.
+Art. 14 do Decreto nº 10.977/22; 
+Art. 1º, item 1, da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei nº 7.116/83.
+Resolução CONTRAN nº 886, de 13/12/2021.
+5 [1..1] Categoria da CNH Texto codificado: A, B, C, D, E, X, AB, AC, AD, 
+AE, XB, XC, XD, XE
+Indica letra(s) correspondente à(s) categoria(s) na(s) qual(is) o condutor for habilitado na 
+Carteira Nacional de Habilitação (CNH), conforme Tabela V. Sem representação. Texto variável, máximo 4 caracteres; Fonte: Tahoma 
+12pt.
+Art. 14 do Decreto nº 10.977/22; 
+Art. 1º, item 1, da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei nº 7.116/83.
+Resolução CONTRAN nº 886, de 13/12/2021.
+3 [0..N]  Identidade Funcional ou Carteira Profissional Caracteres alfanuméricos Número, Unidade Federativa e órgão emissor da Carteira de Identidade Profissional 
+emitido/registrado nos sistemas próprios das categorias profissionais. Sem representação. Texto variável, máximo 28 caracteres; Fonte: 
+Tahoma 12pt.
+Art. 14 do Decreto nº 10.977/2022; 
+Art. 1º, item 1, da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei 7.116/83.
+3 [0..1] Certificado Militar Caracteres alfanuméricos Certificado Militar do titular que comprove a quitação com o serviço militar obrigatório. Sem representação. Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma 12pt.
+Art. 14 do Decreto nº 10.977/2022; 
+Art. 1º, item 1, da Lei nº 9.049/95;
+§1º, art. 4º, da Lei nº 7.116/83.
+1 [1..1] Informações biométricas do titular Seção
+2 [1..1] Fotografia da face Imagem facial Apresenta a fotografia do titular de acordo com os requisitos para captura e codificação 
+de imagens faciais, padrão ICAO, especificados na ISO/IEC 39794-5.
+Resolução 300 dpi;  tamanho máximo de 200 
+kb; Formato Mínimo de 640x480 PNG OU 
+JPEG; Papel: imagem colorida; Cartão: 
+imagem em preto e branco.
+Formato: PNG ou JPEG;
+Resolução mínima: 250 x 250 pixels.
+Resolução desejável: 750 x 750 pixels.
+Tamanho máximo do base64: 500.000 caracteres. 
+Imagem colorida.
+Art. 3º, f, da Lei nº 7.116/83;
+Art. 11, VII, do Decreto nº 10.977/2022;
+ICAO Doc 9303, Machine Readable Travel 
+Documents;
+“Portrait Quality (Reference Facial Images for 
+MRTD)” (ISO/IEC JTC1 SC17 WG3). 
+2 [1..1] Impressão digital Booleano Indica se o titular possui impressão digital. Sem representação. Sem representação. Art. 3º, f, da Lei nº 7.116/83; 
+Art. 11, VII, do Decreto nº 10.977/2022.
+Texto codificado:
+0 - posição do dedo desconhecida;
+1 - polegar direito;
+2 - indicador direito;
+3 - médio direito;
+4 - anular direito;
+5 - mínimo direito;
+6 - polegar esquerdo;
+7 - indicador esquerdo;
+Posição do dedo da impressão digital[1..N]3
+Indica a posição do dedo da impressão digital contida na ficha decadactilar, conforme 
+especificação ISO/IEC 19794-2:2011. Sem representação. Sem representação. Art. 3º, f, da Lei nº 7.116/83;
+Art. 11, VII, do Decreto nº 10.977/2022.
+===== [pag 7] =====
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+A B C D E F G H
+8 - médio esquerdo;
+9 - anular esquerdo; 
+10 - mínimo esquerdo.
+4 [1..N] Fotografia da impressão digital Imagem
+Apresenta até 10 (dez) fotografias, uma para cada dedo da impressão digital.
+Regras negociais:
+- Todas as dez impressões digitais devem ser coletadas, no entanto, se um ou mais dedos 
+não estiverem disponíveis (por exemplo, devido a amputação), deverão ser coletados os 
+dedos disponíveis. 
+- Quando menos de dez dedos forem coletados, será requerido o campo 
+"indisponibilidade da impressão digital".
+Sem representação.
+Formato: WSQ ou PNG ou JPEG; Resolução 500 
+DPI; Dimensão: 640 x 600 pixels (altura x largura); 
+Tamanho máximo do base64: 500.000 caracteres.
+Art. 3º, f, da Lei nº 7.116/83; 
+Art. 11, VII, do Decreto nº 10.977/22.
+5 [0..N] Indisponibilidade da impressão digital
+Texto codificado:
+XX: Leitura parcial ou indisponível por 
+amputação / Amputated ;
+UP: Dedo temporariamente indisponível/ 
+Unable to Print
+Indica, máximo 2 caracteres, os dedos que foram amputados ou dedos que não estavam 
+disponíveis, no momento da captura, conforme padrão ANSI/NIST-ITL 1-2011.
+Regras negociais:
+- Campo obrigatório quando houver menos de 10 fotografias de impressão digital;
+- O campo é composto pela junção de dois itens de informação: Posição do dedo + código 
+de amputado ou de temporariamente indisponível.
+Exemplo: 
+Dedo médio direito amputado: 3XX; dedo mínimo esquerdo enfaixado por acidente: 10UP.
+Sem representação. Sem representação. Art. 3º, f, da Lei nº 7.116/83; 
+Art. 11, VII, do Decreto nº 10.977/2022.
+2 [0..1] Assinatura do titular / Cardholder's Signature Imagem
+Indica a assinatura do titular, representado por um gesto gráfico. 
+Regras negociais:
+- Para casos de não alfabetizados ou impossibilitados de assinatura (por deficiência ou 
+perda de função momentânea), registrar a justificativa e apresentar na CIN a expressão 
+"Não assinou nesse ato";
+- Caso o titular possua nome social, a assinatura poderá ser do nome social.
+Formato PNG ou JPEG; Resolução 300dpi; 
+tamanho mínimo 300KB; tamanho máximo 
+1024KB.
+500.000 caracteres (png em base64).
+A assinatura precisa estar centralizada, ter o fundo 
+transparente e tamanho 285x70 pixels.
+Art. 3º, alínea 'f', da Lei nº 7.116/83; 
+Art. 11, VII, do Decreto nº 10.977/2022.
+3 [0..1] Justificativa de ausência da assinatura
+Texto codificado:
+1 - Não alfabetizado; 
+2 - Impossibilitado.
+Indica a justificativa do não envio da assinatura do titular. "Não assinou nesse ato". "Não assinou nesse ato".
+1 [0..1] Informações de saúde do titular Seção
+2 [0..1] Observações de Saúde Caracteres alfanuméricos
+Informações sobre condições específicas de saúde cuja divulgação possa contribuir para 
+preservar a saúde do titular ou salvar a sua vida. ​
+Regra Negocial:​
+Se solicitado pelo titular, é possível incluir código e descrição da Classificação Estatística 
+Internacional de Doenças e Problemas Relacionados com a Saúde (CID). Atenção à 
+descrição de doenças, pois trata-se de dado pessoal sensível e pode gerar algum tipo de 
+discriminação. ​
+Exemplo: CID M79.7: Fibromialgia.
+Sem representação. Texto variável 50 caracteres; Fonte: Tahoma 12 pt.
+Art. 14, § 2º, do Decreto nº 10.977/2022;  
+Art. 2º da Lei nº 9.049/95; 
+ §1º, art. 4º, da Lei nº 7.116/83;  
+ABNT NBR 9050:2020. 
+2 [0..1] Tipo sanguíneo / Fator RH Texto codificado:
+A+; A-; B+; B-; AB+; AB-; O+; O-.
+Tipo sanguíneo e fator RH positivo (+) ou negativo (-) do titular.
+A+; A-; B+; B-; AB+; AB-; O+; O-, de acordo com a documentação apresentada pelo titular. Sem representação. Texto variável, máximo 3 caracteres;
+Fonte: Tahoma 12pt.
+Art. 14, § 2º, do Decreto nº 10.977/2022;
+Art. 2º da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei nº 7.116/83.
+2 [0..1] Doador de Órgãos Booleano Disposição do titular a doar órgãos em caso de morte. Sem representação. Texto variável, máximo 3 caracteres;
+Fonte: Tahoma 12pt.
+Art. 14, § 2º, do Decreto nº 10.977/2022;
+Art. 2º da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei nº 7.116/83.
+2 [0..1] Deficiência  Física Booleano Identifica a pessoa com deficiência física a partir do Símbolo Internacional de Acesso 
+(SIA). Pictograma - Imagem base64; Cor Preta. Imagem base64; Cor Preta.
+Art. 14, § 2º, do Decreto nº 10.977/2022;  
+Art. 2º da Lei nº 9.049/95; 
+ §1º, art. 4º, da Lei nº 7.116/83;  
+ABNT NBR 9050:2020. 
+2 [0..1] Deficiência Auditiva Booleano Identifica a pessoa com deficiência auditiva, a partir do símbolo internacional de pessoas 
+com deficiência auditiva. Pictograma - Imagem base64; Cor Preta. Imagem base64; Cor Preta.
+Art. 14, § 2º, do Decreto nº 10.977/2022;  
+Art. 2º da Lei nº 9.049/95; 
+ §1º, art. 4º, da Lei nº 7.116/83;  
+ABNT NBR 9050:2020. 
+2 [0..1] Deficiência Intelectual / Psicossocial Booleano Identifica a pessoa com deficiência intelectual / psicossocial. Pictograma - Imagem base64; Cor Preta. Imagem base64; Cor Preta.
+Art. 14, § 2º, do Decreto nº 10.977/2022;
+Art. 2º da Lei nº 9.049/95; 
+§1º, art. 4º, da Lei nº 7.116/83.
+Posição do dedo da impressão digital[1..N]3
+Indica a posição do dedo da impressão digital contida na ficha decadactilar, conforme 
+especificação ISO/IEC 19794-2:2011. Sem representação. Sem representação. Art. 3º, f, da Lei nº 7.116/83;
+Art. 11, VII, do Decreto nº 10.977/2022.
+===== [pag 8] =====
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+A B C D E F G H
+2 [0..1] Deficiência Visual Booleano Identifica a pessoa com deficiência visual, a partir do símbolo internacional de pessoas 
+com deficiência visual. Pictograma - Imagem base64; Cor Preta. Imagem base64; Cor Preta.
+Art. 14, § 2º, do Decreto nº 10.977/2022;  
+Art. 2º da Lei nº 9.049/95; 
+ §1º, art. 4º, da Lei nº 7.116/83;  
+ABNT NBR 9050:2020. 
+2 [0..1] Autismo Booleano Identifica a pessoa com Transtorno do Espectro Autista. Pictograma fita - Imagem base64, Cor Preta. Imagem base64; Cor Preta. Art. 14, III, do Decreto nº 10.977/2022;
+Art. 3º-A, § 1º, IV, da Lei nº 13.977/2020.
+3 [0..1] Ciptea Booleano Identifica a pessoa com Transtorno do Espectro Autista que possui a Carteira de 
+Identificação da Pessoa com Transtorno do Espectro Autista (Ciptea). Sem representação. Sem representação. Lei nº 13.977/2020.
+4 [0..1] Validade da Ciptea Data Data de emissão/expedição do documento, no formato AAAA/MM/DD, conforme ISO 
+8601. Sem representação.
+Texto variável, no formato DD/MM/AAAA, máximo 
+10 caracteres;
+Fonte: Tahoma 12pt.
+Art. 3º-A, § 1º, III, da Lei nº 13.977/2020.
+4 [0..N] Código do diagnóstico Texto codificado por terminologia externa: 
+cid-9; cid-10; cid-11 Código do diagnóstico relacionado à condição de saúde do titular. Sem representação. 6 caracteres. Art. 3º-A, § 1º, III, da Lei nº 13.977/2020.
+4 [0..1] Telefone do titular com TEA Caracteres alfanuméricos Indica o telefone do titular com TEA. Sem representação. Texto variável, máximo 14 caracteres;
+Fonte: Tahoma 12pt. Art. 3º-A, § 1º, III, da Lei nº 13.977/2020.
+4 [0..1] CPF do responsável Caracteres numéricos Identifica o responsável legal ou cuidador do titular com Transtorno do Espectro Autista. Sem representação. Texto variável, máximo 11 caracteres; Fonte: 
+Tahoma  12pt. Art. 3º-A, § 1º, III, da Lei nº 13.977/2020.
+4 [0..1] Nome do responsável Caracteres alfanuméricos Nome completo do responsável legal ou cuidador. Sem representação. Sequência de caracteres alfanuméricos, com limite 
+de 255 caracteres; Fonte: Tahoma 12pt. Art. 3º-A, § 1º, III, da Lei nº 13.977/2020.
+4 [0..1] Endereço do responsável Caracteres alfanuméricos Endereço residencial do responsável legal ou cuidador, no mesmo padrão de endereço de 
+domicílio do titular no Brasil ou no exterior. Sem representação. Texto variável, máximo 255 caracteres; Fonte: 
+Tahoma 12pt. Art. 3º-A, § 1º, III, da Lei nº 13.977/2020.
+4 [0..1] E-mail do responsável Caracteres alfanuméricos E-mail do responsável legal ou cuidador. Sem representação. Texto variável, máximo 80 caracteres; Fonte: 
+Tahoma 12pt. Art. 3º-A, § 1º, III, da Lei nº 13.977/2020.
+4 [0..1] Telefone do responsável Caracteres alfanuméricos Telefone do responsável legal ou cuidador. Sem representação. Texto variável, máximo 14 caracteres; Fonte: 
+Tahoma 12pt. Art. 3º-A, § 1º, III, da Lei nº 13.977/2020.

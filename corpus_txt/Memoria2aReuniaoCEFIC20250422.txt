@@ -1,0 +1,110 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+ 
+1. Identificação da Reunião 
+ 
+ 2ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão de 2025. 
+ 
+Data Horário Local 
+22/04/2025 17h00 Palácio do Planalto – sala 96  
+ 
+ 
+2. Participantes 
+ 
+Nome Órgão  Cargo 
+Pedro Pontual SE-CC-PR Secretário-Executivo Adjunto 
+Rogério Souza Mascarenhas Ministério da Gestão e Inovação - MGI Secretário de Governo Digital 
+Eduardo Lacerda Suplente SEME 
+Paula Xavier Ministério da Saúde - MS Diretora DataSUS 
+Enylson Camolesi ITI Presidente 
+Maurício A. Coelho ITI Diretor 
+Hudson Mesquita SGD/MGI Diretor 
+Ana Maria Lacerda ITI Assessora DITI 
+Rafael Neves Carvalho Receita Federal do Brasil - RFB Coordenador 
+Reriton Weldert Gomes Receita Federal do Brasil - RFB RBF/COCAD 
+Eduardo Manso Ministério da Justiça e Segurança 
+Pública - MJSP 
+CGISP/STI 
+Solange Berto de Medeiros Ministério da Justiça e Segurança 
+Pública - MJSP 
+Subsecretária de Tecnologia da 
+Informação e Comunicação 
+José Vinícius de Souza Ministério da Justiça e Segurança 
+Pública - MJSP 
+ 
+Assessor 
+Ana Estela Haddad SEIDIGI/MS Secretária SEIDIGI/MS 
+Beatriz Figueiredo Ministério da Justiça e Segurança 
+Pública - MJSP 
+CGMTEC/SENASP 
+Daniel de Souza Rosa SGD/CGDIC/MGI Assessor técnico 
+ 
+ 
+  
+===== [pag 2] =====
+3. Pauta 
+ 
+3.1. Abertura 
+ 
+3.2. Deliberação 
+3.2.1 Resolução alteração do SBF 
+3.2.2 Resolução do MI 
+3.2.3 Planejamento 2025 
+ 
+3.3 Informes 
+3.3.1 Status do Projeto (SGD) 
+3.3.2 Diagnóstico das UF’s (SENASP/MJSP) 
+3.3.3 Alteração/Inscrição CPF em SP (SENASP/MJSP e RFB) 
+3.3.4 Status execução do FNSP (SENASP/MJSP) 
+3.3.5 APP leitura QR Code (MJSP) 
+ 
+ 
+4. Relato 
+ 
+Durante a reunião do comitê, foram deliberadas três pautas. A primeira sobre a  republicação de uma 
+resolução sobre o Serviço Biométrico Federal  (SBF), ajustando parâmetros técnicos para garantir maior 
+concorrência nas contratações, sem prejuízo da qualidade. A segunda abordou ajustes no modelo 
+informacional da CIN, com alterações pontuais na taxonomia e nos campos de dados, sem inclusão de novas 
+informações. Ambos as resoluções foram aprovadas por unanimidade. 
+O planejamento macro da CEFIC 2025 foi apresentado e aprovado , sendo solicitado pelo Coordenador  da 
+CEFIC que, partir da apresentação do diagnóstico dos OICs pelo MJ, cada entrega prevista para 2025 tenha 
+um cronograma específico. O planejamento pode ser consultado na apresentação anexa a esta memória.  
+Em acréscimo ao planejamento, foi proposta a criação de um teste nacional de acurácia de motores 
+biométricos para reduzir a dependência de padrões internacionais no sistema biométrico brasileiro. 
+Foi sugerido pelo coordenador da CEFIC que a entrega do Credenciamento Definitivo das gráficas fosse 
+antecipada para 2025, mesmo que mantendo um vacatio legis para 2026, com tempo para que os estados 
+se adaptem.  
+Foi pactuado que as reuniões mensais da CEFIC ocorram sempre na primeira terça-feira de cada mês. 
+Nos informes, registrou-se que mais de 24 milhões de CINs foram emitidas.  
+A SENASP informou que a tabela que foi apresentada em reunião de Ministros com os valores utilizados 
+pelos estados do Fundo Nacional de Segurança Pública será compartilhada após validação com os estados.  
+O diagnóstico em andamento pela SENASP deverá identificar os principais gargalos e orientar ações 
+concretas e customizadas a cada estado. 
+Finalizou-se com o consenso sobre a necessidade de planos de ação individualizados por estado, para atingir 
+as metas com eficácia, a partir do diagnóstico que está sendo realizado pela SENASP.  
+As próximas etapas incluem a consolidação do diagnóstico, oficinas regionais e elaboração de estratégias 
+sob medida, reforçando o compromisso coletivo com a emissão da nova CIN. 
+ 
+ 
+ 
+===== [pag 3] =====
+5. Deliberações 
+ 
+5.1 Ajuste nos parâmetros técnicos da Resolução do Serviço Biométrico Federal 
+ 
+5.2 Atualização do Modelo Informacional da Carteira de Identidade Nacional (CIN) 
+ 
+5.3 Planejamento de entregas (Diagnóstico Nacional,  Serviço de Controle de Fluxo,  Protocolo de 
+Divergência e Equipe) com as discussões e deliberações previstas para reunião de maio. 
+ 
+6. Encaminhamentos 
+ 
+6.1 Submissão da proposta de reuso da biometria ao GT2. 
+6.2 Construção do plano de comunicação  
+6.3 Discussão e maturação do processo de credenciamento das gráficas no GT2. 
+6.4 Validação da proposta de cronograma de entregas até dezembro de 2025. 
+6.5 Apresentação do diagnóstico detalhado da SENASP e plano de ação na próxima reunião. 
+6.6 Realização oficinas temáticas com Estados 
+6.7 Elaboração de plano de ação individualizado. 
+ 

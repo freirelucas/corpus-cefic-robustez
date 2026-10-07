@@ -1,0 +1,107 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião  
+3ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) de 2026.  
+Data Horário Local 
+16/04/2026 17h Palácio do Planalto – sala 407 
+ 
+2. Participantes  
+Nome Órgão  Cargo  
+Pedro Helena Pontual 
+Machado 
+Casa Civil da Presidência da República - 
+CC-PR  Secretário-Executivo Adjunto 
+Beatriz Vasconcellos de 
+Araújo SAM-CC/PR Secretária Adjunta 
+Carlos Antônio Lopes de 
+Araújo SAM-CC/PR Assessor 
+Nicolas Wulk SAM-CC/PR Assessor 
+Hudson Vinícius Mesquita Secretaria de Governo Digital -SGD/MGI Diretor 
+Paulo Ayran da Silva Bezerra Secretaria de Governo Digital -SGD/MGI Coordenador-Geral  
+Heliene Chaves Nagasava  Secretaria de Governo Digital -SGD/MGI Coordenadora 
+Thalita Knupp A. de Carvalho Secretaria de Governo Digital -SGD/MGI Especialista 
+Ana Maria Costa Candido 
+Lacerda 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Assessora Técnica 
+Enylson Flávio Martinez 
+Camolesi 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor-presidente  
+Eder Eustaquio Alves Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor 
+Katia Macarini Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenadora-Geral 
+Marcelo Oliveira Barbosa Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenador-Geral 
+José Rocha de Carvalho Filho Ministério da Justiça e Segurança Pública 
+- MJSP Coordenador-Geral 
+Deivid dos Santos Feitosa Ministério da Justiça e Segurança Pública 
+- MJSP Chefe de Divisão 
+Reriton Weldert Gomes Receita Federal do Brasil - RFB Coordenador-Geral  
+Rafael Neves Carvalho Receita Federal do Brasil - RFB Coordenador-Geral  
+Paula Xavier dos Santos* Ministério da Saúde – MS  Diretora 
+Cândida de Souza Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Diretora 
+*online 
+3. Pauta  
+ 
+3.1. Deliberações: 
+a. Aprovação da Resolução sobre cancelamento da Carteira de Identidade Nacional – CIN 
+b. Aprovação da Resolução do Plano de Implantação do Sistema Biométrico Federal – SBF 
+c. Aprovação da nova versão da máquina de estados do Serviço de Controle de Fluxos – SCF-CIN 
+3.2. Monitoramento do cronograma Cefic 2026 
+3.3. Informes Gerais 
+ 
+4. Relato  
+ 
+A reunião foi iniciada com a apresentação da pauta. Diante da ausência de alguns representantes titulares e 
+suplentes, foi informado que a deliberação das resoluções ocorrerá virtualmente. 
+Foi apresentada a minuta da resolução do Plano de Implantação do Serviço Biométrico Federal – SBF, conforme 
+previsto no artigo 6º  da Resolução Cefic nº 21, de 06/02/2026 . Foram sugeridas pequenas modificações na forma de 
+===== [pag 2] =====
+apresentação das fases, visando dar clareza ao cronograma.  Acatada a sugestão, f oi definido que  documento será 
+ajustado antes do envio para votação virtual.  
+ Foi apresentada a retificação do documento “Máquina de Estados do Serviço de Controle de Fluxos (SCF-CIN)”, 
+anexo da Resolução Cefic nº 30, de 02/02/2026. O documento passou por ajustes técnicos, após o início da implantação 
+do SCF-CIN. Ele será encaminhado para votação virtual juntamente com os demais anexos da Resolução nº 30. 
+Foi apresentada a minuta do Protocolo de Cancelamento. Foi explicado que , atualmente, os Órgãos de 
+Identificação Civil (OIC) realizam o cancelamento da CIN e informam por e-mail aos órgãos integradores ; a resolução 
+formaliza e uniformiza o processo.  
+Dando continuidade à  pauta, foi apresentado o monitoramento das entregas do planejamento 202 6. Os 
+seguintes itens foram destacados: 
+• Serviço de Controle de Fluxos (SCF-CIN) – O Serpro está em processo de implantação. 
+• Modelo Informacional (MI) – O Ministério da Justiça e Segurança Pública já adaptou o sistema para receber 
+os dados no novo formato ; assim como a Secretaria do Governo Digital . Foi detectada a necessidade de 
+alguns pequenos ajustes no Modelo Informacional , que serão realizados  pela Receita Federal e 
+encaminhada para tramitação no GTT3.  
+• Serviço Biométrico Federal (SBF)  – Nesse período de testes já foram recepcionados 280 mil registros do 
+Piauí, 134 mil da Bahia, 100 mil do Distrito Federal e uma menor quantidade de outros estados que estão 
+começando a enviar os arquivos da CIN. Com isso, a meta de receber uma carga de 500 mil CINs que estava 
+prevista abril foi atingida. O objetivo dessa etapa é validar os padrões, o formato e a comunicação. 
+• Recepção das decadactila res – Em consonância ao Modelo Informacional, o Ministério da Justiça e 
+Segurança Pública já ajustou o sistema. Foi informado que o legado de CINs será tratado junto com o SBF.   
+• Monitoramento dos padrões de impressão da CIN  - Foi apresentado o Relatório Executivo de Análise das 
+Amostras da CIN, realizada pelo Instituto Nacional de Tecnologia da Informação (ITI/MGI) desde o final do 
+ano passado. Não foi encontrada nenhuma não -conformidade grave, atestando a segurança d a CIN.  Foi 
+informado que se espera que o processo de monitoramento seja gradativamente automatizado. Por fim, foi 
+informado que está previsto que  o marco regulatório para credenciamento definitivo  seja aprovado em 
+julho, e que o processo de fiscalização seja iniciado em novembro. 
+• Integração com a Declaração de Nascido Vivo ( DNV) e com o Sistema de Informação sobre Mortalidade 
+(SIM) – Foi informado que o acordo de cooperação técnica para integração com a DNV está sendo avaliado 
+juridicamente. Com relação à integração com o SIM, foi implementado e aprovado o uso do CPF como chave 
+prioritária no ambiente de homologação, e nos próximos dias será liberado no ambiente de produção.  
+• Ajustes na integração para reimpressão da CIN – O Ministério da Justiça e Segurança Pública informou que 
+cinco OICs  estão realizando testes. Se os resultados forem positivos , em  aproximadamente um mês o 
+processo de reimpressão será liberado para todos os estados.  
+ 
+Seguindo com a pauta, no item Informes Gerais destacou-se o início do piloto para emissão da CIN no exterior, 
+no consulado de Portugal.  
+ 
+Finalizada a pauta, a reunião foi encerrada. 
+ 
+5. Encaminhamentos: 
+• Ajustar a minuta da Resolução do Plano de Implantação do SBF. 
+• Encaminhar as minutas de resolução  do Plano de Implantação do SBF , de resolução do Protocolo de 
+Cancelamento e dos anexos do SCF-CIN para votação virtual. 

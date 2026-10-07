@@ -1,0 +1,109 @@
+
+===== [pag 1] =====
+DIÁRIO OFICIAL DA UNIÃO
+Publicado em: 15/06/2026 | Edição: 109 | Seção: 1 | Página: 2
+Órgão: Presidência da República/Câmara-Executiva Federal de Identiﬁcação do Cidadão
+RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 2026
+Dispõe  sobre  o  cancelamento  da  Carteira  de  Identidade
+Nacional, emitida ou em processo de emissão, no âmbito dos
+Órgãos  de  Identiﬁcação  Civil  das  unidades  federativas  e  dos
+órgãos  federais  executores  do  Serviço  de  Identiﬁcação  do
+Cidadão.
+O  COORDENADOR  DA  CÂMARA-EXECUTIVA  FEDERAL  DE  IDENTIFICAÇÃO  DO  CIDADÃO  -
+Ceﬁc,no uso das atribuições que lhe confere o art. 6º, § 1º, inciso IV, do Regimento Interno da Ceﬁc,
+aprovado pela Resolução nº 10, de 6 de abril de 2023, e considerando o disposto nos arts. 10 do Decreto
+nº 11.797, de 27 de novembro de 2023, e no art. 4º, § 5º, inciso II, do Decreto nº 10.977, de 23 de fevereiro de
+2022, e a deliberação registrada na reunião extraordinária de 17 de abril de 2026, resolve:
+Art. 1º Esta Resolução dispõe sobre o cancelamento da Carteira de Identidade Nacional, emitida
+ou em processo de emissão, no âmbito dos Órgãos de Identiﬁcação Civil das unidades federativas e dos
+órgãos federais executores do Serviço de Identiﬁcação do Cidadão.
+Art.  2º  Para  ﬁns  do  disposto  nesta  Resolução,  considera-se  cancelamento  da  Carteira  de
+Identidade Nacional - CIN o ato administrativo que invalida esse documento quando não apto a identiﬁcar
+de forma inequívoca um cidadão, resultando nas seguintes consequências:
+I - cancelamento do protocolo da CIN junto à Secretaria Especial da Receita Federal do Brasil;
+II - invalidação do QR Code (Quick Response Code) da CIN junto ao Ministério da Justiça e
+Segurança Pública;
+III - exclusão da CIN digital da Wallet Gov.br junto à Secretaria de Governo Digital;
+IV - atualização do cadastro do cidadão no Serviço Biométrico Federal - SBF;
+V - atualização do status da CIN no Serviço de Controle de Fluxo da CIN - SCF-CIN.
+§ 1º No caso de CIN em processo de emissão, considera-se cancelamento o ato que interrompe
+o  ﬂuxo  de  emissão  em  qualquer  de  suas  fases,  com  o  devido  registro  no  SCF-CIN  e  a  adoção  das
+providências sistêmicas cabíveis.
+§  2º  As  etapas  decisórias  e  os  ﬂuxos  de  cancelamento  estão  representados  no  Anexo  I  -
+Diagrama do Protocolo de Cancelamento.
+Art. 3º O cancelamento da CIN, emitida ou em processo de emissão, no âmbito dos Órgãos de
+Identiﬁcação Civil das unidades federativas e dos órgãos federais executores do Serviço de Identiﬁcação
+do Cidadão, ocorrerá nas seguintes situações:
+I - anulação do Cadastro de Pessoas Físicas - CPF por constatação de fraude;
+II - identiﬁcação de fraude;
+III - decisão administrativa;
+IV - decisão judicial;
+V - falecimento do titular;
+VI - extravio;
+VII - furto;
+VIII - roubo;
+RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 2026 - RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 202... https://www.in.gov.br/web/dou/-/resolucao-n-32-de-3-de-junho-de-2026-712074099
+1 of 4 6/17/2026, 10:53 AM
+===== [pag 2] =====
+IX - dano;
+X - erro material identiﬁcado no processo de emissão;
+XI - reimpressão;
+XII - duplicidade de registro;
+XIII - emissão de nova CIN.
+Art. 4º Para o cancelamento, com exceção das situações previstas nos incisos IX, X, XI, XII e XIII
+do art. 2º, é necessária fundamentação, conforme a situação, a partir de um dos seguintes documentos
+comprobatórios:
+I - Decisão judicial;
+II - Decisão administrativa;
+III - Certidão de óbito.
+§ 1º O cancelamento da CIN poderá ser realizado com fundamento em boletim de ocorrência,
+quando for possível ao órgão emissor veriﬁcar a autenticidade do referido registro por meio de sistemas
+oﬁciais ou outros mecanismos de validação disponíveis.
+§ 2º O cancelamento por falecimento será realizado preferencialmente por integração sistêmica
+com bases oﬁciais de registro civil, quando disponível.
+Art. 5º O cancelamento da CIN deverá ser realizado por:
+I - Órgãos de Identiﬁcação Civil das unidades federativas; ou
+II - Órgãos federais executores do Serviço de Identiﬁcação do Cidadão.
+§  1º  O  Órgão  de  Identiﬁcação  Civil  que  efetuar  o  cancelamento  de  CIN  emitida  por  outra
+unidade federativa deverá registrar o evento no SCF-CIN, para que todos tenham acesso à informação.
+§ 2º Os Órgãos de Identiﬁcação Civil e os órgãos federais executores do Serviço de Identiﬁcação
+do  Cidadão  observarão,  para  ﬁns  de  cancelamento,  os  estados  e  transições  conforme  diagrama  da
+máquina de estados do SCF-CIN, previsto na Resolução nº 30, de 2 de fevereiro de 2026.
+§ 3º Os Órgãos de Identiﬁcação Civil - OICs e o órgãos federais executores do Serviço de
+Identiﬁcação do Cidadão observarão também, para ﬁns de cancelamento, os dispositivos e processos do
+Protocolo de Divergências constante da Resolução nº 29, de 2 de fevereiro de 2026.
+§ 4º O procedimento operacional de cancelamento observará as seguintes etapas mínimas:
+I - Alteração do status da CIN no SCF-CIN;
+II - Registro do motivo do cancelamento no histórico, conforme deﬁnido na documentação do
+SCF-CIN;
+III  -  Tratamento  da  informação  nos  sistemas  de  cada  ente,  dentro  dos  limites  de  sua
+competência.
+§ 5º Em caso de cancelamento por identiﬁcação de fraude, os dados biométricos do respectivo
+registro devem ser inseridos na Lista de Atenção do SBF.
+Art. 6º O cancelamento da CIN poderá ser solicitado pelo cidadão interessado e comunicado
+junto aos órgãos competentes, observado o disposto nesta Resolução.
+§ 1º O titular ou seu representante legal poderá solicitar, junto aos órgãos mencionados no
+caput, o cancelamento da CIN nas hipóteses previstas nos incisos V a XI do art. 2º desta Resolução.
+§ 2º Serviços Consulares poderão encaminhar solicitação para cancelamento da CIN aos Órgãos
+de Identiﬁcação Civil, observando o disposto nesta Resolução.
+§  3º  Na  hipótese  de  cancelamento  da  CIN  em  processo  de  emissão  em  decorrência  do
+falecimento do solicitante, nos termos do inciso V do art. 2º desta Resolução, e após validação do registro
+pelo SBF, os Órgãos de Identiﬁcação Civil poderão emitir Certidão de Interrupção do Processo de Emissão
+da CIN, mediante requerimento de pessoa por procuração ou representação legal.
+RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 2026 - RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 202... https://www.in.gov.br/web/dou/-/resolucao-n-32-de-3-de-junho-de-2026-712074099
+2 of 4 6/17/2026, 10:53 AM
+===== [pag 3] =====
+Art. 7º Todo cancelamento de CIN deverá ser obrigatoriamente registrado e comunicado por
+meio do SCF-CIN.
+Parágrafo único. Enquanto o SCF-CIN não estiver integralmente implantado, a comunicação
+seguirá os procedimentos transitórios deﬁnidos no Anexo II - Procedimentos Transitórios de Comunicação.
+Art. 8º Esta Resolução entra em vigor na data de sua publicação.
+PEDRO HELENA PONTUAL MACHADO
+ANEXO I
+Diagrama do Protocolo de Cancelamento da Carteira de Identidade Nacional - CIN
+RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 2026 - RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 202... https://www.in.gov.br/web/dou/-/resolucao-n-32-de-3-de-junho-de-2026-712074099
+3 of 4 6/17/2026, 10:53 AM
+===== [pag 4] =====
+Este conteúdo não substitui o publicado na versão certiﬁcada.
+RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 2026 - RESOLUÇÃO Nº 32, DE 3 DE JUNHO DE 202... https://www.in.gov.br/web/dou/-/resolucao-n-32-de-3-de-junho-de-2026-712074099
+4 of 4 6/17/2026, 10:53 AM

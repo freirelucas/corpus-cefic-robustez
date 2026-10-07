@@ -1,0 +1,153 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+ 
+1. Identificação da Reunião 
+5ª Reunião ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) no ano de 
+2023. 
+Data Horário Local 
+21/12/2023 9h30 Casa Civil 
+ 
+2. Pauta 
+Diagnóstico de implementação da CIN; 
+Debate sobre MP adiamento da Lei 14.534/23; 
+Previsão orçamentária do projeto; 
+Outros assuntos. 
+2.1 Abertura 
+2.2 Apresentação formal da composição e dos membros da CEFIC 
+ 
+3. Participantes 
+Participantes Cargo/Posição Órgão 
+Claudiana Pereira Batista Assessora Técnica da 
+Subsecretaria de Tecnologia 
+da Informação e 
+Comunicação 
+Ministério da Justiça  e 
+Segurança Pública (MJSP) 
+Joel Benin Convidado 
+Diretor de Programa da 
+Secretaria-Executiva 
+Ney Barros Titular CEFIC 
+Subsecretário de Tecnologia 
+da Informação 
+Rafael Neves Carvalho Coordenador Geral 
+Substituto de Gestão de 
+Cadastro e Benefícios Fiscais 
+da Secretaria Especial da RFB 
+Secretaria Especial da 
+Receita Federal do Brasil 
+(RFB) 
+Rerinton Weldert Gomes Titular CEFIC 
+Coordenador-Geral de 
+Gestão de Cadastro e 
+Benefícios Fiscais na 
+Subsecretaria de 
+Arrecadação, Cadastros e 
+Atendimento da RFB 
+Rogério Souza Mascarenhas Titular CEFIC 
+Secretário de Governo Digital 
+do MGI 
+Ministério da Gestão e da 
+Inovação em Serviços 
+===== [pag 2] =====
+Eduardo Magalhães de 
+Lacerda Filho 
+Suplente CEFIC 
+Coordenador-Geral de 
+Identificação Civil no 
+Gabinete da SGD/MGI 
+Públicos (MGI) / Secretaria 
+de Governo Digital (SGD)  
+Leonardo de Oliveira 
+Gonçalves 
+Convidado 
+Coordenador-Geral Jurídico 
+de Licitações e Contratos 
+MGI 
+Consultoria Jurídica 
+(CONJUR) junto ao MGI 
+Pedro Helena Pontual 
+Machado 
+Titular CEFIC 
+Secretário-Executivo Adjunto 
+da CC 
+Casa Civil (CC) / Presidência 
+da República (PR) 
+Carlos Antônio Lopes de 
+Araújo 
+ 
+Assessor na Secretaria -
+Executiva da CC 
+ 
+Marcos Passos 
+ 
+Assessor da Secretaria 
+Adjunta de Gestão Pública da 
+CC 
+ 
+ 
+4. Relato 
+Pedro Pontual inicia a reunião com uma rodada de apresentação . Rogerio explica que não foi 
+possível a presença de um representante do Ministério da Saúde ( MS); apresenta a pauta da 
+reunião; e passa a palavra para Lacerda , que apresenta o cenário  da Carteira de Identidade 
+Nacional (CIN) em dezembro de 2022 e a situação atual.  
+Lacerda informa que, atualmente, são 17 unidades federativas (UFs) integradas, sendo que 7 
+estados emitem somente CIN; na presente data, foram emitidas 2.700.610 CIN, representando 
+1,3% da população.  Em seguida , apresenta um recorte : 45% das CIN foram emitidas para a 
+população menor de idade. Rogerio destaca que a publicidade está voltada para o público jovem.  
+Lacerda apresenta a previsão de implementação da CIN nos  próximos estados: integração de 
+Pará e Tocantins ainda esse ano; integração de Roraima prevista para 6 de janeiro; integração do 
+Ceará, Mato Grosso do Sul e Espírito Santos na data limite de 11 de janeiro; e integração da Bahia 
+e do Amapá para depois da data limite, em 11 de abril.  
+Rogério explica que no cenário atual, sem publicidade, fechar o ano com o total de 2.700.610 é 
+um número aceitável. Explica que enxerga como avanço a entrada de estados críticos.  
+Lacerda continua com a apresentação das ações planejadas para 2024, com foco na segurança 
+da CIN. A primeira ação é concluir a integração das UFs, em seguida, implementar a fiscalização, 
+auditoria, credenciamento e homologação do ecossistema. Dessa forma, são 3  direções base 
+única, proposição de normas e orçamento, este acordado entre Ministro Rui e a Ministra Esther. 
+Pedro Pontual questiona como está esse acordo. Rogerio explica que houve diversas ações sobre 
+a tentativa de orçamento.  
+Lacerda continua explicando que outra ação para 2024 é a Plataforma da CIN, de forma a 
+estabelecer um plano de trabalho com os Ministérios, tendo em vista que a CIN prove uma fonte 
+de dados. 
+===== [pag 3] =====
+Pedro pergunta quando pode ser analisado o primeiro cronograma . Lacerda diz que com o 
+calendário da CEFIC pode se pensar em final de janeiro e ainda fala sobre as questões de 
+proteção de dados. Rogerio fala que a grande expectativa é que a consulta geral ao sistema na 
+tela, apresentada em reunião anterior, esteja disponível a todos os órgãos federais. Explica que 
+isso está sendo desenhado no âmbito do MGI com a DataPrev. 
+Lacerda cita a integração da Base ICN-TSE, com teste nos estados de Goiás e Piauí. Pedro Pontual 
+fala que a apresentação é ótima, mas que na próxima reunião gostaria que fosse apresentada 
+data para as ações. Rogerio explica que  apresentará, mas que a questão orçamentária é 
+fundamental para que as ações aconteçam. Lacerda finaliza falando das questões de segurança 
+e publicidade.  
+Em seguida Reriton apresenta o relatório relacionado ao fluxo da CIN. 
+Pedro Pontual fala que a verificação do cumprimento do fluxo é essencial.  
+Lacerda explica, do ponto de vista técnico, científico e da ciência da identificação, os avanços em 
+termos de segurança que a CIN trouxe. Cita que o processo precisa ser melhorado sempre e as 
+melhorias vão sendo implementadas a medida da construção do sistema de identificação e dos 
+processos.  
+Rogerio fala que o fluxo precisa ser revisitado, com ações da RFB, da SGD e do MJSP .  
+Pedro diz que precisa ser elaborado um grupo para trabalhar com a melhor solução, fazer a 
+conferência do diagnostico, apresentar a solução a ser implementada e propor um plano de 
+trabalho para que isso aconteça, sinalizando onde há necessidade de aporte orçamentário.  
+Passa-se a discussão sobre a forma de redefinir o fluxo da CIN.  
+Próximo ponto a ser discutido, trata -se da Lei 14.534/23 , que tem a data de 11 de janeiro  de 
+2024 para que para que os órgãos e as entidades realizem a adequação dos sistemas e dos 
+procedimentos de atendimento aos cidadãos, para adoção do número de inscrição no CPF como 
+número de identificação. Há a possibilidade de alguns estados não conseguirem atender a data.  
+Os presentes discutem, considerando aspectos orçamentários, sobre as seguintes possibilidades: 
+a) minuta da MP com prorrogação da Lei – e um desenho de política pública para justificar a 
+prorrogação; b) não prorrogação e análise posterior de solução, mas antes do fim do prazo, caso 
+os estados caminhem para o não atendimento do prazo.  
+Rogerio apresenta a proposta da campanha da CIN, que teve um aporte reduzido, tendo em vista 
+o empenho, para o público jovem. Pedro consulta se a SECOM está de acordo. Lacerda diz que 
+já está em divulgação, desde ontem, nos estados que estão emitindo CIN , com intensificação a 
+partir do dia 11 de janeiro.  
+5. Encaminhamentos:  
+1. Inclusão das datas nas ações apresentadas no planejamento; 
+2. Minuta da proposta de MP que prorroga a Lei 14.534/23; 
+3. Publicação da Resolução com criação de GTT para discussão do fluxo de emissão da CIN: 
+▪ Realizar a conferência do diagnostico realizado pela RFB; 
+▪ Ratificar a solução proposta; 
+▪ Propor plano de trabalho.  

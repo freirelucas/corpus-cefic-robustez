@@ -1,0 +1,134 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião  
+1ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) de 2026.  
+Data Horário Local 
+11/02/2026 17h Palácio do Planalto – sala 407 
+ 
+2. Participantes  
+Nome Órgão  Cargo  
+Pedro Helena Pontual 
+Machado 
+Casa Civil da Presidência da República - 
+CC-PR  Secretário-Executivo Adjunto 
+Beatriz Vasconcellos de 
+Araújo SAM-CC/PR Secretária Adjunta 
+Nicolas Wulk SAM-CC/PR Assessor 
+Rogério Souza Mascarenhas Secretaria de Governo Digital -SGD/MGI Secretário de Governo Digital 
+Hudson Vinícius Mesquita Secretaria de Governo Digital -SGD/MGI Diretor de Identidade Digital  
+Paulo Ayran da Silva Bezerra Secretaria de Governo Digital -SGD/MGI Coordenador-Geral  
+Thalita Knupp A. de Carvalho Secretaria de Governo Digital -SGD/MGI Especialista 
+André Tamiarana Canetta Secretaria de Governo Digital -SGD/MGI Especialista  
+Ana Maria Costa Candido 
+Lacerda 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Assessora Técnica 
+Enylson Flávio Martinez 
+Camolesi 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor-presidente  
+Eder Eustaquio Alves Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Chefe de Gabinete 
+Katia Macarini Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenadora-Geral 
+Maurício Augusto Coelho Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor 
+Marcelo Oliveira Barbosa Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenador-Geral 
+Isabel Seixas de Figueiredo Ministério da Justiça e Segurança Pública 
+- MJSP Diretora 
+Beatriz Marques de Jesus 
+Figueiredo 
+Ministério da Justiça e Segurança Pública 
+- MJSP Coordenadora-Geral 
+Ronei Maia Salvatori Ministério da Justiça e Segurança Pública 
+- MJSP Coordenador 
+Fernando de Mattos Maciel Ministério da Justiça e Segurança Pública 
+- MJSP Coordenador-Geral 
+Reriton Weldert Gomes Receita Federal do Brasil - RFB Coordenador-Geral  
+Paula Xavier dos Santos* Ministério da Saúde – MS  Diretora 
+Elivan Silva Souza* Ministério da Saúde – MS Assessor 
+Tula Vieira Brasileiro Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora-Geral 
+Damaris Campos Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora 
+*online 
+ 
+3. Pauta  
+ 
+3.1. Ratificação ACT/TSE 
+3.2. Planejamento 2026 
+3.3. Informes Gerais 
+ 
+ 
+===== [pag 2] =====
+4. Relato  
+ 
+A pauta foi iniciada com a ratificação do Acordo de Cooperação Técnica (ACT) para uso da Identificação Civil 
+Nacional (ICN) do Tribunal Superior Eleitoral (TSE). Conforme Artigo 26 do Decreto nº 11.797, de 27 de novembro 
+de 2023, é competência da Cefic  avaliar e ratificar prorrogações de acordos entre os órgãos e o TSE referentes à 
+ICN. O último acordo, assinado em 2021, vencerá em março de 2026, e a proposta é prorrogar por mais cinco anos. 
+O Termo Aditivo apresenta as seguintes alterações: 
+a) a titularidade dos partícipes: de "Secretaria -Geral da Presidência da República" para "Casa Civil da 
+Presidência da República". De "Ministério da Economia" para "Ministério da Gestão e da Inovação em 
+Serviços Públicos"; 
+b) a atuação como Secretaria Executiva do Acordo de Cooperação Técnica da até então "Secretaria-Geral 
+da Presidência da República" para o "Ministério da Gestão e da Inovação em Serviços Públicos", na figura 
+da "Secretaria de Governo Digital"; 
+c) as finalidades institucionais da então "Secretaria-Geral da Presidência da República" para as finalidades 
+institucionais da "Casa Civil da Presidência da República". 
+O ACT é posto em votação e aprovado com unanimidade.  
+ 
+Seguindo a pauta, foi apresentado o Planejamento 2026, destacando: 
+• Serviço de Controle de Fluxos ( SCF-CIN) – foi ressaltada a importância da parceria com o Serpro, a 
+SGD e o MJSP, e que a implantação nos estados será gradativa.  
+• Modelo Informacional (M I) – atualmente está ocorrendo a implementação  pelo MJSP  e que o 
+ambiente de espelho está disponível para testes pelos Órgãos de Identificação Civil (OICs).  
+• Serviço Biométrico Federal (SBF)  – no momento os OICs estão enviando dados para Dataprev  e a  
+implantação será escalonada.  
+• Protocolo de Cancelamento – está em processo de aprovação nos Grupos de Trabalho Técnicos (GTTs). 
+• Monitoramento dos padrões de impressões da CIN  – a previsão é que o  relatório seja apresentado 
+em março de 2026, tanto para os estados quanto para a Cefic.  
+• Integração com a Declaração de Nascido Vivo ( DNV) e com o Sistema de Informação sobre 
+Mortalidade (SIM) – previsão de conclusão no final do março de 2026.  
+• Integração com Registro Civil – há avanços no processo de a ssinatura do convênio com o Operador 
+Nacional do Registro Civil de Pessoas Naturais ( ON-RCPN), mas ainda são necessários ajustes  e, 
+portanto, com o cronograma ainda em discussão.  
+• Credenciamento Definitivo de Gráficas e Personalizadoras – previsão de deliberação da resolução na 
+Cefic em junho de 2026. 
+• Proteção à testemunha (Provida) – previsão de deliberação da resolução na Cefic em agosto de 2026. 
+• Recepção das decadactilares – previsão de recepção no fluxo em maio e do legado em julho de 2026.  
+• Auditoria e Fiscalização de Gráficas e Pe rsonalizadoras - previsão da deliberação da resolução em 
+novembro de 2026.    
+• Ajustes na integração para reimpressão da CIN – previsão de implementação no final do mês de março 
+e disponibilização em 20/03/2026.  
+ 
+Com a indefinição da data de algumas entregas, o planejamento 2026 não foi colocado em votação. 
+Adicionalmente, durante a discussão do planejamento, foi verificada a necessidade de um novo levantamento 
+acerca da capacidade de emissão dos estados. A ação será coordenada pelo MJSP . Também foi debatida a definição 
+e a padronização dos termos e indicadores  relativos ao processo de emissão da  CIN. A Secretaria Especial de 
+Articulação e Monitoramento da Casa Civil da Presidência da República (SAM/CC -PR) irá coordenar a definição 
+desses conceitos e parâmetros.  
+ 
+Seguindo a pauta, no item Informes Gerais, destaca-se: 
+• A apresentação do gráfico de emissão de CINs por U nidades Federativas, com cobertura de 21% da 
+população; 
+• Apenas o Estado de Roraima ainda não inscreve e altera o CPF; 
+===== [pag 3] =====
+• A SGD, o Ministério das Relações Exteriores (MRE) e a Polícia Civil do Distrito Federal (PC-DF) realizarão 
+projetos-piloto para emissão da CIN  nos consulados d e Portugal e Paraguai a partir de abril. A proposta é 
+que a coleta de informações seja realizada  por meio de um terminal de teleatendimento e que a CIN seja 
+enviada por malote. Foi sugerido que haja um marcador para separar o número de emissões dos residentes 
+no DF e no exterior.  
+• Elaboração um trabalho de comunicação pela SECOM/PR direcionada sobre a importância da emissão 
+da CIN para os beneficiários de programas sociais.  
+• Retomada das visitas aos estados, com a previsão de cinco no primeiro semestre.  
+ 
+Finalizada a pauta, a reunião é encerrada. 
+ 
+5. Encaminhamentos: 
+• Realizar sessão eletrônica virtual para aprovação do planejamento 2026 após definição do cronograma de 
+integração com o Registro Civil. 
+ 
+ 

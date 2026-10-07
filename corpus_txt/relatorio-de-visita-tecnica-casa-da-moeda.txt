@@ -1,0 +1,167 @@
+
+===== [pag 1] =====
+RELATÓRIO DEVISITA TÉCNICA
+ABRIL DE 2024
+COORDENAÇÃO-GERAL DE IDENTIFICAÇÃO CIVIL
+SECRETARIA DE GOVERNO DIGITAL
+MINISTÉRIO DA GESTÃO E DA INOVAÇÃO EM SERVIÇOS PÚBLICOS
+PREPARADO E APRESENTADO POR
+CÂMARA-EXECUTIVA FEDERAL DE IDENTIFICAÇÃO DO CIDADÃO
+===== [pag 2] =====
+O presente documento consiste em relatório sobre a visita técnica realizada
+no Parquet Gráfico da Casa da Moeda do Brasil (CMB), localizado no estado
+e na cidade do Rio de Janeiro, que possui credenciamento provisório, junto
+à Câmara-Executiva Federal de Identificação do Cidadão (CEFIC), para
+emissão da Carteira de Identidade Nacional (CIN).
+A visita  ocorreu no dia 18 de abril de 2024, em uma ação da CEFIC, e teve
+como objetivo, conforme OFÍCIO SEI Nº 27586/2024/MGI (SEI-MGI nº
+40557927       ), subsidiar, com informações complementares, a análise do
+Parecer Técnico nº 003/2024-INC/DITEC/PF (SEI-MGI 40558046), elaborado
+pelo Serviço de Perícias Documentoscópicas (SEPDOC) da Divisão de
+Perícias Laboratoriais e Documentoscópicas (DPLAD) do Instituto Nacional
+de Criminalística (INC) da Diretoria Técnico-Científica (DITEC) da Polícia
+Federal (PF).
+01
+INTRODUÇÃO
+ CÂMARA-EXECUTIVA FEDERAL DE IDENTIFICAÇÃO DO CIDADÃO 
+===== [pag 3] =====
+A equipe que visitou a CMB foi composta pelos servidores Licia Maria Said
+de Lavor, Perita Criminal Federal e Chefe do SEPDOC, Felipe Ferreira
+Paulucio, Perito Criminal Federal lotado no SEPDOC, Ana Maria Candido
+Lacerda, Gabriella Nunes Neves e Thiara dos Santos Alves, servidoras lotadas
+na Coordenação-Geral de Identificação do Civil (CGGIC) da Secretaria de
+Governo Digital (SGD) do Ministério da Gestão e da Inovação em Serviços
+Públicos (MGI).
+A Casa da Moeda do Brasil possui as seguintes Certificações:
+ISO 45001:2018 Sistema de Gestão de Saúde e Segurança Ocupacional;
+ISO 9001:2015 Sistemas de Gestão de Qualidade;
+ISO 14001:2015 Sistema de Gestão Ambiental;
+ISO 9001:2015 Sistemas de Gestão da Qualidade;
+ABNT NBR ISO 14298:2020 Tecnologia Gráfica - Gestão de Processos de
+impressão de segurança;
+NBR 15540:2020 Sistema de segurança para a fabricação de produtos de
+segurança.
+02
+INTRODUÇÃO
+ CÂMARA-EXECUTIVA FEDERAL DE IDENTIFICAÇÃO DO CIDADÃO 
+===== [pag 4] =====
+03
+METODOLOGIA
+Este roteiro, enviado para a CMB por meio do OFÍCIO SEI Nº 27586/2024/MGI
+(SEI-MGI nº 40557927), apresentava, entre outros elementos, as etapas da
+visita, os itens a serem verificados e a lista de documentos/arquivos/matriz
+a serem apresentados para exame posterior.
+Para atender a necessidade de registros fotográficos, visando ilustrar este
+relatório e subsidiar o novo Parecer Técnico do SEPDOC, a CMB
+disponibilizou um fotógrafo.
+Por fim, cabe informar que durante a visita os Peritos Criminais Federais
+verificaram detalhes documentoscópicos da produção da CIN.
+Foi elaborado um Roteiro de Visita
+Técnica (SEI-MGI nº 40563363) (Anexo 1),
+com check-list de verificação dos pontos
+que não puderam ser esclarecidos nos
+exames preliminares, realizados pelo
+SEPDOC, nas amostras encaminhadas
+previamente pela CMB, conforme  Parecer
+Técnico nº 003/2024-INC/DITEC/PF (SEI-
+MGI 40558046).
+===== [pag 5] =====
+A visita se iniciou com a apresentação de um vídeo institucional da CMB e
+do Fluxo Produtivo da Carteira de Identidade Nacional (CIN). 
+Tal fluxo contempla as seguintes etapas: 
+                                  1) Recebimento de Materiais; 
+                                  2) Impressão Off-Set; 
+                                  3) Impressão Calcográfica; 
+                                  4) Impressão Serigráfica; 
+                                  5) Acabamento e Envio ao Cofre. 
+Em cada etapa do processo produtivo há pontos de controle de qualidade
+(autocontrole), a fim de garantir a aderência do produto final à padrões
+estabelecidos. 
+Além disso, em toda transferência do material, de uma seção para outra,
+ocorre a contagem de folhas, para garantir que nenhum material possa se
+perder na movimentação.
+04
+FLUXO PRODUTIVO 
+===== [pag 6] =====
+05
+PROJETO ARTÍSTICO 
+No Departamento de Matrizes e Projetos Artísticos (DEMAT), o
+Superintendente da área, Alexandre Grilo Magalhães – juntamente com
+Nádia Sepúlveda (Gerente de Desenvolvimento de Produto), Fábio Chagas
+(Gerente de Controle de Qualidade), Erick Vargas (Fabricação e Matriz) e
+demais servidores – apresentou o Projeto Artístico da CIN, a partir de lógica
+de engenharia reversa, que teve como referência uma CIN já impressa, uma
+vez que a CMB não possuia a matriz da CIN. A equipe demonstrou as
+serigrafias separadas e em um único arquivo. 
+Foram demonstrados todos os detalhes para elaboração do projeto e do
+controle de qualidade para produzir uma CIN conforme requisitos técnicos
+e definições descritas no manual.
+===== [pag 7] =====
+06
+IMPRESSÃO EACABAMENTO 
+No Departamento de Produtos Gráficos e Cartões (DEGER), o
+Superintendente da área, Frederico Lima da Costa, apresentou todo o
+processo de impressão e acabamento da CIN e fez considerações sobre as
+máquinas.
+Considerando a antiguidade de algumas máquinas, não foi possível a
+apresentação de Notas Fiscais, pois os documentos foram descartados
+após cumprirem seus prazos de guarda. Mas foram entregues o registro
+contábil de depreciação e ficha de ativo imobilizado das máquinas
+utilizadas para impressão da CIN.  
+Foi concedido livre acesso aos equipamentos e às máquinas, de forma que
+foi possível verificar a impressão de espelhos da CIN em formulário
+contínuo, com seus elementos de segurança(imagem 03 e 04), 
+Nesse sentido destaca-se que não havia impressão calcográfica anterior à
+entrada do papel na rolaria em que se encontra a matriz calcográfica
+(imagem 02). Foi identificada a impressão calcográfica cilíndrica em duas
+cores com única passagem em matriz única( imagem 01). 
+Durante a visita foi ainda possível verificar os processos de impressão  
+serigráfica, a aposição de tintas especiais, como a anti-stoke invisível e UV.
+Ademais, foram produzidas e disponibilizadas amostras de cada fase de
+produção da CIN para os Peritos Criminais Federais que acompanharam a
+visita, para análise posterior(imagem 05 e 06). 
+A CMB não possuía a amostra de papel de segurança para a emissão da
+CIN em razão da indisponiblidade do fornecedor, no entanto apresentou
+todos os processos gráficos no papel disponível. 
+Ficou acordado que quando o fornecedor disponibilizar o papel de
+segurança a CMB enviará as amostras em papel à Polícia Federal,
+juntamente com as amostras em policarbonato, para análise técnica e
+emissão de parecer complementar.
+===== [pag 8] =====
+07
+IMPRESSÃO EACABAMENTO 
+0201
+03 04
+05 06
+===== [pag 9] =====
+08
+Pontos de Atenção
+Durante a visita foi possível verificar a matriz em chapa única e  os
+requisitos e elementos que compõe o layout, inclusive as microletras e
+as letras invertidas. A visita pela área de produção permitiu o
+acompanhamento  do processo produtivo da CIN  e todas a etapas da
+impressão de cada camada e elemento de segurança.
+
+===== [pag 10] =====
+09
+Pontos de Atenção
+Como a CMB não possuía a amostra de papel de segurança para impressão
+da CIN não foi possível verificar a marca d’água.
+Da mesma forma, não foi possível verificar a impressão da CIN em
+policarbonato tendo em vista que a compra do insumo DOV está
+condicionada ao credenciamento. 
+Dessa forma, solicitamos a CMB o envio das amostras da CIN emitida no
+papel de segurança. Então, assim que a empresa BP Security disponibilizar
+o papel à CMB serão enviadas as amostras em papel à Polícia Federal,
+juntamente com as amostras em policarbonato, para análise técnica e
+emissão de parecer complementar pelo SEPDOC/DITEC/PF. 
+===== [pag 11] =====
+10
+ANEXOS
+===== [pag 12] =====
+
+===== [pag 13] =====
+
+===== [pag 14] =====
+
+===== [pag 15] =====

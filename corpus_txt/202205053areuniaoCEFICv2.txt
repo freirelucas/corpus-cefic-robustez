@@ -1,0 +1,152 @@
+
+===== [pag 1] =====
+Secretaria Especial de 
+Modernização do Estado
+05/05/2022
+3ª Reunião Ordinária da Câmara Executiva Federal de 
+Identificação do Cidadão
+===== [pag 2] =====
+ Abertura.
+ Projeto Piloto com os Estados.
+ Desenvolvimentos dos entes federados;
+ Desenvolvimentos do Governo Federal.
+ Credenciamento de empresas (ainda não deliberativa - apresentação da proposta).
+ Outros assuntos.
+ Pauta para aprovação do manual da Carteira de Identidade;
+ Outros.
+ Encerramento
+Agenda – 3ª Reunião da CEFIC
+===== [pag 3] =====
+ 8 Estados da federação.
+ Acre
+ Distrito Federal
+ Goiás
+ Minas Gerais
+ Paraná
+ Pernambuco
+ Rio Grande do Sul
+ Santa Catarina
+ Pessoas naturais que tenham CPF e sem divergência na base da RFB.
+ Resultado sem intercorrência com a ICN.
+ Limitado a 600 mil Carteiras de Identidades emitidas por mês para os 8 Estados.
+Projeto Piloto
+Meta: 
+Em Junho, expedição das primeiras 
+Carteiras
+===== [pag 4] =====
+ Precisa retificar o Ofício à RFB para acesso a base/abertura da demanda.
+ Realizada reunião de acesso a documentação das APIs SGD ICN, QR Code e Wallet.
+ Pretende emitir a Carteira para todos os cidadãos habilitados em todos os pontos.
+ 8.000 Carteiras por mês.
+ Ponto de atenção: Houve troca de toda equipe do Instituto.
+ Status: atrasado.
+ACRE
+STATUS - ATRASADO
+===== [pag 5] =====
+ Demanda com a RFB aberta, falta ainda o range de IPs.
+ Realizada reunião de acesso a documentação das APIs SGD ICN, QR Code e Wallet.
+ Não informou quantas Carteiras por mês ainda.
+ Status: atrasado.
+DISTRITO FEDERAL
+STATUS - ATRASADO
+===== [pag 6] =====
+ Demanda com a RFB aberta, mas GO usa um barramento de saída de serviços – já em 
+contato com a RFB.
+ Realizada reunião de acesso a documentação das APIs SGD ICN, QR Code e Wallet*.
+ *Já possui integração com a API da Wallet – agora é um novo template.
+ Pretende emitir a Carteira somente as 1ª vias.
+ 7.000 Carteiras por mês.
+ Status: atrasado.
+GOIÁS
+STATUS - ATRASADO
+===== [pag 7] =====
+ Já possui massa de teste com a RFB – teste nessa semana/próxima.
+ Realizada reunião de acesso a documentação das APIs SGD ICN*, QR Code e Wallet.
+ *MG já possui acordo com TSE para consumo da base ICN, sem ser pelo 
+barramento GOV.BR, para expedição das carteiras antigas – será usado para 
+carteiras novas também. 
+ Pretende emitir a Carteira para todos os cidadãos habilitados em todos os pontos.
+ 120.000 Carteiras por mês.
+ Status: no prazo*.
+ *Provável que seja o primeiro Estado pronto.
+MINAS GERAIS
+STATUS – no prazo
+===== [pag 8] =====
+ Já possui massa de teste com a RFB – teste nessa semana/próxima.
+ Realizada reunião de acesso a documentação das APIs SGD ICN* QR Code e Wallet.
+ *Já possui acordo com TSE para consulta ICN, mas não no fluxo para expedição 
+da Carteira. Deverá usar o barramento GOV.BR – API ICN (já solicitado à SGD).
+ Pretende emitir a Carteira para todos os cidadãos habilitados em todos os pontos.
+ 70.000 Carteiras por mês.
+ Status: no prazo.
+PARANÁ
+STATUS – no prazo
+===== [pag 9] =====
+ Precisa enviar o range de IPs para a RFB.
+ Realizada reunião de acesso a documentação das APIs SGD ICN, QR Code e Wallet.
+ Pretende emitir a Carteira em alguns pontos somente.
+ 5.000 Carteiras por mês.
+ A gráfica de PE talvez não possua condições de imprimir as especificações da 
+Carteira – reunião a ser marcada.
+ Status: atrasado.
+PERNAMBUCO
+STATUS - ATRASADO
+===== [pag 10] =====
+ Já possui massa de teste com a RFB – teste nessa semana/próxima – verificando 
+autorização com a RFB (e-mail enviado para RFB).
+ Realizada reunião de acesso a documentação das APIs ICN*, QR Code e Wallet.
+ *Já possui acordo com TSE para consulta ICN, mas não no fluxo para expedição 
+da Carteira. Deverá usar o barramento GOV.BR – API ICN (já solicitado à SGD).  
+ Pretende emitir a Carteira para todos os cidadãos habilitados em todos os pontos.
+ 50.000 Carteiras por mês.
+ Status: no prazo.
+RIO GRANDE DO SUL
+STATUS – no prazo
+===== [pag 11] =====
+ Já possui massa de teste com a RFB – teste próxima semana.
+ Não realizada reunião de acesso a documentação das APIs SGD ICN*, QR Code e 
+Wallet.
+ *Já possui acordo com TSE para consulta ICN, mas não no fluxo para expedição 
+da Carteira. Deverá usar o barramento GOV.BR – API ICN (já solicitado à SGD).
+ Pretende emitir a Carteira para todos os cidadãos habilitados em todos os pontos.
+ 42.000 Carteiras por mês.
+ A gráfica de SC talvez não possua condições de imprimir as especificações da 
+Carteira – reunião dia 09/05.
+SANTA CATARINA
+STATUS - ATRASADO
+===== [pag 12] =====
+ RFB.
+ Finalizando a Fase 2 – Associação CIN-CPF, alertas, resultado biométrico – 15-20 dias homologação –
+“curso” com os Estados piloto.
+ Fase 3 (consulta biográfica), Fase 4 (alteração base), Fase 5 (inscrição do CPF) ainda não iniciou –
+conversas SERPRO (orçamento).
+ Aumentar capacidade de infraestrutura – conversas SERPRO (orçamento).
+ SGD.
+ Finalizando o template da API QR Code e Wallet (em conjunto com MJSP).
+ Barramento SIC – demanda estabelecida com SERPRO.
+ MJSP .
+ Manual e matrizes das Carteiras (papel ok – Ofício enviado para produção da marca d’agua - +25 dias, 
+cartão – pendência com a PF – aguardando nova manifestação).
+ Ofício aos Estados para acesso aos manuais e matrizes pronto – disparado dia 04/05/2022.
+ Finalizando a definição do arquivo biométrico para ICN (deca/face).
+GOVERNO FEDERAL
+===== [pag 13] =====
+ Estabelece os procedimentos para o credenciamento de empresa pública ou privada 
+interessada em produzir a Carteira de Identidade Nacional na forma estabelecida 
+pelo Decreto 10.977, de 23 de fevereiro de 2022.
+ Requisitos mínimos de capacidade técnica para expedição da Carteira.
+ CEFIC faz o credenciamento por meio de um relatório de uma Comissão de 
+Credenciamento da CEFIC.
+ Auditoria 
+ Vistoria in loco em casos justificados ou para fiscalização.
+Credenciamento de empresas
+===== [pag 14] =====
+ Aprovação dos Manuais com modelos das Carteiras.
+ Só as especificações em papel.
+ Ofício Banco do Brasil
+ Outros...
+Outros assuntos
+===== [pag 15] =====
+SECRETARIA ESPECIAL DE MODERNIZAÇÃO DO ESTADO
+A Identificação do Cidadão Brasileiro
+Desafio de todos nós !

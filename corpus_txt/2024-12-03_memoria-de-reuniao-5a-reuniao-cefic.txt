@@ -1,0 +1,95 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+ 
+1. Identificação da Reunião 
+5ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) no ano de 2024. 
+Data Horário Local 
+03/12/2024 17h00 Casa Civil 
+ 
+2. Pauta 
+2.1. Informes 
+ 
+• Lei 14.534/23  
+2.2. Apresentação do aplicativo de leitura da CIN 
+2.3. Relato dos trabalhos dos GTT em outubro e novembro/2024  
+2.4. Acompanhamento sobre a situação atual de emissões da CIN 
+2.5. Deliberação - Resolução do Serviço Biométrico Federal e Resolução do Fluxo de emissão da CIN 
+3. Participantes 
+PARTICIPANTES CARGO/POSIÇÃO ÓRGÃO 
+Pedro Helena Pontual 
+Machado 
+Titular CEFIC 
+Secretário-Executivo Adjunto da Casa Civil 
+Casa Civil da Presidência da 
+República (CC-PR) 
+Rogério Souza Mascarenhas Titular CEFIC  
+Secretário-Executivo da CEFIC  
+Secretário de Governo Digital  
+Secretaria de Governo Digital 
+(SGD) / Ministério da Gestão e 
+da Inovação em Serviços 
+Públicos (MGI) Eduardo Magalhães de 
+Lacerda Filho 
+Coordenador-Geral de Identificação Civil  
+Enylson Camolesi Presidente Instituto Nacional de 
+Tecnologia da Informação (ITI) 
+/ Ministério da Gestão e da 
+Inovação em Serviços Públicos 
+(MGI) 
+Sylvio Koury Diretor de Tecnologias de Identificação 
+Katia Macarini Gonçalves Coordenadora Geral de Tecnologias de 
+Identificação 
+Ana Maria Costa Cândido 
+Lacerda 
+Assessora da Diretoria de Tecnologias de 
+Identificação 
+Rériton Weldert Gomes Suplente CEFIC 
+Coordenador-Geral de Gestão de Cadastro e 
+Benefícios Fiscais 
+Secretaria Especial da Receita 
+Federal do Brasil (RFB) 
+Rafael Neves Carvalho Coordenador Operacional de Cadastros e 
+Benefícios Fiscais 
+Solange Berto de Medeiros Suplente CEFIC  
+Subsecretária de Tecnologia da Informação e 
+Comunicação - STI/MJSP 
+Ministério da Justiça e 
+Segurança Pública (MJSP) 
+Camila Pintarelli Diretora -DGFNSP/SENASP/MJSP 
+Jose Rocha de Carvalho Filho Coordenador-Geral de Planejamento, Inovação 
+e Integração de Tecnologia da Informação e 
+Comunicação para Segurança Pública 
+Fernando Ferreira Rezende 
+Freitas 
+Instituto Nacional de Identificação - INI/DPA/PF 
+Ana Estela Haddad Secretária de Informação e Saúde Digital Ministério da Saúde (MS) 
+===== [pag 2] =====
+Fábio Mariano da Silva Diretor de Promoção dos Direitos Humanos Ministério dos Direitos 
+Humanos e da Cidadania 
+(MDHC) 
+ 
+4. Relato 
+O levantamento das bases de dados para adequação  está em curso, conforme a necessidade pr evista na Lei 
+14.534/2023. Considerando a exiguidade do prazo, sugeriu -se avaliar a pactuação de Termos de ajustes sem 
+passar pelo processo de legislativo para prorrogação do prazo. Diagnóstico das bases e interoperabilidade será 
+apresentado na próxima reunião. 
+ MJSP apresentou o aplicativo para leitura do QRCode da CIN. O aplicativo proposto apresenta 3 
+funcionalidades no menu principal: 
+• Minha carteira de Identidade Nacional;  
+• Configurar compartilhamento, e; 
+• Ler outra identidade.   
+ 
+Na verificação do QRCode são apresentadas 2 opções de leitura: 
+a. Offline – Retorna: CPF, Data de Nascimento e data de validade da CIN; 
+b. Online – Retorna: CPF, foto, nome, filiação, data de nascimento, data de validade da CIN  e 
+naturalidade.  
+Avaliou-se que a disponibilidade da CIN, também neste aplicativo, pode gerar alguma confusão na população, 
+uma vez que sua  finalidade é a validação do QRCode . As demais funcionalidades  propostas para o aplicativo 
+devem ficar para análise posterior.   
+ 
+5. Encaminhamentos  
+5.1 - Discussão no GTT1  - Planejamento e Monitoramento  e GTT3 - Desenvolvimento Técnico  sobre 
+alternativas para a utilização dos recursos desenvolvidos para o aplicativo. 
+5.2 - Reunião Extraordinária em 19/12/2024, para continuidade da discussão da pauta apresentada hoje: 
+• Deliberação:  Minuta Serviço Biométrico Federal e da Minuta Fluxo de Emissão da CIN. 

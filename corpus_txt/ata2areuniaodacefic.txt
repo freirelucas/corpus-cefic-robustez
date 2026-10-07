@@ -1,0 +1,134 @@
+
+===== [pag 1] =====
+ 
+PRESIDÊNCIA DA REPÚBLICA 
+SECRETARIA-GERAL 
+SECRETARIA ESPECIAL DE MODERNIZAÇÃO DO ESTADO 
+ 
+ 
+1 
+ 
+ATA DE REUNIÃO 
+ 
+1. Identificação da Reunião 
+ 2ª Reunião ordinária da Câmara Executiva Federal de Identificação do Cidadão no ano de 2022. 
+Data Horário Local 
+24/03/2022 14h30 ás 16h30 Videoconferência  
+ 
+2. Pauta 
+2.1. Abertura 
+2.2. Desenvolvimento das demandas RFB/SERPRO, conforme especificado no plano de trabalho – a a 
+cargo da RFB. 
+2.3. Desenvolvimento do arquivo vetorial com as especificações dos modelos das carteiras – a cargo do 
+MJSP. 
+2.4. Apresentação de proposta de ampliação da capacidade do Sistema ABIS Nacional da Polícia Federal - 
+a cargo da PF. 
+2.5. Apresentação de proposta para dotar os Estados de infraestrutura tecnológicos para implantação do 
+SIC (aqueles que não possuem) – a cargo da PF. 
+2.6. Situação de andamento das demandas pela SGD, RFB, MJSP e PF. 
+2.7. Fluxograma da emissão da carteira de identidade – minuta – a cargo da SEME. 
+2.8. Outros assuntos de interesse dos membros da CEFIC. 
+2.8.1. Retificação do Regimento Interno 
+2.8.2. Comunicação Oficial da CEFIC - Representantes  
+2.9. Encerramento. 
+ 
+3. Participantes 
+Participantes  Órgão 
+Eduardo Gomes da Silva  Titular - 
+Coordenador 
+Secretário Especial de Modernização do 
+Estado - SEME 
+André Monteiro Titular 
+Secretário de Modernização Institucional e 
+Regional - SEME 
+Alexandre Urioste  
+Suplente SEME   
+Eduardo Lacerda  
+Suplente SEME 
+Romulo Setúbal  
+Assessor  SEME 
+Roberto Pereira Alves 
+Convidado Assessor de Projetos SEME 
+Beatriz Alice Convidado Estagiária SEME 
+===== [pag 2] =====
+ 
+PRESIDÊNCIA DA REPÚBLICA 
+SECRETARIA-GERAL 
+SECRETARIA ESPECIAL DE MODERNIZAÇÃO DO ESTADO 
+ 
+ 
+2 
+ 
+Fernando André Coelho 
+Mitkiewicz  Titular Secretário de Governo Digital - ME 
+Hudson Mesquita  Convidado -SGD/ME 
+Frederico Igor Leite Faber Titular 
+Subsecretário da Receita Federal do 
+Brasil(RFB) do Ministério da Economia 
+Valdimir Bezerra Castro Filho -  Convidado RFB 
+Washington Leonardo Guanaes 
+Bonini  Titular 
+Secretário Executivo Adjunto – Ministério 
+da Justiça e Segurança Pública(MJSP) 
+Rodrigo Lange   Convidado -Diretor MJSP 
+Jade Kende Gonçalves Umbelino   Titular  Polícia Federal 
+Paulo Ayran da Silva Bezerra Suplente Polícia Federal  
+André de Cesero Convidado SERPRO 
+ 
+4. Relato 
+4.1. A reunião foi aberta pelo Sr Eduardo Gomes da Silva, Secretário Especial de Modernização do 
+Estado e Coordenador da CEFIC, dando boas-vindas aos presentes, registrando a pauta da reunião.  
+4.2. A seguir, o Sr. Eduardo Lacerda fez a apresentação do Fluxograma da Emissão da nova Carteira de 
+Identidade Nacional (CIN). Ele informou que o grupo técnico da CEFIC irá apresentar um relatório sobre o fluxograma 
+da emissão da mova carteira de identidade nos estados para deliberação da CEFIC, conforme o que está previsto no 
+decreto 10.900.  
+4.3. O Sr. Eduardo Gomes acrescentou a importância da transparência técnica que foi realizado para a 
+escolha dos 8 estados pilotos para emissão da carteira de identidade. 
+4.4.  O Sr. Frederico Leite informou os oito estados que comporão o projeto piloto estão aptos para a 
+emissão da nova carteira de identidade. Escolha seguiu fatores predominantemente técnicos.  
+4.5.   O Sr. Eduardo Lacerda acrescentou que o escopo das fases do projeto, feito pela RFB, está alinhado 
+e atende com o que a SEME deseja.   
+4.6. O SERPRO informou que se compromete a rever o novo escopo para verificação de prazos e 
+implementações   
+4.7. O Sr. Alexandre Urioste solicitou a manifestação do ME para o próximo item da pauta para tratar 
+sobre o desenvolvimento do arquivo vetorial e especificações do novo modelo da carteira. 
+4.8.  O Sr. Washington Bonini informou que já foi demandado o desenvolvimento do arquivo vetorial, 
+solicitando prorrogação de mais 20 dias úteis para produção do arquivo. Washington Bonini questionou os integrantes 
+da CEFIC se seria possível o MJSP iniciar uma comunicação com os países do MERCOSUL, para comunicar quais 
+documentos estão em vigor no território nacional, para reconhecimento de documento de viagem.  
+4.9. O Sr Eduardo Lacerda sugeriu à PF aditivar o contrato para a base do ABIS tenha pelo menos  100 
+milhões de registros.  
+===== [pag 3] =====
+ 
+PRESIDÊNCIA DA REPÚBLICA 
+SECRETARIA-GERAL 
+SECRETARIA ESPECIAL DE MODERNIZAÇÃO DO ESTADO 
+ 
+ 
+3 
+ 
+4.10. O Sr Jade Kende confirmou que essa é a meta, atender 100 milhões e aumentar a capacidade diária 
+para 80 mil na emissão da carteira. Realizou uma apresentação no Excel, informando o levantamento que foi feito com 
+os estados sobre os recursos RFB/SERPRO para o segundo item da pauta 
+4.10.1. O Sr. Alexandre Urioste fez a retificação do regimento interno da CEFIC com as mudanças 
+solicitadas. Informou que já foi realizada a primeira reunião  do Grupo Técnico de Identificação do Cidadão nos 
+Estados (GTIC) e solicitando aos integrantes da CEFIC que enviasse por e -mail a indicação dos componentes da 
+GTIC. Comunicou que foi remetida a ATA da reunião do dia 14 de março de 2022, para aprovação dos componentes, 
+solicitando que qualquer alteraç ão que seja demandada pelos participantes seja enviada no e -mail 
+cefic@presidencia.gov.br.  
+4.11. Por fim, não havendo mais assuntos a serem tratados, o Sr. Eduardo Gomes agradeceu aos 
+presentes e encerrou a reunião. 
+ 
+5. Deliberações 
+ 
+5.1. Foi deliberado o regimento interno da CEFIC.  
+5.2. Foi aprovada a Ata de reunião do dia 14 de março de 2022. 
+ 
+6. Encaminhamentos 
+6.1. A SEME irá enviar um e-mail para a RFB informando que foi aprovado por parte da SEME o escopo 
+das fases do projeto.  
+6.2. Os Ministérios irão enviar um e-mail indicando os representantes do Grupo Técnico de Identificação 
+do Cidadão nos Estados  (GTIC). 
+ 
+7. Anexos 
+7.1. Apresentação em Power point da segunda reunião CEFIC 

@@ -1,0 +1,155 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião  
+7ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) de 2025.  
+Data Horário Local 
+09/09/2025 17h Palácio do Planalto – sala 407 
+ 
+2. Participantes  
+Nome Órgão  Cargo  
+Pedro Helena Pontual 
+Machado* 
+Casa Civil da Presidência da República - 
+CC-PR  Secretário-Executivo Adjunto 
+Carlos Antônio Lopes de 
+Araújo 
+Casa Civil da Presidência da República - 
+CC-PR Assessor Especial 
+Patrick de Faria Casa Civil da Presidência da República - 
+CC-PR Assessor 
+Rogério Souza Mascarenhas Secretaria de Governo Digital -SGD/MGI Secretário de Governo Digital 
+Hudson Vinícius Mesquita Secretaria de Governo Digital -SGD/MGI Diretor de Identidade Digital  
+Paulo Ayran da Silva Bezerra Secretaria de Governo Digital -SGD/MGI Coordenador-Geral de Identificação 
+Civil 
+Thalita Knupp Secretaria de Governo Digital -SGD/MGI Especialista em Análise de 
+Processos de Negócios 
+Daniel de Souza Rosa Secretaria de Governo Digital -SGD/MGI Engenheiro  
+Ana Maria Costa Candido 
+Lacerda 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Assessora Técnica 
+Enylson Flávio Martinez 
+Camolesi 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor-presidente 
+Katia Macarini Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenadora-Geral 
+Maurício Augusto Coelho Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor 
+Marcelo Oliveira Barbosa Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenador-Geral 
+Beatriz Marques de Jesus 
+Figueiredo 
+Ministério da Justiça e Segurança Pública 
+- MJSP 
+Coordenadora-Geral de 
+Modernização Tecnológica 
+José Rocha de Carvalho Filho Ministério da Justiça e Segurança Pública 
+- MJSP Coordenador-Geral de Inovação 
+José Vinicius Sousa Ministério da Justiça e Segurança Pública 
+- MJSP Assessor 
+Isabel Seixas de Figueiredo Secretaria Nacional de Segurança Pública 
+- SENASP/MJSP Diretora 
+Priscilla Roscia Polícia Federal - PF/MJSP Diretora 
+Alex Halti Cabral  Instituto Nacional de Identificação – INI Diretor 
+Wilson Silva de Sousa Instituto Nacional de Identificação – INI Papiloscopista 
+Rafael Neves* Receita Federal do Brasil - RFB Coordenador-Geral  
+Paula Xavier dos Santos Ministério da Saúde – MS Diretora DATASUS 
+Sérgio Araújo Correia Lima Ministério da Saúde – MS Coordenador-Geral DATASUS 
+Tula Vieira Brasileiro Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora-Geral 
+Letícia Valverde Chahaira* Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora 
+*Não assinaram a lista de presença 
+3. Pauta  
+ 
+3.1. Abertura  
+===== [pag 2] =====
+3.2. Informes gerais 
+3.3. Entregas 2025 
+3.4 Plano de Ação OIC 
+ 
+4. Relato  
+ 
+A reunião da CEFIC teve início com a apresentação da pauta e o destaque para a realização 
+de visitas aos estados. Foi ressaltada a importância dos decretos que vinculam a emissão da Carteira 
+de Identidade Nacional (CIN) ao acesso a benefícios sociais. Registrou-se que o encontro teria caráter 
+exclusivamente informativo, sem deliberações formais. 
+ 
+Na sequência, foram apresentados os informes gerais. Foram expostos os dados de emissão 
+da CIN por unidade da federação e relatado que o Estado do Pará se comprometeu a efetivar a 
+inscrição no CPF até a semana seguinte, enquanto o Distrito Federal assumiu o mesmo compromisso 
+com prazo para a primeira quinzena de outubro. 
+ 
+No que se refere às entregas previstas para o ano de 2025, foram destacados cinco pontos 
+centrais. O primeiro deles foi o Serviço Biométrico Federal, que se encontra em fase final de 
+contratação e cuja previsão é de estar disponível até o final de outubro. Para esta fase inicial, está 
+prevista a realização de testes em dois estados, havendo a necessidade de atualização do plano de 
+implementação e de preparação técnica dos órgãos estaduais de identificação. 
+ 
+O segundo ponto foi o Serviço de Controle de Fluxo. Constatou -se que o texto referente ao 
+tema está em debate nos grupos técnicos, devendo ser harmonizado com os documentos 
+relacionados ao Protocolo de Divergências e ao próprio Serviço Biométrico Federal. Apesar de o 
+orçamento já estar liberado, a contratação depende da edição de resolução específica. 
+ 
+O terceiro ponto abordado foi a Declaração de Nascido Vivo (DNV-e) e a Biometria Neonatal. 
+Atualmente, quatorze Estados já avançaram na implementação do registro, embora ainda não exista 
+padronização nacional. Destacou-se a importância da vinculação do DNV aos documentos futuros 
+do cidadão e da articulação com a Receita Federal, tema que seguirá em discussão nos grup os 
+técnicos competentes. 
+ 
+O quarto ponto tratado foi o credenciamento definitivo. O processo regulatório foi retomado 
+em 2025, com previsão de aprovação em março de 2026. Ficou definido que o credenciamento será 
+restrito a prestadores externos, abrangendo as etapas de gráfica, correspondente ao espelho, e de 
+personalização, relativa à impressão. Serão previstos requisitos técnicos de controle de qualidade, 
+de segurança da informação e de gráfica segura, de acordo com normas específicas. A previsão é 
+que a exigência de certificação o corra após três anos da aprovação, com revisões periódicas. Foi 
+solicitado um cronograma detalhado acompanhado de análise de riscos. Reforçou -se, ainda, que 
+não deve haver descontinuidade na prestação de serviços e deve ser garantida a aceitação legal da 
+CIN digital para o acesso a benefícios sociais. 
+ 
+O quinto ponto tratou do monitoramento dos padrões de impressão. Até o momento, foi 
+analisada a conformidade ao Decreto nº 10.977/2022 de amostras de quatorze Estados, tendo sido 
+===== [pag 3] =====
+identificada a ocorrência de QR Codes em tamanho inferior ao estabelecido na Bahia, embora sem 
+prejuízo para a leitura.  
+ 
+Destacou-se também a necessidade de ajustes na base biométrica do Ministério da Justiça e 
+Segurança Pública, a fim de incluir a coleta das dez digitais, com previsão de adequação técnica até 
+o mês de outubro, caso outras demandas do Ministério sejam despriorizadas. 
+ 
+Na parte destinada às discussões gerais, destacou -se a importância de formalizar as 
+demandas que serão direcionadas aos Estados e de qualificar previamente as informações que 
+subsidiarão as visitas. Definiram -se como prioritários os seguintes temas: Serviço Biométrico 
+Federal, Serviço de Controle de Fluxo, monitoramento da impressão e credenciamento definitivo. 
+Avaliou-se a conveniência de apresentar essas informações durante o Congresso da Cidadania  
+Digital, aproveitando o espaço para reuniões com representantes estaduais. 
+ 
+Quanto ao plano de ação dos órgãos de identificação civil, estabeleceu-se que a priorização 
+se dará pela razão entre os potenciais beneficiários sem CIN e a quantidade de emissões realizadas 
+em julho de 2025. Foram priorizados os estados do Pará, do Espírito Santo, do Amapá, do Rio Grande 
+do Norte e da Bahia. Também foram considerados fatores como a distribuição de beneficiários, a 
+rede de pontos de emissão e as estimativas de atendimento mensal. Elaborou -se um conjunto de 
+ações adaptáveis à realidade de cada estado, com a observação de que algumas unidades federativas 
+terão dificuldade de cumprir as metas estabelecidas, havendo possibilidade de prorrogação dos 
+prazos. 
+ 
+No que diz respeito ao planejamento das visitas, definiu -se que haverá participação de 
+representantes dos estados e do governo federal. A agenda das visitas será dividida em dois 
+momentos: no turno matutino , ocorrerá o alinhamento estratégico com o objetivo de pactuar a 
+elaboração de um plano de ação; no turno vespertino, será realizada reunião operacional voltada à 
+construção detalhada desse plano. O modelo adotado contemplará cinco eixos: aumento da 
+eficiência operacional, expansão da capacidade, realização de mutirões, atendimento vinculado à 
+seguridade social e estratégias de comunicação.  
+Finalizada a pauta, a reunião foi encerrada. 
+ 
+5. Encaminhamentos: 
+ 
+• Atualizar plano de implantação do SBF. 
+• Atualizar e detalhar  cronograma do credenciamento definitivo, bem como elaborar uma 
+análise de risco.  
+• Alinhar assuntos que precisam ser apresentados ao s estados , p reparando-os para as 
+demandas extras que estão por vir.  
+• Incluir no planejamento do GTT1 os ajustes na base do MJSP .  
+• Planejar reunião com os diretores dos OICs durante o Congresso da Cidadania. 

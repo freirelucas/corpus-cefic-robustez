@@ -1,0 +1,3510 @@
+
+===== [pag 1] =====
+Número de referência 
+69 páginas
+© ABNT 2025
+ABNT NBR 17225:2025
+ABNT NBR
+17225
+Primeira edição
+11.03.2025
+Acessibilidade em conteúdo e aplicações web — 
+Requisitos
+Accessibility in web content and applications — Requirements
+NORMA
+BRASILEIRA
+ICS 11.180.99; 35.240.95
+===== [pag 2] =====
+ii
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+© ABNT 2025
+Todos os direitos reservados. A menos que especificado de outro modo, nenhuma parte desta publicação pode ser 
+reproduzida ou utilizada por qualquer meio, eletrônico ou mecânico, incluindo fotocópia e microfilme, sem permissão por 
+escrito da ABNT.
+ABNT
+Av. Treze de Maio, 13 - 28º andar
+20031-901 - Rio de Janeiro - RJ
+Tel.: + 55 21 3974-2300
+Fax: + 55 21 3974-2346
+abnt@abnt.org.br
+www.abnt.org.br
+===== [pag 3] =====
+iii
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Sumário Página
+Prefácio ...............................................................................................................................................ix
+Introdução ............................................................................................................................................x
+1 Escopo ................................................................................................................................1
+2 Referências normativas .....................................................................................................1
+3	 Termos 	e	definições ...........................................................................................................1
+4 Conformidade .....................................................................................................................9
+5 Diretrizes ...........................................................................................................................10
+5.1 Interação por teclado .......................................................................................................10
+5.1.1 Ind icador de foco visível – Requisito .............................................................................10
+5.1.2 Elemento em foco totalmente visível – Recomendação ...............................................10
+5.1.3 Elemento em foco parcialmente visível – Requisito .....................................................10
+5.1.4 Ordem de foco previsível – Requisito ............................................................................11
+5.1.5 Uso de foco – Recomendação ........................................................................................11
+5.1.6 Armadilha de foco – Requisito ........................................................................................11
+5.1.7 Conteúdo adicional – Recomendação ...........................................................................11
+5.1.8 Conteúdo adicional persistente – Requisito .................................................................11
+5.1.9 Conteúdo adicional dispensável – Requisito ................................................................11
+5.1.10 Atalhos de teclado – Recomendação .............................................................................12
+5.1.11	 Atalhos 	de	teclado	sem	tecla	modificadora	–	Requisito ..............................................12
+5.1.12 Acessibilidade por teclado total – Recomendação .......................................................12
+5.1.13 Acessibilidade por teclado parcial – Requisito .............................................................12
+5.1.14 Mecanismos de entrada simultâneos – Recomendação ..............................................12
+5.1.15 Comportamento de componentes customizados – Recomendação ..........................12
+5.1.16 Instruções para componentes customizados – Requisito ...........................................13
+5.2 Imagens .............................................................................................................................13
+5.2.1 T exto alternativo para imagens de conteúdo – Requisito ............................................13
+5.2.2 T exto alternativo para imagens funcionais – Requisito ...............................................13
+5.2.3 T exto alternativo para imagens decorativas – Requisito .............................................13
+5.2.4 Descrição para imagens complexas – Requisito ..........................................................13
+5.2.5 Imagens de texto – Requisito ..........................................................................................13
+5.2.6 T exto alternativo para mapas de imagens – Requisito .................................................14
+5.3 Cabeçalhos .......................................................................................................................14
+5.3.1 Semântica de cabeçalho – Requisito .............................................................................14
+5.3.2 Uso de cabeçalhos – Requisito ......................................................................................14
+5.3.3 Cabeçalho principal – Recomendação ...........................................................................14
+5.3.4 Seções com cabeçalhos – Recomendação ...................................................................14
+5.3.5 Estrutura de cabeçalhos – Requisito .............................................................................14
+5.4 Regiões .............................................................................................................................15
+5.4.1 Semântica de região – Requisito ....................................................................................15
+5.4.2 Uso de regiões – Requisito .............................................................................................15
+5.4.3 Conteúdo em regiões – Recomendação ........................................................................15
+===== [pag 4] =====
+iv
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.4.4 Regiões únicas – Recomendação ..................................................................................15
+5.4.5	 Regiões 	identificadas	unicamente	–	Requisito .............................................................15
+5.5 Listas .................................................................................................................................16
+5.5.1 Semântica de lista – Requisito ........................................................................................16
+5.5.2 Uso de listas – Requisito .................................................................................................16
+5.6 Tabelas ..............................................................................................................................16
+5.6.1 Semântica de tabela – Requisito ....................................................................................16
+5.6.2 Uso de T abelas – Requisito .............................................................................................16
+5.6.3 Cabeçalhos de tabela – Requisito ..................................................................................16
+5.6.4 Título de tabela – Recomendação ..................................................................................16
+5.6.5 Título de tabela associado – Requisito ..........................................................................17
+5.6.6 Descrição para tabelas complexas – Recomendação ..................................................17
+5.7 Links e navegação ...........................................................................................................17
+5.7.1 Semântica de link – Requisito .........................................................................................17
+5.7.2 Uso de links – Requisito ..................................................................................................17
+5.7.3 Propósito do link sem contexto – Recomendação .......................................................17
+5.7.4 Propósito do link no contexto – Requisito ....................................................................17
+5.7.5 Links	com	identificação	consistente	–	Recomendação ...............................................17
+5.7.6 Links que abrem em uma nova guia ou janela – Recomendação ...............................18
+5.7.7 Links para arquivos (não HTML) – Recomendação ......................................................18
+5.7.8 Links para sites externos – Recomendação ..................................................................18
+5.7.9 T exto complementar do link – Recomendação .............................................................18
+5.7.10 Links adjacentes – Recomendação ................................................................................18
+5.7.11 Links para contornar blocos de conteúdo – Recomendação ......................................18
+5.7.12 Links para contornar blocos de conteúdo em conjunto de páginas – Requisito ......18
+5.7.13 Alternativas para localização – Requisito ......................................................................19
+5.7.14 Localização em conjunto de páginas – Recomendação ..............................................19
+5.7.15 Navegação consistente – Requisito ...............................................................................19
+5.7.16 Ajuda consistente – Requisito ........................................................................................19
+5.8 Botões e controles ...........................................................................................................19
+5.8.1 Semântica de botão – Requisito .....................................................................................19
+5.8.2 Uso de botões – Requisito ..............................................................................................19
+5.8.3 Propósito do botão – Requisito ......................................................................................19
+5.8.4	 Identificação 	consistente	na	página	–	Recomendação ................................................20
+5.8.5	 Identificação 	consistente	em	conjunto	de	páginas	–	Requisito ..................................20
+5.8.6 Área de acionamento (aprimorada) – Recomendação .................................................20
+5.8.7 Área de acionamento (mínima) – Requisito ...................................................................20
+5.8.8 Mudança de contexto previsível – Recomendação ......................................................21
+5.8.9 Mudança de contexto previsível no foco – Requisito ...................................................21
+5.8.10 Mudança de contexto previsível na entrada – Requisito .............................................21
+5.8.11 Acionamento por ponteiro único – Requisito ...............................................................21
+5.8.12 Operação por gestos de ponteiro – Requisito ..............................................................21
+5.8.13 Operação por movimento de arrastar – Requisito ........................................................22
+===== [pag 5] =====
+v
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.8.14 Operação por movimento – Requisito ...........................................................................22
+5.8.15 Controles com retorno – Recomendação ......................................................................22
+5.9 Formulários e entrada de dados .....................................................................................22
+5.9.1 Rótulo de campo – Requisito ..........................................................................................22
+5.9.2 Rótulo de campo previsível – Requisito ........................................................................22
+5.9.3 Rótulo de campo associado – Requisito .......................................................................23
+5.9.4 Rótulo de campo descritivo – Requisito ........................................................................23
+5.9.5 T extos de ajuda previsíveis – Requisito ........................................................................23
+5.9.6 Campos relacionados – Requisito ..................................................................................23
+5.9.7 Campos obrigatórios – Requisito ...................................................................................23
+5.9.8 T ipo de dado determinado – Requisito ..........................................................................23
+5.9.9 Mensagem de erro descritiva – Requisito .....................................................................23
+5.9.10 Sugestão de correção – Requisito .................................................................................23
+5.9.11 Prevenção de erro – Recomendação .............................................................................24
+5.9.12 Prevenção de erro para formulários críticos – Requisito ............................................24
+5.9.13 Ajuda contextual – Recomendação ................................................................................24
+5.9.14 Botão de submissão – Recomendação ..........................................................................24
+5.9.15 Reentrada de dados – Requisito .....................................................................................24
+5.9.16 V alidação sensorial ou por movimento – Requisito .....................................................24
+5.9.17 Autenticação acessível (aprimorado) – Recomendação ..............................................25
+5.9.18 Autenticação acessível (mínima) – Requisito ...............................................................25
+5.10 Apresentação ....................................................................................................................25
+5.10.1 Características sensoriais – Requisito ..........................................................................25
+5.10.2 Ordem de apresentação – Requisito ..............................................................................25
+5.10.3 Orientação de exibição – Requisito ................................................................................26
+5.10.4 Design responsivo – Requisito .......................................................................................26
+5.10.5 Área do indicador de foco visível – Recomendação ....................................................26
+5.11 Uso de cores  ....................................................................................................................26
+5.11.1 Uso de cores – Requisito ................................................................................................26
+5.11.2 Contraste para texto (aprimorado) – Recomendação ...................................................26
+5.11.3 Contraste para texto (mínimo) – Requisito ....................................................................27
+5.11.4 Contraste para componentes – Requisito .....................................................................27
+5.11.5	 Contraste 	para	objetos	gráficos	–	Requisito .................................................................27
+5.11.6 Contraste para indicador de foco visível – Requisito ...................................................27
+5.12 Conteúdo textual ..............................................................................................................27
+5.12.1 Espaçamento entre as linhas – Requisito .....................................................................27
+5.12.2 Espaçamento entre os parágrafos – Requisito .............................................................28
+5.12.3 Espaçamento entre as letras – Requisito ......................................................................28
+5.12.4 Espaçamento entre as palavras – Requisito .................................................................28
+5.12.5 Alinhamento de blocos de texto – Recomendação ......................................................28
+5.12.6 Largura de blocos de texto – Requisito .........................................................................28
+5.12.7 T exto redimensionado – Requisito .................................................................................29
+5.12.8 Semântica de texto especial – Requisito .......................................................................29
+===== [pag 6] =====
+vi
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.12.9 Uso de texto especial – Requisito ..................................................................................29
+5.12.10	 Definições 	de	significado	–	Recomendação .................................................................29
+5.12.11 Siglas e abreviaturas – Recomendação .........................................................................29
+5.12.12 Nível de linguagem – Recomendação ............................................................................29
+5.12.13	 Pronúncia 	identificada	–	Recomendação ......................................................................30
+5.13	 Codificação 	e	marcação	semântica ................................................................................30
+5.13.1 Título da página – Requisito ...........................................................................................30
+5.13.2 Idi oma da página – Requisito ..........................................................................................30
+5.13.3 Idi oma das partes da página – Requisito .......................................................................30
+5.13.4 Título do frame – Requisito .............................................................................................30
+5.13.5 Zoom não bloqueado – Requisito ...................................................................................30
+5.13.6 Ordem de leitura – Requisito ..........................................................................................31
+5.13.7 T exto visível no nome acessível – Requisito .................................................................31
+5.13.8 Mensagens de status – Requisito ...................................................................................31
+5.13.9	 Propósito 	identificável	–	Recomendação ......................................................................31
+5.13.10 Componentes com nome acessível – Requisito ...........................................................31
+5.13.11 Elementos nativos – Recomendação .............................................................................31
+5.13.12 Semântica de componentes customizados – Requisito ..............................................31
+5.13.13 Estados, propriedades e valores de componentes customizados – Requisito .........32
+5.14 Áudio e vídeo ....................................................................................................................32
+5.14.1 Alternativa em texto para áudio – Requisito .................................................................32
+5.14.2 Legendas descritivas para vídeo – Requisito ...............................................................32
+5.14.3 T ranscrição para vídeo – Recomendação ......................................................................32
+5.14.4 Audiodescrição para vídeo – Requisito .........................................................................32
+5.14.5 Audiodescrição estendida para vídeo – Recomendação .............................................33
+5.14.6 Janela de Libras para conteúdo em áudio – Recomendação ......................................33
+5.14.7 Controle de áudio – Requisito ........................................................................................33
+5.14.8 Áudio sem ruído – Recomendação ................................................................................33
+5.14.9 Legendas para áudio e vídeo ao vivo – Requisito ........................................................33
+5.14.10 T ranscrição para áudio ao vivo – Recomendação ........................................................33
+5.15 Animação ..........................................................................................................................33
+5.15.1 Controle de animação – Requisito .................................................................................34
+5.15.2 Animações acionadas por interação – Recomendação ...............................................34
+5.15.3 Flash intermitente – Recomendação ..............................................................................34
+5.15.4 Flash intermitente limitado – Requisito .........................................................................34
+5.16 Tempo ................................................................................................................................34
+5.16.1 Limite de tempo – Recomendação .................................................................................34
+5.16.2 Limite de tempo ajustável – Requisito ...........................................................................35
+5.16.3 Controle de atualização – Requisito ...............................................................................35
+5.16.4 Interrupções – Recomendação .......................................................................................35
+5.16.5 Reautenticação – Recomendação ..................................................................................35
+5.16.6 T empo de inatividade – Recomendação ........................................................................35
+6 Material de apoio ..............................................................................................................36
+===== [pag 7] =====
+vii
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Anexo A (informativo) Itens problemáticos para acessibilidade ....................................................37
+A.1 Geral ..................................................................................................................................37
+A.1.1 CAPTCHA ..........................................................................................................................37
+A.1.2 Reconhecimento facial – Biometria ................................................................................37
+A.1.3 Conteúdo exibido somente por foco do teclado ou posicionamento do cursor .......37
+A.1.4 Conteúdo inserido por CSS ............................................................................................38
+A.1.5 Conteúdo de terceiros .....................................................................................................38
+A.1.6 Componentes customizados ..........................................................................................38
+A.1.7 Arquivos acessíveis .........................................................................................................39
+A.1.8 T abelas para leiaute .........................................................................................................39
+A.1.9	 Marcação 	conforme	a	especificação ..............................................................................39
+Anexo B (informativo) Desempenho funcional ................................................................................40
+B.1 Geral ..................................................................................................................................40
+B.1.1 Utilização sem visão ........................................................................................................40
+B.1.2 Utilização com visão limitada .........................................................................................40
+B.1.3 Utilização sem percepção da cor ....................................................................................40
+B.1.4 Utilização sem a audição .................................................................................................41
+B.1.5 Utilização com audição limitada .....................................................................................41
+B.1.6 Utilização sem voz ...........................................................................................................41
+B.1.7 Utilização com manipulação ou força limitadas ...........................................................41
+B.1.8 Utilização com alcance limitado .....................................................................................42
+B.1.9 Utilização por pessoas com epilepsia fotossensível ....................................................42
+B.1.10  Utilização com cognição limitada ..................................................................................42
+Anexo C (informativo) Checklist ........................................................................................................43
+C.1 Geral ..................................................................................................................................43
+C.1.1 Interação por teclado .......................................................................................................43
+C.1.2 Imagens .............................................................................................................................46
+C.1.3 Cabeçalhos .......................................................................................................................47
+C.1.4 Regiões .............................................................................................................................48
+C.1.5 Listas .................................................................................................................................49
+C.1.6 Tabelas ..............................................................................................................................49
+C.1.7 Links e navegação ...........................................................................................................50
+C.1.8 Botões e controles ...........................................................................................................53
+C.1.9 Formulários e entrada de dados .....................................................................................56
+C.1.10 Apresentação ....................................................................................................................59
+C.1.11 Uso de cores  ....................................................................................................................60
+C.1.12 Conteúdo textual ..............................................................................................................61
+C.1.13	 Codificação 	e	marcação	semântica ................................................................................63
+C.1.14 Áudio e vídeo ....................................................................................................................65
+C.1.15 Animação ..........................................................................................................................67
+C.1.16 Tempo ................................................................................................................................68
+Bibliografia .........................................................................................................................................69
+===== [pag 8] =====
+viii
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabelas
+Tabela C.1 – Interação por teclado ..................................................................................................43
+Tabela C.2 – Imagens ........................................................................................................................46
+Tabela C.3 – Cabeçalhos ...................................................................................................................47
+Tabela C.4 – Regiões .........................................................................................................................48
+Tabela C.5 – Listas ............................................................................................................................49
+Tabela C.6 – Tabelas ..........................................................................................................................49
+Tabela C.7 – Links e navegação .......................................................................................................50
+Tabela C.8 – Botões e controles ......................................................................................................53
+Tabela C.9 – Formulários e entrada de dados ................................................................................56
+Tabela C.10 – Apresentação .............................................................................................................59
+Tabela C.11 – Uso de cores ..............................................................................................................60
+Tabela C.12 – Conteúdo textual .......................................................................................................61
+Tabela	C.13	–	Codificação	e	marcação	semântica .........................................................................63
+Tabela C.14 – Áudio e vídeo .............................................................................................................65
+Tabela C.15 – Animação ....................................................................................................................67
+Tabela C.16 – Tempo .........................................................................................................................68
+===== [pag 9] =====
+ix
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Prefácio
+A Associação Brasileira de Normas Técnicas (ABNT) é o Foro Nacional de Normalização. As Normas 
+Brasileiras, cujo conteúdo é de responsabilidade dos Comitês Brasileiros (ABNT/CB), dos Organismos 
+de Normalização Setorial (ABNT/ONS) e das Comissões de Estudo Especiais (ABNT/CEE), são 
+elaboradas por Comissões de Estudo (CE), formadas pelas partes interessadas no tema objeto  
+da normalização.
+Os Documentos Técnicos ABNT são elaborados conforme as regras da ABNT Diretiva 2.
+A ABNT chama a atenção para que, apesar de ter sido solicitada manifestação sobre eventuais direitos 
+de patentes durante a Consulta Nacional , estes podem ocorrer e devem ser comunicados à ABNT  
+a qualquer momento (Lei nº 9.279, de 14 de maio de 1996).
+Os Documentos Técnicos ABNT, assim como as Normas Internacionais (ISO e IEC), são voluntários 
+e não incluem requisitos contratuais, legais ou estatutários. Os Documentos Técnicos ABNT não 
+substituem Leis, Decretos ou Regulamentos, aos quais os usuários devem atender, tendo precedência 
+sobre qualquer Documento Técnico ABNT.
+Ressalta-se que os Documentos Técnicos ABNT podem ser objeto de citação em Regulamentos 
+Técnicos. Nestes casos, os órgãos responsáveis pelos Regulamentos Técnicos podem determinar  
+as datas para exigência dos requisitos de quaisquer Documentos Técnicos ABNT.
+A ABNT NBR 17225 foi elaborad a no Comitê Brasileiro de Acessibilidade (ABNT/CB-040), pela 
+Comissão de Estudo de Acessibilidade para a Inclusão Digital (CE-040:000.004) . O Projeto foi 
+submetido à Consulta Nacional no período de 27.11.2024 a 26.12.2024.
+O Escopo em inglês da ABNT NBR 17225 é o seguinte:
+Scope
+This standard establishes accessibility requirements for websites based on the International Web 
+Accessibility Guidelines. Compliance with this standard aims to comply with current legislation.
+This Standard establishes requirements to facilitate and optimize access to virtual environments for all 
+people with accessibility needs - situational, temporary or permanent - especially those with disabilities, 
+with the aim of eliminating or mitigating barriers to using websites.
+NOTE The international guidelines adopted for compliance with this standard are the W eb Content 
+Accessibility Guidelines 2.2 (WCAG 2.2), maintained by the international World Wide Web Consortium (W3C).
+===== [pag 10] =====
+x
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Introdução
+Esta Norma segue os critérios de sucesso (C.S.) do documento Diretrizes de Acessibilidade para 
+Conteúdo Web (WCAG) 2.2, principal conteúdo com orientações e boas práticas internacionais de 
+acessibilidade na web. Os critérios de sucesso do WCAG 2.2 estabelecem orientações para eliminação 
+de barreiras de acesso para pessoas que necessitam de acessibilidade, principalmente as que têm 
+deficiência.
+O WCAG 2.2 tem três níveis de conformidade, identificados em cada critério de sucesso:
+ — Para conformidade de Nível A, a página da web satisfaz todos os critérios de sucesso de Nível 
+A, ou é fornecida uma versão alternativa em conformidade com o Nível A. Este é o nível mais 
+simples e oferece acessibilidade limitada. Ao atender esse nível de conformidade, um determinado 
+número de pessoas com deficiência não encontra barreiras ao navegar na página.
+ — Para conformidade de Nível AA, a página da web satisfaz todos os critérios de sucesso de 
+Nível A e Nível AA, ou é fornecida uma versão alternativa em conformidade com o Nível AA. Este 
+é o nível recomendado para a maioria do conteúdo web. Ao atender a esse nível de conformidade, 
+um grande número de pessoas com deficiência não encontra barreiras ao navegar na página.
+ — Para conformidade de Nível AAA, a página da web satisfaz todos os critérios de sucesso de  
+Nível A, Nível AA e Nível AAA, ou é fornecida uma versão alternativa em conformidade com 
+o Nível AAA. Este é o nível mais difícil de obter conformidade. Não é indicado adotá-lo como 
+requisito para todo o conteúdo, porque nem sempre é possível atendê-lo. Ao atender a esse 
+nível de conformidade, um número maior de pessoas com deficiência não encontra barreiras ao 
+navegar na página.
+A Seção 5, elaborada com base nos critérios de sucesso do WCAG 2.2, visa favorecer a percepção, 
+a compreensão e a operação de usuários com deficiência, com base em desempenho funcional. Isso 
+significa que atender a estes requisitos e recomendações permite que pessoas com limitações para 
+enxergar, ouvir, falar, mover-se ou compreender possam usufruir de uma experiência com segurança 
+e autonomia.
+Nesta Norma, alguns ajustes de nomenclatura e indicação foram feitos para que ela esteja alinhada 
+com o WCAG 2.2.
+Na Seção 5, as subseções a serem cumpridas são identificadas pela palavra “requisito”, e as demais 
+subseções são identificadas pela palavra “recomendação”.
+===== [pag 11] =====
+ABNT NBR 17225:2025
+NORMA BRASILEIRA
+1© ABNT 2025 - Todos os direitos reservados
+Acessibilidade em conteúdo e aplicações web — Requisitos
+1 Escopo
+Esta Norma estabelece os requisitos de acessibilidade para websites baseados nas Diretrizes 
+Internacionais de Acessibilidade Web. A conformidade com esta norma visa atender à legislação vigente.
+Esta Norma estabelece os requisitos para facilitar e otimizar o acesso de todas as pessoas com 
+necessidades de acessibilidade — situacionais, temporárias ou permanentes —, principalmente 
+as com deficiência, aos ambientes virtuais, com o objetivo de eliminar ou mitigar as barreiras para 
+utilização de websites.
+NOTA As diretrizes internacionais adotadas para a conformidade com esta norma são as Diretrizes  
+de Acessibilidade para Conteúdo Web 2.2 (WCAG 2.2), mantidas pelo consórcio internacional World Wide 
+Web (W3C).
+2 Referências normativas
+Os documentos a seguir são citados no texto de tal forma que seus conteúdos, totais ou parciais, 
+constituem requisitos para este Documento. Para referências datadas, aplicam-se somente as edições 
+citadas. Para referências não datadas, aplicam-se as edições mais recentes do referido documento 
+(incluindo emendas).
+ABNT NBR 17060, Acessibilidade em aplicativos de dispositivos móveis
+ABNT NBR ISO 24495-1, Linguagem simples
+ABNT NBR 16452, Acessibilidade na comunicação – Audiodescrição
+ABNT NBR 15610-3, Televisão digital terrestre – Acessibilidade – Parte 3: Língua de Sinais (Libras)
+W3C-WCAG 2.2, Web Content Accessibility Guidelines (WCAG) 2.2
+W3C-WAI-ARIA 1.2, Accessible Rich Internet Applications
+W3C-ARIA, Authoring Practices Guide (APG) Home
+3 Termos	e	definições
+Para os efeitos deste documento, aplicam-se os seguintes termos e definições. 
+3.1  
+agente de usuário
+qualquer software que obtenha e apresente conteúdos da web aos usuários
+EXEMPLO  Navegadores web, reprodutores de multimídia, plug-ins e outros programas — incluindo 
+tecnologias assistivas — que ajudam a obter, apresentar e interagir com conteúdo da web.
+===== [pag 12] =====
+2
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+3.2  
+audiodescrição
+recurso de acessibilidade comunicacional que consiste na tradução de imagens em palavras, por meio 
+de técnicas e habilidades aplicadas com o objetivo de proporcionar uma narração descritiva em áudio, 
+para ampliação do entendimento de imagens estáticas ou dinâmicas, textos e origem de sons não 
+contextualizados, principalmente sem a utilização da visão
+[Fonte: ABNT NBR 16452 e ABNT NBR 17060]
+3.3  
+conteúdo adicional
+conteúdo oculto que se torna visível quando o usuário interage com a interface
+EXEMPLO  O conteúdo adicional pode ser apresentado por meio de tooltips, submenus e outros 
+elementos não modais.
+NOTA 1 O elemento que exibe o conteúdo adicional é chamado de gatilho. O gatilho e o conteúdo adicional 
+formam um mesmo componente. 
+NOTA 2 O conteúdo adicional considerado nesta norma refere-se ao conteúdo que é produzido pelo autor 
+e não é controlado pelo agente de usuário.
+3.4  
+componente
+componente de interface de usuário
+3.5  
+componente customizado
+componente da interface que não utiliza comportamento e semântica nativos dos elementos HTML
+NOTA Uma lista de componentes customizados pode ser encontrada no documento ARIA Authoring 
+Practices Guide.
+3.6  
+componentes interativos baseados em tempo
+componentes cuja interação do usuário é influenciada pelo tempo ou em que há necessidade de 
+resposta dentro de um período específico 
+EXEMPLO  Questionários online que requerem respostas dentro de um tempo limitado, jogos interativos 
+que requerem ação rápida ou decisões em tempo real e vídeos que pausam para perguntas ou escolhas do 
+usuário.
+3.7  
+conjunto de páginas web
+grupo de páginas web que compartilha um objetivo comum e que são criadas pelo mesmo autor, grupo 
+ou organização
+3.8  
+contexto do link
+informação adicional que pode ser determinada programaticamente a partir de relações com um link, 
+combinada com o texto do link e apresentada aos usuários de diferentes maneiras 
+NOTA 1 É esperado que o usuário possa identificar o contexto do  link sem mover o foco. 
+NOTA 2 Desenvolvedores podem utilizar técnicas de ARIA para associar texto adicional da página com  
+o link.
+===== [pag 13] =====
+3
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+3.9  
+dados tabuladores
+dados apresentados em células dispostas em linhas e colunas, de forma que a posição da célula em 
+linha e coluna específicas seja essencial para informar a relação entre os dados 
+NOTA Os valores em cada célula podem ser de tipos de dados numéricos, categóricos ou de texto.
+3.10  
+determinado programaticamente 
+determinado/determinável por meio de código de programação
+determinado pelo software a partir de dados fornecidos pelo autor, de forma que os diferentes agentes 
+de usuário, incluindo tecnologias assistivas, possam extrair e apresentar a informação aos usuários de 
+diferentes maneiras
+3.11  
+elementos focáveis 
+elementos tabuláveis
+elementos passíveis de receber foco do teclado
+EXEMPLO  Por meio da tecla tab.
+NOTA Elementos que somente recebem foco por programação ou pelo ponteiro não são considerados 
+elementos focáveis.
+3.12  
+elementos nativos
+elementos de marcação básicos e intrínsecos à linguagem, que não dependem de bibliotecas externas 
+para sua funcionalidade e formam a estrutura fundamental de uma página web
+EXEMPLO  Tags como <html>, <head>, <body>, <p>, <div>, <img>, entre outros.
+NOTA Cada um destes elementos nativos desempenha um papel específico na criação e na organização 
+do conteúdo na página. Elementos nativos HTML são essenciais para a construção de documentos web e 
+proporcionam a base para a inclusão de outros elementos mais avançados e customizados.
+3.13  
+emergência
+situação ou ocorrência repentina e inesperada que requer ação imediata
+EXEMPLO  Uma situação que requer uma ação imediata para preservar a saúde, a segurança ou a 
+propriedade.
+3.14  
+essencial
+algo que, se removido, altera profundamente a informação ou a funcionalidade do conteúdo, e a 
+informação e a funcionalidade não podem ser obtidas de outra forma para ficarem em conformidade
+3.15  
+flash
+par de alterações opostas em uma luminescência relativa
+NOTA Pode causar convulsões em algumas pessoas caso a exposição seja prolongada e ocorra em um 
+determinado intervalo de frequência.
+===== [pag 14] =====
+4
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+3.16  
+flash vermelho
+flashes que ocorrem com predominância da cor vermelha
+NOTA A luz vermelha tem uma frequência específica que pode ser mais propensa a desencadear 
+convulsões comparada a outras cores.
+3.17  
+foco do teclado
+foco direcionado a um elemento diretamente por meio da interface do teclado
+3.18  
+foco por programação
+foco direcionado a um elemento por meio de programação, sem a utilização direta da interface do 
+teclado, ou foco direcionado por botões ou âncoras, ainda que acionados pelo teclado, assim como 
+foco direcionado por tecnologias assistivas, ainda que utilizem a interface do teclado para operar
+3.19  
+formulários críticos
+formulários de envio de dados em que ocorrem responsabilidades jurídicas ou transações financeiras 
+para o usuário, que modificam ou eliminam dados controláveis pelo usuário em sistemas de 
+armazenamento de dados, ou que enviam respostas de teste do usuário
+3.20  
+funcionalidade acionada por movimento
+funções acionadas ao mover um dispositivo (por exemplo, sacudir ou inclinar) ou por meio de sensores 
+que respondem diretamente a movimentos, como gestos em direção ao dispositivo (para que sensores 
+como uma câmera possam captar e interpretar os gestos)
+3.21  
+gesto baseado em caminho
+tipo de movimento de ponteiro único que envolve uma interação em que não apenas os pontos finais 
+importam 
+NOTA Se passar por um ponto intermediário (geralmente próximo ao início do gesto) também afeta seu 
+significado, então é um gesto baseado em caminho.
+EXEMPLO  Movimento de deslizar ( swiping) e desenhar na tela.
+3.22  
+gesto multiponto
+gesto feito com mais de um ponto de contato simultâneo na interação em dispositivos de tela de toque 
+(touchscreen)
+EXEMPLO  Gesto de pinça para dar zoom.
+3.23  
+imagens complexas
+imagens que contêm informações substanciais que requerem uma descrição detalhada para 
+contemplar seu conteúdo 
+EXEMPLO  Infográficos, gráficos, diagramas, organogramas, entre outros.
+===== [pag 15] =====
+5
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+3.24  
+imagens de conteúdo 
+imagens informativas
+imagens que são parte integrante do conteúdo, ou que representam graficamente algum conceito  
+ou informação
+3.25  
+imagens decorativas
+imagens que não apresentam conteúdo ou informação, ou que são redundantes em relação ao texto 
+adjacente, de forma que podem ser removidas sem que haja perda de conteúdo ou informação
+3.26  
+imagens funcionais
+imagens utilizadas como conteúdo que identifica elementos interativos como botões e links
+3.27  
+imagens de texto
+imagens que exibem texto que se destina a ser lido e em que o texto é o conteúdo principal
+NOTA Imagens de texto são consideradas essenciais quando uma forma específica de apresentação do 
+texto é essencial para a informação transmitida e não é possível criar esta apresentação do texto de outra 
+forma, como em um logotipo, a réplica de um documento ou uma carta.
+3.28  
+indicador de foco visível
+sinal gráfico que indica visualmente o elemento em foco, comumente representado como uma moldura 
+ao redor do elemento
+3.29  
+interrupção
+conteúdo adicional ou atualização não requisitada pelo usuário que interrompe sua jornada
+3.30  
+legendas 
+subtitle
+textos que aparecem em um vídeo, que transcrevem exclusivamente diálogos
+NOTA Utilizadas principalmente para transmitir o diálogo em um idioma diferente daquele falado no vídeo.
+3.31  
+legendas ao vivo
+textos que aparecem em um vídeo como uma transcrição ou tradução em tempo real do conteúdo 
+falado em transmissão ao vivo
+3.32  
+legendas descritivas 
+caption
+textos que aparecem em um vídeo, que transcrevem diálogos, efeitos sonoros, sons do ambiente e demais 
+informações que não poderiam ser percebidos ou compreendidos por pessoas com deficiência auditiva 
+NOTA As legendas podem estar embutidas no vídeo (open caption ou legendas abertas) ou implementadas 
+de forma que possam ser ativadas e desativadas pelo usuário ( closed caption  ou legendas ocultas).
+===== [pag 16] =====
+6
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+3.33  
+lingua brasileira de sinais 
+Libras
+língua de natureza visual-espacial, com estrutura gramatical própria, que constitui o sistema linguístico 
+de comunidades surdas do Brasil
+3.34  
+linguagem simples
+técnica de comunicação em que o texto, a estrutura e o design são tão claros que os leitores a que se 
+destinam conseguem com facilidade encontrar o que precisam, entender o que encontram e utilizar 
+essa informação
+3.35  
+mapa de imagem
+elemento que consiste em uma lista de coordenadas que determina diferentes áreas interativas em 
+uma imagem
+3.36  
+mecanismo
+processo ou técnica para se alcançar um resultado, que pode ser explicitamente fornecido para o 
+usuário no conteúdo, ou pode ser um recurso fornecido pelo sistema operacional, agente de usuário 
+ou tecnologia assistiva
+3.37  
+mecanismo de ajuda
+mecanismo que permite fornecer ajuda ao usuário da página 
+NOTA Pode ser oferecido diretamente na página ou em uma outra página indicada.
+EXEMPLOS Uma seção com informações de contato (telefones, e-mail, canais de redes sociais etc.),  
+um mecanismo de autoajuda (perguntas frequentes), de contato humano (sistema de mensagens, formulário 
+de contato etc.) ou automatizado (chatbot).
+3.38  
+mecanismo de navegação
+mecanismo que permite acessar um conteúdo na web a partir de outro conteúdo
+EXEMPLO  Menus de navegação, teclas de atalho, campos de busca e links para saltar conteúdo.
+3.39  
+mecanismo que evita ativação acidental
+mecanismo que permite o cancelamento de uma ação 
+EXEMPLO  A utilização de controles nativos de botões e links, eventos disparados somente quando 
+o usuário solta um botão do mouse ou levanta o dedo da tela ( up-event) e acionamentos que podem ser 
+cancelados ou modificados.
+3.40  
+mídia sincronizada
+conteúdo que combina elementos como áudio, texto e/ou vídeo, em que todos precisam estar 
+sincronizados entre si para transmitir a informação de maneira correta e/ou com componentes 
+interativos baseados em tempo
+EXEMPLO  Vídeos com narração em áudio, animações com áudio, áudios com legendas e apresentações 
+de slides com voz.
+===== [pag 17] =====
+7
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+3.41  
+mudança de contexto
+mudança de posicionamento ou alteração de conteúdo substancial que, se efetuada sem conhecimento 
+do usuário, pode desorientar quem não for capaz de perceber toda a página simultaneamente
+NOTA 1 A mudança de contexto também é conhecida como alteração de contexto.
+NOTA 2 Uma alteração de conteúdo, por exemplo, a expansão de um submenu ou o surgimento de uma 
+mensagem de erro, nem sempre é uma mudança de contexto.
+EXEMPLO   Abrir uma nova janela, mover o foco para um componente diferente, acessar uma nova 
+página ou reorganizar significativamente o conteúdo de uma página.
+3.42  
+nome acessível
+texto associado a um componente de interface para identificá-lo a usuários de tecnologia assistiva
+NOTA 1 Um nome acessível serve principalmente para transmitir o propósito ou a intenção do elemento e 
+distingui-lo de outros na página. O nome acessível pode ser exposto apenas para tecnologia assistiva e ser 
+diferente do texto visível. 
+NOTA 2 Orientações detalhadas sobre a utilização de nome acessível estão disponíveis no documento 
+Providing Accessible Names and Descriptions.
+3.43  
+piscar
+alternar entre dois estados visuais com o intuito de chamar a atenção
+3.44  
+ponteiro
+uma representação de um dispositivo de entrada que pode direcionar para uma coordenada específica 
+(ou conjunto de coordenadas) em uma tela
+EXEMPLO  Mouse, uma caneta ou toque.
+3.45  
+ponteiro único
+entrada de ponteiro que opera com um ponto de contato com a tela, incluindo toques e cliques únicos, 
+toques e cliques duplos, toques longos e gestos baseados em caminho
+3.46  
+região
+seção de conteúdo perceptível, programaticamente determinada 
+NOTA Em HTML, qualquer área designada com uma função de ponto de referência (marco ou landmark 
+role) é uma região. Os tipos de região são header/banner, main, footer/contentinfo, navigation, search, form, 
+aside/complementary, region.
+3.47  
+seção
+parte independente de um conteúdo que aborda um ou mais tópicos ou pensamentos relacionados
+NOTA Uma seção pode consistir em um ou mais parágrafos e incluir gráficos, tabelas, listas e subseções.
+===== [pag 18] =====
+8
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+3.48  
+tabelas de leiaute
+tabelas utilizadas para posicionar visualmente elementos não tabulares na tela seguindo algum leiaute
+3.49  
+tabelas complexas
+tabelas que apresentam vários níveis de cabeçalho na linha ou na coluna e quando há múltiplos 
+grupos de linhas ou colunas
+3.50  
+tecla	modificadora
+tecla do teclado utilizada em conjunto com outras teclas para executar funções específicas ou atalhos 
+EXEMPLO  As teclas modificadoras mais comuns são: Shift, Ctrl, Alt, Alt gr, Win, Option e Fn.
+3.51  
+tecnologia assistiva 
+recursos de tecnologia assistiva
+hardware ou software que funciona como um agente de usuário, ou em conjunto com um agente de 
+usuário convencional, que fornece funcionalidades para atender às necessidades de usuários com 
+deficiência, que vão além das oferecidas pelos agentes de usuário convencionais
+EXEMPLO  Leitores de tela, ampliadores de tela (lupas), software de conversão de texto para fala 
+(sintetizador de fala), software de reconhecimento de voz, teclados alternativos, linha Braille e dispositivos 
+apontadores alternativos.
+NOTA No contexto desta norma, os termos tecnologia assistiva e recursos de tecnologia assistiva são 
+utilizados como sinônimos, para indicar recursos relacionados ao acesso e à utilização da web por pessoas 
+com deficiência. Neste documento, foi adotado o termo tecnologia assistiva para manter conformidade com 
+a utilização do termo nas WCAG, apesar de, no contexto brasileiro, a Lei Brasileira de Inclusão da Pessoa 
+com Deficiência (LBI) apresentar um conceito mais amplo de tecnologia assistiva.
+3.52  
+tecnologia da informação e comunicação (TIC)
+tecnologia para coletar, armazenar, recuperar, processar, analisar e transmitir informações
+3.53  
+teste de função cognitiva
+tarefa que requer que o usuário lembre, manipule, ou transcreva informação
+EXEMPLO  Incluem, mas não se limitam a:
+ — memorização, como lembrar o nome de usuário, senha, um grupo de caracteres, imagens ou padrões. 
+NOTA Os identificadores comuns como nome, e-mail e número de telefone não são considerados 
+testes de função cognitiva, pois são pessoais ao usuário e consistentes entre websites;
+ — transcrição, como digitar caracteres;
+ — utilização da ortografia correta;
+ — realizar cálculos;
+ — resolver problemas.
+===== [pag 19] =====
+9
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+3.54  
+texto alternativo
+texto disponibilizado como alternativa para um conteúdo não textual, quando este não está disponível 
+ou não é perceptível ao usuário
+3.55  
+texto alternativo vazio
+quando não há conteúdo no atributo para texto alternativo 
+NOTA A utilização do atributo de texto alternativo é obrigatório em imagens, sendo assim, utilizar texto 
+alternativo vazio permite que a imagem seja reconhecida como decorativa e, portanto, ignorada por tecnologia 
+assistiva.
+3.56  
+texto em plano secundário
+texto ou imagens de texto que fazem parte de um componente de interface de usuário inativo, que  
+são meramente decorativos, que não estão visíveis para ninguém, ou que são parte de uma imagem 
+que inclui outro conteúdo visual significativo
+3.57  
+texto em tamanho grande
+texto com pelo menos 18pt em fonte normal ou 14pt quando em negrito
+NOTA Quando for utilizada outra unidade de medida, verificar o tamanho equivalente.
+3.58  
+volume que não interfere no som principal
+sons de fundo que estão pelo menos 20 dB (decibéis) abaixo do som principal, ou seja, muito mais 
+baixos que o principal
+EXEMPLO  Em uma conversa em tom de voz normal de 60 dB, sons de fundo como o de um sussurro 
+suave, sons de folhas se movendo levemente ou tique-taque de um relógio não passam dos 40 dB.
+4 Conformidade
+Esta Norma está dividida em requisitos e recomendações, sendo que os requisitos são considerados 
+para os Níveis de conformidade A e AA. O Nível de conformidade AAA, que abrange boas práticas, 
+requisitos mais rígidos e itens que não podem ser exigidos em todos os contextos, está sinalizado 
+como recomendação. Contudo, é esperado que se procure atingir este nível de conformidade, pois ele 
+oferece maior qualidade e conforto à experiência acessível para os usuários.
+Atender aos requisitos e às recomendações desta Norma não isenta o desenvolvedor de implementar 
+outras boas práticas não abrangidas por esta Norma, como princípios de usabilidade, entre outras.
+Esta Norma considera dois tipos de conformidade - a conformidade regular e a conformidade plena:
+ — Conformidade regular: é atingida com o atendimento de todos os itens estabelecidos como 
+requisitos. A conformidade regular está alinhada com o Nível de conformidade AA do WCAG 2.2, 
+de forma que um site em conformidade regular com esta Norma está também em conformidade 
+com os Níveis A e AA do WCAG 2.2, nível mínimo exigido (semelhantemente ao adotado 
+internacionalmente).
+===== [pag 20] =====
+10
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+ — Conformidade plena: abrange todos os requisitos e também as recomendações. Caso uma ou 
+mais recomendações não sejam atendidas, é necessária uma justificativa razoável.
+Todos os requisitos e recomendações estão agrupados em seções e possuem um nome que pode 
+ser utilizado para referenciá-los, incluindo os códigos dos critérios de sucesso (C.S.) e o nível de 
+conformidade do WCAG 2.2 que pretendem atender.
+Os requisitos e recomendações consistem em proposições que devem ser verdadeiras. Alguns 
+requisitos ou recomendações preveem mais de uma forma de serem atendidos, o que é indicado pela 
+separação das proposições com o conectivo “ou”. Caso alguma das proposições seja verdadeira, 
+o requisito ou a recomendação pode ser considerado atendido. A ordem em que as proposições 
+são posicionadas implica uma preferência, de forma que as primeiras são mais indicadas do que  
+as seguintes, que devem ser interpretadas como alternativas para exceções (fallbacks).
+Algumas recomendações, quando cumpridas, também atendem à conformidade com determinados 
+requisitos. Quando isso acontece, há uma nota apontando a referência. Essas subseções sempre 
+aparecem em sequência, estão nomeadas com um mesmo prefixo e devem ser vistas em conjunto.
+5 Diretrizes
+5.1 Interação por teclado
+Alguns usuários não conseguem utilizar o mouse, ou podem utilizar tecnologia assistiva que não 
+permitem o uso preciso ou total do cursor. É importante que a interface e o conteúdo possam ser 
+navegados e operados utilizando somente o teclado.
+5.1.1 Indicador de foco visível – Requisito
+Todos os elementos focáveis possuem um indicador de foco visível. 
+C.S. 2.4.7, Nível de conformidade AA
+5.1.2 Elemento em foco totalmente visível – Recomendação
+Todos os elementos focáveis estão completamente visíveis quando recebem foco.
+C. S. 2.4.11, Nível de conformidade AA
+C.S. 2.4.12, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.1.3, Elemento em foco 
+parcialmente visível.
+5.1.3 Elemento em foco parcialmente visível – Requisito
+Todos os elementos focáveis estão pelo menos parcialmente visíveis quando recebem foco, 
+considerando a sobreposição por elementos de autoria do desenvolvedor.
+C.S. 2.4.11, Nível de conformidade AA
+===== [pag 21] =====
+11
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.1.4 Ordem de foco previsível – Requisito
+Todos os elementos focáveis recebem foco em ordem sequencial lógica e intuitiva, consistente com  
+a apresentação e que preserva o significado e a operabilidade.
+C.S. 2.4.3, Nível de conformidade A
+5.1.5 Uso de foco – Recomendação
+Todos os elementos focáveis são utilizados para interação.
+C.S. 2.1.1, Nível de conformidade A
+C.S. 2.1.3, Nível de conformidade AAA
+5.1.6 Armadilha de foco – Requisito
+Não há componentes que bloqueiam, impedem ou interrompem a navegação por teclado.
+C.S. 2.1.2, Nível de conformidade A
+5.1.7 Conteúdo adicional – Recomendação
+Não há conteúdo adicional que seja exibido somente pelo foco do teclado ou posicionamento  
+do cursor.
+C.S. 1.4.13, Nível de conformidade AA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também os requisitos 5.1.8, Conteúdo adicional 
+persistente, e 5.1.9, Conteúdo adicional dispensável.
+5.1.8 Conteúdo adicional persistente – Requisito
+Todo conteúdo adicional exibido por foco do teclado ou posicionamento do cursor permanece visível 
+até que o usuário retire o foco, posicione o cursor fora do componente ou dispense-o de outra forma, 
+ou até que a informação transmitida pelo conteúdo deixe de ser válida.
+C.S. 1.4.13, Nível de conformidade AA
+5.1.9 Conteúdo adicional dispensável – Requisito
+ — Todo conteúdo adicional exibido por foco do teclado ou posicionamento do cursor pode ser 
+dispensado sem a necessidade de retirar o foco ou reposicionar o cursor; ou
+ — O conteúdo adicional exibido comunica um erro de entrada, ou não oculta ou substitui outro 
+conteúdo.
+C.S. 1.4.13, Nível de conformidade AA
+===== [pag 22] =====
+12
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.1.10 Atalhos de teclado – Recomendação
+Não há atalhos de teclado que utilizam uma única tecla, de forma que sempre haja a presença de  
+uma tecla modificadora (como Ctrl ou Alt).
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.1.11, Atalhos de teclado 
+sem tecla modificadora.
+C.S. 2.1.4, Nível de conformidade A
+5.1.11 Atalhos	de	teclado	sem	tecla	modificadora	–	Requisito
+ — Há um mecanismo simples para desativar ou remapear o atalho de teclado sem tecla modificadora; 
+ou
+ — O atalho só é acionado quando um componente específico está em foco.
+C.S. 2.1.4, Nível de conformidade A
+5.1.12 Acessibilidade por teclado total – Recomendação
+Todas as funcionalidades da página são acessíveis com o teclado, sem exceção.
+C.S. 2.1.1, Nível de conformidade A
+C.S. 2.1.3, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.1.13, Acessibilidade por 
+teclado parcial.
+5.1.13 Acessibilidade por teclado parcial – Requisito
+Todas as funcionalidades da página que não são acessíveis pelo teclado não admitem modo de 
+operação equivalente utilizando somente o teclado (por exemplo, desenho à mão livre).
+C.S. 2.1.1, Nível de conformidade A
+5.1.14 Mecanismos de entrada simultâneos – Recomendação
+ — Não há funcionalidade na página que restringe o uso de algum mecanismo de entrada disponível; 
+ou
+ — A restrição do uso do mecanismo de entrada específico é essencial, necessária para garantir  
+a segurança do conteúdo ou para respeitar as configurações do usuário.
+C.S. 2.5.6, Nível de conformidade AAA
+5.1.15 Comportamento de componentes customizados – Recomendação
+Todos os componentes customizados possuem comportamento previsível.
+C.S. 2.1.1, Nível de conformidade A
+C.S. 2.1.3, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.1.16, Instruções para 
+componentes customizados. 
+===== [pag 23] =====
+13
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.1.16 Instruções para componentes customizados – Requisito
+Todos os componentes customizados que exigem interações complexas e comportamento não 
+previsível possuem instruções para operação.
+C.S. 3.3.2, Nível de conformidade A
+5.2 Imagens
+Imagens facilitam a compreensão e tornam o conteúdo mais amigável ao transmitir informações de 
+forma visual. A acessibilidade em imagens garante que todos os usuários, incluindo aqueles que 
+utilizam tecnologia assistiva, possam perceber, compreender e interagir com o conteúdo visual em 
+interfaces e documentos.
+5.2.1 Texto alternativo para imagens de conteúdo – Requisito
+Todas as imagens que transmitem informação ou conteúdo relevante possuem texto alternativo  
+que descreve essa informação ou conteúdo.
+C.S. 1.1.1, Nível de conformidade A
+5.2.2 Texto alternativo para imagens funcionais – Requisito
+Todas as imagens funcionais possuem texto alternativo que descreve a funcionalidade do elemento.
+C.S. 1.1.1, Nível de conformidade A
+C.S. 2.4.4, Nível de conformidade A
+C.S. 2.4.9, Nível de conformidade AAA
+5.2.3 Texto alternativo para imagens decorativas – Requisito
+Todas as imagens decorativas possuem texto alternativo vazio ou estão implementadas de outra 
+forma, de modo que podem ser ignoradas por tecnologia assistiva.
+C.S. 1.1.1, Nível de conformidade A
+5.2.4 Descrição para imagens complexas – Requisito
+Todas as imagens complexas possuem texto alternativo que as identifica e têm descrição detalhada 
+disponível na página (próximo à respectiva imagem) ou em outra página indicada.
+C.S. 1.1.1, Nível de conformidade A
+5.2.5 Imagens de texto – Requisito
+ — Não há imagens de texto; ou
+ — Todas as imagens de texto são essenciais e possuem texto alternativo com o mesmo conteúdo; ou
+ — É possível customizar as imagens de texto não essenciais e elas possuem texto alternativo com 
+o mesmo conteúdo.
+===== [pag 24] =====
+14
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.S. 1.1.1, Nível de conformidade A
+C.S. 1.4.5, Nível de conformidade AA
+C.S. 1.4.9, Nível de conformidade AAA
+5.2.6 Texto alternativo para mapas de imagens – Requisito
+Todos os mapas de imagens possuem texto alternativo para cada área interativa.
+C.S. 1.1.1, Nível de conformidade A
+5.3 Cabeçalhos
+Os níveis de cabeçalho organizam a estrutura, a ordem de importância e a subordinação dos 
+conteúdos da página, facilitando a leitura e a compreensão. Além disso, funcionam como ferramenta 
+de navegação para que os usuários de tecnologia assistiva encontrem facilmente o conteúdo desejado. 
+O uso de hierarquia correta dos níveis de cabeçalho é um requisito para que essa navegação ocorra 
+adequadamente.
+5.3.1 Semântica de cabeçalho – Requisito
+Todos os cabeçalhos possuem semântica determinada programaticamente. 
+C. S. 1.3.1, Nível de conformidade A
+5.3.2 Uso de cabeçalhos – Requisito
+Todos os cabeçalhos são utilizados para identificar seções de conteúdo. 
+C. S. 1.3.1, Nível de conformidade A
+C. S. 2.4.6, Nível de conformidade AA
+5.3.3 Cabeçalho principal – Recomendação
+Há um, e somente um, cabeçalho de nível 1, que identifica a página. 
+C. S. 2.4.6, Nível de conformidade AA
+C. S. 2.4.10, Nível de conformidade AAA
+5.3.4 Seções com cabeçalhos – Recomendação
+Todas as seções de conteúdo possuem um cabeçalho que as identifica. 
+C. S. 2.4.10, Nível de conformidade AAA
+5.3.5 Estrutura de cabeçalhos – Requisito
+Todos os cabeçalhos seguem uma estrutura hierárquica, lógica e semântica.
+C. S. 1.3.1, Nível de conformidade A
+===== [pag 25] =====
+15
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C. S. 2.4.6, Nível de conformidade AA
+C. S. 2.4.10, Nível de conformidade AAA
+5.4 Regiões
+Regiões (marcos) ajudam a comunicar o leiaute e as áreas importantes da página, como a de 
+navegação e a do conteúdo principal. O uso de regiões com marcação semântica correta facilita  
+a compreensão da estrutura da página e permite fácil acesso a essas áreas.
+5.4.1 Semântica de região – Requisito
+Todas as regiões da página possuem semântica determinada programaticamente e condizente com 
+a sua função e tipo de conteúdo.
+C. S. 1.3.1, Nível de conformidade A
+C. S. 1.3.6, Nível de conformidade AAA
+5.4.2 Uso de regiões – Requisito
+Todas as regiões são utilizadas para organizar os conteúdos da página de acordo com o tipo de 
+conteúdo.
+C. S. 1.3.1, Nível de conformidade A
+C. S. 1.3.6, Nível de conformidade AAA
+5.4.3 Conteúdo em regiões – Recomendação
+Todo o conteúdo está contido em regiões. 
+C. S. 1.3.6, Nível de conformidade AAA
+5.4.4 Regiões únicas – Recomendação
+Não há mais do que uma região do tipo ‘header’/’banner’, ‘main’ ou ‘footer’/’contentinfo’.
+C. S. 1.3.1, Nível de conformidade A
+C. S. 1.3.6, Nível de conformidade AAA
+5.4.5 Regiões	identificadas	unicamente	–	Requisito
+Todas as regiões do mesmo tipo possuem um nome acessível único que as identifica.
+C. S. 1.3.1, Nível de conformidade A
+C. S. 4.1.2, Nível de conformidade A
+===== [pag 26] =====
+16
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.5 Listas
+Listas permitem a identificação do agrupamento de itens relacionados, apresentados de forma sequencial 
+ou não sequencial. Conteúdos organizados em listas facilitam a compreensão e a navegação.
+5.5.1 Semântica de lista – Requisito
+Todas as listas possuem semântica determinada programaticamente e condizente com o tipo de 
+relação entre os itens (ordenada, não ordenada e de definições). 
+C. S. 1.3.1, Nível de conformidade A
+5.5.2 Uso de listas – Requisito
+Todas as listas são utilizadas para agrupamento de itens de mesma natureza.
+C. S. 1.3.1, Nível de conformidade A
+5.6 Tabelas
+Tabelas são uma forma estruturada de apresentar dados, que facilita a compreensão das relações  
+entre diferentes tipos de informação. A disposição de dados tabulares em estrutura visual e 
+semanticamente identificada beneficia todos os usuários.
+5.6.1 Semântica de tabela – Requisito
+Todas as tabelas de dados possuem semântica determinada programaticamente. 
+C. S. 1.3.1, Nível de conformidade A
+5.6.2 Uso de Tabelas – Requisito
+ — Todas as tabelas são utilizadas para apresentar dados tabulares. Não há tabelas de leiaute; ou
+ — Todas as tabelas de leiaute não possuem semântica determinada. 
+C. S. 1.3.1, Nível de conformidade A
+5.6.3 Cabeçalhos de tabela – Requisito
+Todas as células de dados de uma tabela estão associadas com os respectivos cabeçalhos de linha  
+e coluna de forma programaticamente determinada. 
+C. S. 1.3.1, Nível de conformidade A
+5.6.4 Título de tabela – Recomendação
+Todas as tabelas possuem um título ou legenda que as identifica.
+C. S. 2.4.6, Nível de conformidade AA
+C. S. 2.4.10, Nível de conformidade AAA
+===== [pag 27] =====
+17
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.6.5 Título de tabela associado – Requisito
+Todos os títulos ou legendas de tabela estão associados à respectiva tabela de forma programaticamente 
+determinada.
+C. S. 1.3.1, Nível de conformidade A
+5.6.6 Descrição para tabelas complexas – Recomendação
+Todas as tabelas complexas possuem uma descrição da tabela em texto.
+C. S. 3.1.5, Nível de conformidade AAA
+5.7 Links e navegação
+Links permitem que o usuário navegue entre as páginas e entre os conteúdos de uma mesma página. 
+Os links devem informar claramente o seu destino e devem ser facilmente encontrados na página.
+5.7.1 Semântica de link – Requisito
+Todos os links possuem semântica determinada programaticamente. 
+C. S. 1.3.1, Nível de conformidade A
+5.7.2 Uso de links – Requisito
+Todos os links são utilizados para navegação. 
+C. S. 1.3.1, Nível de conformidade A
+5.7.3 Propósito do link sem contexto – Recomendação
+Todos os links possuem texto, texto alternativo ou nome acessível que indica sua função ou destino. 
+C. S. 2.4.4, Nível de conformidade A
+C. S. 2.4.9, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.7.4, Propósito do link  
+no contexto.
+5.7.4 Propósito do link no contexto – Requisito
+Todos os links possuem texto, texto alternativo ou nome acessível que, em conjunto com o contexto 
+do link, informa sua função ou destino. 
+C. S. 2.4.4, Nível de conformidade A
+5.7.5 Links	com	identificação	consistente	–	Recomendação
+Não há links com texto, texto alternativo ou nome acessível iguais que levam para destinos diferentes. 
+C. S. 3.2.4, Nível de conformidade AA
+C. S. 2.4.9, Nível de conformidade AAA
+===== [pag 28] =====
+18
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.7.6 Links que abrem em uma nova guia ou janela – Recomendação
+ — Não há links que abrem em uma nova guia ou janela; ou
+ — Todos os links que abrem em uma nova guia ou janela informam isso ao usuário. 
+C. S. 2.4.4, Nível de conformidade A
+C. S. 2.4.9, Nível de conformidade AAA
+C. S. 3.2.5, Nível de conformidade AAA
+5.7.7 Links para arquivos (não HTML) – Recomendação
+ — Todos os links para arquivos incluem no texto ou no texto alternativo a informação do formato e 
+tamanho do arquivo; ou
+ — O link para arquivo informa isso ao usuário de outra forma.
+C. S. 2.4.4, Nível de conformidade A
+C. S. 2.4.9, Nível de conformidade AAA
+5.7.8 Links para sites externos – Recomendação
+Todos os links para sites externos informam isso ao usuário.
+C. S. 2.4.4, Nível de conformidade A
+C. S. 2.4.9, Nível de conformidade AAA
+5.7.9 Texto complementar do link – Recomendação
+Não há texto complementar que repete o texto, texto alternativo ou nome acessível do link.
+C. S. 2.4.4, Nível de conformidade A
+5.7.10 Links adjacentes – Recomendação
+Não há links adjacentes que levam para o mesmo destino. 
+C. S. 2.4.4, Nível de conformidade A
+5.7.11 Links para contornar blocos de conteúdo – Recomendação
+Há um ou mais links (ou outro mecanismo) que permitem contornar blocos de conteúdo na página. 
+C. S. 2.4.1, Nível de conformidade A
+5.7.12 Links para contornar blocos de conteúdo em conjunto de páginas – Requisito
+Há um ou mais links (ou outro mecanismo) que permitem contornar blocos de conteúdo que se repetem 
+em um conjunto de páginas. 
+C. S. 2.4.1, Nível de conformidade A
+===== [pag 29] =====
+19
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.7.13 Alternativas para localização – Requisito
+ — Há mais de uma forma para encontrar uma página em um conjunto de páginas; ou
+ — A página é o resultado ou uma etapa de um processo.
+C. S. 2.4.5, Nível de conformidade AA
+5.7.14 Localização em conjunto de páginas – Recomendação
+Há informação sobre a localização do usuário em relação às demais páginas ou seções do site.
+C. S. 2.4.8, Nível de conformidade AAA
+5.7.15 Navegação consistente – Requisito
+ — Todos os mecanismos de navegação que se repetem em um conjunto de páginas estão na 
+mesma ordem relativa; ou
+ — A posição do mecanismo é alterada pelo usuário.
+C. S. 3.2.3, Nível de conformidade AA
+5.7.16 Ajuda consistente – Requisito
+ — Todos os mecanismos de ajuda que se repetem em um conjunto de páginas estão na mesma 
+ordem relativa; ou
+ — A posição do mecanismo é alterada pelo usuário.
+C. S. 3.2.6, Nível de conformidade A
+5.8 Botões e controles
+Elementos interativos, como links e botões, permitem que o usuário navegue para um destino ou 
+execute uma ação, respectivamente. É importante que todos os elementos interativos sejam 
+perceptíveis, compreensíveis e passíveis de acionamento para todos os usuários.
+5.8.1 Semântica de botão – Requisito
+Todos os botões possuem semântica determinada programaticamente. 
+C. S. 1.3.1, Nível de conformidade A
+5.8.2 Uso de botões – Requisito
+Todos os botões são utilizados para acionar uma funcionalidade. 
+C. S. 1.3.1, Nível de conformidade A
+5.8.3 Propósito do botão – Requisito
+Todos os botões possuem texto, texto alternativo ou nome acessível que indica sua função.
+C. S. 4.1.2, Nível de conformidade A
+C. S. 2.4.6, Nível de conformidade AA
+===== [pag 30] =====
+20
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.8.4 Identificação	consistente	na	página	–	Recomendação
+Todos os componentes que possuem a mesma funcionalidade e se repetem na página são identificados 
+de maneira consistente.
+C. S. 3.2.4, Nível de conformidade AA
+5.8.5 Identificação	consistente	em	conjunto	de	páginas	–	Requisito
+Todos os componentes que possuem a mesma funcionalidade e se repetem em um conjunto de 
+páginas são identificados de maneira consistente.
+C. S. 3.2.4, Nível de conformidade AA
+5.8.6 Área de acionamento (aprimorada) – Recomendação
+ — Todos os elementos interativos têm área de acionamento de pelo menos 44 pixels CSS de altura 
+e largura; ou
+ — Existe um controle com função equivalente na mesma página, com área de acionamento de pelo 
+menos 44 pixels CSS de altura e largura; ou
+ — O elemento está em uma sentença ou bloco de texto; ou
+ — O tamanho do elemento é determinado pelo agente de usuário; ou
+ — O tamanho do elemento é essencial para transmitir a informação.
+C. S. 2.5.8, Nível de conformidade AA
+C. S. 2.5.5, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.8.7, Área de acionamento 
+(mínima).
+5.8.7 Área de acionamento (mínima) – Requisito
+ — Todos os elementos interativos têm área de acionamento de pelo menos 24 pixels CSS de altura 
+e largura; ou
+ — O elemento tem espaçamento em relação aos elementos de interação adjacentes, de tal modo 
+que a soma do tamanho do elemento mais o espaçamento é de pelo menos 24 pixels CSS em 
+todas as direções; ou
+ — Existe um controle com função equivalente na mesma página com área de acionamento de pelo 
+menos 24 pixels CSS de altura e largura; ou
+ — O elemento está em uma sentença ou bloco de texto, ou seu tamanho está delimitado pela altura 
+da linha do texto; ou
+ — O tamanho do elemento é determinado pelo agente de usuário; ou
+ — O tamanho do elemento é essencial ou legalmente exigido para transmitir a informação.
+C. S. 2.5.8, Nível de conformidade AA
+===== [pag 31] =====
+21
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.8.8 Mudança de contexto previsível – Recomendação
+ — Toda mudança de contexto é iniciada apenas a pedido do usuário; ou
+ — Há um mecanismo para desativar essas mudanças de contexto.
+C. S. 3.2.1, Nível de conformidade A
+C. S. 3.2.2, Nível de conformidade A
+C. S. 3.2.5, Nível de conformidade AAA
+5.8.9 Mudança de contexto previsível no foco – Requisito
+Não há componentes acionados somente pelo foco do teclado ou posicionamento do cursor, que 
+provocam uma mudança de contexto.
+C. S. 3.2.1, Nível de conformidade A
+5.8.10 Mudança de contexto previsível na entrada – Requisito
+ — Não há componentes que provocam mudança de contexto enquanto o usuário insere ou seleciona 
+informações; ou
+ — O usuário é avisado sobre esse comportamento antes de utilizar o componente.
+C. S. 3.2.2, Nível de conformidade A
+5.8.11 Acionamento por ponteiro único – Requisito
+ — Não há funcionalidade operada por ponteiro único que é acionada pelo pressionamento do 
+ponteiro (down-event); ou
+ — O acionamento completo da funcionalidade só é finalizado ao soltar o ponteiro (up-event ), e 
+existe um mecanismo para interromper o acionamento antes da finalização ou para desfazer o 
+acionamento após a finalização; ou
+ — Soltar o ponteiro reverte o acionamento ocasionado pelo pressionamento do ponteiro; ou
+ — O acionamento completo da funcionalidade pelo pressionamento do ponteiro é essencial.
+C. S. 2.5.2, Nível de conformidade A
+5.8.12 Operação por gestos de ponteiro – Requisito
+ — Toda funcionalidade operada por gestos multiponto ou baseados em caminhos pode ser operada 
+também por um ponteiro único, sem um gesto baseado em caminho; ou
+ — O gesto multiponto ou baseado em caminho é essencial; ou
+ — A funcionalidade é determinada pelo agente usuário, e não modificada pelo desenvolvedor.
+C. S. 2.5.1, Nível de conformidade A
+===== [pag 32] =====
+22
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.8.13 Operação por movimento de arrastar – Requisito
+ — Toda funcionalidade operada por movimento de arrastar pode ser operada também por um 
+ponteiro único sem movimento de arrastar; ou
+ — O movimento de arrastar é essencial; ou
+ — A funcionalidade é determinada pelo agente usuário, e não modificada pelo desenvolvedor.
+C. S. 2.5.7, Nível de conformidade AA
+5.8.14 Operação por movimento – Requisito
+ — Toda funcionalidade operada por movimento pode ser operada também por componentes que 
+não exigem esse modo de operação, e a resposta aos movimentos pode ser desabilitada para 
+evitar acionamento acidental; ou
+ — Existe um mecanismo para operar o controle de movimento de outra forma; ou
+ — O movimento é essencial para a funcionalidade, e desabilitá-lo invalidaria a atividade.
+C. S. 2.5.4, Nível de conformidade A
+5.8.15 Controles com retorno – Recomendação
+Todos os controles têm um retorno (feedback) perceptível ao usuário quando são acionados.
+C. S. 1.3.3, Nível de conformidade A
+C. S. 4.1.3, Nível de conformidade AA
+5.9 Formulários e entrada de dados
+Formulários permitem que os usuários insiram e enviem informações, e são essenciais para 
+funcionalidades como envio de mensagens, realização de pedidos e cadastros. Instruções claras 
+para inserir e corrigir informações possibilitam que os usuários preencham dados de forma correta e 
+eficiente.
+5.9.1 Rótulo de campo – Requisito
+ — Todos os campos de formulário possuem um rótulo que os identifica; ou
+ — O campo de formulário possui propósito visualmente evidente e um nome acessível que o identifica.
+C. S. 3.3.2, Nível de conformidade A
+C. S. 4.1.2, Nível de conformidade A
+5.9.2 Rótulo de campo previsível – Requisito
+Todos os rótulos estão posicionados de maneira previsível em relação aos respectivos campos 
+de formulário.
+C. S. 1.3.2, Nível de conformidade A
+C. S. 3.3.2, Nível de conformidade A
+===== [pag 33] =====
+23
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.9.3 Rótulo de campo associado – Requisito
+Todos os rótulos estão associados aos respectivos campos de formulário de forma programaticamente 
+determinada.
+C. S. 1.3.1, Nível de conformidade A
+5.9.4 Rótulo de campo descritivo – Requisito
+ — Todos os rótulos identificam o propósito do respectivo campo de formulário; ou
+ — O rótulo, em conjunto com o agrupamento do campo, identifica o propósito do respectivo campo 
+de formulário.
+C. S. 2.4.6, Nível de conformidade A
+5.9.5 Textos de ajuda previsíveis – Requisito
+Todos os textos de ajuda estão posicionados de maneira previsível em relação aos campos do 
+formulário.
+C. S. 3.3.2, Nível de conformidade A
+5.9.6 Campos relacionados – Requisito
+Todos os campos de entrada relacionados possuem agrupamento determinado programaticamente.
+C. S. 1.3.1, Nível de conformidade A
+5.9.7 Campos obrigatórios – Requisito
+Todos os campos obrigatórios estão devidamente identificados, de forma que todos possam perceber. 
+C. S. 3.3.2, Nível de conformidade A
+5.9.8 Tipo de dado determinado – Requisito
+Todos os campos de entrada têm seu tipo de dado determinado programaticamente.
+C. S. 1.3.5, Nível de conformidade AA
+5.9.9 Mensagem de erro descritiva – Requisito
+Todas as mensagens de erro descrevem em texto qual é o erro e identificam qual é o campo com erro. 
+C. S. 3.3.1, Nível de conformidade A
+5.9.10 Sugestão de correção – Requisito
+ — Todas as mensagens de erro fornecem sugestões de correção de entrada de dados, quando 
+conhecidas; ou
+ — A sugestão de correção coloca em risco a segurança ou o propósito do conteúdo. 
+C. S. 3.3.3, Nível de conformidade AA
+===== [pag 34] =====
+24
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.9.11 Prevenção de erro – Recomendação
+Todos os formulários permitem uma forma de reverter, verificar ou confirmar os dados.
+C. S. 3.3.4, Nível de conformidade AA
+C. S. 3.3.6, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.9.12, Prevenção de erro 
+para formulários críticos.
+5.9.12 Prevenção de erro para formulários críticos – Requisito
+Todos os formulários críticos permitem uma forma de reverter, verificar ou confirmar os dados.
+C. S. 3.3.4, Nível de conformidade AA
+5.9.13 Ajuda contextual – Recomendação
+Há ajuda contextual, como instruções e dicas relevantes, que auxilia o usuário a preencher e enviar 
+os formulários.
+C. S. 3.3.5, Nível de conformidade AAA
+5.9.14 Botão de submissão – Recomendação
+Todos os formulários possuem um botão para a submissão dos dados.
+C. S. 3.2.2, Nível de conformidade A
+5.9.15 Reentrada de dados – Requisito
+ — Todos os campos de entrada que exigem dados previamente inseridos são preenchidos 
+automaticamente ou estão disponíveis para seleção; ou
+ — A reentrada de dados é essencial; ou
+ — A informação inserida é necessária por segurança; ou
+ — A informação previamente inserida não é mais válida. 
+C. S. 3.3.7, Nível de conformidade A
+5.9.16 Validação sensorial ou por movimento – Requisito
+Todo método de validação que exige uma percepção ou capacidade motora específica possui uma 
+alternativa que não possui a mesma exigência. 
+C. S. 1.1.1, Nível de conformidade A
+C. S. 2.5.4, Nível de conformidade A
+C. S. 2.5.6, Nível de conformidade AAA
+===== [pag 35] =====
+25
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.9.17 Autenticação acessível (aprimorado) – Recomendação
+ — Não há testes de função cognitiva em processos de autenticação; ou
+ — Há um método de autenticação alternativo sem teste de função cognitiva; ou
+ — Há um mecanismo para auxiliar o usuário a completar o teste de função cognitiva.
+C. S. 3.3.8, Nível de conformidade AA
+C. S. 3.3.9, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.9.18, Autenticação 
+acessível (mínima).
+5.9.18 Autenticação acessível (mínima) – Requisito
+ — Não há testes de função cognitiva em processos de autenticação; ou
+ — Há um método de autenticação alternativo sem teste de função cognitiva; ou
+ — Há um mecanismo para auxiliar o usuário a completar o teste de função cognitiva; ou
+ — O teste é um método de reconhecimento de objetos; ou
+ — O teste serve para identificar um conteúdo não textual fornecido pelo usuário.
+C. S. 3.3.8, Nível de conformidade AA
+5.10 Apresentação
+O conteúdo de uma página pode ser apresentado de diversas formas, incluindo variações de cores, 
+fontes, leiautes, imagens e outras características sensoriais. A acessibilidade na estética e no design 
+visual, de acordo com boas práticas, permite a percepção, compreensão e interação com o conteúdo 
+para todas as pessoas.
+5.10.1 Características sensoriais – Requisito
+Não há instruções para compreender e utilizar o conteúdo que dependem somente das características 
+sensoriais dos componentes, como forma, cor, tamanho, localização visual, orientação e som.
+C. S. 1.3.3, Nível de conformidade A
+5.10.2 Ordem de apresentação – Requisito
+A apresentação dos elementos conforme aparecem na tela é tal que preserva o significado e a 
+operabilidade. 
+C. S. 1.3.2, Nível de conformidade A
+===== [pag 36] =====
+26
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.10.3 Orientação de exibição – Requisito
+ — O conteúdo não restringe sua visualização e operação a uma única orientação de exibição, como 
+de retrato ou paisagem; ou
+ — A orientação específica de exibição é essencial.
+C. S. 1.3.4, Nível de conformidade AA
+5.10.4 Design responsivo – Requisito
+ — Não há perda de informação ou funcionalidade, nem barra de rolagem em duas dimensões  
+para conteúdo de rolagem horizontal apresentado com altura equivalente a 256 pixels CSS; ou
+ — Não há perda de informação ou funcionalidade, nem barra de rolagem em duas dimensões  
+para conteúdo de rolagem vertical apresentado com largura equivalente a 320 pixels CSS; ou
+ — O conteúdo exige leiaute bidimensional para uso ou significado (por exemplo, mapas, diagramas, 
+vídeos, jogos, apresentações, tabelas de dados e interfaces).
+C. S. 1.4.10, Nível de conformidade AA
+5.10.5 Área do indicador de foco visível – Recomendação
+O indicador de foco visível dos elementos focáveis tem área pelo menos equivalente ao perímetro  
+do elemento com 2 pixels CSS de espessura.
+C. S. 2.4.13, Nível de conformidade AAA
+5.11 Uso de cores 
+A cor é um recurso importante no design de conteúdo da web. A acessibilidade no uso de cores 
+permite que pessoas que não podem ver ou perceber as cores também consigam compreender e 
+utilizar o conteúdo.
+5.11.1 Uso de cores – Requisito
+Não há elementos que fazem uso somente de cores para transmitir informações, indicar uma ação, 
+pedir uma resposta ou distinguir um elemento visual. 
+C. S. 1.4.1, Nível de conformidade A
+5.11.2 Contraste para texto (aprimorado) – Recomendação
+ — Todo conteúdo de texto, incluindo imagens de texto, tem relação de contraste de pelo menos 7:1 
+com o fundo; ou
+ — O conteúdo de texto está em tamanho grande e tem relação de contraste de pelo menos 4,5:1 
+com o fundo; ou
+ — O texto faz parte de um logotipo ou está em plano secundário.
+C. S. 1.4.3, Nível de conformidade AA
+===== [pag 37] =====
+27
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C. S. 1.4.6, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.11.3, Contraste para texto 
+(mínimo).
+5.11.3 Contraste para texto (mínimo) – Requisito
+ — Todo conteúdo de texto, incluindo imagens de texto, tem relação de contraste de pelo  
+menos 4,5:1 com o fundo; ou
+ — O conteúdo de texto está em tamanho grande e tem relação de contraste de pelo menos 3:1  
+com o fundo; ou
+ — O texto faz parte de um logotipo ou está em plano secundário.
+C. S. 1.4.3, Nível de conformidade AA
+5.11.4 Contraste para componentes – Requisito
+ — Todos os componentes de interface têm relação de contraste de pelo menos 3:1 com o fundo  
+e entre seus estados; ou
+ — O componente está em estado inativo.
+C. S. 1.4.11, Nível de conformidade AA
+5.11.5 Contraste	para	objetos	gráficos	–	Requisito
+ — Todas as partes de objetos gráficos necessárias para compreender o conteúdo têm relação  
+de contraste de pelo menos 3:1 com o fundo e entre si; ou
+ — A apresentação específica dos objetos gráficos é essencial para a informação transmitida.
+C. S. 1.4.11, Nível de conformidade AA
+5.11.6 Contraste para indicador de foco visível – Requisito
+O indicador de foco visível dos elementos focáveis tem relação de contraste de pelo menos 3:1 com  
+o fundo e entre os estados em foco e sem foco.
+C. S. 1.4.11, Nível de conformidade AA
+C. S. 2.4.13, Nível de conformidade AAA
+5.12 Conteúdo textual
+Conteúdo em texto é essencial para apresentar informações na web. Textos escritos, estruturados  
+e marcados de forma acessível, e que permitem a formatação mais adequada para cada usuário,  
+são mais fáceis de ler e de serem compreendidos por todas as pessoas.
+5.12.1 Espaçamento entre as linhas – Requisito
+ — Todos os blocos de texto têm espaçamento entre as linhas (entrelinhas) de pelo menos 1,5 vez 
+o tamanho da fonte; ou
+===== [pag 38] =====
+28
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+ — Existe um mecanismo para configurar o espaçamento e não há perda de conteúdo ou funcionalidade 
+quando o critério acima é cumprido. 
+C. S. 1.4.12, Nível de conformidade AA
+C. S. 1.4.8, Nível de conformidade AAA
+5.12.2 Espaçamento entre os parágrafos – Requisito
+ — Todos os parágrafos têm espaçamento entre si de pelo menos 2 vezes o tamanho da fonte; ou
+ — Existe um mecanismo para configurar o espaçamento e não há perda de conteúdo ou funcionalidade 
+quando o critério acima é cumprido. 
+C. S. 1.4.12, Nível de conformidade AA
+C. S. 1.4.8, Nível de conformidade AAA
+5.12.3 Espaçamento entre as letras – Requisito
+ — Todos os blocos de texto têm espaçamento entre as letras (rastreamento) de pelo menos  
+0,12 vez o tamanho da fonte; ou
+ — Existe um mecanismo para configurar o espaçamento e não há perda de conteúdo ou funcionalidade 
+quando o critério acima é cumprido. 
+C. S. 1.4.12, Nível de conformidade AA
+5.12.4 Espaçamento entre as palavras – Requisito
+ — Todos os blocos de texto têm espaçamento entre as palavras de pelo menos 0,16 vez o tamanho 
+da fonte; ou
+ — Existe um mecanismo para configurar o espaçamento e não há perda de conteúdo ou funcionalidade 
+quando o critério acima é cumprido. 
+C. S. 1.4.12, Nível de conformidade AA
+5.12.5 Alinhamento de blocos de texto – Recomendação
+ — Todos os blocos de texto estão alinhados à esquerda para idiomas que são lidos da esquerda 
+para a direita; e
+ — Todos os blocos de texto estão alinhados à direita para idiomas que são lidos da direita para  
+a esquerda; ou
+ — O alinhamento é essencial para a compreensão do conteúdo.
+C. S. 1.4.8, Nível de conformidade AAA
+5.12.6 Largura de blocos de texto – Requisito
+ — A largura dos blocos de texto não ultrapassa 80 caracteres (40 caracteres, se o idioma for chinês, 
+japonês ou coreano); ou
+===== [pag 39] =====
+29
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+ — Existe um mecanismo para configurar a largura dos blocos de texto e alcançar esse resultado.
+C. S. 1.4.10, Nível de conformidade AA
+C. S. 1.4.8, Nível de conformidade AAA
+5.12.7 Texto redimensionado – Requisito
+Não há perda de conteúdo ou funcionalidade quando o texto é redimensionado sem o uso de recursos 
+de tecnologia assistiva em até 200 %, de modo que o usuário não precisa rolar horizontalmente para 
+ler uma linha de texto em uma janela de tela inteira.
+C. S. 1.4.4, Nível de conformidade AA
+C. S. 1.4.8, Nível de conformidade AAA
+5.12.8 Semântica de texto especial – Requisito
+Todos os trechos de texto de ênfase, citação, abreviação ou outro tipo de texto especial possuem 
+semântica determinada programaticamente.
+C. S. 1.3.1, Nível de conformidade A
+5.12.9 Uso de texto especial – Requisito
+Todos os trechos de texto de ênfase, citação, abreviação ou texto especial são utilizados para transmitir 
+esses propósitos.
+C. S. 1.3.1, Nível de conformidade A
+5.12.10 Definições	de	significado	–	Recomendação
+Há um mecanismo para identificar definições específicas de palavras ou frases usadas de forma 
+incomum ou restrita, incluindo expressões idiomáticas e jargões.
+C. S. 3.1.3, Nível de conformidade AAA
+5.12.11 Siglas e abreviaturas – Recomendação
+Há um mecanismo para identificar a forma expandida ou o significado das siglas e abreviaturas.
+C. S. 3.1.4, Nível de conformidade AAA
+5.12.12 Nível de linguagem – Recomendação
+ — Todo conteúdo de texto utiliza linguagem simples e clara; ou
+ — Existe conteúdo suplementar ou uma versão alternativa simplificada para linguagem especializada 
+ou recursos linguísticos complexos.
+C. S. 3.1.5, Nível de conformidade AAA
+===== [pag 40] =====
+30
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.12.13 Pronúncia	identificada	–	Recomendação
+Há um mecanismo para identificar a pronúncia específica de palavras cujo significado no contexto  
+é ambíguo sem se conhecer a pronúncia.
+C. S. 3.1.6, Nível de conformidade AAA
+5.13 Codificação	e	marcação	semântica
+Conjunto de códigos que determina o comportamento e a funcionalidade de todo o site ou aplicação 
+web. Um código com boa qualidade é robusto, o que o torna compatível com uma ampla gama de 
+agentes de usuário, como navegadores e tecnologias assistivas.
+5.13.1 Título da página – Requisito
+A página possui um título único em relação às demais páginas do site, que a identifica. 
+C. S. 2.4.2, Nível de conformidade A
+5.13.2 Idioma da página – Requisito
+A página tem seu idioma declarado de forma programaticamente determinada. 
+C. S. 3.1.1, Nível de conformidade A
+5.13.3 Idioma das partes da página – Requisito
+ — Todas as partes da página que possuem idioma diferente do principal têm seu idioma declarado  
+de forma programaticamente determinada; ou
+ — O texto é um nome próprio, um termo técnico, uma palavra em um idioma indeterminado, ou  
+uma palavra ou frase estrangeira que se tornou parte do vernáculo do texto que a envolve.
+C. S. 3.1.2, Nível de conformidade AA
+5.13.4 Título do frame – Requisito
+Todo frame ou iframe possui um título único, que o identifica.
+C. S. 1.3.1, Nível de conformidade A
+C. S. 4.1.2, Nível de conformidade A
+5.13.5 Zoom não bloqueado – Requisito
+A página não bloqueia o recurso de zoom do agente de usuário.
+C. S. 1.4.4, Nível de conformidade AA
+C. S. 1.4.10, Nível de conformidade AA
+===== [pag 41] =====
+31
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.13.6 Ordem de leitura – Requisito
+A ordem dos elementos conforme aparecem no código é lógica e intuitiva, de modo que preserva  
+o significado e a operabilidade.
+C. S. 1.3.2, Nível de conformidade A
+5.13.7 Texto visível no nome acessível – Requisito
+ — Todos os componentes possuem nome acessível igual ao texto visível do componente ou do  
+seu rótulo; ou
+ — O nome acessível contém o texto visível, preferencialmente no início.
+C. S. 2.5.3, Nível de conformidade A
+5.13.8 Mensagens de status – Requisito
+Todas as mensagens de status são determinadas programaticamente, de modo que não seja 
+necessário que os usuários de tecnologia assistiva tenham que dar foco no elemento.
+C. S. 4.1.3, Nível de conformidade AA
+5.13.9 Propósito	identificável	–	Recomendação
+A finalidade dos componentes da interface do usuário, ícones e regiões pode ser determinada 
+programaticamente.
+C. S. 1.3.6, Nível de conformidade AAA
+5.13.10 Componentes com nome acessível – Requisito
+Todos os componentes que requerem identificação por nome possuem um nome acessível.
+C. S. 4.1.2, Nível de conformidade A
+5.13.11 Elementos nativos – Recomendação
+Todos os componentes da página utilizam elementos nativos.
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também os requisitos 5.13.12, Semântica de 
+componentes customizados, e 5.13.13, Estados, propriedades e valores de componentes customizados.
+C. S. 1.3.1, Nível de conformidade A
+5.13.12 Semântica de componentes customizados – Requisito
+Todos os componentes customizados possuem semântica, incluindo função, estados, propriedades  
+e valores, determinada programaticamente, incluindo as alterações desses itens.
+C. S. 1.3.1, Nível de conformidade A
+C. S. 4.1.2, Nível de conformidade A
+===== [pag 42] =====
+32
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.13.13 Estados, propriedades e valores de componentes customizados – Requisito
+Todos os componentes de interface de usuário, cujos estados, propriedades e valores possam ser 
+definidos pelo usuário, permitem que esses atributos sejam definidos programaticamente.
+C. S. 4.1.2, Nível de conformidade A
+5.14 Áudio e vídeo
+Conteúdo multimídia, incluindo áudio e vídeo ao vivo ou pré-gravado, é um dos tipos de recursos  
+para a web. Todos podem perceber e interagir com esse tipo de conteúdo se forem oferecidas 
+alternativas equivalentes.
+5.14.1 Alternativa em texto para áudio – Requisito
+ — Todo áudio pré-gravado tem uma alternativa em texto que transcreve todo o seu conteúdo; ou
+ — O áudio é uma alternativa para um vídeo sem áudio ou texto equivalente e está claramente 
+identificado como tal.
+C. S. 1.2.1, Nível de conformidade A
+5.14.2 Legendas descritivas para vídeo – Requisito
+ — Todo vídeo com áudio pré-gravado tem legendas descritivas disponíveis e equivalentes ao 
+conteúdo do áudio; ou
+ — O vídeo é uma alternativa para um texto equivalente e está claramente identificado como tal.
+C. S. 1.2.2, Nível de conformidade A
+5.14.3 Transcrição para vídeo – Recomendação
+Todo conteúdo em vídeo pré-gravado tem uma alternativa em texto que transcreve todo o seu conteúdo, 
+visual e sonoro.
+C. S. 1.2.1, Nível de conformidade A
+C. S. 1.2.3, Nível de conformidade A
+C. S. 1.2.8, Nível de conformidade AAA
+5.14.4 Audiodescrição para vídeo – Requisito
+ — Todos os vídeos pré-gravados têm audiodescrição para todo o conteúdo visual; ou
+ — O áudio original é suficiente para a compreensão do conteúdo do vídeo sem o uso da visão.
+C. S. 1.2.1, Nível de conformidade A
+C. S. 1.2.3, Nível de conformidade A
+C. S. 1.2.5, Nível de conformidade AA
+===== [pag 43] =====
+33
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+5.14.5 Audiodescrição estendida para vídeo – Recomendação
+Todo conteúdo em vídeo pré-gravado, cujas pausas não sejam suficientes para audiodescrição, tem 
+uma versão com audiodescrição estendida para todo o vídeo.
+C. S. 1.2.3, Nível de conformidade A
+C. S. 1.2.5, Nível de conformidade AA
+C. S. 1.2.7, Nível de conformidade AAA
+5.14.6 Janela de Libras para conteúdo em áudio – Recomendação
+Janela de Libras está disponível em todo o conteúdo de áudio pré-gravado em mídia sincronizada.
+C. S. 1.2.6, Nível de conformidade AAA
+5.14.7 Controle de áudio – Requisito
+ — Não há áudio que toque automaticamente e dure mais que 3 s; ou
+ — Existe um mecanismo para pausar, parar, silenciar ou ajustar o seu volume sem afetar o volume 
+geral do sistema.
+C. S. 1.4.2, Nível de conformidade A
+5.14.8 Áudio sem ruído – Recomendação
+ — Não há conteúdo em áudio que possua sons de fundo; ou
+ — Não há conteúdo em áudio focado principalmente na fala ou no discurso, com a presença de sons 
+de fundo que possam distrair ou interferir na compreensão do conteúdo; ou
+ — O áudio é uma vocalização com intenção de expressão musical ou parte de um CAPTCHA; ou
+ — Há um mecanismo para desligar os sons de fundo; ou
+ — Os sons de fundo têm volume que não interferem no som principal.
+C. S. 1.4.7, Nível de conformidade AAA
+5.14.9 Legendas para áudio e vídeo ao vivo – Requisito
+Todo conteúdo em áudio ou áudio e vídeo ao vivo tem legendas disponíveis.
+C. S. 1.2.4, Nível de conformidade AA
+5.14.10 Transcrição para áudio ao vivo – Recomendação
+Existe uma transcrição para todo o conteúdo em áudio ao vivo.
+C. S. 1.2.9, Nível de conformidade AAA
+5.15 Animação
+Conteúdos que se movem, piscam ou rolam, que mudam de estado de modo que transmitem uma 
+sensação de movimento, sejam autonomamente ou em resposta a uma ação do usuário. Animações 
+podem gerar barreiras ou distrações para usuários que têm dificuldade para acompanhar o movimento 
+===== [pag 44] =====
+34
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+ou que possuem déficit de atenção. É importante que sejam fornecidas opções para controlar ou 
+desativar essas animações.
+5.15.1 Controle de animação – Requisito
+ — Não há animação que inicie automaticamente, dure mais que 5 s e seja apresentada em paralelo 
+com outro conteúdo; ou
+ — Existe um mecanismo para pausar, parar ou ocultar a animação; ou
+ — A animação é essencial para a atividade. 
+C. S. 2.2.2, Nível de conformidade A
+5.15.2 Animações acionadas por interação – Recomendação
+ — Não há animações de movimento acionadas pela interação do usuário; ou
+ — Existe um mecanismo para desativar as animações de movimento acionadas pela interação do 
+usuário; ou
+ — A animação de movimento é essencial para a funcionalidade ou informação transmitida.
+C. S. 2.3.3, Nível de conformidade AAA
+5.15.3 Flash intermitente – Recomendação
+Não há conteúdo que pisque mais de três vezes em qualquer período de 1 s. 
+C. S. 2.3.1, Nível de conformidade A
+C. S. 2.3.2, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.15.4, Flash intermitente 
+limitado.
+5.15.4 Flash intermitente limitado – Requisito
+Todo conteúdo que pisca está abaixo dos limites de flash geral e flash vermelho.
+C. S. 2.3.1, Nível de conformidade A
+5.16 Tempo
+Algumas atividades na web exigem limites de tempo para a sua realização. Esses limites devem 
+considerar pessoas que necessitam de mais tempo para ler ou completar tarefas.
+5.16.1 Limite de tempo – Recomendação
+ — Não há evento ou atividade no conteúdo com limite de tempo; ou
+ — O limite de tempo não é parte essencial do evento ou da atividade; ou
+ — O conteúdo é uma mídia sincronizada não interativa ou um evento em tempo real.
+C. S. 2.2.1, Nível de conformidade A
+===== [pag 45] =====
+35
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C. S. 2.2.3, Nível de conformidade AAA
+NOTA Cumprindo o descrito nesta subseção, cumpre-se também o requisito 5.16.2, Limite de tempo 
+ajustável.
+5.16.2 Limite de tempo ajustável – Requisito
+ — Há um mecanismo para desligar, ajustar ou estender o limite de tempo antes de atingi-lo; ou
+ — O limite de tempo é intrínseco ao conteúdo, essencial ou superior a 20 h. 
+C. S. 2.2.1, Nível de conformidade A
+5.16.3 Controle de atualização – Requisito
+ — Não há atualização que inicie automaticamente e seja apresentada em paralelo com outro 
+conteúdo; ou
+ — Existe um mecanismo para pausar, parar ou ocultar a atualização, ou para controlar a frequência 
+da atualização; ou
+ — A atualização é essencial para a atividade. 
+C. S. 2.2.2, Nível de conformidade A
+5.16.4 Interrupções – Recomendação
+ — Não há interrupções; ou
+ — Existe um mecanismo para adiar ou bloquear as interrupções; ou
+ — As interrupções envolvem uma emergência.
+C. S. 2.2.4, Nível de conformidade AAA
+5.16.5 Reautenticação – Recomendação
+ — Não há perda de dados quando uma sessão autenticada expira. O usuário pode continuar a 
+atividade sem perda de dados após a nova autenticação; ou
+ — A perda de dados é essencial.
+C. S. 2.2.1, Nível de conformidade A
+C. S. 2.2.5, Nível de conformidade AAA
+5.16.6 Tempo de inatividade – Recomendação
+ — Não há perda de dados quando um limite de tempo de inatividade do usuário é atingido; ou
+ — Há um aviso sobre o limite de tempo de inatividade do usuário antes da perda de dados; ou
+ — O limite de tempo de inatividade do usuário sem perda de dados é de pelo menos 20 h.
+C. S. 2.2.1, Nível de conformidade A
+C. S. 2.2.6, Nível de conformidade AAA
+===== [pag 46] =====
+36
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+6 Material de apoio
+Os materiais listados a seguir apresentam orientações técnicas e ferramentas que auxiliam na 
+conformidade com esta norma.
+ — Amaweb – Manual. https://amaweb.unifesp.br/manual/ (acesso em 16 de setembro de 2024).
+ — Accessibility requirements for ICT products and services . https://www.etsi.org/deliver/etsi_en/301 
+500_301599/301549/03.02.01_60/en_301549v030201p.pdf (acesso em 16 de setembro de 2024).
+ — Checklist – The A11Y Project, A11yproject.com, 2013. https://www.a11yproject.com/checklist/ 
+(acesso em 16 de setembro de 2024).
+ — WebAIM: WebAIM’s WCAG 2 Checklist, Webaim.org, Feb. 26, 2021. https://webaim.org/standards/
+wcag/checklist  (acesso em 16 de setembro de 2024).
+ — Intopia, Accessibility Not-Checklist | Brewed by team Intopia , Intopia.digital, 2023. https://not-
+checklist.intopia.digital/  (acesso em 16 de setembro de 2024).
+ — WCAG Checklist – Free and simple guides to WCAG 2.2 | Wuhcag, Wuhcag, Mar. 21, 2023. 
+https://www.wuhcag.com/wcag-checklist/  (acesso em 16 de setembro de 2024).
+ — Digital A11Y WCAG Checklist. https://www.digitala11y.com/wcag-checklist/ (acesso em 16 de 
+setembro de 2024).
+ — Modelo de Relatório de Avaliação de Acessibilidade. https://beinclusive.app/audits/90486301-
+25ef-4d74-8e28-743c444f8908/report (acesso em 16 de setembro de 2024).
+ — Web Accessibility Checklist. Deque University. https://dequeuniversity.com/checklists/web/ 
+(acesso em 16 de setembro de 2024).
+ — Usability & Web Accessibility. Yale University . https://usability.yale.edu/web-accessibility/articles  
+(acesso em 16 de setembro de 2024).
+ — Design and Develop Overview. WAI Initiative . W3C. https://www.w3.org/WAI/design-develop/ 
+(acesso em 16 de setembro de 2024).
+ — Acessibilidade. MDN Web Docs. https://developer.mozilla.org/pt-BR/docs/Web/Accessibility 
+(acesso em 16 de setembro de 2024).
+ — Providing Accessible Names and Descriptions. ARIA Authoring Practices Guide (APG).   
+https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#accessiblenameguidance
+byrole (acesso em 23 de setembro de 2024).
+===== [pag 47] =====
+37
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Anexo A 
+(informativo) 
+ 
+Itens problemáticos para acessibilidade
+A.1 Geral
+Os itens listados em A.1.1 a A.1.9 são amplamente utilizados na web, porém apresentam barreiras 
+de acesso para pessoas com deficiência. Seu uso é desencorajado e, quando utilizados, devem ser 
+implementados com certos cuidados.
+A.1.1 CAPTCHA
+Quando um site utiliza CAPTCHA, ele deve vir acompanhado de uma descrição que identifique  
+aquele conteúdo não textual como sendo um CAPTCHA. A partir desta descrição, o usuário deve ser 
+capaz de identificar que o CAPTCHA requer a conclusão de uma tarefa e que tipo de tarefa é.
+Em conjunto com essa descrição que identifica um CAPTCHA, é necessário fornecer uma versão 
+alternativa a este CAPTCHA que utilize uma modalidade diferente de tarefa para que usuários com 
+deficiência possam concluir com sucesso o que é solicitado pelo CAPTCHA.
+EXEMPLO  Uma página que possua um CAPTCHA com uma tarefa visual, como transcrever uma imagem 
+em texto, pode oferecer juntamente a esse desafio visual uma opção alternativa, como inserir o conteúdo de 
+um áudio, permitindo que os usuários com deficiência visual completem a tarefa solicitada, ou pode fornecer 
+uma alternativa em tela como um campo de formulário que pergunte “quanto é dois mais sete?”, permitindo 
+que usuários com deficiência auditiva possam inserir a resposta correta e completar a tarefa solicitada.
+Deve ser assegurado que a alternativa para os CAPTCHA em imagens não apresentem dificuldade 
+excessiva para pessoas com deficiência, como desafios em áudio em outro idioma ou com nível de 
+ruído que torne muito difícil o entendimento ou desafios lógicos com nível de dificuldade excessivo.
+A.1.2 Reconhecimento facial – Biometria
+Sistemas de reconhecimento facial e biometria vêm sendo amplamente utilizados para confirmação 
+de identidade do usuário. O problema é que diversos sistemas exigem posicionamento em frente  
+à câmera e movimentos complexos para pessoas com deficiência visual ou mobilidade reduzida.  
+Em alguns sistemas, as orientações aos usuários não são acessíveis aos recursos de tecnologia 
+assistiva, como softwares leitores de tela. 
+Aplicações que utilizam reconhecimento facial e biometria devem assegurar que as informações  
+para posicionamento de câmera sejam acessíveis para tecnologias assistivas. Esses sistemas também 
+devem oferecer uma outra forma de identificação do usuário que não dependa exclusivamente de 
+reconhecimento facial e biometria.
+A.1.3 Conteúdo exibido somente por foco do teclado ou posicionamento do cursor
+Conteúdos são exibidos quando o usuário foca ou posiciona o cursor sobre um determinado elemento. 
+Essa técnica é uma barreira para usuários cegos e de baixa visão que navegam por software leitor 
+===== [pag 48] =====
+38
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+de tela, já que exige a exploração do conteúdo que aparece após posicionar o cursor ou focar por 
+teclado. Essa técnica também é inacessível para usuários de dispositivos móveis, como smartphones 
+e tablets.
+O uso de tooltips (como o implementado por meio do atributo ‘title’ do HTML) exibidos somente ao 
+posicionar o cursor sobre um elemento também é uma barreira de acesso, já que nem todos podem 
+acessar o conteúdo apresentado. 
+Aplicações que exibem conteúdo por foco do teclado ou posicionamento do cursor devem assegurar 
+que essas informações estejam disponíveis caso o usuário não possa posicionar o cursor sobre o 
+elemento.
+A.1.4 Conteúdo inserido por CSS
+Conteúdos em texto que são inseridos no código HTML por meio de pseudoclasses de Folhas de 
+Estilo em Cascata (CSS), que não estão presentes no código HTML original. Esse conteúdo pode  
+não ser lido por softwares leitores de tela.
+Ao usar essa técnica, há o risco de o conteúdo não ser exibido devido a alguma troca ou falha  
+de carregamento do arquivo CSS. Por não fazer parte da estrutura do documento, que é o HTML,  
+essa informação pode não ser exibida ao usuário.
+Os arquivos CSS são utilizados para controlar a apresentação do conteúdo (como definição de cores, 
+tamanho de texto, posicionamento etc.) e o HTML serve para estruturar o documento e incluir o conteúdo.
+É recomendado não utilizar conteúdo inserido por CSS na página. Em vez disso, utilizar javascript  
+em conjunto com atributos de WAI-ARIA pode tornar esse conteúdo adicionado mais acessível.
+A.1.5 Conteúdo de terceiros
+Conteúdos que vêm de outras fontes cujo autor não tem controle. Conteúdos de terceiros podem ser 
+um vídeo de uma plataforma específica, um post em rede social ou mesmo um documento ou imagem. 
+Como não é possível assegurar a acessibilidade ou determinar o nível de conformidade de conteúdo 
+de terceiros, é recomendado escolher sempre fontes de conteúdo que sigam boas práticas de 
+acessibilidade. 
+Se não for possível evitar conteúdos de terceiros com barreiras de acesso, é recomendado alertar  
+o usuário sobre esse conteúdo.
+A.1.6 Componentes customizados
+Componentes customizados, como caixas de diálogo modais, pop-ups e carrosséis, podem causar 
+problemas de acessibilidade. Diferentemente de componentes nativos, os componentes customizados 
+não têm sua semântica e comportamento definidos pelo agente de usuário, de forma que recai sobre 
+o desenvolvedor a responsabilidade de definir esses atributos e propriedades de forma adequada. Se 
+o desenvolvimento não for muito cuidadoso, os usuários podem ser prejudicados por componentes 
+que não se comportem ou sejam identificados de forma acessível.
+Sempre que for possível, é recomendado utilizar elementos nativos para os componentes da página.  
+Em alguns casos, porém, não existe um elemento nativo que implemente o componente desejado. 
+Nesse caso, é muito importante que a especificação adequada de cada componente seja seguida.
+===== [pag 49] =====
+39
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+A.1.7 Arquivos acessíveis
+Muitas vezes as páginas web estão em conformidade com padrões de acessibilidade, mas possuem 
+links para arquivos em diversos formatos, que podem não ser acessíveis. É recomendado sempre 
+verificar a acessibilidade de arquivos com as especificações individuais de cada tipo de arquivo.
+A.1.8 Tabelas para leiaute
+Tabelas geralmente são utilizadas para a exibição de dados tabulares, mas, em algumas situações, 
+os autores utilizam tabelas para posicionar elementos em tela. Usar tabelas para leiaute pode causar 
+problemas de acessibilidade, pois, caso a semântica da tabela seja transmitida para o usuário de 
+tecnologia assistiva, isso pode gerar confusão por não se tratar de dados tabulares. 
+O uso de tabelas para leiaute causa problemas também para usuários de dispositivos móveis, já  
+que seu conteúdo pode não se adaptar a todos os tamanhos de tela.
+É recomendado não utilizar tabelas para leiaute. Caso isso seja feito, toda a semântica da tabela  
+deve ser retirada.
+A.1.9 Marcação	conforme	a	especificação
+A partir da versão 2.2 do WCAG, não há mais a necessidade de conformidade com o critério de 
+sucesso 4.1.1, referente à página desenvolvida conforme a especificação, com abertura e fechamento 
+de elementos HTML e sem atributos ou identificadores únicos duplicados. 
+Esse critério foi originalmente adotado para abordar problemas que a tecnologia assistiva tinha 
+ao analisar o código HTML diretamente, o que não acontece mais com a tecnologia atual. 
+Consequentemente, esses problemas não existem mais ou são abordados por outros critérios. 
+Apesar de não ser mais mandatório que a página não tenha erros de marcação, convém que seja feita 
+uma verificação para encontrar erros que possam impactar a acessibilidade da página.
+===== [pag 50] =====
+40
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Anexo B 
+(informativo) 
+ 
+Desempenho funcional
+B.1 Geral
+Este Anexo descreve o desempenho funcional que as Tecnologias de Informação e Comunicação (TIC) 
+devem ter para assegurar sua utilização por pessoas, independentemente de fatores e atributos 
+físicos, cognitivos ou sensoriais.
+B.1.1 Utilização sem visão
+Quando a TIC oferecer meios de operação visuais, deve ser fornecido pelo menos um modo de 
+operação que não requeira o uso da visão.
+O descrito a seguir pode contribuir para tal:
+ — Uma página web ou aplicativo com uma boa estrutura semântica permite que os usuários que  
+não fazem uso da visão identifiquem, naveguem e interajam com a interface. 
+ — Interfaces de usuário táteis e de áudio.
+B.1.2 Utilização com visão limitada
+Quando a TIC oferecer meios de operação visuais, deve ser fornecido pelo menos um modo de 
+operação que permita sua utilização com visão parcial ou limitada.
+O descrito a seguir pode contribuir para tal:
+ — Ampliação, redução do campo visual e controle do contraste, brilho e intensidade.
+ — Quando houver recursos importantes da interface que dependam da percepção de profundidade, 
+fornecer meios adicionais para fazer a distinção entre esses recursos.
+ — Usuários com visão limitada também podem se beneficiar de modos de operação que não 
+requeiram a visão, conforme B.1.1, Utilização sem visão.
+B.1.3 Utilização sem percepção da cor
+Quando a TIC oferecer meios de operação visuais que dependam de cor, deve ser fornecido pelo 
+menos um modo de operação que não requeira essa percepção.
+O descrito a seguir pode contribuir para tal:
+ — Quando houver recursos importantes da interface codificados por cor, fornecer meios adicionais 
+para fazer a distinção entre esses recursos.
+===== [pag 51] =====
+41
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+B.1.4 Utilização sem a audição
+Quando a TIC oferecer meios de operação sonoros, deve ser fornecido pelo menos um modo de 
+operação que não requeira o uso da audição.
+O descrito a seguir pode contribuir para tal:
+ — Interfaces de usuário visuais e táteis.
+B.1.5 Utilização com audição limitada
+Quando a TIC oferecer meios de operação sonoros, deve ser fornecido pelo menos um modo de 
+operação que permita sua utilização com audição parcial ou limitada.
+O descrito a seguir pode contribuir para tal:
+ — Aprimoramento da clareza do áudio.
+ — Redução de ruídos de fundo.
+ — Aumento da faixa de volume.
+ — Volume maior na faixa de frequência mais alta.
+ — Usuários com audição limitada também podem se beneficiar de modos de operação que não 
+requeiram a audição, conforme B.1.4, Utilização sem a audição.
+B.1.6 Utilização sem voz
+Quando a TIC exigir entrada por voz, deve ser fornecido pelo menos um modo de operação que  
+não requeira a utilização da voz. A utilização da voz inclui o uso de sons gerados oralmente, incluindo 
+fala, assobios, estalidos etc.
+O descrito a seguir pode contribuir para tal:
+ — Interfaces de usuário com utilização por teclado, caneta ou toque.
+B.1.7 Utilização com manipulação ou força limitadas
+Quando a TIC exigir ações manuais, deve ser fornecido pelo menos um modo de operação que não 
+requeira manipulação ou força da mão.
+Exemplos de operações que os usuários podem não conseguir realizar incluem aquelas que requerem 
+controle motor fino, gestos específicos, movimento de pinça, torção do pulso, agarramento ou ações 
+manuais simultâneas.
+O descrito a seguir pode contribuir para tal:
+ — Ações que exigem a utilização de apenas uma das mãos.
+ — Ações por meio de teclas sequenciais.
+ — Ações por entrada de voz.
+===== [pag 52] =====
+42
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+ — Ações que não exigem força nas mãos. Alguns usuários têm força limitada nas mãos e podem 
+não conseguir atingir o nível de força necessário para realizar uma ação.
+B.1.8 Utilização com alcance limitado
+Os elementos operacionais precisam estar ao alcance de todos os usuários.
+O descrito a seguir pode contribuir para tal:
+ — Considerar as necessidades dos usuários de cadeiras de rodas e a variedade de estaturas  
+dos usuários ao posicionar elementos operáveis da interface de usuário.
+B.1.9 Utilização por pessoas com epilepsia fotossensível
+Quando a TIC oferecer meios de operação visuais, deve ser fornecido pelo menos um modo de 
+operação que minimize o potencial de desencadear convulsões fotossensíveis.
+O descrito a seguir pode contribuir para tal:
+ — Limitar a área e o número de flashes por segundo.
+B.1.10  Utilização com cognição limitada
+Alguns usuários precisam que a TIC forneça recursos que a tornem mais simples e fácil de utilizar. 
+Esta subseção tem o objetivo de incluir as necessidades de pessoas com habilidades cognitivas,  
+de linguagem e de aprendizagem limitadas.
+O descrito a seguir pode contribuir para tal:
+ — Limite de tempo ajustável.
+ — Indicação de erro e auxílio para a correção.
+ — Ordem lógica de foco.
+Desempenho funcional baseado no documento Accessibility requirements for ICT products and services.
+===== [pag 53] =====
+43
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Anexo C 
+(informativo) 
+ 
+Checklist
+C.1 Geral
+Esta checklist foi criada para auxiliar na conformidade com esta Norma. Para cada item, há uma coluna 
+informando se ele é um requisito ou uma recomendação. Também há uma coluna com informações 
+referentes ao respectivo critério de sucesso (C.S.) e nível de conformidade (A, AA ou AAA) do 
+documento WCAG 2.2. A última coluna serve para a marcação da conformidade. “Sim” significa que 
+atende ao item. “Não” significa não atende e “N/A” significa que esse critério não se aplica.
+C.1.1 Interação por teclado
+Alguns usuários não conseguem utilizar o mouse, ou podem utilizar tecnologia assistiva que não 
+permitem o uso preciso ou total do cursor. É importante que a interface e o conteúdo possam ser 
+navegados e operados utilizando somente o teclado.
+Tabela C.1 – Interação por teclado (continua)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.1.1 Indicador de foco visível
+Todos os elementos focáveis possuem um indicador de foco visível.
+Requisito 2.4.7 (AA)
+Sim
+Não
+N/A
+5.1.2 Elemento em foco totalmente visível
+Todos os elementos focáveis estão completamente visíveis quando 
+recebem foco. 
+NOTA Cumprindo o descrito neste item, cumpre-se também o item 5.1.3, 
+Elemento em foco parcialmente visível.
+Recomendação 2.4.11 (AA) 
+2.4.12 (AAA)
+Sim
+Não
+N/A
+5.1.3 Elemento em foco parcialmente visível
+Todos os elementos focáveis estão pelo menos parcialmente visíveis 
+quando recebem foco, considerando a sobreposição por elementos de 
+autoria do desenvolvedor.
+Requisito 2.4.11 (AA)
+Sim
+Não
+N/A
+5.1.4 Ordem de foco previsível
+Todos os elementos focáveis recebem foco em ordem sequencial 
+lógica e intuitiva, consistente com a apresentação e que preserva o 
+significado e a operabilidade.
+Requisito 2.4.3 (A)
+Sim
+Não
+N/A
+===== [pag 54] =====
+44
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.1 (continuação)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.1.5 Uso de foco
+Todos os elementos focáveis são utilizados para interação.
+Recomendação
+2.1.1 (A)
+2.1.3 (AAA)
+Sim
+Não
+N/A
+5.1.6 Armadilha de foco
+Não há componentes que bloqueiam, impedem ou interrompem a 
+navegação por teclado. Requisito 2.1.2 (A)
+Sim
+Não
+N/A
+5.1.7 Conteúdo adicional
+Não há conteúdo adicional que seja exibido somente pelo foco do 
+teclado ou posicionamento do cursor. 
+NOTA Cumprindo o descrito neste item, cumpre-se também os itens 5.1.8, 
+Conteúdo adicional persistente, e 5.1.9, Conteúdo adicional dispensável.
+Recomendação 1.4.13 (AA)
+Sim
+Não
+N/A
+5.1.8 Conteúdo adicional persistente
+Todo conteúdo adicional exibido por foco do teclado ou posicionamento 
+do cursor permanece visível até que o usuário retire o foco, posicione o 
+cursor fora do componente ou dispense-o de outra forma, ou até que a 
+informação transmitida pelo conteúdo deixe de ser válida.
+Requisito 1.4.13 (AA)
+Sim
+Não
+N/A
+5.1.9 Conteúdo adicional dispensável
+Todo conteúdo adicional exibido por foco do teclado ou posicionamento 
+do cursor pode ser dispensado sem a necessidade de retirar o foco ou 
+reposicionar o cursor; ou
+O conteúdo adicional exibido comunica um erro de entrada, ou não 
+oculta ou substitui outro conteúdo.
+Requisito 1.4.13 (AA)
+Sim
+Não
+N/A
+5.1.10 Atalhos de teclado
+Não há atalhos de teclado que utilizam uma única tecla, de forma que 
+sempre haja a presença de uma tecla modificadora (como Ctrl ou Alt). 
+NOTA Cumprindo o descrito neste item, cumpre-se também o item 5.1.11, 
+Atalhos de teclado sem tecla modificadora.
+Recomendação 2.1.4 (A)
+Sim
+Não
+N/A
+5.1.11	Atalhos 	 de 	 teclado 	 sem 	 tecla 	 modificadora
+Há um mecanismo simples para desativar ou remapear o atalho de 
+teclado sem tecla modificadora; ou
+O atalho só é acionado quando um componente específico está em 
+foco.
+Requisito 2.1.4 (A)
+Sim
+Não
+N/A
+===== [pag 55] =====
+45
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.1 (conclusão)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.1.12 Acessibilidade por teclado total
+Todas as funcionalidades da página são acessíveis com o teclado, sem 
+exceção. 
+NOTA Cumprindo o descrito neste item, cumpre-se também o item 5.1.13, 
+Acessibilidade por teclado parcial.
+Recomendação
+2.1.1(A)
+2.1.3 (AAA)
+Sim
+Não
+N/A
+5.1.13 Acessibilidade por teclado parcial
+Todas as funcionalidades da página que não são acessíveis pelo 
+teclado não admitem modo de operação equivalente utilizando somente 
+o teclado (por exemplo, desenho à mão livre).
+Requisito 2.1.1 (A)
+Sim
+Não
+N/A
+5.1.14 Mecanismos de entrada simultâneos
+Não há funcionalidade na página que restringe o uso de algum 
+mecanismo de entrada disponível; ou
+A restrição do uso do mecanismo de entrada específico é essencial, 
+necessária para garantir a segurança do conteúdo ou para respeitar as 
+configurações do usuário.
+Recomendação 2.5.6 (AAA)
+Sim
+Não
+N/A
+5.1.15 Comportamento de componentes customizados
+Todos os componentes customizados possuem comportamento 
+previsível.
+NOTA Cumprindo o descrito neste item, cumpre-se também o item 5.1.16, 
+Instruções para componentes customizados.
+Recomendação
+2.1.1 (A)
+2.1.3 (AAA)
+Sim
+Não
+N/A
+5.1.16 Instruções para componentes customizados
+Todos os componentes customizados que exigem interações 
+complexas e comportamento não previsível possuem instruções para 
+operação.
+Requisito 3.3.2 (A)
+Sim
+Não
+N/A
+===== [pag 56] =====
+46
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.2 Imagens
+Imagens facilitam a compreensão e tornam o conteúdo mais amigável ao transmitir informações de 
+forma visual. A acessibilidade em imagens garante que todos os usuários, incluindo aqueles que 
+utilizam tecnologia assistiva, possam perceber, compreender e interagir com o conteúdo visual em 
+interfaces e documentos.
+Tabela C.2 – Imagens
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.2.1 Texto alternativo para imagens de conteúdo
+Todas as imagens que transmitem informação ou conteúdo 
+relevante possuem texto alternativo que descreve essa informação 
+ou conteúdo.
+Requisito 1.1.1 (A)
+Sim
+Não
+N/A
+5.2.2 Texto alternativo para imagens funcionais
+Todas as imagens funcionais possuem texto alternativo que 
+descreve a funcionalidade do elemento. Requisito
+1.1.1 (A)
+2.4.4.(A) 
+2.4.9 (AAA)
+Sim
+Não
+N/A
+5.2.3 Texto alternativo para imagens decorativas
+Todas as imagens decorativas possuem texto alternativo vazio 
+ou estão implementadas de outra forma, de modo que podem ser 
+ignoradas por tecnologia assistiva.
+Requisito 1.1.1 (A)
+Sim
+Não
+N/A
+5.2.4 Descrição para imagens complexas
+Todas as imagens complexas possuem texto alternativo que as 
+identifica e têm descrição detalhada disponível na página (próximo 
+à respectiva imagem) ou em outra página indicada.
+Requisito 1.1.1 (A)
+Sim
+Não
+N/A
+5.2.5 Imagens de texto
+Não há imagens de texto; ou
+Todas as imagens de texto são essenciais e possuem texto 
+alternativo com o mesmo conteúdo; ou
+É possível customizar as imagens de texto não essenciais e elas 
+possuem texto alternativo com o mesmo conteúdo.
+Requisito
+1.1.1 (A) 
+1.4.5 (AA) 
+1.4.9 (AAA)
+Sim
+Não
+N/A
+5.2.6 Texto alternativo para mapas de imagens
+Todos os mapas de imagens possuem texto alternativo para cada 
+área interativa. Requisito 1.1.1 (A)
+Sim
+Não
+N/A
+===== [pag 57] =====
+47
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.3 Cabeçalhos
+Os níveis de cabeçalho organizam a estrutura, a ordem de importância e a subordinação dos 
+conteúdos da página, facilitando a leitura e a compreensão. Além disso, funcionam como ferramenta 
+de navegação para que os usuários de tecnologia assistiva encontrem facilmente o conteúdo desejado. 
+O uso de hierarquia correta dos níveis de cabeçalho é um requisito para que essa navegação ocorra 
+adequadamente.
+Tabela C.3 – Cabeçalhos
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.3.1 Semântica de cabeçalho
+Todos os cabeçalhos possuem semântica determinada 
+programaticamente. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.3.2 Uso de cabeçalhos
+Todos os cabeçalhos são utilizados para identificar seções 
+de conteúdo. Requisito 1.3.1 (A) 
+2.4.6 (AA)
+Sim
+Não
+N/A
+5.3.3 Cabeçalho principal
+Há um, e somente um, cabeçalho de nível 1, que identifica 
+a página. Recomendação
+2.4.6 (AA)
+2.4.10 (AAA)
+Sim
+Não
+N/A
+5.3.4 Seções com cabeçalhos
+Todas as seções de conteúdo possuem um cabeçalho que 
+as identifica. Recomendação 2.4.10 (AAA)
+Sim
+Não
+N/A
+5.3.5 Estrutura de cabeçalhos
+Todos os cabeçalhos seguem uma estrutura hierárquica, 
+lógica e semântica. Requisito
+1.3.1 (A) 
+2.4.6 (AA) 
+2.4.10 (AAA)
+Sim
+Não
+N/A
+===== [pag 58] =====
+48
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.4 Regiões
+Regiões (marcos) ajudam a comunicar o leiaute e as áreas importantes da página, como a de 
+navegação e a do conteúdo principal. O uso de regiões com marcação semântica correta facilita a 
+compreensão da estrutura da página e permite fácil acesso a essas áreas.
+Tabela C.4 – Regiões
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.4.1 Semântica de região
+Todas as regiões da página possuem semântica determinada 
+programaticamente e condizente com a sua função e tipo de 
+conteúdo.
+Requisito
+1.3.1 (A)
+1.3.6 (AAA)
+Sim
+Não
+N/A
+5.4.2 Uso de regiões
+Todas as regiões são utilizadas para organizar os conteúdos da 
+página de acordo com o tipo de conteúdo. Requisito 1.3.1 (A) 
+1.3.6 (AAA)
+Sim
+Não
+N/A
+5.4.3 Conteúdo em regiões
+Todo o conteúdo está contido em regiões. 
+Recomendação 1.3.6 (AAA)
+Sim
+Não
+N/A
+5.4.4 Regiões únicas
+Não há mais do que uma região do tipo ‘header’/’banner’, ‘main’ 
+ou ‘footer’/’contentinfo’. Recomendação
+1.3.1 (A)
+1.3.6 (AAA)
+Sim
+Não
+N/A
+5.4.5	Regiões	identificadas	unicamente
+Todas as regiões do mesmo tipo possuem um nome acessível 
+único que as identifica. Requisito 1.3.1 (A) 
+4.1.2 (A)
+Sim
+Não
+N/A
+===== [pag 59] =====
+49
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.5 Listas
+Listas permitem a identificação do agrupamento de itens relacionados, apresentados de forma sequencial 
+ou não sequencial. Conteúdos organizados em listas facilitam a compreensão e a navegação.
+Tabela C.5 – Listas
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.5.1 Semântica de lista
+Todas as listas possuem semântica determinada 
+programaticamente e condizente com o tipo de relação entre os 
+itens (ordenada, não ordenada e de definições).
+Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.5.2 Uso de listas
+Todas as listas são utilizadas para agrupamento de itens de 
+mesma natureza. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+C.1.6 Tabelas
+Tabelas são uma forma estruturada de apresentar dados, que facilita a compreensão das relações entre 
+diferentes tipos de informação. A disposição de dados tabulares em estrutura visual e semanticamente 
+identificada beneficia todos os usuários.
+Tabela C.6 – Tabelas (continua)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.6.1 Semântica de tabela
+Todas as tabelas de dados possuem semântica determinada 
+programaticamente. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.6.2 Uso de Tabelas
+Todas as tabelas são utilizadas para apresentar dados tabulares. 
+Não há tabelas de leiaute; ou
+Todas as tabelas de leiaute não possuem semântica determinada. 
+Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+===== [pag 60] =====
+50
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.6 (conclusão)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.6.3 Cabeçalhos de tabela
+Todas as células de dados de uma tabela estão associadas 
+com os respectivos cabeçalhos de linha e coluna de forma 
+programaticamente determinada. 
+Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.6.4 Título de tabela
+Todas as tabelas possuem um título ou legenda que as identifica.
+Recomendação 2.4.6 (AA) 
+2.4.10 (AAA)
+Sim
+Não
+N/A
+5.6.5 Título de tabela associado
+Todos os títulos ou legendas de tabela estão associados à 
+respectiva tabela de forma programaticamente determinada. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.6.6 Descrição para tabelas complexas
+Todas as tabelas complexas possuem uma descrição da tabela em 
+texto. Recomendação 3.1.5 (AAA)
+Sim
+Não
+N/A
+C.1.7 Links e navegação
+Links permitem que o usuário navegue entre as páginas e entre os conteúdos de uma mesma página. 
+Os links devem informar claramente o seu destino e devem ser facilmente encontrados na página.
+Tabela C.7 – Links e navegação (continua)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.7.1 Semântica de link
+Todos os links possuem semântica determinada 
+programaticamente. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+===== [pag 61] =====
+51
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.7 (continuação)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.7.2 Uso de links
+Todos os links são utilizados para navegação. 
+Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.7.3 Propósito do link sem contexto
+Todos os links possuem texto, texto alternativo ou nome acessível 
+que indica sua função ou destino. 
+NOTA  Cumprindo o descrito neste item, cumpre-se também o item 5.7.4, 
+Propósito do link no contexto.
+Recomendação
+2.4.4 (A)
+2.4.9 (AAA)
+Sim
+Não
+N/A
+5.7.4 Propósito do link no contexto
+Todos os links possuem texto, texto alternativo ou nome acessível 
+que, em conjunto com o contexto do link, informa sua função ou 
+destino. 
+Requisito 2.4.4 (A)
+Sim
+Não
+N/A
+5.7.5 Links	com	identificação	consistente
+Não há links com texto, texto alternativo ou nome acessível iguais 
+que levam para destinos diferentes. Recomendação
+3.2.4 (AA)
+2.4.9 (AAA)
+Sim
+Não
+N/A
+5.7.6 Links que abrem em uma nova guia ou janela
+Não há links que abrem em uma nova guia ou janela; ou
+Todos os links que abrem em uma nova guia ou janela informam 
+isso ao usuário. 
+Recomendação
+2.4.4 (A)
+2.4.9 (AAA) 
+3.2.5 (AAA)
+Sim
+Não
+N/A
+5.7.7 Links para arquivos (não HTML)
+Todos os links para arquivos incluem no texto ou no texto 
+alternativo a informação do formato e tamanho do arquivo; ou
+O link para arquivo informa isso ao usuário de outra forma.
+Recomendação
+2.4.4 (A)
+2.4.9 (AAA)
+Sim
+Não
+N/A
+5.7.8 Links para sites externos
+Todos os links para sites externos informam isso ao usuário.
+Recomendação
+2.4.4 (A)
+2.4.9 (AAA)
+Sim
+Não
+N/A
+5.7.9 Texto complementar do link
+Não há texto complementar que repete o texto, texto alternativo ou 
+nome acessível do link. Recomendação 2.4.4 (A)
+Sim
+Não
+N/A
+===== [pag 62] =====
+52
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.7 (conclusão)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.7.10 Links adjacentes
+Não há links adjacentes que levam para o mesmo destino.  
+Recomendação 2.4.4 (A)
+Sim
+Não
+N/A
+5.7.11 Links para contornar blocos de conteúdo
+Há um ou mais links (ou outro mecanismo) que permitem contornar 
+blocos de conteúdo na página. Recomendação 2.4.1 (A)
+Sim
+Não
+N/A
+5.7.12 Links para contornar blocos de conteúdo em conjunto 
+de páginas
+Há um ou mais links (ou outro mecanismo) que permitem contornar 
+blocos de conteúdo que se repetem em um conjunto de páginas. 
+Requisito 2.4.1 (A)
+Sim
+Não
+N/A
+5.7.13 Alternativas para localização
+Há mais de uma forma para encontrar uma página em um conjunto 
+de páginas; ou
+A página é o resultado ou uma etapa de um processo.
+Requisito 2.4.5 (AA)
+Sim
+Não
+N/A
+5.7.14 Localização em conjunto de páginas
+Há informação sobre a localização do usuário em relação às 
+demais páginas ou seções do site. Recomendação 2.4.8 (AAA)
+Sim
+Não
+N/A
+5.7.15 Navegação consistente
+Todos os mecanismos de navegação que se repetem em um 
+conjunto de páginas estão na mesma ordem relativa; ou
+A posição do mecanismo é alterada pelo usuário.
+Requisito 3.2.3 (AA)
+Sim
+Não
+N/A
+5.7.16 Ajuda consistente
+Todos os mecanismos de ajuda que se repetem em um conjunto de 
+páginas estão na mesma ordem relativa; ou
+A posição do mecanismo é alterada pelo usuário.
+Requisito 3.2.6 (A)
+Sim
+Não
+N/A
+===== [pag 63] =====
+53
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.8 Botões e controles
+Elementos interativos, como links e botões, permitem que o usuário navegue para um destino ou 
+execute uma ação, respectivamente. É importante que todos os elementos interativos sejam 
+perceptíveis, compreensíveis e passíveis de acionamento para todos os usuários.
+Tabela C.8 – Botões e controles (continua)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.8.1 Semântica de botão
+Todos os botões possuem semântica determinada 
+programaticamente. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.8.2 Uso de botões
+Todos os botões são utilizados para acionar uma funcionalidade. 
+Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.8.3 Propósito do botão
+Todos os botões possuem texto, texto alternativo ou nome 
+acessível que indica sua função. Requisito 4.1.2 (A) 
+2.4.6 (AA)
+Sim
+Não
+N/A
+5.8.4	Identificação	consistente	na	página
+Todos os componentes que possuem a mesma funcionalidade e se 
+repetem na página são identificados de maneira consistente. Recomendação 3.2.4 (AA)
+Sim
+Não
+N/A
+5.8.5	Identificação	consistente	em	conjunto	de	páginas
+Todos os componentes que possuem a mesma funcionalidade e se 
+repetem em um conjunto de páginas são identificados de maneira 
+consistente.
+Requisito 3.2.4 (AA)
+Sim
+Não
+N/A
+===== [pag 64] =====
+54
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.8 (continuação)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.8.6 Área de acionamento (aprimorada)
+Todos os elementos interativos têm área de acionamento de pelo 
+menos 44 pixels CSS de altura e largura; ou
+Existe um controle com função equivalente na mesma página, com 
+área de acionamento de pelo menos 44 pixels CSS de altura e 
+largura; ou
+O elemento está em uma sentença ou bloco de texto; ou
+O tamanho do elemento é determinado pelo agente de usuário; ou
+O tamanho do elemento é essencial para transmitir a informação.
+NOTA Cumprin do o descrito neste item, cumpre-se também o item 5.8.7, 
+Área de acionamento (mínima).
+Recomendação 2.5.8 (AA) 
+2.5.5 (AAA)
+Sim
+Não
+N/A
+5.8.7 Área de acionamento (mínima)
+Todos os elementos interativos têm área de acionamento de pelo 
+menos 24 pixels CSS de altura e largura; ou
+O elemento tem espaçamento em relação aos elementos de 
+interação adjacentes, de tal modo que a soma do tamanho do 
+elemento mais o espaçamento é de pelo menos 24 pixels CSS em 
+todas as direções; ou
+Existe um controle com função equivalente na mesma página com 
+área de acionamento de pelo menos 24 pixels CSS de altura e 
+largura; ou
+O elemento está em uma sentença ou bloco de texto, ou seu 
+tamanho está delimitado pela altura da linha do texto; ou
+O tamanho do elemento é determinado pelo agente de usuário; ou
+O tamanho do elemento é essencial ou legalmente exigido para 
+transmitir a informação.
+Requisito 2.5.8 (AA)
+Sim
+Não
+N/A
+5.8.8 Mudança de contexto previsível
+Toda mudança de contexto é iniciada apenas a pedido do usuário; 
+ou
+Há um mecanismo para desativar essas mudanças de contexto.
+Recomendação
+3.2.1 (A) 
+3.2.2 (A) 
+3.2.5 (AAA)
+Sim
+Não
+N/A
+5.8.9 Mudança de contexto previsível no foco
+Não há componentes acionados somente pelo foco do teclado 
+ou posicionamento do cursor, que provocam uma mudança de 
+contexto.
+Requisito 3.2.1 (A)
+Sim
+Não
+N/A
+5.8.10 Mudança de contexto previsível na entrada
+Não há componentes que provocam mudança de contexto 
+enquanto o usuário insere ou seleciona informações; ou
+O usuário é avisado sobre esse comportamento antes de utilizar o 
+componente.
+Requisito 3.2.2 (A)
+Sim
+Não
+N/A
+===== [pag 65] =====
+55
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.8 (conclusão)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.8.11 Acionamento por ponteiro único
+Não há funcionalidade operada por ponteiro único que é acionada 
+pelo pressionamento do ponteiro (down-event); ou
+O acionamento completo da funcionalidade só é finalizado ao soltar 
+o ponteiro (up–event), e existe um mecanismo para interromper o 
+acionamento antes da finalização ou para desfazer o acionamento 
+após a finalização; ou
+Soltar o ponteiro reverte o acionamento ocasionado pelo 
+pressionamento do ponteiro; ou
+O acionamento completo da funcionalidade pelo pressionamento do 
+ponteiro é essencial.
+Requisito 2.5.2 (A)
+Sim
+Não
+N/A
+5.8.12 Operação por gestos de ponteiro
+Toda funcionalidade operada por gestos multiponto ou baseados 
+em caminhos pode ser operada também por um ponteiro único, 
+sem um gesto baseado em caminho; ou
+O gesto multiponto ou baseado em caminho é essencial; ou
+A funcionalidade é determinada pelo agente usuário, e não 
+modificada pelo desenvolvedor.
+Requisito 2.5.1 (A)
+Sim
+Não
+N/A
+5.8.13 Operação por movimento de arrastar
+Toda funcionalidade operada por movimento de arrastar pode 
+ser operada também por um ponteiro único sem movimento de 
+arrastar; ou
+O movimento de arrastar é essencial; ou
+A funcionalidade é determinada pelo agente usuário, e não 
+modificada pelo desenvolvedor.
+Requisito 2.5.7 (AA)
+Sim
+Não
+N/A
+5.8.14 Operação por movimento
+Toda funcionalidade operada por movimento pode ser operada 
+também por componentes que não exigem esse modo de 
+operação, e a resposta aos movimentos pode ser desabilitada para 
+evitar acionamento acidental; ou
+Existe um mecanismo para operar o controle de movimento de 
+outra forma; ou
+O movimento é essencial para a funcionalidade, e desabilitá-lo 
+invalidaria a atividade.
+Requisito 2.5.4 (A)
+Sim
+Não
+N/A
+5.8.15 Controles com retorno
+Todos os controles têm um retorno (feedback) perceptível ao 
+usuário quando são acionados. Recomendação
+1.3.3 (A)
+4.1.3 (AA)
+Sim
+Não
+N/A
+===== [pag 66] =====
+56
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.9 Formulários e entrada de dados
+Formulários permitem que os usuários insiram e enviem informações, e são essenciais para 
+funcionalidades como envio de mensagens, realização de pedidos e cadastros. Instruções claras 
+para inserir e corrigir informações possibilitam que os usuários preencham dados de forma correta e 
+eficiente.
+Tabela C.9 – Formulários e entrada de dados (continua)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.9.1 Rótulo de campo
+Todos os campos de formulário possuem um rótulo que os identifica; ou
+O campo de formulário possui propósito visualmente evidente e um 
+nome acessível que o identifica.
+Requisito
+3.2.2 (A)
+4.1.2 (A)
+Sim
+Não
+N/A
+5.9.2 Rótulo de campo previsível
+Todos os rótulos estão posicionados de maneira previsível em 
+relação aos respectivos campos de formulário. Requisito
+1.3.1 (A)
+3.3.2 (A)
+Sim
+Não
+N/A
+5.9.3 Rótulo de campo associado
+Todos os rótulos estão associados aos respectivos campos de 
+formulário de forma programaticamente determinada. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.9.4 Rótulo de campo descritivo
+Todos os rótulos identificam o propósito do respectivo campo de 
+formulário; ou
+O rótulo, em conjunto com o agrupamento do campo, identifica o 
+propósito do respectivo campo de formulário.
+Requisito 2.4.6 (A)
+Sim
+Não
+N/A
+5.9.5 Textos de ajuda previsíveis
+Todos os textos de ajuda estão posicionados de maneira previsível 
+em relação aos campos do formulário. Requisito 3.3.2 (A)
+Sim
+Não
+N/A
+5.9.6 Campos relacionados
+Todos os campos de entrada relacionados possuem agrupamento 
+determinado programaticamente. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+===== [pag 67] =====
+57
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.9 (continuação)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.9.7 Campos obrigatórios
+Todos os campos obrigatórios estão devidamente identificados, de 
+forma que todos possam perceber. Requisito 3.3.2 (A)
+Sim
+Não
+N/A
+5.9.8 Tipo de dado determinado
+Todos os campos de entrada têm seu tipo de dado determinado 
+programaticamente. Requisito 1.3.5 (AA)
+Sim
+Não
+N/A
+5.9.9 Mensagem de erro descritiva
+Todas as mensagens de erro descrevem em texto qual é o erro e 
+identificam qual é o campo com erro. Requisito 3.3.1 (A)
+Sim
+Não
+N/A
+5.9.10 Sugestão de correção
+Todas as mensagens de erro fornecem sugestões de correção de 
+entrada de dados, quando conhecidas; ou
+A sugestão de correção coloca em risco a segurança ou o propósito 
+do conteúdo. 
+Requisito 3.3.3 (AA)
+Sim
+Não
+N/A
+5.9.11 Prevenção de erro
+Todos os formulários permitem uma forma de reverter, verificar ou 
+confirmar os dados.
+NOTA Cumprin do o descrito neste item, cumpre-se também o item 5.9.12, 
+Prevenção de erro para formulários críticos.
+Recomendação
+3.3.4 (AA)
+3.3.6 (AAA)
+Sim
+Não
+N/A
+5.9.12 Prevenção de erro para formulários críticos
+Todos os formulários críticos permitem uma forma de reverter, 
+verificar ou confirmar os dados. Requisito 3.3.4 (AA)
+Sim
+Não
+N/A
+5.9.13 Ajuda contextual
+Há ajuda contextual, como instruções e dicas relevantes, que auxilia 
+o usuário a preencher e enviar os formulários. Recomendação 3.3.5 (AAA)
+Sim
+Não
+N/A
+===== [pag 68] =====
+58
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.9 (conclusão)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.9.14 Botão de submissão
+Todos os formulários possuem um botão para a submissão dos 
+dados. Recomendação 3.2.2 (A)
+Sim
+Não
+N/A
+5.9.15 Reentrada de dados
+Todos os campos de entrada que exigem dados previamente 
+inseridos são preenchidos automaticamente ou estão disponíveis 
+para seleção; ou
+A reentrada de dados é essencial; ou
+A informação inserida é necessária por segurança; ou
+A informação previamente inserida não é mais válida. 
+Requisito 3.3.7 (A)
+Sim
+Não
+N/A
+5.9.16 Validação sensorial ou por movimento
+Todo método de validação que exige uma percepção ou capacidade 
+motora específica possui uma alternativa que não possui a mesma 
+exigência. 
+Requisito
+1.1.1 (A) 
+2.5.4 (A) 
+2.5.6 (AAA)
+Sim
+Não
+N/A
+5.9.17 Autenticação acessível (aprimorado)
+Não há testes de função cognitiva em processos de autenticação; ou
+Há um método de autenticação alternativo sem teste de função 
+cognitiva; ou
+Há um mecanismo para auxiliar o usuário a completar o teste de 
+função cognitiva.
+NOTA Cumprin do o descrito neste item, cumpre-se também o item 5.8.18, 
+Autenticação acessível (mínima).
+Recomendação 3.3.8 (AA) 
+3.3.9 (AAA)
+Sim
+Não
+N/A
+5.9.18 Autenticação acessível (mínima)
+Não há testes de função cognitiva em processos de autenticação; ou
+Há um método de autenticação alternativo sem teste de função 
+cognitiva; ou
+Há um mecanismo para auxiliar o usuário a completar o teste de 
+função cognitiva; ou
+O teste é um método de reconhecimento de objetos; ou
+O teste serve para identificar um conteúdo não textual fornecido pelo 
+usuário.
+Requisito 3.3.8 (AA)
+Sim
+Não
+N/A
+===== [pag 69] =====
+59
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.10 Apresentação
+O conteúdo de uma página pode ser apresentado de diversas formas, incluindo variações de cores, 
+fontes, leiautes, imagens e outras características sensoriais. A acessibilidade na estética e no design 
+visual, de acordo com boas práticas, permite a percepção, compreensão e interação com o conteúdo 
+para todas as pessoas.
+Tabela C.10 – Apresentação
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.10.1 Características sensoriais
+Não há instruções para compreender e utilizar o conteúdo que 
+dependem somente das características sensoriais dos componentes, 
+como forma, cor, tamanho, localização visual, orientação e som.
+Requisito 1.3.3 (A)
+Sim
+Não
+N/A
+5.10.2 Ordem de apresentação
+A apresentação dos elementos conforme aparecem na tela é tal que 
+preserva o significado e a operabilidade. Requisito 1.3.2 (A)
+Sim
+Não
+N/A
+5.10.3 Orientação de exibição
+O conteúdo não restringe sua visualização e operação a uma única 
+orientação de exibição, como de retrato ou paisagem; ou
+A orientação específica de exibição é essencial.
+Requisito 1.3.4 (AA)
+Sim
+Não
+N/A
+5.10.4 Design responsivo
+Não há perda de informação ou funcionalidade, nem barra de 
+rolagem em duas dimensões para conteúdo de rolagem horizontal 
+apresentado com altura equivalente a 256 pixels CSS; ou
+Não há perda de informação ou funcionalidade, nem barra de 
+rolagem em duas dimensões para conteúdo de rolagem vertical 
+apresentado com largura equivalente a 320 pixels CSS; ou
+O conteúdo exige leiaute bidimensional para uso ou significado (por 
+exemplo, mapas, diagramas, vídeos, jogos, apresentações, tabelas 
+de dados e interfaces).
+Requisito 1.4.10 (AA)
+Sim
+Não
+N/A
+5.10.5 Área do indicador de foco visível
+O indicador de foco visível dos elementos focáveis tem área pelo 
+menos equivalente ao perímetro do elemento com 2 pixels CSS de 
+espessura.
+Recomendação 2.4.13 (AAA)
+Sim
+Não
+N/A
+===== [pag 70] =====
+60
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.11 Uso de cores 
+A cor é um recurso importante no design de conteúdo da web. A acessibilidade no uso de cores 
+permite que pessoas que não podem ver ou perceber as cores também consigam compreender e 
+utilizar o conteúdo.
+Tabela C.11 – Uso de cores
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.11.1 Uso de cores
+Não há elementos que fazem uso somente de cores para transmitir 
+informações, indicar uma ação, pedir uma resposta ou distinguir um 
+elemento visual. 
+Requisito 1.4.1 (A)
+Sim
+Não
+N/A
+5.11.2 Contraste para texto (aprimorado)
+Todo conteúdo de texto, incluindo imagens de texto, tem relação de 
+contraste de pelo menos 7:1 com o fundo; ou
+O conteúdo de texto está em tamanho grande e tem relação de 
+contraste de pelo menos 4,5:1 com o fundo; ou
+O texto faz parte de um logotipo ou está em plano secundário.
+NOTA Cumprin do o descrito neste item, cumpre-se também o item 5.11.3, 
+Contraste para texto (mínimo).
+Recomendação 1.4.3 (AA) 
+1.4.6 (AAA)
+Sim
+Não
+N/A
+5.11.3 Contraste para texto (mínimo)
+Todo conteúdo de texto, incluindo imagens de texto, tem relação de 
+contraste de pelo menos 4,5:1 com o fundo; ou
+O conteúdo de texto está em tamanho grande e tem relação de 
+contraste de pelo menos 3:1 com o fundo; ou
+O texto faz parte de um logotipo ou está em plano secundário.
+Requisito 1.4.3 (AA)
+Sim
+Não
+N/A
+5.11.4 Contraste para componentes
+Todos os componentes de interface têm relação de contraste de pelo 
+menos 3:1 com o fundo e entre seus estados; ou
+O componente está em estado inativo.
+Requisito 1.4.11 (AA)
+Sim
+Não
+N/A
+5.11.5	Contraste	para	objetos	gráficos
+Todas as partes de objetos gráficos necessárias para compreender o 
+conteúdo têm relação de contraste de pelo menos 3:1 com o fundo e 
+entre si; ou
+A apresentação específica dos objetos gráficos é essencial para a 
+informação transmitida.
+Requisito 1.4.11 (AA)
+Sim
+Não
+N/A
+5.11.6 Contraste para indicador de foco visível
+O indicador de foco visível dos elementos focáveis tem relação de 
+contraste de pelo menos 3:1 com o fundo e entre os estados em foco 
+e sem foco.
+Requisito 1.4.11 (AA) 
+2.4.13 (AAA)
+Sim
+Não
+N/A
+===== [pag 71] =====
+61
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.12 Conteúdo textual
+Conteúdo em texto é essencial para apresentar informações na web. Textos escritos, estruturados e 
+marcados de forma acessível, e que permitem a formatação mais adequada para cada usuário, são 
+mais fáceis de ler e de serem compreendidos por todas as pessoas.
+Tabela C.12 – Conteúdo textual (continua)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.1.12 Espaçamento entre as linhas
+Todos os blocos de texto têm espaçamento entre as linhas 
+(entrelinhas) de pelo menos 1,5 vez o tamanho da fonte; ou
+Existe um mecanismo para configurar o espaçamento e não há perda 
+de conteúdo ou funcionalidade quando o critério acima é cumprido. 
+Requisito 1.4.12 (AA) 
+1.4.8 (AAA)
+Sim
+Não
+N/A
+5.12.2 Espaçamento entre os parágrafos
+Todos os parágrafos têm espaçamento entre si de pelo menos 
+2 vezes o tamanho da fonte; ou
+Existe um mecanismo para configurar o espaçamento e não há perda 
+de conteúdo ou funcionalidade quando o critério acima é cumprido. 
+Requisito 1.4.12 (AA) 
+1.4.8 (AAA)
+Sim
+Não
+N/A
+5.12.3 Espaçamento entre as letras
+Todos os blocos de texto têm espaçamento entre as letras 
+(rastreamento) de pelo menos 0,12 vez o tamanho da fonte; ou
+Existe um mecanismo para configurar o espaçamento e não há perda 
+de conteúdo ou funcionalidade quando o critério acima é cumprido. 
+Requisito 1.4.12 (AA)
+Sim
+Não
+N/A
+5.12.4 Espaçamento entre as palavras
+Todos os blocos de texto têm espaçamento entre as palavras de pelo 
+menos 0,16 vez o tamanho da fonte; ou
+Existe um mecanismo para configurar o espaçamento e não há perda 
+de conteúdo ou funcionalidade quando o critério acima é cumprido. 
+Requisito 1.4.12 (AA)
+Sim
+Não
+N/A
+5.12.5 Alinhamento de blocos de texto
+Todos os blocos de texto estão alinhados à esquerda para idiomas 
+que são lidos da esquerda para a direita; e
+Todos os blocos de texto estão alinhados à direita para idiomas que 
+são lidos da direita para a esquerda; ou
+O alinhamento é essencial para a compreensão do conteúdo.
+Recomendação 1.4.8 (AAA)
+Sim
+Não
+N/A
+5.12.6 Largura de blocos de texto
+A largura dos blocos de texto não ultrapassa 80 caracteres  
+(40 caracteres, se o idioma for chinês, japonês ou coreano); ou
+Existe um mecanismo para configurar a largura dos blocos de texto 
+e alcançar esse resultado.
+Requisito 1.4.10 (AA) 
+1.4.8 (AAA)
+Sim
+Não
+N/A
+===== [pag 72] =====
+62
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.12 (conclusão)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.12.7 Texto redimensionado
+Não há perda de conteúdo ou funcionalidade quando o texto é 
+redimensionado sem o uso de recursos de tecnologia assistiva em 
+até 200 %, de modo que o usuário não precisa rolar horizontalmente 
+para ler uma linha de texto em uma janela de tela inteira.
+Requisito 1.4.4 (AA) 
+1.4.8 (AAA)
+Sim
+Não
+N/A
+5.12.8 Semântica de texto especial
+Todos os trechos de texto de ênfase, citação, abreviação ou 
+outro tipo de texto especial possuem semântica determinada 
+programaticamente.
+Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.12.9 Uso de texto especial
+Todos os trechos de texto de ênfase, citação, abreviação ou texto 
+especial são utilizados para transmitir esses propósitos. Requisito 1.3.1 (A)
+Sim
+Não
+N/A
+5.12.10	Definições	de	significado
+Há um mecanismo para identificar definições específicas de palavras 
+ou frases usadas de forma incomum ou restrita, incluindo expressões 
+idiomáticas e jargões.
+Recomendação 3.1.3 (AAA)
+Sim
+Não
+N/A
+5.12.11 Siglas e abreviaturas
+Há um mecanismo para identificar a forma expandida ou o significado 
+das siglas e abreviaturas. Recomendação 3.1.4 (AAA)
+Sim
+Não
+N/A
+5.12.12 Nível de linguagem
+Todo conteúdo de texto utiliza linguagem simples e clara; ou
+Existe conteúdo suplementar ou uma versão alternativa simplificada 
+para linguagem especializada ou recursos linguísticos complexos.
+Recomendação 3.1.5 (AAA)
+Sim
+Não
+N/A
+5.12.13	Pronúncia	identificada
+Há um mecanismo para identificar a pronúncia específica de palavras 
+cujo significado no contexto é ambíguo sem se conhecer a pronúncia. Recomendação 3.1.6 (AAA)
+Sim
+Não
+N/A
+===== [pag 73] =====
+63
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.13 Codificação	e	marcação	semântica
+Conjunto de códigos que determina o comportamento e a funcionalidade de todo o site ou aplicação 
+web. Um código com boa qualidade é robusto, o que o torna compatível com uma ampla gama de 
+agentes de usuário, como navegadores e tecnologias assistivas.
+Tabela	C.13	–	Codificação	e	marcação	semântica	(continua)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.13.1 Título da página
+A página possui um título único em relação às demais páginas do 
+site, que a identifica. Requisito 2.4.2 (A)
+Sim
+Não
+N/A
+5.13.2 Idioma da página
+A página tem seu idioma declarado de forma programaticamente 
+determinada. Requisito 3.1.1 (A)
+Sim
+Não
+N/A
+5.13.3 Idioma das partes da página
+Todas as partes da página que possuem idioma diferente do principal 
+têm seu idioma declarado de forma programaticamente determinada; ou
+O texto é um nome próprio, um termo técnico, uma palavra em um 
+idioma indeterminado, ou uma palavra ou frase estrangeira que se 
+tornou parte do vernáculo do texto que a envolve.
+Requisito 3.1.2 (AA)
+Sim
+Não
+N/A
+5.13.4 Título do frame
+Todo frame ou iframe possui um título único, que o identifica.
+Requisito 1.3.1 (A) 
+4.1.2 (A)
+Sim
+Não
+N/A
+5.13.5 Zoom não bloqueado
+A página não bloqueia o recurso de zoom do agente de usuário.
+Requisito 1.4.4 (AA) 
+1.4.10 (AA)
+Sim
+Não
+N/A
+5.13.6 Ordem de leitura
+A ordem dos elementos conforme aparecem no código é lógica e 
+intuitiva, de modo que preserva o significado e a operabilidade. Requisito 1.3.2 (A)
+Sim
+Não
+N/A
+===== [pag 74] =====
+64
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.13 (conclusão)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.13.7 Texto visível no nome acessível
+Todos os componentes possuem nome acessível igual ao texto 
+visível do componente ou do seu rótulo; ou
+O nome acessível contém o texto visível, preferencialmente no início.
+Requisito 2.5.3 (A)
+Sim
+Não
+N/A
+5.13.8 Mensagens de status
+Todas as mensagens de status são determinadas 
+programaticamente, de modo que não seja necessário que os 
+usuários de tecnologia assistiva tenham que dar foco no elemento.
+Requisito 4.1.3 (AA)
+Sim
+Não
+N/A
+5.13.9	Propósito	identificável
+A finalidade dos componentes da interface do usuário, ícones e 
+regiões pode ser determinada programaticamente. Recomendação 1.3.6 (AAA)
+Sim
+Não
+N/A
+5.13.10 Componentes com nome acessível
+Todos os componentes que requerem identificação por nome 
+possuem um nome acessível. Requisito 4.1.2 (A)
+Sim
+Não
+N/A
+5.13.11 Elementos nativos
+Todos os componentes da página utilizam elementos nativos 
+NOTA Cumprin do o descrito neste item, cumpre-se também os itens 5.13.12, 
+Semântica de componentes customizados, e 5.13.13, Estados, propriedades e 
+valores de componentes customizados.
+Recomendação 1.3.1 (A)
+Sim
+Não
+N/A
+5.13.12 Semântica de componentes customizados
+Todos os componentes customizados possuem semântica, 
+incluindo função, estados, propriedades e valores, determinada 
+programaticamente, incluindo as alterações desses itens.
+Requisito 1.3.1 (A) 
+4.1.2 (A)
+Sim
+Não
+N/A
+5.13.13 Estados, propriedades e valores de componentes 
+customizados
+Todos os componentes de interface de usuário, cujos estados, 
+propriedades e valores possam ser definidos pelo usuário, permitem 
+que esses atributos sejam definidos programaticamente.
+Requisito 4.1.2 (A)
+Sim
+Não
+N/A
+===== [pag 75] =====
+65
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.14 Áudio e vídeo
+Conteúdo multimídia, incluindo áudio e vídeo ao vivo ou pré-gravado, é um dos tipos de recursos para 
+a web. Todos podem perceber e interagir com esse tipo de conteúdo se forem oferecidas alternativas 
+equivalentes.
+Tabela C.14 – Áudio e vídeo (continua)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.14.1 Alternativa em texto para áudio
+Todo áudio pré-gravado tem uma alternativa em texto que transcreve 
+todo o seu conteúdo; ou
+O áudio é uma alternativa para um vídeo sem áudio ou texto 
+equivalente e está claramente identificado como tal.
+Requisito 1.2.1 (A)
+Sim
+Não
+N/A
+5.14.2 Legendas descritivas para vídeo
+Todo vídeo com áudio pré-gravado tem legendas descritivas 
+disponíveis e equivalentes ao conteúdo do áudio; ou
+O vídeo é uma alternativa para um texto equivalente e está 
+claramente identificado como tal.
+Requisito 1.2 2 (A)
+Sim
+Não
+N/A
+5.14.3 Transcrição para vídeo
+Todo conteúdo em vídeo pré-gravado tem uma alternativa em texto 
+que transcreve todo o seu conteúdo, visual e sonoro. Recomendação
+1.2.1 (A) 
+1.2.3 (A) 
+1.2.8 (AAA)
+Sim
+Não
+N/A
+5.14.4 Audiodescrição para vídeo
+Todos os vídeos pré-gravados têm audiodescrição para todo o 
+conteúdo visual; ou
+O áudio original é suficiente para a compreensão do conteúdo do 
+vídeo sem o uso da visão.
+Requisito
+1.2.1 (A) 
+1.2.3 (A) 
+1.2.5 (AA)
+Sim
+Não
+N/A
+5.14.5 Audiodescrição estendida para vídeo
+Todo conteúdo em vídeo pré-gravado, cujas pausas não sejam 
+suficientes para audiodescrição, tem uma versão com audiodescrição 
+estendida para todo o vídeo.
+Recomendação
+1.2.3 (A) 
+1.2.5 (AA) 
+1.2.7 (AAA)
+Sim
+Não
+N/A
+5.14.6 Janela de Libras para conteúdo em áudio
+Janela de Libras está disponível em todo o conteúdo de áudio 
+pré-gravado em mídia sincronizada. Recomendação 1.2.6 (AAA)
+Sim
+Não
+N/A
+===== [pag 76] =====
+66
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Tabela C.14 (conclusão)
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.14.7 Controle de áudio
+Não há áudio que toque automaticamente e dure mais que 3 s; ou
+Existe um mecanismo para pausar, parar, silenciar ou ajustar o seu 
+volume sem afetar o volume geral do sistema.
+Requisito 1.4.2 (A)
+Sim
+Não
+N/A
+5.14.8 Áudio sem ruído
+Não há conteúdo em áudio que possua sons de fundo; ou
+Não há conteúdo em áudio focado principalmente na fala ou no 
+discurso, com a presença de sons de fundo que possam distrair ou 
+interferir na compreensão do conteúdo; ou
+O áudio é uma vocalização com intenção de expressão musical ou 
+parte de um CAPTCHA; ou
+Há um mecanismo para desligar os sons de fundo; ou
+Os sons de fundo têm volume que não interferem no som principal.
+Recomendação 1.4.7 (AAA)
+Sim
+Não
+N/A
+5.14.9 Legendas para áudio e vídeo ao vivo
+Todo conteúdo em áudio ou áudio e vídeo ao vivo tem legendas 
+disponíveis. Requisito 1.2.4 (AA)
+Sim
+Não
+N/A
+5.14.10 Transcrição para áudio ao vivo
+Existe uma transcrição para todo o conteúdo em áudio ao vivo.
+Recomendação 1.2.9 (AAA)
+Sim
+Não
+N/A
+===== [pag 77] =====
+67
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.15 Animação
+Conteúdos que se movem, piscam ou rolam, que mudam de estado de modo que transmitem uma 
+sensação de movimento, sejam autonomamente ou em resposta a uma ação do usuário. Animações 
+podem gerar barreiras ou distrações para usuários que têm dificuldade para acompanhar o movimento 
+ou que possuem déficit de atenção. É importante que sejam fornecidas opções para controlar ou 
+desativar essas animações.
+Tabela C.15 – Animação
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.15.1 Controle de animação
+Não há animação que inicie automaticamente, dure mais que 5 s e 
+seja apresentada em paralelo com outro conteúdo; ou
+Existe um mecanismo para pausar, parar ou ocultar a animação; ou
+A animação é essencial para a atividade. 
+Requisito 2.2.2 (A)
+Sim
+Não
+N/A
+5.15.2 Animações acionadas por interação
+Não há animações de movimento acionadas pela interação do 
+usuário; ou
+Existe um mecanismo para desativar as animações de movimento 
+acionadas pela interação do usuário; ou
+A animação de movimento é essencial para a funcionalidade ou 
+informação transmitida.
+Recomendação 2.3.3 (AAA)
+Sim
+Não
+N/A
+5.15.3 Flash intermitente
+Não há conteúdo que pisque mais de três vezes em qualquer período 
+de 1 s. 
+NOTA Cumprindo o descrito neste item, cumpre-se também o item 5.15.4, 
+Flash intermitente limitado.
+Recomendação 2.3.1(A) 
+2.3.2 (AAA)
+Sim
+Não
+N/A
+5.15.4 Flash intermitente limitado
+Todo conteúdo que pisca está abaixo dos limites de flash geral e 
+flash vermelho. Requisito 2.3.1 (A)
+Sim
+Não
+N/A
+===== [pag 78] =====
+68
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+C.1.16 Tempo
+Algumas atividades na web exigem limites de tempo para a sua realização. Esses limites devem 
+considerar pessoas que necessitam de mais tempo para ler ou completar tarefas.
+Tabela C.16 – Tempo
+Item Classificação
+C.S. 
+e nível de 
+conformidade 
+WCAG 2.2
+Checklist
+5.16.1 Limite de tempo
+Não há evento ou atividade no conteúdo com limite de tempo; ou
+O limite de tempo não é parte essencial do evento ou da atividade; ou
+O conteúdo é uma mídia sincronizada não interativa ou um evento 
+em tempo real.
+NOTA Cumprindo o descrito neste item, cumpre-se também o item 5.16.2, 
+Limite de tempo ajustável.
+Recomendação 2.2.1 (A) 
+2.2.3 (AAA)
+Sim
+Não
+N/A
+5.16.2 Limite de tempo ajustável
+Há um mecanismo para desligar, ajustar ou estender o limite de 
+tempo antes de atingi-lo; ou
+O limite de tempo é intrínseco ao conteúdo, essencial ou superior a 20 h. 
+Requisito 2.2.1 (A)
+Sim
+Não
+N/A
+5.16.3 Controle de atualização
+Não há atualização que inicie automaticamente e seja apresentada 
+em paralelo com outro conteúdo; ou
+Existe um mecanismo para pausar, parar ou ocultar a atualização, ou 
+para controlar a frequência da atualização; ou
+A atualização é essencial para a atividade. 
+Requisito 2.2.2 (A)
+Sim
+Não
+N/A
+5.16.4 Interrupções
+Não há interrupções; ou
+Existe um mecanismo para adiar ou bloquear as interrupções; ou
+As interrupções envolvem uma emergência.
+Recomendação 2.2.4 (AAA)
+Sim
+Não
+N/A
+5.16.5 Reautenticação
+Não há perda de dados quando uma sessão autenticada expira. O 
+usuário pode continuar a atividade sem perda de dados após a nova 
+autenticação; ou
+A perda de dados é essencial.
+Recomendação 2.2.1 (A) 
+2.2.5 (AAA)
+Sim
+Não
+N/A
+5.16.6 Tempo de inatividade
+Não há perda de dados quando um limite de tempo de inatividade do 
+usuário é atingido; ou
+Há um aviso sobre o limite de tempo de inatividade do usuário antes 
+da perda de dados; ou
+O limite de tempo de inatividade do usuário sem perda de dados é de 
+pelo menos 20 h.
+Recomendação 2.2.1 (A) 
+2.2.6 (AAA)
+Sim
+Não
+N/A
+===== [pag 79] =====
+69
+ABNT NBR 17225:2025
+© ABNT 2025 - Todos os direitos reservados
+Bibliografia
+[1]  ABNT NBR 15290, Acessibilidade em comunicação na televisão
+[2]  ABNT NBR 15610-3, Televisão digital terrestre – Acessibilidade – Parte 3: Língua de Sinais (Libras)
+[3]  ABNT NBR 16452, Acessibilidade na comunicação – Audiodescrição
+[4]  ABNT NBR 17060, Acessibilidade em aplicativos de dispositivos móveis
+[5]  ABNT NBR ISO 9241-11, Ergonomia da interação humano-sistema – Parte 11: Usabilidade –
+Definições e conceitos
+[6]  ABNT NBR ISO 9241-171, Ergonomia da interação humano-sistema – Parte 171: Orientações 
+sobre acessibilidade de software
+[7]  ABNT NBR ISO 24495-1, Linguagem simples
+[8]  BRASIL. Lei Federal nº 10.098 de 19/12/2000 – Lei da Acessibilidade – Regulamentada pelo 
+Decreto nº 5.296 de 02/12/2004. http://www.planalto.gov.br/ccivil_03/leis/l10098.htm
+[9]  BRASIL. Decreto nº 5.296 de 2/12/2004. 
+http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm
+[10]  Lei Brasileira de Inclusão da Pessoa com Deficiência – L13146. 
+http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm
+[11]  Accessibility requirements for ICT products and services. 
+https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf

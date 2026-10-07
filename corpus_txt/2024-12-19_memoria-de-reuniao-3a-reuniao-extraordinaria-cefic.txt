@@ -1,0 +1,120 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião 
+3° Reunião Extraordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) no ano de 2024. 
+Data Horário Local 
+19/12/2024 09h30 Casa Civil 
+ 
+2. Pauta 
+2.1. Deliberação - Minutas de Resolução do Serviço Biométrico Federal e do Fluxo de Emissão da CIN. 
+3. Participantes 
+PARTICIPANTES CARGO/POSIÇÃO ÓRGÃO 
+Pedro Helena Pontual Machado Titular CEFIC 
+Secretário-Executivo Adjunto da Casa Civil 
+Casa Civil da Presidência 
+da República (CC-PR) 
+Carlos Antônio Lopes de 
+Araújo 
+Assessor Especial 
+Rogério Souza Mascarenhas Titular CEFIC  
+Secretário-Executivo da CEFIC  
+Secretário de Governo Digital  
+Secretaria de Governo 
+Digital (SGD) / Ministério 
+da Gestão e da Inovação 
+em Serviços Públicos 
+(MGI) 
+Hudson Vinícius Mesquita Diretor de Identidade Digital 
+Eduardo Magalhães de Lacerda 
+Filho 
+Coordenador-Geral de Identificação Civil  
+Enylson Camolesi Presidente Instituto Nacional de 
+Tecnologia da 
+Informação (ITI) / 
+Ministério da Gestão e 
+da Inovação em Serviços 
+Públicos (MGI) 
+Mauricio Augusto Coelho Diretor de Infraestrutura Tecnológica 
+Sylvio Koury Diretor de Tecnologias de Identificação 
+Katia Macarini Gonçalves 
+ 
+Coordenadora Geral  
+de Tecnologias de Identificação 
+Ana Maria Costa Cândido 
+Lacerda 
+Assessora da Diretoria de Tecnologias de 
+Identificação 
+Rériton Weldert Gomes Suplente CEFIC 
+Coordenador-Geral de Gestão de Cadastro e 
+Benefícios Fiscais 
+Secretaria Especial da 
+Receita Federal do Brasil 
+(RFB) 
+Lílian Manoela Monteiro Cintra 
+de Melo 
+Titular CEFIC  
+Secretária de Direito Digital - SEDIGI/MJSP 
+Ministério da Justiça e 
+Segurança Pública 
+(MJSP) 
+Solange Berto de Medeiros Suplente CEFIC  
+Subsecretária de Tecnologia da Informação e 
+Comunicação - STI/MJSP 
+Isabel Seixas de Figueiredo Diretora do Sistema Único de Segurança Pública 
+Jose Rocha de Carvalho Filho Coordenador-Geral de Planejamento, Inovação e 
+Integração de Tecnologia da Informação e 
+Comunicação para Segurança Pública 
+Beatriz Figueiredo Coordenadora-Geral de Modernização Tecnológica 
+SENASP 
+Priscilla de Jesus Roscia Instituto Nacional de Identificação - INI/DPA/PF 
+Fábio Mariano da Silva Diretor de Promoção dos Direitos Humanos Ministério dos Direitos 
+Humanos e da Cidadania 
+(MDHC) 
+ 
+ 
+4. Breve relato 
+===== [pag 2] =====
+Contextualização do Serviço Biométrico Federal (SBF) e explanação do texto das Minutas, com exibição do fluxo proposto. 
+O barramento está previsto para conferência biométrica desde o início do projeto. Esclarecido que o barramento não vai 
+trazer novos custos ou mudanças para o cidadão.  A inovação da implementação do SBF está no grupo de análise de 
+divergência e será associada ao protocolo e fluxo em elaboração.  
+Os Órgãos de Identificação Civil (OIC) foram incluídos nas discussões das minutas por meio do Grupo de Trabalho 2 -  
+Articulação com Estados - GTT2.  
+Foram solicitados os seguintes ajustes nos textos das Minutas: 
+• SBF - Art. 5° – Parágrafo único (retirada do INI); 
+• Fluxo- incorporar o fluxo como anexo à Resolução SBF; 
+- Art. 3°- Incluir comando de que o plano de implementação será elaborado no âmbito dos GTT e instituído pela CEFIC no 
+prazo de 90 dias; 
+- Fluxograma - RFB pediu que fosse feita uma correção na seta no fluxograma que sai do Golden Record. 
+Sobre a proposta do  aplicativo de leitura do QRCode , houve entendimento geral da importância do leitor do QRCode. 
+Entendeu-se no sentido de não se incluírem o utras funcionalidades, no aplicativo, por apresentarem divergências em 
+relação ao público-alvo e de finalidade. Encaminhamento da CEFIC foi para que o ap licativo a ser lançado apresente a 
+funcionalidade de leitura do QRCode. Outras funcionalidades podem ser avaliadas, pela CEFIC, em momento posterior. 
+Também foi definido a importância da realização de testes, nessa primeira versão do aplicativo, com avaliações prévias 
+ao lançamento em todo o país. 
+Nas discussões do GTT3 - Desenvolvimento técnico, foi montado um Painel com 5 cenários diferentes, e o aplicativo com 
+o validador do QRCode correspondia ao cenário 2.  
+5. Encaminhamentos:  
+5.1 - Aprovação da Resolução do Serviço Biométrico Federal e do Fluxo de Emissão da CIN como um normativo único, 
+com os ajustes a seguir: 
+5.1.1 -Minuta de Resolução do Serviço Biométrico Federal 
+ Retirar a menção do INI na minuta (Art5°-Parágrafo único). 
+ Retirar no Art. 6°: e executado até 30 abril/2025 
+ Incluir no Ar. t6°: elaborados no âmbito dos GTT da CEFIC, e por ela instituído no prazo de 90 dias. 
+5.1.2 - Fluxo de Emissão da CIN 
+ Incorporar como anexo à Resolução SBF. 
+ A partir da implementação do plano de ação com incorporação do fluxo (anexo II)  a Resolução 3 será 
+revogada. 
+5.2- Geral 
+ MJSP relatar a situação dos planos dos Estados para o uso dos recursos do FNSP e planejamento das ações junto 
+aos Estados. 
+ GTT 1  – Planejamento e Monitoramento -  Discussão e elaboração do planejamento 2025 e relatoria desse 
+planejamento pela Senasp para a CEFIC. 
+ GTT 2 –  Articulação com Estados - Ampliar o diálogo com os Estados , e reforçar o cuidado no cronograma de 
+implementação. 
+ GTT3 – Desenvolvimento Técnico -  Atribuição específica para discussão n o grupo: elaboração da norma e do  
+protocolo de divergência. 
+ MJSP fará proposta do  aplicativo com a funcionalidade de leitura de QRCode, e apresentar á a respectiva 
+proposta de Resolução . A proposta deve conter  a estratégia de comunicação , para a população , do que está 
+sendo oferecido, além de mecanismos de avaliação da “experiência do usuário”. 

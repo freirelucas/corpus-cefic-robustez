@@ -1,0 +1,163 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião  
+ 
+6ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (Cefic) de 2025.  
+Data Horário Local 
+15/08/2025 16h Palácio do Planalto – sala 407 
+ 
+2. Participantes  
+Nome Órgão  Cargo  
+Pedro Helena Pontual 
+Machado 
+Casa Civil da Presidência da República - 
+CC-PR  Secretário-Executivo Adjunto 
+Carlos Antônio Lopes de 
+Araújo 
+Casa Civil da Presidência da República - 
+CC-PR Assessor Especial 
+Beatriz Vasconcellos de 
+Araújo SAM-CC/PR Secretária Adjunta 
+Sylvio Cezar Koury Musolino 
+Filho SAM-CC/PR Gerente de Projeto 
+Patrick de Faria Casa Civil da Presidência da República - 
+CC-PR Assessor 
+Rogério Souza Mascarenhas Secretaria de Governo Digital -SGD/MGI Secretário de Governo Digital 
+Hudson Vinícius Mesquita Secretaria de Governo Digital -SGD/MGI Diretor de Identidade Digital  
+Paulo Ayran da Silva Bezerra Secretaria de Governo Digital -SGD/MGI Coordenador-Geral de Identificação 
+Civil 
+Simone Cabanelas Martinez Secretaria de Governo Digital -SGD/MGI Coordenadora-Geral 
+Thalita Knupp Secretaria de Governo Digital -SGD/MGI Especialista em Análise de 
+Processos de Negócios 
+Daniel de Souza Rosa Secretaria de Governo Digital -SGD/MGI Engenheiro  
+Ana Maria Costa Candido 
+Lacerda 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Assessora Técnica 
+Enylson Flávio Martinez 
+Camolesi 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor-presidente  
+Maurício Augusto Coelho Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor 
+Marcelo Oliveira Barbosa Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenador-Geral 
+Beatriz Marques de Jesus 
+Figueiredo 
+Ministério da Justiça e Segurança Pública 
+- MJSP 
+Coordenadora-Geral de 
+Modernização Tecnológica 
+José Rocha de Carvalho Filho Ministério da Justiça e Segurança Pública 
+- MJSP Coordenador-Geral de Inovação 
+Alex Halti Cabral Instituto Nacional de Identificação – INI Diretor 
+Wilson Silva de Sousa Instituto Nacional de Identificação – INI Papiloscopista 
+Rafael Neves Receita Federal do Brasil - RFB Coordenador-Geral  
+Ana Estela Haddad Ministério da Saúde – MS  
+Secretária da Secretaria de 
+Informação e Saúde Digital - 
+SEIDIGI/MS 
+Tula Vieira Brasileiro Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora-Geral 
+Letícia Chahara Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora 
+ 
+3. Pauta  
+ 
+3.1. Abertura  
+3.2. Informes 
+===== [pag 2] =====
+3.3.1 Emissão de CIN’s por Unidades Federativas (UF) 
+3.3.2 Status do projeto 
+3.3.3 Congresso da Cidadania 
+3.3.4 Decreto nº 12.561/25 e Portarias de regulamentação 
+3.3. Resoluções 
+3.3.1 Modelo Informacional (MI-CIN) - Resolução nº 24 
+3.3.2 Grupos de Trabalho Técnico – GTT’s - Resoluções nº 25, 26 e 27 
+3.3.3 Reimpressão (MI-CIN) - Resolução nº 28 
+3.4. Planejamento 2025 
+3.4.1 Entregas Cefic 2025 
+3.4.2 Plano de ação OICs 
+ 
+4. Relato  
+ 
+A 6ª reunião ordinária da C efic teve início com a apresentação dos informes, destacando -se os números de 
+emissões da CIN em uma unidade da federação. Manifestou -se preocupação quanto ao possível não atingimento da 
+meta anual, embora tenha sido observado um crescimento contínuo no volume de emissões. 
+ 
+No que se refere ao status do projeto, esclareceu-se que outra unidade da federação em questão não apresenta 
+pendência técnica, mas sim política, exigindo articulação com o governo local. 
+ 
+Em relação às resoluções, confirmou -se que os ajustes jurídicos realizados nas versões aprovadas 
+anteriormente não comprometeram seu mérito, sendo todas ratificadas pelo colegiado. 
+ 
+A resolução sobre a reimpressão da CIN foi apresentada separadamente do tema “reuso”, devido à 
+complexidade deste último e à necessidade de operacionalização por meio do SBF. A divisão foi validada pelo grupo 
+técnico GTT2. Esclareceu-se que a reimpressão se aplica exclusivamente à CIN, devendo ser realizada no mesmo estado 
+da emissão original. Em caso de nova emissão em outro estado, a versão anterior é automaticamente cancelada. 
+Reforçou-se, ainda, a obrigatoriedade da conferência biométrica, inclusive nos pedidos online, podendo ser realizada no 
+momento da solicitação. 
+ 
+Durante a discussão, abordaram-se limitações técnicas do motor biométrico, com destaque para o fato de que, 
+até o momento, apenas uma digital tem sido enviada à base nacional, o que compromete a qualidade da identificação. 
+A partir de setembro, está previs ta a coleta completa das digitais e a integração retroativa dos dados das emissões 
+anteriores. Ressaltou-se a importância da integridade da base biométrica, considerando que a CIN passará a ser requisito 
+para acesso a benefícios sociais. 
+ 
+Adicionalmente, mencionou-se a existência de um pequeno percentual de imagens faciais com baixa qualidade, 
+decorrente do não cumprimento dos padrões técnicos por parte de alguns institutos emissores. Também foi debatida a 
+questão da soberania digital da base de dados, sugerindo-se sua migração para armazenamento em território nacional. 
+Ficou acordado o agendamento de reunião específica para avaliação técnica da base biométrica nacional. 
+ 
+Prosseguindo com a pauta, tratou-se do planejamento para 2025. Destacou-se que os temas relacionados aos 
+OICs serão aprofundados em reunião marcada para o dia 19/08/2025. Quanto ao SBF , informou -se que o processo 
+licitatório está em andamento, com previsão  de conclusão em outubro, após a realização da Prova de Conceito. Em 
+relação ao Serviço de Controle de Fluxo, aguarda-se a formalização do protocolo de divergência para definição do prazo 
+de entrega. 
+ 
+Reforçou-se a necessidade de elaboração de uma resolução voltada para pessoas com deficiência (PCD), tendo 
+em vista o elevado número de beneficiários do BPC. Quanto à integração com as Declarações de Nascido Vivo (DNV) e 
+de Óbito (DO), destacou-se a iniciativa de coleta biométrica neonatal em curso em um estado, e sugeriu-se a realização 
+de reunião com o Ministério da Saúde para aprofundar o tema. Em relação à integração com o Registro Civil, foram 
+discutidas as dificuldades de articulação com o CNJ e os avanços nas tratativas com o ONR, incluindo o uso do SERP e o 
+processo de digitalização progressiva dos registros de óbito. A base SISOB foi citada como instrumento estatístico, sem 
+atualização em tempo real. 
+===== [pag 3] =====
+O credenciamento definitivo das gráficas permanece previsto para dezembro, com início das operações em 
+2026. Foi relatado um problema de leitura no QR Code das CINs emitidas em determinado estado, causado por 
+impressão fora dos padrões técnicos. Decidiu -se encaminhar o caso para regularização e elaboração de laudo técnico. 
+Sugeriu-se também a adoção de auditoria com uso de lotes de referência, como prática das grandes indústrias. Apontou-
+se a necessidade de respaldo legal para que apenas gráficas credenciadas possam emitir a CIN. 
+ 
+No tocante à comunicação, reiterou -se que o foco deve ser a apresentação da CIN à sociedade. Quanto à 
+capacitação e ao fomento à pesquisa, foram mencionadas visitas técnicas realizadas a diversos institutos emissores. 
+Solicitou-se, ainda, o encadeamento das entregas da CEFIC, com definição clara das interdependências e dos prazos de 
+início. 
+Na sequência, apresentaram-se os dados de uso do aplicativo de leitura do QR Code da CIN, lançado em julho. 
+Destacou-se que apenas as leituras válidas são contabilizadas. Também foi confirmada a realização do Congresso da 
+Cidadania nos dias 23, 24 e 25 de setembro, em Brasília. 
+ 
+Por fim, discutiram -se os desdobramentos do Decreto nº 12.561/25, publicado em 23/07/2025. Estão em 
+elaboração duas portarias: uma conjunta  entre MGI, MPS e MDS , para regulamentar exceções (idosos, migrantes, 
+residentes em locais remotos, entre outros); e outra, do MGI, para tratar da transitoriedade, estabelecendo a exigência 
+de CIN para novos benefícios a partir de 2026 e, a partir de 2027, para renovações e alterações. Os dados detalhados, 
+organizados pela Dataprev, serão apresentados na próxima reunião. 
+ 
+A reunião foi encerrada com a definição dos principais encaminhamentos, incluindo a publicação das resoluções 
+aprovadas, o agendamento de reuniões técnicas com o MJSP e o Ministério da Saúde, a atualização do cronograma da 
+CEFIC com as interdependências e o início das ações, além da formalização das tratativas para adequação do padrão de 
+impressão do QR Code. 
+ 
+ 
+5. Encaminhamentos: 
+ 
+• Publicar as três resoluções aprovadas sobre os Grupos de Trabalho Técnico (GTT’s). 
+• Publicar a resolução aprovada sobre Modelo Informacional. 
+• Publicar a resolução aprovada sobre Reimpressão da CIN.  
+• Agendar reunião para verificação das limitações da base do MJSP .  
+• Agendar reunião com o Ministério da Saúde para tratar da integração com DNV (Declaração de Nascido 
+Vivo), e apresentar informações mais aprofundadas na próxima reunião da CEFIC.  
+• Entrar em contato com OIC para ajustar o QR Code ao padrão.  
+• Atualizar as entregas da CEFIC de acordo com o que foi discutido, incluindo o encadeamento das ações e a 
+inclusão das datas de início.  

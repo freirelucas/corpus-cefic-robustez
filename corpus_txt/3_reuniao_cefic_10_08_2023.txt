@@ -1,0 +1,158 @@
+
+===== [pag 1] =====
+ 
+ 
+ 
+MEMÓRIA DE REUNIÃO 
+ 
+1. Identificação da Reunião 
+1ª Reunião ordinária da Câmara Executiva Federal de Identificação do Cidadão no ano de 2023 
+ 
+Data Horário Local 
+10/08/2023 17:00 Presidência – Sala 98, 4º 
+andar, Palácio do Planalto 
+ 
+2. Pauta 
+2.1. Abertura 
+2.2. Apresentar todo o Projeto (resposta ao TCU) 
+2.3. Apresentação da Plataforma Social 
+2.4. Status de integração das Unidades Federativas 
+2.5. Outros assuntos de interesse dos membros da CEFIC. 
+2.6. Encerramento 
+3. Participantes 
+Participantes  Órgão 
+Pedro Helena Pontual 
+Machado 
+Titular - 
+Coordenador 
+Casa Civil 
+Rogério Souza Mascarenhas Titular – 
+Secretario 
+Executivo 
+Secretaria de Governo Digital 
+Reriton Weldert Gomes Suplente Secretaria Especial da Receita Federal do 
+Brasil(RFB)  
+Ney Barros Titular Ministério da Justiça e Segurança Pública 
+Cristina Mori Convidada Secretaria-Executiva do Ministério da 
+Gestão e Inovação em Serviços Públicos 
+Eduardo Magalhães de 
+Lacerda 
+Suplente Secretaria de Governo Digital 
+Carlos Antonio Lopes de 
+Araújo 
+Convidado Casa Civil 
+Claudiana Batista Convidada Ministério da Justiça e Segurança Pública 
+Rafael Neves Carvalho Convidado Secretaria Especial da Receita Federal do 
+Brasil(RFB) 
+Ademir Lapa Convidado Secretaria de Governo Digital 
+Ana Maria Costa Candido 
+Lacerda 
+Convidada Secretaria de Governo Digital 
+Simone Cabanelas Martinez Convidada Secretaria de Governo Digital 
+ 
+4. Relato 
+4.1. A reunião foi aberta pelo Sr. Pedro  Helena Pontual Machado, Secretário -Executivo 
+Adjunto da Casa Civil da Presidência da República e Coordenador da CEFIC, que 
+===== [pag 2] =====
+agradeceu a presença de todos e registrou que está recebendo inúmeros pedidos para 
+postergação da data de início do b-Cadastro. 
+4.2. O Coordenador destaca a importância das entregas ainda que não haja estrutura e 
+passa a palavra ao Secretário-Executivo para que apresente a pauta. 
+4.3. O Sr. Rogério Souza Mascarenhas, Secretário-Executivo da CEFIC, apresenta a pauta e 
+em seguida  passa a palavra para o Secretário -Executivo substituto, o Sr. Eduardo 
+Lacerda, explica que está sendo elaborado  um documento com a "projetização" 
+mínima do que é necessário para o Brasil entregar um sistema seguro de 
+identificação civil. O documento apresenta todos os detalhes, técnicos, financeiros 
+e históricos, para o entendimento e andamento do projeto . O projeto apresnta os 
+artefatos solicitados pelo TCU ( EAP, que foi apresentada durante a reunião, riscos, 
+cronogramas, análise de viabilidade, dentre outros). 
+4.4. Eduardo Lacerda apresentou o protótipo da plataforma social com a consolidação 
+dos dados oficiais de identificação civil do cidadão. Pela primeira vez no Brasil, 
+temos um produto que estabelecerá, por meio da CIN, um fluxo oficial de dados de 
+identificação do cidadão.  Conforme comprovado, temos um produto que 
+encontra inconsistências e consegue apresentar um caminho para erradicar as 
+fraudes bilionárias em pagamentos indevidos e outros processos públicos 
+desse país. O INSS passou a informação oficial de que  R$ 7.000.000.000,00 (sete 
+bilhões de reais) em fraudes  foram gastos do orçamento público,  somente na 
+previdência federal, pelo uso de documentação falsa no ano de 2022. Esse cenário 
+se repete ano após ano. A Polícia Federal e Dataprev possuem  números em torno 
+de 7 vezes maior do que isso por ano, perfazendo quase R$ 50.000.000.000,00 
+(cinquenta bilhões de reais). Por dia, as fraudes somente na previdência federal são 
+na ordem R$ 19.000.000,00 (dezenove milhões de reais). Ainda há que se contar 
+as fraudes trabalhistas, assistenciais, na área da saúde, educação, Estaduais, 
+Municipais e no setor privado. 
+4.5. Ainda nesse sentido, demonstrou-se a capacidade que a plataforma tem de auxiliar 
+os agentes de segurança pública nos mais diversos deveres. É uma plataforma 
+que será disponibilizada para que todos possam fazer as aferições de identificação 
+de forma nacional. E, por óbvio, fraudes bilionárias que acontecem no país  que 
+financiam quadrilhas e o crime organizado . Existem outros desdobramentos da 
+plataforma como a mitigação de sequestro de crianças, combate ao sub-registro 
+e desaparecidos. 
+4.6. O Sr. Reriton Welderton Gomes, representante da RFB, no contexto da apresentação 
+da plataforma, citou que pode ser um importante instrumento de auxílio no contexto 
+da reforma tributária.  
+4.7. Eduardo Lacerda destaca que são necessários desenvolvimentos para estruturar a 
+plataforma, como a consolidação segura da informação no Registro Civil e nas 
+entidades de saúde, para além dos trabalhos na própria plataforma e consequências 
+que virão dela, como estabelecimento de um protocolo de divergência biográfica e 
+biométrica nacional e distribuição da informação oficial. 
+4.8. Ressaltou ainda que  a celeridade da entrega da plataforma depende de 
+investimento e estrutura . O projeto depende de todas as Unidades da 
+Federação estarem emitindo a nova CIN  e de uma estrutura institucional para 
+cuidar de todos os processos técnicos, administrativos, jurídicos, de  
+===== [pag 3] =====
+comunicação, auditoria, credenciamento, homologação, relações subnacionais, 
+com entes da união e internacional , entre outros. As propostas para atender o 
+necessário, já foram feitas e estarão no documento do projeto. 
+4.9. Eduardo Lacerda pontuou ainda que o orçamento estimado para esse projeto, que 
+envolve investimento nas Unidades da Federação, incremento dos orçamentos de 
+todos os órgãos Executores, custeio da base da ICN, custeio da troca pela CIN, 
+investimento em credenciamento/homologação, custeio da pl ataforma, entre 
+outros, esta exemplificado  abaixo (as memórias de cálculo serão enviadas no 
+projeto): 
+2023 - R$ 56.911.569,61 Representa 3 dias de fraudes somente na previdência 
+federal ao orçamento público e diversos outros problemas de segurança 
+pública e social. Se for pegar o dado da PF, representa ~ 11 horas. 
+2024 - R$ 242.223.058,00 Representa 12 dias de fraudes somente na previdência 
+federal ao orçamento público e diversos outros problemas de segurança 
+pública e social. Se for pegar o dado da PF, representa ~ 2 dias. 
+2025 - R$ 102.223.058,00 Representa 5 dias de fraudes somente na previdência 
+federal ao orçamento público e diversos outros problemas de segurança 
+pública e social. Se for pegar o dado da PF, representa ~ 23 horas. 
+ 2026 - R$ 102.223.058,00 Representa 12 dias de fraudes somente na 
+previdência federal ao orçamento público e diversos outros problemas de 
+segurança pública e social. Se for pegar o dado da PF, representa ~ 23 horas. 
+TOTAL EM 4 ANOS R$ 503.580.743,61Representa 26 dias de fraudes somente na 
+previdência federal ao orçamento público e diversos outros problemas de 
+segurança pública e social. Se for pegar o dado da PF, representa ~ 4 dias. 
+ 
+4.10. Eduardo Lacerda destacou que sem uma estrutura administrativa, jurídica, técnica, 
+comunicação, assessoria, não será possível entregar todas as atividades que serão 
+apresentadas. O Brasil é o único país do mundo ( com exceção dos  EUA e 
+Inglaterra) que não possui uma estrutura central para lidar com o tema de 
+identificação civil - a estrutura dos outros países também conta, a parte, com 
+órgãos executores e atendimentos na ponta, para além das suas caixas 
+institucionais. Um comparativo será mostrado no projeto. 
+4.11. Rogerio Mascarenhas sinaliza que no tema do b -cadastro temos um ponto de 
+atenção em relação ao prazo nos Estados de SC e MT. Será tratado pela Secretaria 
+Executiva da CEFIC, que entrará em contato com a RFB e coordenador da CEFIC para 
+definição da melhor estratégia. 
+4.12. Eduardo Lacerda, informa que a API da ICN (TSE) de verificação biométrica 
+começará os testes em Setembro. 
+4.13. Destaca ainda que a CIN entrou nas ações do PAC (ainda estamos buscamos mais 
+informações). 
+4.14. Por fim, informa que duas  audiências públicas foram aprovadas sobre o tema da 
+identidade. Sobre combate a fraudes na previdência (previdência) e nas questões 
+de sub-registro e sequestro de criança (direitos humanos). 
+ 
+===== [pag 4] =====
+ 
+ 
+5. Deliberações 
+6. Encaminhamentos 
+6.1. Encaminhar cronograma aos integrantes da CEFIC. 
+6.2. Encaminhar o Projeto do Programa Nacional de Identificação Civil. 
+7. Anexos 
+ 
+ 
+ 

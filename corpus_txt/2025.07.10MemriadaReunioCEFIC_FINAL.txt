@@ -1,0 +1,111 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião  
+5ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) de 2025.  
+Data Horário Local 
+10/07/2025 17h Palácio do Planalto – sala 407 
+ 
+2. Participantes  
+Nome Órgão  Cargo  
+Pedro Helena Pontual 
+Machado 
+Casa Civil da Presidência da República - 
+CC-PR  Secretário-Executivo Adjunto 
+Carlos Antônio Lopes de 
+Araújo 
+Casa Civil da Presidência da República - 
+CC-PR Assessor Especial 
+Rogério Souza Mascarenhas Secretaria de Governo Digital -SGD/MGI Secretário de Governo Digital 
+Hudson Vinícius Mesquita Secretaria de Governo Digital -SGD/MGI Diretor de Identidade Digital  
+Paulo Ayran da Silva Bezerra Secretaria de Governo Digital -SGD/MGI Coordenador-Geral de Identificação 
+Civil 
+Thalita Knupp Secretaria de Governo Digital -SGD/MGI Especialista em Análise de 
+Processos de Negócios 
+Daniel de Souza Rosa Secretaria de Governo Digital -SGD/MGI Engenheiro  
+Kátia Macarani  Instituto Nacional de Tecnologia da 
+Informação – ITI/MGI 
+Coordenador-geral de Tecnologia da 
+Identificação  
+Ana Maria Costa Candido 
+Lacerda 
+Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Assessora Técnica 
+Enylson Martinez Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor-presidente do ITI  
+Beatriz Marques de Jesus 
+Figueiredo 
+Ministério da Justiça e Segurança Pública 
+- MJSP 
+Coordenadora-Geral de 
+Modernização Tecnológica 
+José Vinícius de Sousa Ministério da Justiça e Segurança Pública 
+- MJSP Assessor 
+José Rocha C. Filho Ministério da Justiça e Segurança Pública 
+- MJSP Coordenador-Geral de Inovação 
+Priscilla Roscia Polícia Federal - PF Diretora Substituta  do Instituto 
+Nacional de Identificação 
+Reriton Weldert Gomes Receita Federal do Brasil - RFB Coordenador-Geral de Gestão de 
+Cadastros e Benefícios Fiscais 
+Ana Estela Haddad Ministério da Saúde - MS 
+Secretária da Secretaria de 
+Informação e Saúde Digital - 
+SEIDIGI/MS 
+Tula Vieira Brasileiro Ministério dos Direitos Humanos e da 
+Cidadania - MDHC Coordenadora-Geral 
+ 
+3. Pauta  
+ 
+3.1. Abertura  
+3.2. Informes 
+3.3. Aprovação das resoluções que tratam da manutenção dos  três Grupos de Trabalho Técnico 
+(GTT’s) atuais 
+3.4. Aprovação da resolução que atualiza informações do Modelo Informacional 
+3.5. Planejamento das ações a serem realizadas pelo governo federal para apoiar os OICs na emissão 
+da CIN 
+ 
+ 
+ 
+4. Relato  
+A 5ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) ocorreu no 
+dia 10 de julho de 2025, às 17h, no Palácio do Planalto, sala 407, com a presença de representantes da Casa 
+Civil, MGI, ITI, MJSP , PF, RFB, MS e MDHC.  
+===== [pag 2] =====
+A reunião foi aberta com informações acerca do andamento do planejamento estadual, tendo sido 
+apresentado o panorama das emissões da CIN por estado, destacando -se o avanço nas emissões com 
+inscrição e alteração de CPF. No entanto, algumas unidades federativas  ainda não estão realizando alguns 
+destes procedimentos.  
+Na sequência, as novas propostas de alterações das resoluções referentes aos Grupos de Trabalho – 
+GTT’s e do Modelo Informacional – M.I. foram encaminhadas para aprovação: O GTT 1 passou a incluir o 
+Ministério da Saúde e teve sua vigência reduzida para seis meses, enquanto as estruturas dos GTT 2 e GTT 3 
+foram mantidas, sem alterações. Já a proposta relacionada ao M .I. foi aprovada, apenas com mudanças 
+formais, sem criação ou extinção de campos . O s membros presentes validaram todas as resoluções por 
+unanimidade. 
+O plano de ação para apoio federal aos Órgãos de Identificação Civil (OICs) foi apresentado, incluindo 
+a definição de públicos prioritários, como beneficiários da seguridade social, especialmente diante da possível 
+entrada em vigor do decreto que regulamenta a Lei nº 15.077/2024.  
+Levantou-se a preocupação com a capacidade dos OICs em atender a uma demanda crescente. 
+Sugeriu-se o mapeamento geográfico dos cidadãos sem CIN, visando ações estratégicas de comunicação, 
+visitas técnicas e alocação de recursos. Também se discutiu a necessidade de in tegração entre ações de 
+cadastro biométrico e prova de vida, especialmente para idosos. 
+Foram debatidos os critérios a serem adotados para fins de priorização dos planos de ação no s 
+estados, considerando população, capacidade de interlocução e infraestrutura local.  
+Destacou-se que existem recursos disponíveis para apoiar estados com maior potencial de emissão, 
+desde que o plano de ação esteja bem estruturado. Uma planilha com o plano de ação por OIC foi 
+apresentada, e decidiu-se elaborar um diagnóstico e plano detalhado com base nos critérios definidos. 
+Outros pontos incluíram a análise de contratos para estimar o custo da CIN por estado e o 
+agendamento de uma reunião do GTT1 para a semana seguinte, com a participação da Casa Civil, a fim de 
+elaborar uma proposta de plano de ação. Também foram discutidos os preparativos para a participação da 
+CEFIC na edição paulista do Congresso da Cidadania Digital (30/07) e a organização de reunião com dirigentes 
+dos OICs durante a edição de Brasília, em setembro.  
+Por fim, fora informado acerca da situação atual da contratação do Serviço Biométrico Federal - SBF. 
+A expectativa é de que as pendências administrativas sejam brevemente solucionadas, permitindo que, ainda 
+no final do mês de julho, o sistema comece a receber os dados e a fase de testes seja iniciada. 
+ 
+5. Encaminhamentos: 
+• Aprovar as três resoluções sobre os Grupos de Trabalho Técnico (GTT’s). 
+• Aprovar a resolução que atualiza informações do Modelo Informacional. 
+• Mapear beneficiários de programas sociais quem não tem CIN por distribuição geográfica.  
+• Agendar reunião técnica do GTT1 na próxima semana. 
+• Elaborar proposta para reunião com os diretores de OICs na semana do Congresso da Cidadania 
+em Brasília.  

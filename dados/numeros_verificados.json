@@ -1,0 +1,17 @@
+{
+ "arquivos_txt": 154,
+ "pdfs": 154,
+ "sha_unicos": 130,
+ "paginas": 805,
+ "linhas": 32170,
+ "resolucoes_numeros_distintos": 33,
+ "serie_resolucoes": "1-33",
+ "familias": 30,
+ "kwic_corrigido": 239,
+ "kwic_ampliado": 1062,
+ "docs_sem_camada_texto": 4,
+ "ligaduras": 1260,
+ "docs_com_ligadura": 72,
+ "formas_invisiveis": 2327,
+ "ocorrencias_invisiveis": 36688
+}

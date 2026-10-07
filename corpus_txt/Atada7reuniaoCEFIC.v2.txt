@@ -1,0 +1,96 @@
+
+===== [pag 1] =====
+PRESIDÊNCIA DA REPÚBLICA 
+SECRETARIA-GERAL 
+SECRETARIA ESPECIAL DE MODERNIZAÇÃO DO ESTADO 
+1 
+ 
+ 
+ 
+ 
+ATA DE REUNIÃO 
+ 
+ 
+1. Identificação da Reunião 
+7ª Reunião ordinária da Câmara Executiva Federal de Identificação do Cidadão no ano de 2022. 
+ 
+Data Horário Local 
+31/05/2022 16h30 Reunião Virtual - Deliberação realizada por e-mail 
+ 
+2. Pauta 
+ 
+2.1. Abertura. 
+2.2. Deliberação da Parametrização do Serviço de Identificação do Cidadão – SIC. 
+2.3. Encerramento. 
+ 
+ 
+3. Participantes 
+ 
+Participantes  Órgão 
+Eduardo Gomes da Silva Titular - 
+Coordenador 
+Secretário Especial de Modernização do 
+Estado - SEME 
+André Monteiro Titular Secretário de Modernização Institucional e 
+Regional - SEME 
+Eduardo Lacerda Suplente SEME 
+Luiz Carlos Miyadaira Ribeiro 
+Junior 
+Suplente Ministério da Economia 
+Frederico Igor Leite Faber Titular Subsecretário da Receita Federal do 
+Brasil(RFB) do Ministério da Economia 
+Jade Kende Gonçalves Umbelino  Titular Policia Federal 
+Washington Leonardo Guanaes 
+Bonini  
+Titular Ministério da Justiça e Segurança Pública  
+===== [pag 2] =====
+PRESIDÊNCIA DA REPÚBLICA 
+SECRETARIA-GERAL 
+SECRETARIA ESPECIAL DE MODERNIZAÇÃO DO ESTADO 
+2 
+ 
+ 
+ 
+ 
+ 
+4. Relato 
+ 
+A reunião extraordinária foi aberta pelo Sr. Eduardo Lacerda – Secretário Executivo da CEFIC – por intermédio de 
+email, enviado a todos os participantes, registrando a pauta da reunião conforme segue: 
+ 
+4.1. De ordem do Coordenador da CEFIC, Secretário Especial, Eduardo Gomes, foi convocada a Reunião 
+Virtual Extraordinária da CEFIC com a seguinte pauta: Deliberação da Parametrização do Serviço de Identificação do 
+Cidadão – SIC. 
+4.2. Tal pauta mostra -se urgente e extraordinária , dado que a disponibilização de acesso a API da ICN 
+encontra-se atrasada e precisa ser urgentemente disponibilizada aos Estados Piloto. 
+4.3. De acordo com o Regimento Interno da CEFIC (art. 27), as reuniões virtuais, que serão feitas todas por 
+correspondências por essa thread de e-mails, possuem o prazo de até 10 dias a contar de sua abertura para manifestação 
+dos seus membros. Os membros da CEFIC devem responder a esse e-mail consignando o seu voto (aprovação ou não). 
+Todas as manifestações serão consignadas em ata. Solicita-se, caso seja possível, que os membros respondam 
+tempestivamente para agilidade dos processos. 
+4.4. O Sr. Eduardo Gomes, Secretário Especial de Modernização do Estado e Coordenador da CEFIC, aprovou 
+a deliberação. 
+4.5. O Sr. Frederico Igor Leite Faber, Titular da CEFIC, aprovou a deliberação. 
+4.6. O Sr. André de Souza Monteiro, Titular de CEFIC,  aprovou a deliberação. 
+4.7. O Sr. Luiz Carlos Miyadaira, Suplente da CEFIC, aprovou a deliberação. 
+4.8. O Sr. Jade Kende Gonçalves Umbelino, Titular da CEFIC, aprovou a delibiração. 
+4.9. O Sr. Washington Bonini, Titular de CEFIC, aprovou a deliberação. Ressalta que talvez não seja possível 
+o enquadramento na exceção da LGPD, questão deferida para a análise jurídica do ato. 
+4.10. O Sr. Eduardo Lacerda informou que foi aprovad a a parametrização do Serviço  de Identificação do 
+Cidadão - SIC à SGD, conforme art. 21 do decreto 10.900/21 (6 votos manifestados). Foi solicitada a disponibilização das 
+APIs necessárias aos Estados Piloto para a consecução do Projeto Piloto para viabilizar o envio da Carteira de Identidade 
+para o acesso GOV.BR e conexão com a ICN. 
+4.11. Por fim, não havendo mais assuntos a serem tratados, o Sr. Eduardo Lacerda encerrou a votação. 
+ 
+5. Deliberações 
+ 
+5.1 Aprovação da parametrização do Serviço de Identificação do Cidadão -  SIC. 
+ 
+6. Encaminhamentos 
+6.1. Foi solicitado a disponibilização das APIs necessárias aos Estados Pilotos, para a consecução do 
+Projeto Piloto quanto ao envio da Carteira de Identidade para o app GOV.BR e conexão com a ICN.  
+ 
+7. Anexos 
+ 
+7.1. Resolução do Serviço de Identificação do Cidadão 
+7.2. Termo de Adesão ao Programa Conecta GOV 

@@ -1,0 +1,111 @@
+
+===== [pag 1] =====
+MEMÓRIA DE REUNIÃO 
+1. Identificação da Reunião  
+4ª Reunião Ordinária da Câmara Executiva Federal de Identificação do Cidadão (CEFIC) de 2026.  
+Data Horário Local 
+13/05/2026 16h Palácio do Planalto – sala 97 
+ 
+2. Participantes  
+Nome Órgão  Cargo  
+Pedro Helena Pontual Machado Casa Civil da Presidência da República - 
+CC-PR  Secretário-Executivo Adjunto 
+Carlos Antônio Lopes de Araújo Casa Civil da Presidência da República - 
+CC-PR Assessor 
+Beatriz Vasconcellos de Araújo Secretaria de Articulação e 
+Monitoramento - SAM-CC/PR Secretária Adjunta 
+Sylvio Cezar Koury Musolino Filho Secretaria de Articulação e 
+Monitoramento - SAM-CC/PR Gerente de projeto 
+Nicolas Wulk Secretaria de Articulação e 
+Monitoramento - SAM-CC/PR Assessor 
+Rogério Souza Mascarenhas Secretaria de Governo Digital -
+SGD/MGI Secretário-Executivo 
+Paulo Ayran da Silva Bezerra Secretaria de Governo Digital -
+SGD/MGI Coordenador-Geral  
+Simone Cabanelas Martinez Secretaria de Governo Digital -
+SGD/MGI Coordenadora-Geral  
+Thalita Knupp A. de Carvalho Secretaria de Governo Digital -
+SGD/MGI Especialista 
+Eder Eustaquio Alves Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Diretor 
+Ana Maria Costa Candido Lacerda Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Assessora Técnica 
+Marcelo Oliveira Barbosa Instituto Nacional de Tecnologia da 
+Informação - ITI/MGI Coordenador-Geral 
+Solange Berto de Medeiros Ministério da Justiça e Segurança 
+Pública - MJSP Subsecretária 
+José Rocha de Carvalho Filho Ministério da Justiça e Segurança 
+Pública - MJSP Coordenador-Geral 
+Beatriz Marques de Jesus Figueiredo Ministério da Justiça e Segurança 
+Pública - MJSP Coordenadora-Geral 
+Reriton Weldert Gomes Receita Federal do Brasil - RFB Coordenador-Geral  
+Ana Estela Haddad* Ministério da Saúde – MS Secretária-Executiva 
+Paula Xavier dos Santos Ministério da Saúde – MS  Diretora 
+*online 
+3. Pauta  
+ 
+3.1. Informes Gerais 
+3.2. Retificação das Resoluções  
+3.2.1. Resolução nº 33 – Plano de Implantação do Serviço Biométrico Federal (SBF) 
+3.2.2. Resolução nº 30 – Serviço de Controle de Fluxo (SCF-CIN) 
+ 
+ 
+ 
+ 
+===== [pag 2] =====
+4. Relato  
+ 
+A reunião foi iniciada com a apresentação dos informes gerais.  Foram destacados os avanços do Programa 
+Nacional de Fomento à Gestão e Emissão da Carteira de Identidade Nacional - ProCIN, por meio da efetivação do repasse 
+dos recursos para Bahia no âmbito do ProCIN 1  e do lançamento do ProCIN 2. Destacou-se também o atingimento da 
+marca de 53 milhões de CINs emitidas, com aumento do número de emissões mensais  de 1,8 milhão/mês no começo 
+do ano passado para 2,7 milhão/mês em março de 2026. Com relação à emissão do antigo Registro Geral (RG), São Paulo 
+e Rio de Janeiro ainda emitem RG em situações excepcionais, e Roraima e Pará estão se empenhando para emitir apenas 
+CIN a partir de junho desse ano . Foi destacado que Roraima, o único estado que não inscreve plenamente no CPF , está 
+avançando na superação dessa etapa de implementação da CIN.  
+Informou-se que o Congresso da Cidadania, organizado pela Abrid, não acontecerá  esse ano, mas haverá um 
+espaço para interação com os órgãos de identificação civil dos estados no Cert Fórum ID 2026, que será realizado em 
+Brasília nos dias 9 e 10 de junho de 2026.  
+ 
+Seguindo com a pauta, foram apresentadas as alterações na Resolução nº 33, para exclusão das tarefas 
+referentes ao SCF-CIN. Com relação à Resolução nº 30, o texto foi retificado com a exclusão da verificação do hash de 
+dados biométricos que constava equivocadamente no item 3.1, para publicação da forma correta. Foi informado que o 
+Plano de implantação do SCF -CIN foi aprovado ontem no Grupo de Trabalho Técnico 2 (GTT2), e será apresentado 
+posteriormente na Cefic. 
+ 
+Submetidas à deliberação, as retificações foram aprovadas por unanimidade.  
+ 
+Após a informação de  que o monitoramento do cronograma de ações 2026 será apresentado na próxima 
+reunião da Cefic, a palavra foi franqueada aos participantes que quisessem informar sobre alguma atualização.  
+ 
+Sobre o SBF , foi informado que já existe uma base de testes de 800 mil biometrias disponibilizadas por 6 ou 7 
+estados e que as assinaturas dos termos de compromisso com outros estados  estão sendo realizadas . Informou-se 
+também que o segundo motor está sendo adquirido para deduplicação da base e disponibilização do sistema aos 
+estados. Destacou -se a im portância de  comunicar aos estados os benefícios  que existirão com a  entrada em 
+funcionamento do SBF.  
+ 
+Sobre o Credenciamento Definitivo , foi informado que a minuta de resolução foi aprovad a pelos grupos 
+técnicos, e no momento está em consulta pública. 
+ 
+Foi solicitado o agendamento de reuniões em maio ou junho, conforme disponibilidade de agenda, para: 
+• Discutir os impactos da atual vinculação da CIN digital da física;  
+• Desenvolver um plano de ação para recebimento das decadactilates pelo Ministério da Justiça e 
+Segurança Pública; 
+• Discutir o impacto da Lei Orgânica das Polícias Civis no projeto da CIN. 
+Foi avaliada a necessidade de retomar as visitas técnicas de acompanhamento aos estados. O cronograma e o 
+planejamento das viagens serão discutidos oportunamente.  
+Informou-se que a Cefic deve ser convidada para participar de discussões sobre o Projeto de Lei 6423/2025, 
+que dispõe sobre aspectos gerais da Inteligência no Estado brasileiro, por causa do texto referente à identidade fictícia. 
+É importante estabelecer tecnicamente o que é possível realizar nesse escopo, que tem relação direta com o Provita.  
+  
+Informou-se sobre o p arecer de força executória recebido pela Receita Federal a respeito da comunicação de 
+qualquer ato de saneamento de CPF ao cidadão. Isso i mpacta diretamente nas ações de tratamento da base, inclusive 
+nos oito milhões de CPF suspensos que existem atualmente . Como a Receita Federal não foi consultada durante o 
+processo, e não há mais solução jurídica possível, provavelmente a solução será por meio de Medida Provisória.   
+ 
+Finalizada a pauta, a reunião foi encerrada. 
+ 
+5. Encaminhamentos: 
+• Publicar as resoluções do Plano de Implantação do SBF e do SCF-CIN. 
+• Agendar reuniões sobre CIN digital desvinculada da física, plano de ação para recebimento das 
+decadactilates e impacto da Lei Orgânica das Polícias Civis no projeto da CIN. 
