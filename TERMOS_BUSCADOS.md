@@ -183,7 +183,6 @@ onde cada ocorrência aparece, com arquivo e página, consulte
 | monopólio | — |
 | fornecedor único | — |
 | exclusividade | — |
-
 ---
 
 ## Contagens por família
@@ -194,8 +193,8 @@ As famílias agrupam termos que designam o mesmo conceito. Abaixo, o resultado c
 
 | família | ocorrências | documentos | situação |
 |---|---|---|---|
-| Território nacional | 38 | 16 | presente; contagem anterior inflada por copias redundantes |
-| Interoperabilidade | 34 | 19 | presente; contagem anterior inflada por copias redundantes |
+| Território nacional | 38 | 16 | presente; contagem anterior inflada por copias redundantes do corpus |
+| Interoperabilidade | 34 | 19 | presente; contagem anterior inflada por copias redundantes do corpus |
 | Preferência normativa | 12 | 10 | familia acrescentada no teste (fora do recorte original) |
 | Multifornecedor / segundo motor | 3 | 3 | presente |
 | Soberania | 3 | 2 | presente |
@@ -222,7 +221,7 @@ respondem às dimensões analíticas do artigo. Ficam registradas por transparê
 
 | família | ocorrências | documentos |
 |---|---|---|
-| Gráficas | 57 | 29 |
+| Gráficas | 39 | 21 |
 | NIST / NFIQ | 16 | 8 |
 | Fala.BR | 7 | 1 |
 | Bancos / sistema financeiro | 6 | 2 |

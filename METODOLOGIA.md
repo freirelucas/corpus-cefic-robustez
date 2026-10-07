@@ -38,8 +38,8 @@ explicá-las porque cada uma já produziu erro de contagem neste corpus.
 **Ligaduras tipográficas.** Programas de diagramação representam os pares "fi" e "fl" como
 um único caractere (ﬁ, ﬂ). Um procedimento que descarte caracteres fora do alfabeto básico
 parte a palavra ao meio: "grá**ﬁ**cas" vira "grá cas" e deixa de ser encontrada. Há 1.260
-ligaduras neste corpus, distribuídas por 72 documentos. A varredura anterior perdia por
-esse motivo ocorrências reais do termo "gráficas", quase todas em resoluções.
+ligaduras neste corpus, distribuídas por 72 documentos. A varredura anterior deixava de
+encontrar, por esse motivo, três ocorrências do termo "gráficas" em dois documentos.
 
 **Acentuação.** Reduzir o texto a caracteres sem acento é necessário para que "território"
 e "territorio" sejam a mesma busca, mas precisa ser feito preservando a palavra. Feito de

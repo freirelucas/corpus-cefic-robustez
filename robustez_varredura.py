@@ -201,7 +201,8 @@ LEXICO: dict[str, dict[str, list[str]]] = {
     "acuracia": {"estrito": [r"acuracia"], "ampliado": [r"acuracia", r"acuracidade", r"taxa\s+de\s+(erro|falso)", r"\bfmr\b", r"\bfnmr\b"]},
     "nist_nfiq": {"estrito": [r"nfiq", r"\bnist\b"], "ampliado": [r"nfiq", r"\bnist\b", r"\bminex\b", r"\bfrvt\b"]},
     "policiafederal_aditivo": {"estrito": [r"aditiv"], "ampliado": [r"aditiv", r"prorrogacao\s+contratual", r"policia\s+federal"]},
-    "graficas": {"estrito": [r"graficas"], "ampliado": [r"grafica", r"casa\s+da\s+moeda", r"\bcmb\b", r"impressao\s+(do\s+)?documento"]},
+    # fronteira a esquerda: sem ela, "graficas" casa dentro de "biograficas"
+    "graficas": {"estrito": [r"(?<![a-z])graficas"], "ampliado": [r"(?<![a-z])grafica", r"casa\s+da\s+moeda", r"\bcmb\b", r"impressao\s+(do\s+)?documento"]},
     "fala_brasil": {"estrito": [r"fala\s*\.?\s*br"], "ampliado": [r"fala\s*\.?\s*br", r"gov\s*\.?\s*br"]},
     "tier_iii": {"estrito": [r"tier\s*iii"], "ampliado": [r"tier\s*(iii|3)\b", r"\btia\s*942"]},
     "sitios_operacionais": {"estrito": [r"sitios\s+operacionais"], "ampliado": [r"sitios?\s+operacion", r"site\s+de\s+contingencia", r"data\s*center"]},

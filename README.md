@@ -5,11 +5,26 @@ papel da Cefic"** (Boletim Radar, Ipea). Reúne o corpus documental em texto, a 
 completa dos termos buscados, o código que produz os resultados e o registro das
 limitações do procedimento.
 
+## Buscar no corpus
+
+O arquivo **[`busca_corpus_cefic.html`](busca_corpus_cefic.html)** é uma ferramenta de busca autocontida: um único
+arquivo HTML, com o corpus inteiro embutido, que funciona offline em qualquer navegador —
+sem servidor, sem instalação e sem conexão.
+
+Para usar: abra o arquivo no repositório, clique em **Download raw file**, e abra o arquivo
+baixado no navegador. Digite um termo e cada ocorrência aparece com o documento, a página e
+o trecho em que consta. Há atalhos para os termos cuja ausência sustenta conclusões do
+artigo e um filtro para restringir a busca aos atos da própria CEFIC.
+
+---
+
 Não é preciso programar para usar este repositório. Se você chegou aqui vindo do artigo,
 comece pela pergunta que o trouxe:
 
 | Se você quer... | vá para |
 |---|---|
+| **buscar um termo no corpus** | **[`busca_corpus_cefic.html`](busca_corpus_cefic.html)** |
+| **conferir em que cada linha do quadro do artigo se apoia** | [FUNDAMENTACAO_DO_QUADRO.md](FUNDAMENTACAO_DO_QUADRO.md) |
 | entender por que a ausência de termos é confiável | [METODOLOGIA.md](METODOLOGIA.md) |
 | conferir os termos buscados, um a um | [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md) |
 | ver cada ocorrência com arquivo e página | [`dados/kwic_cefic_corrigido.csv`](dados/kwic_cefic_corrigido.csv) |
@@ -87,8 +102,8 @@ oficial de origem. Os textos são atos normativos e documentos administrativos p
 
 | família | ocorrências | documentos | situação |
 |---|---|---|---|
-| Território nacional | 38 | 16 | presente; contagem anterior inflada por copias redundantes |
-| Interoperabilidade | 34 | 19 | presente; contagem anterior inflada por copias redundantes |
+| Território nacional | 38 | 16 | presente; contagem anterior inflada por copias redundantes do corpus |
+| Interoperabilidade | 34 | 19 | presente; contagem anterior inflada por copias redundantes do corpus |
 | Preferência normativa | 12 | 10 | familia acrescentada no teste (fora do recorte original) |
 | Multifornecedor / segundo motor | 3 | 3 | presente |
 | Soberania | 3 | 2 | presente |
@@ -115,7 +130,7 @@ e não respondem às dimensões analíticas do artigo. Ficam registradas por tra
 
 | família | ocorrências | documentos |
 |---|---|---|
-| Gráficas | 57 | 29 |
+| Gráficas | 39 | 21 |
 | NIST / NFIQ | 16 | 8 |
 | Fala.BR | 7 | 1 |
 | Bancos / sistema financeiro | 6 | 2 |
@@ -192,8 +207,11 @@ roda automaticamente a cada alteração enviada ao repositório.
 ## Estrutura
 
 ```
+busca_corpus_cefic.html          ferramenta de busca autocontida (abre no navegador)
+gerar_busca.py                    gera busca_corpus_cefic.html a partir do corpus
 README.md                         este documento — porta de entrada
 METODOLOGIA.md                    procedimento de busca, cuidados técnicos e limitações
+FUNDAMENTACAO_DO_QUADRO.md        liga cada item do quadro do artigo à evidência
 TERMOS_BUSCADOS.md                os 100 termos, um a um, com o resultado de cada
 DICIONARIO_DE_DADOS.md            o que significa cada coluna de cada tabela
 corpus_txt/                       os 129 documentos distintos em texto

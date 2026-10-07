@@ -1,0 +1,10 @@
+{
+ "documentos": 129,
+ "paginas": 663,
+ "linhas": 28508,
+ "familias": 30,
+ "kwic_estrito": 183,
+ "kwic_ampliado": 812,
+ "familias_zeradas_no_recorte_original": 14,
+ "familias_que_seguem_zeradas_no_nivel_ampliado": 11
+}

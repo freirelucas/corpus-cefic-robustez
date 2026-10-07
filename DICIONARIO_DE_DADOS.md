@@ -51,7 +51,7 @@ Contagens da varredura anterior, preservadas para comparação.
 
 Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e contexto.
 
-201 linhas.
+183 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -65,7 +65,7 @@ Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e c
 
 Uma linha por ocorrência encontrada no nível ampliado.
 
-881 linhas.
+812 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -233,3 +233,21 @@ Grupos de arquivos que correspondem ao mesmo documento em capturas diferentes; o
 | `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
 | `chars` | inteiro | Número de caracteres do texto extraído |
 | `caracteres_corrompidos` | inteiro | Número de caracteres que não puderam ser decodificados do PDF (U+FFFD) |
+
+## `fundamentacao_do_quadro.csv`
+
+Liga cada item do quadro de dimensões analíticas do artigo aos termos buscados e ao resultado obtido.
+
+9 linhas.
+
+| coluna | tipo | descrição |
+|---|---|---|
+| `dimensao` | texto | Dimensão analítica do artigo |
+| `item_do_quadro` | texto | Item tal como declarado no quadro de dimensões |
+| `termos_buscados` | texto | Termos literais efetivamente buscados |
+| `n_termos` | inteiro | Quantidade de termos buscados para o item |
+| `ocorrencias` | inteiro | Número de ocorrências no corpus |
+| `ocorrencias_lexico_ampliado` | inteiro | Ocorrências sob o léxico ampliado, com sinônimos |
+| `documentos` | inteiro | Número de documentos distintos em que o termo ocorre |
+| `resultado` | texto | Se o item ocorre ou não no corpus |
+| `onde_conferir` | texto | Arquivo em que a evidência pode ser inspecionada |
