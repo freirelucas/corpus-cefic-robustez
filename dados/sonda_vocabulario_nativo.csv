@@ -1,22 +1,23 @@
-﻿termo,ocorrencias,docs_cefic
-dados pessoais,324,10
-credenciamento,81,26
-custo,57,9
-contrato,49,12
-exterior,41,11
-auditoria,40,17
-infraestrutura,28,11
-dispensa,28,5
-orcamento,19,8
-certificacao,14,5
-convenio,14,5
-homologacao,13,9
-contratacao,11,8
-estrangeir,10,3
-autonomia,10,1
-acordo de cooperacao,7,4
-investimento,6,4
-nuvem,5,0
-licitacao,3,0
-capacidade tecnica,3,3
-importac,2,1
+﻿termo,padrao,ocorrencias,arquivos,documentos,ocorrencias_cefic,documentos_cefic
+dados pessoais,\bdados\s+pessoais,344,16,12,27,7
+credenciamento,\bcredenciament,81,28,23,74,20
+orçamento,\borcament,55,18,16,46,13
+contrato,\bcontratos?\b,49,17,15,18,10
+auditoria,\bauditorias?\b,40,20,16,28,12
+exterior,\bexterior\b,35,13,9,32,8
+infraestrutura,\binfraestrutura,28,14,12,23,8
+dispensa,\bdispensa,28,11,9,4,2
+certificação,\bcertificac,18,8,7,15,5
+custo,\bcustos?\b,16,8,8,7,5
+convênio,\bconvenios?\b,14,9,8,3,2
+homologação,\bhomologac,13,10,9,10,7
+contratação,\bcontratac,12,10,7,10,6
+estrangeiro,\bestrangeir,10,7,6,4,3
+autonomia,\bautonomia,10,4,4,1,1
+acordo de cooperação,\bacordos?\s+de\s+cooperacao,9,7,5,8,4
+investimento,\binvestiment,6,4,3,6,3
+nuvem,\bnuvem\b,5,1,1,0,0
+licitação,\blicitac,4,3,3,1,1
+licitatório,\blicitatori,3,3,3,2,2
+capacidade técnica,\bcapacidade\s+tecnica,3,3,3,3,3
+importação,\bimportac,2,1,1,2,1

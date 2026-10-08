@@ -34,13 +34,69 @@ def confere(rotulo: str, obtido, esperado) -> None:
 def main() -> int:
     ref = json.loads((DADOS / "numeros_verificados.json").read_text(encoding="utf-8"))
     docs = {f.stem: Doc(f.read_text(encoding="utf-8", errors="replace"))
-            for f in sorted(TEXTOS.glob("*.txt"))}
+            for f in sorted(TEXTOS.glob("*.txt"), key=lambda f: f.name.lower())}
 
     print("Corpus")
-    confere("documentos", len(docs), ref["documentos_canonicos"])
+    confere("arquivos de texto", len(docs), ref["arquivos_texto"])
     paginas = sum(len(re.findall(r"===== \[pag \d+\] =====", d.raw)) or 1 for d in docs.values())
     confere("paginas", paginas, ref["paginas"])
     confere("linhas", sum(d.raw.count("\n") + 1 for d in docs.values()), ref["linhas"])
+    ligaduras = {n: sum(1 for ch in d.raw if "\ufb00" <= ch <= "\ufb06") for n, d in docs.items()}
+    confere("ligaduras tipograficas", sum(ligaduras.values()), ref["ligaduras_tipograficas"])
+    confere("arquivos com ligadura", sum(1 for v in ligaduras.values() if v),
+            ref["arquivos_com_ligadura"])
+
+    print("Composicao")
+    with (DADOS / "inventario_documentos.csv").open(encoding="utf-8-sig") as f:
+        inv = {r["arquivo"]: r for r in csv.DictReader(f)}
+    if set(inv) != set(docs):
+        falhas.append("inventario_documentos.csv nao corresponde a corpus_txt/: "
+                      + ", ".join(sorted(set(inv) ^ set(docs))))
+    cefic = [a for a in inv if inv[a]["orgao"] == "CEFIC"]
+    demais = [a for a in inv if inv[a]["orgao"] != "CEFIC"]
+    confere("documentos", len({r["documento"] for r in inv.values()}), ref["documentos"])
+    grupos: dict[str, int] = {}
+    for r in inv.values():
+        grupos[r["documento"]] = grupos.get(r["documento"], 0) + 1
+    confere("grupos de versoes do mesmo documento", sum(1 for n in grupos.values() if n > 1),
+            ref["grupos_versoes_mesmo_documento"])
+    confere("arquivos da CEFIC", len(cefic), ref["arquivos_cefic"])
+    confere("documentos da CEFIC", len({inv[a]["documento"] for a in cefic}), ref["documentos_cefic"])
+    confere("arquivos dos demais emissores", len(demais), ref["arquivos_demais"])
+    confere("documentos sem captura da CEFIC",
+            len({inv[a]["documento"] for a in demais} - {inv[a]["documento"] for a in cefic}),
+            ref["documentos_demais"])
+    numeros = sorted({int(r["numero"]) for r in inv.values() if r["categoria"] == "resolucao"})
+    confere("resolucoes, numeros distintos", len(numeros), ref["resolucoes_numeros_distintos"])
+    confere("serie de resolucoes", f"{numeros[0]}-{numeros[-1]}"
+            if numeros == list(range(numeros[0], numeros[-1] + 1)) else "com lacuna",
+            ref["serie_resolucoes"])
+    with (DADOS / "inventario_reunioes.csv").open(encoding="utf-8-sig") as f:
+        reunioes = list(csv.DictReader(f))
+    confere("reunioes com registro", len(reunioes), ref["reunioes_com_registro"])
+    registros = [a.strip() for r in reunioes for a in r["arquivos_registro"].split(";")]
+    apresentacoes = [r["arquivo_apresentacao"] for r in reunioes if r["arquivo_apresentacao"]]
+    confere("arquivos de registro de reuniao", len(registros), ref["arquivos_registro_reuniao"])
+    confere("arquivos de apresentacao de reuniao", len(apresentacoes),
+            ref["arquivos_apresentacao_reuniao"])
+    por_categoria = {c: {a for a, r in inv.items() if r["categoria"] == c}
+                     for c in ("registro_reuniao", "apresentacao_reuniao")}
+    if set(registros) != por_categoria["registro_reuniao"]:
+        falhas.append("inventario_reunioes.csv e inventario_documentos.csv divergem nos registros")
+    if set(apresentacoes) != por_categoria["apresentacao_reuniao"]:
+        falhas.append("inventario_reunioes.csv e inventario_documentos.csv divergem nas apresentacoes")
+    datas = sorted(r["data"][6:] + r["data"][3:5] + r["data"][:2] for r in reunioes)
+    confere("primeira reuniao", f"{datas[0][6:]}/{datas[0][4:6]}/{datas[0][:4]}", ref["primeira_reuniao"])
+    confere("ultima reuniao", f"{datas[-1][6:]}/{datas[-1][4:6]}/{datas[-1][:4]}", ref["ultima_reuniao"])
+
+    print("Constituicao do corpus")
+    with (DADOS / "copias_identicas.csv").open(encoding="utf-8-sig") as f:
+        copias = len(list(csv.DictReader(f)))
+    with (DADOS / "capturas_preteridas.csv").open(encoding="utf-8-sig") as f:
+        preteridas = len(list(csv.DictReader(f)))
+    confere("copias identicas descartadas", copias, ref["copias_identicas"])
+    confere("capturas preteridas", preteridas, ref["capturas_preteridas"])
+    confere("PDFs coletados", len(docs) + copias + preteridas, ref["pdfs_coletados"])
 
     print("Integridade do corpus")
     vistos: dict[str, str] = {}
@@ -90,9 +146,18 @@ def main() -> int:
 
     print("Cobertura da documentacao")
     dp = json.loads((BASE / "datapackage.json").read_text(encoding="utf-8"))
+    declarados = {r["path"] for r in dp["resources"]}
+    for p in sorted(DADOS.glob("*.csv")):
+        if f"dados/{p.name}" not in declarados:
+            falhas.append(f"tabela publicada sem declaracao no datapackage: dados/{p.name}")
     for r in dp["resources"]:
         if not (BASE / r["path"]).exists():
             falhas.append(f"datapackage declara recurso inexistente: {r['path']}")
+            continue
+        with (BASE / r["path"]).open(encoding="utf-8-sig") as f:
+            cabecalho = next(csv.reader(f))
+        if cabecalho != [c["name"] for c in r["schema"]["fields"]]:
+            falhas.append(f"colunas divergem do datapackage: {r['path']}")
         for campo in r["schema"]["fields"]:
             if not campo["description"] or campo["description"] == "\u2014":
                 falhas.append(f"coluna sem descricao: {r['path']}:{campo['name']}")

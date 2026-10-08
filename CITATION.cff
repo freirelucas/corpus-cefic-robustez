@@ -15,8 +15,8 @@ abstract: >-
   Corpus documental da Câmara Executiva Federal de Identificação do Cidadão (CEFIC),
   código de varredura lexical e teste de robustez das afirmações de ausência que
   sustentam o artigo "Identidade digital e desenvolvimento tecnológico: o papel da
-  Cefic" (Boletim Radar, Ipea). Reúne 129 documentos distintos,
-  663 páginas, com corte em 15/09/2026.
+  Cefic" (Boletim Radar, Ipea). Reúne 129 arquivos de texto, correspondentes a 105
+  documentos e 663 páginas, com coleta em 14/09/2026.
 keywords:
   - identidade digital
   - infraestrutura pública digital
@@ -25,5 +25,5 @@ keywords:
   - CEFIC
 license: CC-BY-4.0
 license-url: "https://github.com/freirelucas/corpus-cefic-robustez/blob/main/LICENSE"
-version: "1.0.0"
-date-released: "2026-10-07"
+version: "1.2.0"
+date-released: "2026-10-08"

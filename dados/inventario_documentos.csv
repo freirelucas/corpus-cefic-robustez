@@ -13,7 +13,7 @@
 2024-10-01_memoria-de-reuniao-4a-reuniao-cefic,Registro da reunião de 01/10/2024,registro_reuniao,CEFIC,,01/10/2024,
 2024-12-03_memoria-de-reuniao-5a-reuniao-cefic,Registro da reunião de 03/12/2024,registro_reuniao,CEFIC,,03/12/2024,
 2024-12-19_memoria-de-reuniao-3a-reuniao-extraordinaria-cefic,Registro da reunião de 19/12/2024,registro_reuniao,CEFIC,,19/12/2024,
-2025.06.10MemriadaReunioCEFICFINAL,Registro da reunião de 10/06/2025,registro_reuniao,CEFIC,,10/06/2025,
+2025.06.10MemriadaReunioCEFICFINAL,Registro da reunião de 10/06/2025,registro_reuniao,CEFIC,,10/06/2025,texto extraído de outra captura do mesmo documento; ver capturas_preteridas.csv
 2025.07.10MemriadaReunioCEFIC1revisado,Registro da reunião de 10/07/2025,registro_reuniao,CEFIC,,10/07/2025,
 2025.07.10MemriadaReunioCEFIC_FINAL,Registro da reunião de 10/07/2025,registro_reuniao,CEFIC,,10/07/2025,
 2025.08.15MemriadaReunioCEFIC,Registro da reunião de 15/08/2025,registro_reuniao,CEFIC,,15/08/2025,
@@ -112,12 +112,12 @@ res6,Resolução CEFIC nº 6,resolucao,CEFIC,6,13/10/2022,
 res7,Resolução CEFIC nº 7,resolucao,CEFIC,7,13/10/2022,
 res8,Resolução CEFIC nº 8,resolucao,CEFIC,8,13/10/2022,
 res9,Resolução CEFIC nº 9,resolucao,CEFIC,9,07/11/2022,
-resolucao-15,Resolução CEFIC nº 15,resolucao,CEFIC,15,01/11/2023,página integral do Diário Oficial; contém também atos de outros órgãos
-resolucao-16,Resolução CEFIC nº 16,resolucao,CEFIC,16,22/01/2024,página integral do Diário Oficial; contém também atos de outros órgãos
+resolucao-15,Resolução CEFIC nº 15,resolucao,página mista do DOU,15,01/11/2023,"página integral do Diário Oficial, com atos de outros órgãos; excluída das contagens da CEFIC, pois a resolução consta de captura própria"
+resolucao-16,Resolução CEFIC nº 16,resolucao,página mista do DOU,16,22/01/2024,"página integral do Diário Oficial, com atos de outros órgãos; excluída das contagens da CEFIC, pois a resolução consta de captura própria"
 resolucao-no-32_03_06_2026,Resolução CEFIC nº 32,resolucao,CEFIC,32,03/06/2026,
 resolucao-no-33_03_06_2026,Resolução CEFIC nº 33,resolucao,CEFIC,33,03/06/2026,
 resolucao_n-9-de-7-de-novembro-de-2022,Resolução CEFIC nº 9,resolucao,CEFIC,9,07/11/2022,
-resolucao_n_1,Resolução CEFIC nº 1,resolucao,CEFIC,1,24/03/2022,página integral do Diário Oficial; contém também atos de outros órgãos
+resolucao_n_1,Resolução CEFIC nº 1,resolucao,página mista do DOU,1,24/03/2022,"página integral do Diário Oficial, com atos de outros órgãos; excluída das contagens da CEFIC, pois a resolução consta de captura própria; a razão social ""Empresa Brasileira de Participações em Energia Nuclear"" pertence a ato de outro órgão nesta página"
 resolucao_n__2__de_02_de_junho_de_2022,Resolução CEFIC nº 2,resolucao,CEFIC,2,02/06/2022,
 resolucao_n__3__de_13_de_junho_de_2022,Resolução CEFIC nº 3,resolucao,CEFIC,3,13/06/2022,
 resolucao_n__4__de_7_de_junho_de_2022,Resolução CEFIC nº 4,resolucao,CEFIC,4,07/06/2022,

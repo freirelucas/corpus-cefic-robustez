@@ -7,6 +7,7 @@ instalacao: basta baixa-lo e abri-lo no navegador. Nao depende de bibliotecas ex
 """
 from __future__ import annotations
 
+import csv
 import json
 import re
 import sys
@@ -61,6 +62,7 @@ CABECALHO = """<!DOCTYPE html>
   .doc{border-top:1px solid var(--linha);padding:14px 0 4px}
   .doc h2{font-family:var(--sans);font-size:13.5px;font-weight:600;margin:0 0 8px;letter-spacing:.01em}
   .doc h2 span{font-weight:400;color:var(--apagado)}
+  .doc .obs{font-family:var(--sans);font-size:12px;color:var(--apagado);margin:-4px 0 8px}
   .oc{margin:0 0 10px;padding-left:14px;border-left:2px solid var(--linha);font-size:15px}
   .oc .pag{font-family:var(--sans);font-size:11.5px;color:var(--apagado);
            text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:2px}
@@ -172,8 +174,10 @@ function buscar(){
     }
     if (!achados.length) continue;
     totalDocs++; totalOc += achados.length;
-    let html = '<div class="doc"><h2>' + escapaHtml(doc.a) +
-               (doc.k ? '' : ' <span>&middot; documento de contexto</span>') + '</h2>';
+    let html = '<div class="doc"><h2>' + escapaHtml(doc.d) +
+               ' <span>&middot; ' + escapaHtml(doc.a) +
+               (doc.k ? '' : ' &middot; ' + escapaHtml(doc.g)) + '</span></h2>' +
+               (doc.o ? '<p class="obs">' + escapaHtml(doc.o) + '</p>' : '');
     for (const [a,b] of achados){
       const ini = Math.max(a-110, 0), fim = Math.min(b+110, doc.t.length);
       const antes = escapaHtml(doc.t.slice(ini, a)).replace(/\s+/g,' ');
@@ -190,12 +194,12 @@ function buscar(){
   if (!totalOc){
     veredito.className = 'veredito vazio';
     veredito.innerHTML = 'Nenhuma ocorr&ecirc;ncia de <strong>' + escapaHtml(bruto) +
-      '</strong> nos ' + escopo + ' documentos pesquisados.';
+      '</strong> nos ' + escopo + ' arquivos pesquisados.';
   } else {
     veredito.className = 'veredito';
     veredito.innerHTML = '<strong>' + totalOc + '</strong> ocorr&ecirc;ncia' + (totalOc>1?'s':'') +
       ' de <strong>' + escapaHtml(bruto) + '</strong> em <strong>' + totalDocs +
-      '</strong> documento' + (totalDocs>1?'s':'') + ', de um total de ' + escopo + '.';
+      '</strong> arquivo' + (totalDocs>1?'s':'') + ', de um total de ' + escopo + '.';
   }
   saida.innerHTML = blocos.join('');
 }
@@ -254,16 +258,19 @@ def prepara(raw: str) -> tuple[str, str, list[list[int]]]:
 
 def main() -> None:
     num = json.loads((DADOS / "numeros_verificados.json").read_text(encoding="utf-8"))
+    with (DADOS / "inventario_documentos.csv").open(encoding="utf-8-sig") as f:
+        inv = {r["arquivo"]: r for r in csv.DictReader(f)}
     docs = []
-    for f in sorted(TEXTOS.glob("*.txt")):
+    for f in sorted(TEXTOS.glob("*.txt"), key=lambda f: f.name.lower()):
         raw = f.read_text(encoding="utf-8", errors="replace")
         exib, norm, cortes = prepara(raw)
         assert len(exib) == len(norm), f"desalinhamento em {f.stem}"
-        eh_cefic = bool(re.search(r"\bcefic\b|camara executiva federal de identificacao",
-                                  norm[:3000]))
+        r = inv[f.stem]
         # "n" nao e embutido: o navegador o deriva de "t" com o mesmo algoritmo,
         # caractere a caractere, o que mantem o alinhamento e reduz o arquivo a metade
-        docs.append({"a": f.stem, "t": exib, "c": cortes, "k": 1 if eh_cefic else 0})
+        docs.append({"a": f.stem, "t": exib, "c": cortes, "d": r["documento"],
+                     "o": r["observacao"], "g": r["orgao"],
+                     "k": 1 if r["orgao"] == "CEFIC" else 0})
 
     ausentes = ["margem de prefer\u00eancia", "conte\u00fado local", "encomenda tecnol\u00f3gica",
                 "transfer\u00eancia de tecnologia", "c\u00f3digo-fonte", "software livre",
@@ -275,28 +282,30 @@ def main() -> None:
     atalhos += '<div style="margin-top:10px">Termos presentes, para compara&ccedil;&atilde;o:</div>'
     atalhos += "".join(f'<button data-t="{t}">{t}</button>' for t in presentes)
 
-    resumo = (f"Pesquisa direta nos {num['documentos_canonicos']} documentos distintos do corpus da "
+    resumo = (f"Pesquisa direta nos {num['arquivos_texto']} arquivos de texto do corpus da "
               f"C&acirc;mara Executiva Federal de Identifica&ccedil;&atilde;o do Cidad&atilde;o "
-              f"(CEFIC), {num['paginas']} p&aacute;ginas, com corte em {num['corte']}. "
-              "Cada ocorr&ecirc;ncia &eacute; exibida com o documento, a p&aacute;gina e o "
-              "trecho em que aparece.")
+              f"(CEFIC), correspondentes a {num['documentos']} documentos e {num['paginas']} "
+              f"p&aacute;ginas, com coleta em {num['corte']}. Cada ocorr&ecirc;ncia &eacute; "
+              "exibida com o documento, o arquivo, a p&aacute;gina e o trecho em que aparece.")
 
-    nota = f"""  <p><strong>FIGURA 1</strong><br>Ferramenta de busca no texto integral do corpus CEFIC</p>
-  <p>Fonte: corpus documental da CEFIC, {num['documentos_canonicos']} documentos distintos,
-     {num['paginas']} p&aacute;ginas, corte em {num['corte']}.</p>
-  <p>Elabora&ccedil;&atilde;o dos autores.</p>
-  <p>Nota: a busca percorre o texto integral dos documentos. Com a op&ccedil;&atilde;o
+    nota = f"""  <p>Fonte: corpus documental da CEFIC, {num['arquivos_texto']} arquivos de texto,
+     {num['documentos']} documentos, {num['paginas']} p&aacute;ginas, coleta em {num['corte']}.</p>
+  <p>Nota: a busca percorre o texto integral. Com a op&ccedil;&atilde;o
      <em>ignorar acentos e caixa</em> ativada, <code>resolucao</code> encontra
      &ldquo;Resolu&ccedil;&atilde;o&rdquo;. Com <em>palavras inteiras</em> ativada,
-     <code>NIB</code> deixa de casar dentro de &ldquo;disponibilidade&rdquo;. As ligaduras
-     tipogr&aacute;ficas dos PDFs s&atilde;o expandidas antes da compara&ccedil;&atilde;o,
-     de modo que <code>gr&aacute;ficas</code> encontra tamb&eacute;m as ocorr&ecirc;ncias
-     grafadas com o caractere &uacute;nico &ldquo;&#64257;&rdquo;.</p>
-  <p>Obs.: dos {num['documentos_canonicos']} documentos, {num['documentos_cefic']} s&atilde;o atos
-     ou registros da pr&oacute;pria CEFIC e {num['documentos_contexto']} s&atilde;o documentos de
-     contexto de outros &oacute;rg&atilde;os; o filtro permite restringir a busca aos primeiros.
-     Dois documentos n&atilde;o possuem camada de texto e n&atilde;o s&atilde;o alcan&ccedil;ados
-     por nenhuma busca, conforme <code>dados/lacunas_cobertura.csv</code>.</p>"""
+     <code>NIB</code> deixa de casar dentro de &ldquo;disponibilidade&rdquo; e
+     <code>licitação</code> deixa de casar dentro de &ldquo;solicita&ccedil;&atilde;o&rdquo;.
+     As ligaduras tipogr&aacute;ficas dos PDFs s&atilde;o expandidas antes da
+     compara&ccedil;&atilde;o, de modo que <code>gr&aacute;ficas</code> encontra tamb&eacute;m
+     as ocorr&ecirc;ncias grafadas com o caractere &uacute;nico &ldquo;&#64257;&rdquo;.</p>
+  <p>Obs.: dos {num['arquivos_texto']} arquivos, {num['arquivos_cefic']} s&atilde;o atos ou
+     registros da pr&oacute;pria CEFIC, conforme <code>dados/inventario_documentos.csv</code>;
+     o filtro restringe a busca a eles. Um mesmo documento pode constar em mais de uma
+     captura, de modo que o n&uacute;mero de arquivos com ocorr&ecirc;ncia pode exceder o de
+     documentos. Tr&ecirc;s capturas s&atilde;o p&aacute;ginas inteiras do Di&aacute;rio
+     Oficial, com atos de outros &oacute;rg&atilde;os, e ficam fora do filtro; as
+     resolu&ccedil;&otilde;es que cont&ecirc;m constam de capturas pr&oacute;prias. Dois arquivos n&atilde;o possuem camada de texto, conforme
+     <code>dados/lacunas_cobertura.csv</code>.</p>"""
 
     html = (CABECALHO
             .replace("__RESUMO__", resumo)
@@ -306,8 +315,8 @@ def main() -> None:
             .replace("__DADOS__", json.dumps(
                 {"d": docs, "n": len(docs), "kc": sum(x["k"] for x in docs)},
                 ensure_ascii=False, separators=(",", ":"))))
-    SAIDA.write_text(html, encoding="utf-8")
-    print(f"busca_corpus_cefic.html gerado: {len(html)//1024} KB, {len(docs)} documentos")
+    SAIDA.write_text(html, encoding="utf-8", newline="\r\n")
+    print(f"busca_corpus_cefic.html gerado: {len(html)//1024} KB, {len(docs)} arquivos")
 
 
 

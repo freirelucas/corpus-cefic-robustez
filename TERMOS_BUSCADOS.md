@@ -1,13 +1,17 @@
 # Termos buscados
 
-Todos os termos de busca em forma literal, com o resultado de cada um no corpus de
-129 documentos. **97 dos 100 termos não ocorrem em nenhum documento.**
+As 100 expressões que compõem as 14 famílias sem ocorrência no recorte declarado, em forma
+literal, com o resultado de cada uma nos 129 arquivos do corpus. **97 das 100 expressões não
+ocorrem em nenhum arquivo**; as três que ocorrem são termos vizinhos em ocorrências marginais,
+descritas no [README](README.md#ausências). Os termos das famílias presentes —
+interoperabilidade, território nacional e as demais — não integram esta lista; seus
+resultados constam das tabelas ao final.
 
 A conferência manual em um PDF requer a opção **"Palavras inteiras"** ativada. Sem ela,
 siglas curtas produzem falso positivo: `NIB` casa no interior de *disponibilidade*, `ETEC` no
 de *detecção* e `cativo` no de *aplicativo*.
 
-O travessão (—) indica que o termo não ocorre em nenhum documento.
+O travessão (—) indica que o termo não ocorre em nenhum arquivo. "Arq." indica arquivos.
 
 A mesma informação em formato tabular está em
 [`dados/termos_buscados_conferencia.csv`](dados/termos_buscados_conferencia.csv). A
@@ -140,7 +144,7 @@ localização de cada ocorrência dos termos presentes, com arquivo e página, e
 | propriedade intelectual | — |
 | propriedade industrial | — |
 | direitos patrimoniais | — |
-| patente | 1 em 1 doc. |
+| patente | 1 em 1 arq. |
 | titularidade dos direitos | — |
 | titularidade dos resultados | — |
 | INPI | — |
@@ -163,8 +167,8 @@ localização de cada ocorrência dos termos presentes, com arquivo e página, e
 |---|---|
 | capacitação tecnológica | — |
 | capacitação técnica | — |
-| capacitação | 4 em 4 doc. |
-| treinamento | 1 em 1 doc. |
+| capacitação | 4 em 4 arq. |
+| treinamento | 1 em 1 arq. |
 | formação de equipes | — |
 | formação de pessoal | — |
 | qualificação técnica | — |
@@ -189,50 +193,56 @@ localização de cada ocorrência dos termos presentes, com arquivo e página, e
 
 ## Contagens por família
 
-As famílias agrupam termos que designam o mesmo conceito.
+As famílias agrupam termos que designam o mesmo conceito. Contagens no nível estrito; a
+tabela completa, com o nível ampliado, está em
+[`dados/resultados_por_familia.csv`](dados/resultados_por_familia.csv).
 
 ### Famílias das duas dimensões analíticas do artigo
 
-| família | ocorrências | documentos | situação |
-|---|---|---|---|
-| Território nacional | 38 | 16 | presente |
-| Interoperabilidade | 34 | 19 | presente |
-| Preferência normativa | 12 | 10 | presente; família acrescentada ao léxico no teste de robustez |
-| Multifornecedor / segundo motor | 3 | 3 | presente |
-| Soberania | 3 | 2 | presente |
-| Concorrência | 3 | 2 | presente |
-| Propriedade intelectual | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
-| Capacitação tecnológica | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
-| Aprisionamento / lock-in | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Empresa/indústria nacional | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
-| Código-fonte | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Conteúdo local | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Software livre / código aberto | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Padrão aberto | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Nova Indústria Brasil | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Margem de preferência | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Encomenda tecnológica | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Desenvolvimento nacional | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Substituição de fornecedor | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Transferência de tecnologia | 0 | 0 | ausência robusta a sinônimos e variantes |
+| família | ocorrências | arquivos | documentos | documentos da CEFIC | situação |
+|---|---|---|---|---|---|
+| Território nacional | 38 | 16 | 13 | 7 | presente |
+| Interoperabilidade | 34 | 19 | 15 | 9 | presente |
+| Preferência normativa | 12 | 10 | 7 | 5 | presente; família acrescentada ao léxico no teste de robustez |
+| Multifornecedor / segundo motor | 3 | 3 | 2 | 2 | presente |
+| Soberania | 3 | 2 | 2 | 1 | presente |
+| Concorrência | 3 | 2 | 2 | 1 | presente |
+| Capacitação tecnológica | 0 | 0 | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
+| Propriedade intelectual | 0 | 0 | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
+| Empresa/indústria nacional | 0 | 0 | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
+| Aprisionamento / lock-in | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Conteúdo local | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Código-fonte | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Desenvolvimento nacional | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Encomenda tecnológica | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Margem de preferência | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Nova Indústria Brasil | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Padrão aberto | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Software livre / código aberto | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Substituição de fornecedor | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Transferência de tecnologia | 0 | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+
+### Termos que sustentam afirmações do texto fora do quadro
+
+| família | ocorrências | arquivos | documentos | documentos da CEFIC |
+|---|---|---|---|---|
+| NIST / NFIQ | 16 | 8 | 5 | 5 |
+| Tier III | 2 | 2 | 1 | 1 |
+| Sítios operacionais | 2 | 2 | 1 | 1 |
 
 ### Demais famílias do levantamento
 
-Pertencem ao estudo paralelo sobre os certames do Serviço Biométrico Federal e não respondem
-às dimensões analíticas do artigo.
+Não respondem às dimensões analíticas do artigo e ficam registradas por transparência.
 
-| família | ocorrências | documentos |
-|---|---|---|
-| Gráficas | 39 | 21 |
-| NIST / NFIQ | 16 | 8 |
-| Fala.BR | 7 | 1 |
-| Bancos / sistema financeiro | 6 | 2 |
-| Blockchain | 6 | 3 |
-| Acurácia | 5 | 5 |
-| Fomento | 4 | 3 |
-| Polícia Federal / aditivo | 3 | 3 |
-| Sítios operacionais | 2 | 2 |
-| Tier III | 2 | 2 |
+| família | ocorrências | arquivos | documentos | documentos da CEFIC |
+|---|---|---|---|---|
+| Gráficas | 39 | 21 | 17 | 16 |
+| Fala.BR | 7 | 1 | 1 | 0 |
+| Blockchain | 6 | 3 | 2 | 2 |
+| Bancos / sistema financeiro | 6 | 2 | 2 | 1 |
+| Acurácia | 5 | 5 | 3 | 3 |
+| Fomento | 4 | 3 | 3 | 2 |
+| Polícia Federal / aditivo | 3 | 3 | 2 | 2 |
 
 Fonte: corpus documental da CEFIC.
 Elaboração dos autores.
