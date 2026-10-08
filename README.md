@@ -16,7 +16,7 @@ que essas ausências — e as presenças — possam ser verificadas de forma ind
 
 A Câmara Executiva Federal de Identificação do Cidadão (CEFIC) foi criada pelo Decreto nº
 10.900/2021 e mantida pelo Decreto nº 11.797/2023. A coleta dos documentos foi realizada em
-14/09/2026.
+14/09/2026, data registrada na obtenção dos 154 arquivos de origem.
 
 ## Busca no corpus
 
@@ -97,6 +97,34 @@ extraordinárias, realizadas entre 14/03/2022 e 11/08/2026, um documento por reu
 cabeçalhos dos próprios registros nem sempre concordam entre si quanto à ordem e ao tipo da
 reunião; [`dados/inventario_reunioes.csv`](dados/inventario_reunioes.csv) traz uma linha por
 reunião, com a ordem e o tipo tais como declarados e as divergências assinaladas.
+
+## Composição do corpus
+
+| categoria | documentos |
+|---|---|
+| Resoluções | 33 |
+| Retificações de resolução | 2 |
+| Registros de reunião | 40 |
+| Apresentações de reunião | 3 |
+| Relatórios técnicos | 3 |
+| Anexo de resolução | 1 |
+| **Subtotal — atos e registros da CEFIC** | **82** |
+| Portarias da SGD/MGI | 12 |
+| Leis e decretos | 8 |
+| Norma técnica (ABNT) | 1 |
+| Relatório de outro órgão | 1 |
+| Documento sem camada de texto | 1 |
+| **Subtotal — documentos de contexto** | **23** |
+| **Total** | **105** |
+
+As 33 resoluções, as 2 retificações e os 40 registros de reunião somam 75 documentos; os
+demais 7 atos da CEFIC são apresentações levadas às reuniões, relatórios técnicos e um anexo
+de resolução. Os 23 documentos de contexto são normas de outros órgãos incorporadas ao
+corpus por serem referidas nas deliberações, e não constituem manifestação da Câmara —
+afirmações sobre o que a Cefic enuncia referem-se aos 82 primeiros.
+
+O inventário documento a documento, com categoria, órgão emissor e data, está em
+[`dados/inventario_documentos.csv`](dados/inventario_documentos.csv).
 
 ## Resoluções e reuniões
 

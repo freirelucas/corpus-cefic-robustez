@@ -3,7 +3,7 @@
 As 100 expressões que compõem as 14 famílias sem ocorrência no recorte declarado, em forma
 literal, com o resultado de cada uma nos 105 documentos do corpus. **97 das 100 expressões
 não ocorrem em nenhum documento**; as três que ocorrem são termos vizinhos em ocorrências marginais,
-descritas no [README](README.md#ausências). Os termos das famílias presentes —
+descritas no [README](README.md). Os termos das famílias presentes —
 interoperabilidade, território nacional e as demais — não integram esta lista; seus
 resultados constam das tabelas ao final.
 
