@@ -2,7 +2,8 @@ MIT License (codigo) / CC BY 4.0 (dados e textos derivados)
 
 Copyright (c) 2026
 
-CODIGO (robustez_varredura.py, reproduzir.py, varredura_original_referencia.py)
+CODIGO (robustez_varredura.py, reproduzir.py, gerar_busca.py, teste_reproducao.py,
+verificar_checksums.py)
 -------------------------------------------------------------------------------
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

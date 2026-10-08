@@ -1,8 +1,9 @@
 """Varredura robusta do corpus CEFIC.
 
-Objetivo: separar ausencia real de artefato metodologico. A varredura original
-(varredura_cefic.py) reduz o texto a um "esqueleto ASCII" que destroi acentos,
-busca pagina a pagina e nao trata hifenizacao de quebra de linha.
+Objetivo: separar ausencia real de artefato metodologico. Reduzir o texto a um
+"esqueleto ASCII" destroi palavras acentuadas, buscar pagina a pagina perde
+expressoes que atravessam a quebra, e ignorar a hifenizacao de fim de linha
+perde palavras partidas.
 
 Aqui a normalizacao preserva alinhamento 1:1 com o texto original (cada
 caractere de entrada gera exatamente um caractere normalizado), de modo que o

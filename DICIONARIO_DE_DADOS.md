@@ -1,43 +1,30 @@
 # Dicionário de dados
 
 Significado de cada tabela publicada em `dados/` e de cada uma de suas colunas.
+Gerado por `reproduzir.py` a partir de `datapackage.json`.
 
 ## `resultados_por_familia.csv`
 
-Resultado por família de termos nos dois níveis de busca, com a situação de cada uma.
+Resultado por família de termos nos dois níveis de busca, com a situação de cada família. Gerado por reproduzir.py.
 
 30 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
-| `familia` | texto | Família de termos (conceito) a que a ocorrência pertence |
-| `estrito_total` | inteiro | Ocorrências no nível estrito de busca |
-| `estrito_docs` | inteiro | Documentos distintos no nível estrito |
-| `ampliado_total` | inteiro | Ocorrências no nível ampliado, com sinônimos e variantes |
-| `ampliado_docs` | inteiro | Documentos distintos no nível ampliado |
-| `no_recorte_declarado_sem_ocorrencia` | booleano | Indica que a família não registrou ocorrência no recorte de termos declarado na pesquisa |
-| `situacao` | texto | Interpretação do resultado da família após o teste de robustez |
-
-## `contagens_por_familia.csv`
-
-Contagens por família nos níveis estrito e ampliado.
-
-30 linhas.
-
-| coluna | tipo | descrição |
-|---|---|---|
-| `familia` | texto | Família de termos (conceito) a que a ocorrência pertence |
-| `estrito_total` | inteiro | Ocorrências no nível estrito de busca |
-| `estrito_docs` | inteiro | Documentos distintos no nível estrito |
-| `ampliado_total` | inteiro | Ocorrências no nível ampliado, com sinônimos e variantes |
-| `ampliado_docs` | inteiro | Documentos distintos no nível ampliado |
-| `sem_ocorrencia_no_recorte_declarado` | booleano | Indica que a família não registrou ocorrência no recorte de termos declarado na pesquisa |
+| `familia` | texto | Família de termos (conceito) |
+| `estrito_ocorrencias` | inteiro | Ocorrências no nível estrito |
+| `estrito_documentos` | inteiro | Documentos com ocorrência no nível estrito |
+| `estrito_documentos_cefic` | inteiro | Documentos da CEFIC com ocorrência no nível estrito |
+| `ampliado_ocorrencias` | inteiro | Ocorrências no nível ampliado, com sinônimos e variantes |
+| `ampliado_documentos` | inteiro | Documentos com ocorrência no nível ampliado |
+| `sem_ocorrencia_no_recorte_declarado` | booleano | Família sem ocorrência no recorte de termos declarado na pesquisa |
+| `situacao` | texto | Leitura do resultado: presente; ausência robusta a sinônimos e variantes; ou sintagma ausente com termos vizinhos em ocorrências marginais |
 
 ## `kwic_estrito.csv`
 
 Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e contexto.
 
-183 linhas.
+145 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -51,7 +38,7 @@ Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e c
 
 Uma linha por ocorrência encontrada no nível ampliado.
 
-812 linhas.
+716 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -63,17 +50,17 @@ Uma linha por ocorrência encontrada no nível ampliado.
 
 ## `termos_buscados_conferencia.csv`
 
-Os termos de busca em forma literal, com o resultado de cada um.
+As 100 expressões das 14 famílias sem ocorrência no recorte declarado, em forma literal, com o resultado de cada uma. As contagens são geradas por reproduzir.py.
 
 100 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
-| `conceito` | texto | Nome legível da família de termos |
-| `termo` | texto | Trecho exato do documento que casou com o padrão de busca |
-| `situacao` | texto | Interpretação do resultado da família após o teste de robustez |
+| `conceito` | texto | Família de termos a que a expressão pertence |
+| `termo` | texto | Expressão buscada, na forma literal |
+| `situacao` | texto | presente ou ausente no corpus |
 | `ocorrencias` | inteiro | Número de ocorrências no corpus |
-| `documentos` | inteiro | Número de documentos distintos em que o termo ocorre |
+| `documentos` | inteiro | Número de documentos em que o termo ocorre |
 | `aviso` | texto | Observação sobre como conferir o termo manualmente |
 
 ## `fundamentacao_do_quadro.csv`
@@ -88,110 +75,98 @@ Liga cada item do quadro de dimensões analíticas do artigo aos termos buscados
 | `item_do_quadro` | texto | Item tal como declarado no quadro de dimensões |
 | `termos_buscados` | texto | Termos literais efetivamente buscados |
 | `n_termos` | inteiro | Quantidade de termos buscados para o item |
-| `ocorrencias` | inteiro | Número de ocorrências no corpus |
+| `ocorrencias` | inteiro | Ocorrências no nível estrito |
 | `ocorrencias_lexico_ampliado` | inteiro | Ocorrências sob o léxico ampliado, com sinônimos |
-| `documentos` | inteiro | Número de documentos distintos em que o termo ocorre |
-| `resultado` | texto | Se o item ocorre ou não no corpus |
+| `documentos` | inteiro | Número de documentos com ocorrência no nível estrito |
+| `resultado` | texto | Se o item ocorre no corpus e, quando necessário, em que forma |
 | `onde_conferir` | texto | Arquivo em que a evidência pode ser inspecionada |
 
 ## `sonda_vocabulario_nativo.csv`
 
-Termos empregados pelos próprios documentos que o recorte declarado não cobria.
+Termos empregados pelos próprios documentos que o recorte declarado não cobre, com contagens no corpus e nos atos da CEFIC.
 
-21 linhas.
+22 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
-| `termo` | texto | Trecho exato do documento que casou com o padrão de busca |
-| `ocorrencias` | inteiro | Número de ocorrências no corpus |
-| `docs_cefic` | inteiro | Número de documentos da própria CEFIC em que o termo ocorre |
+| `termo` | texto | Termo do vocabulário dos documentos, fora do recorte declarado |
+| `padrao` | texto | Expressão regular aplicada ao texto normalizado, ancorada no início da palavra |
+| `ocorrencias` | inteiro | Ocorrências no corpus inteiro |
+| `documentos` | inteiro | Documentos com ocorrência |
+| `ocorrencias_cefic` | inteiro | Ocorrências em documentos da CEFIC |
+| `documentos_cefic` | inteiro | Documentos da CEFIC com ocorrência |
 
 ## `proveniencia.csv`
 
-Origem, hash, tipo documental e data de coleta de cada documento do corpus.
+Origem, hash e data de coleta do PDF de que cada texto do corpus foi extraído.
 
-129 linhas.
+105 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
-| `arquivo_repo` | texto | Nome do documento no repositório, sem extensão |
+| `arquivo_repo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
 | `arquivo_origem` | texto | Nome do arquivo PDF de origem |
-| `sha256` | texto | Hash SHA-256 do arquivo PDF de origem, em hexadecimal |
-| `bytes` | inteiro | Tamanho do arquivo em bytes |
-| `tipo_documental` | texto | Classificação do documento: resolucao, registro_reuniao, portaria, norma_externa ou contexto |
-| `numero` | texto | Número da norma, quando aplicável |
-| `data_documento` | texto | Data do documento no formato DD/MM/AAAA, quando identificada |
-| `data_coleta` | texto | Data em que o arquivo foi coletado, em ISO 8601 |
+| `sha256` | texto | Hash SHA-256 do PDF de que o texto foi extraído |
+| `bytes` | inteiro | Tamanho do PDF em bytes |
+| `data_coleta` | texto | Data da coleta, em ISO 8601 |
 | `fonte` | texto | Origem declarada do documento |
 
 ## `integridade_texto.csv`
 
 Correspondência entre cada texto e o PDF de origem.
 
-129 linhas.
+105 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
-| `arquivo_repo` | texto | Nome do documento no repositório, sem extensão |
+| `arquivo_repo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
 | `sha256_pdf` | texto | Hash SHA-256 do PDF de origem correspondente ao texto |
 | `texto_presente` | booleano | Indica se há arquivo de texto correspondente |
 | `chars_uteis` | inteiro | Número de caracteres não brancos no texto extraído |
 | `paginas` | inteiro | Número de páginas detectadas no texto extraído |
-| `situacao` | texto | Interpretação do resultado da família após o teste de robustez |
+| `situacao` | texto | ok, ou a natureza do problema encontrado na extração do texto |
 
 ## `lacunas_cobertura.csv`
 
 Documentos sem camada de texto, inalcançáveis por qualquer busca.
 
-2 linhas.
+1 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
 | `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
 | `chars_uteis` | inteiro | Número de caracteres não brancos no texto extraído |
 | `problema` | texto | Natureza da lacuna identificada no documento |
+| `observacao` | texto | Consequência da lacuna para a busca |
 
 ## `copias_identicas.csv`
 
-Cópias byte-idênticas descartadas na constituição do corpus, com o arquivo canônico correspondente.
+PDFs byte-idênticos a outro PDF da coleta, descartados na constituição do corpus.
 
 24 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
-| `arquivo_removido` | texto | Nome do arquivo descartado por ser cópia byte-idêntica de outro |
-| `identico_a` | texto | Arquivo canônico cujo conteúdo é idêntico ao removido |
-| `sha256` | texto | Hash SHA-256 do arquivo PDF de origem, em hexadecimal |
-
-## `versoes_mesmo_documento.csv`
-
-Grupos de arquivos correspondentes ao mesmo documento em capturas distintas; os conteúdos diferem e nenhum foi descartado.
-
-18 linhas.
-
-| coluna | tipo | descrição |
-|---|---|---|
-| `documento` | texto | Documento ao qual os arquivos do grupo correspondem |
-| `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
-| `chars` | inteiro | Número de caracteres do texto extraído |
-| `caracteres_corrompidos` | inteiro | Número de caracteres que não puderam ser decodificados do PDF (U+FFFD) |
+| `pdf_descartado` | texto | PDF descartado por ser cópia byte-idêntica de outro |
+| `identico_a` | texto | PDF de conteúdo idêntico, mantido no corpus ou registrado em capturas_preteridas.csv |
+| `sha256_pdf` | texto | Hash SHA-256 comum aos dois PDFs |
 
 ## `sha256_pdfs.csv`
 
 Hash SHA-256 de cada PDF de origem.
 
-129 linhas.
+105 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
 | `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
-| `sha256` | texto | Hash SHA-256 do arquivo PDF de origem, em hexadecimal |
+| `sha256` | texto | Hash SHA-256 do PDF de que o texto foi extraído |
 
 ## `mapa_arquivos.csv`
 
 Correspondência entre nomes encurtados e nomes originais.
 
-6 linhas.
+5 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
@@ -200,40 +175,67 @@ Correspondência entre nomes encurtados e nomes originais.
 
 ## `inventario_resolucoes.csv`
 
-Inventário das resoluções identificadas no corpus.
+Uma linha por resolução ou retificação da CEFIC, com data, ementa, dados de publicação no Diário Oficial da União e signatário.
 
-52 linhas.
+35 linhas.
+
+| coluna | tipo | descrição |
+|---|---|---|
+| `tipo` | texto | resolução ou retificação |
+| `numero` | inteiro | Número da resolução |
+| `data` | texto | Data do ato, DD/MM/AAAA |
+| `ementa` | texto | Ementa transcrita do ato; para retificações, a resolução retificada |
+| `publicacao_dou` | texto | Data de publicação no Diário Oficial da União, DD/MM/AAAA |
+| `edicao_dou` | inteiro | Edição do Diário Oficial da União |
+| `secao_dou` | inteiro | Seção do Diário Oficial da União |
+| `pagina_dou` | inteiro | Página do Diário Oficial da União |
+| `signatario` | texto | Autoridade signatária; vazio nas retificações, que não trazem assinatura |
+| `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
+
+## `inventario_documentos.csv`
+
+Classificação de cada documento do corpus: categoria e órgão emissor. Base do recorte dos atos da CEFIC.
+
+105 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
 | `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
-| `sha12` | texto | Primeiros 12 caracteres do hash SHA-256 do arquivo, usado como identificador curto |
-| `paginas` | inteiro | Número de páginas detectadas no texto extraído |
-| `bytes` | inteiro | Tamanho do arquivo em bytes |
-| `num` | texto | Número da resolução |
-| `data_doc` | texto | Data do documento no formato DD/MM/AAAA |
-| `sem_texto` | texto | Marca os documentos cujo PDF não possui camada de texto |
-| `minuta` | texto | Marca os documentos em versão de minuta, não publicada |
-| `dou` | texto | Data de publicação no Diário Oficial da União |
-| `dou_edicao` | número | Número da edição do Diário Oficial da União |
-| `dou_secao` | número | Seção do Diário Oficial da União |
-| `dou_pagina` | número | Página do Diário Oficial da União |
-| `ementa_raw` | texto | Ementa da norma, transcrita do documento |
-| `signatario` | texto | Autoridade signatária da norma |
+| `documento` | texto | Identificação do documento |
+| `categoria` | texto | resolucao, retificacao, registro_reuniao, apresentacao_reuniao, relatorio_tecnico, anexo, portaria, legislacao, norma_tecnica, relatorio_outro_orgao ou sem_camada_de_texto |
+| `orgao` | texto | Órgão emissor; CEFIC para atos e registros da própria Câmara |
+| `numero` | texto | Número do ato, quando houver |
+| `data_documento` | texto | Data do documento, DD/MM/AAAA ou MM/AAAA, quando identificada |
+| `observacao` | texto | Particularidade do arquivo relevante para a leitura das contagens |
 
-## `inventario_atas.csv`
+## `inventario_reunioes.csv`
 
-Inventário dos registros de reunião identificados no corpus.
+Uma linha por reunião da CEFIC com registro no corpus, com a ordem e o tipo tais como declarados no cabeçalho do registro.
 
-38 linhas.
+40 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
-| `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
-| `sha12` | texto | Primeiros 12 caracteres do hash SHA-256 do arquivo, usado como identificador curto |
-| `paginas` | inteiro | Número de páginas detectadas no texto extraído |
-| `bytes` | inteiro | Tamanho do arquivo em bytes |
-| `ordinal` | número | Número ordinal da reunião no ano, quando identificado |
-| `tipo` | texto | Natureza da reunião: ordinária ou extraordinária |
-| `data_doc` | texto | Data do documento no formato DD/MM/AAAA |
-| `ano` | número | Ano de referência da reunião |
+| `data` | texto | Data da reunião, DD/MM/AAAA, conforme o cabeçalho do registro |
+| `ordem_declarada` | texto | Ordem da reunião declarada no cabeçalho; vazio quando ausente |
+| `tipo_declarado` | texto | ordinária ou extraordinária, conforme o cabeçalho; vazio quando ausente |
+| `modalidade` | texto | Forma de realização declarada: presencial, videoconferência, virtual para votação ou deliberação por e-mail |
+| `arquivos_registro` | texto | Documento de ata ou memória da reunião |
+| `arquivo_apresentacao` | texto | Arquivo de slides exibidos na reunião, quando houver |
+| `observacao` | texto | Divergência entre cabeçalho, nome do arquivo e sequência das reuniões, quando houver |
+
+## `capturas_preteridas.csv`
+
+PDFs distintos de documentos que constavam em mais de uma captura; de cada documento mantém-se uma única captura, e as demais são registradas aqui com o motivo.
+
+25 linhas.
+
+| coluna | tipo | descrição |
+|---|---|---|
+| `pdf_preterido` | texto | Nome do PDF preterido |
+| `sha256_pdf` | texto | Hash SHA-256 do PDF preterido |
+| `documento` | texto | Documento a que o PDF corresponde |
+| `substituido_por` | texto | PDF da captura mantida no corpus |
+| `sha256_substituto` | texto | Hash SHA-256 do PDF da captura mantida |
+| `arquivo_repo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
+| `motivo` | texto | Razão pela qual a captura foi preterida |

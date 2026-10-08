@@ -1,0 +1,41 @@
+﻿data,ordem_declarada,tipo_declarado,modalidade,arquivos_registro,arquivo_apresentacao,observacao
+14/03/2022,1ª,ordinária,presencial,ata_1_14mar22,20220209semeprojetoidentificacaodocidadao_primeira_reu_ceficv6,"cabeçalho grafa a data como ""014/03/2022"""
+24/03/2022,2ª,ordinária,videoconferência,ata2areuniaodacefic,20220209semeprojetoidentificacaodocidadao_segunda_reu_ceficv5,
+05/05/2022,3ª,ordinária,videoconferência,Ata3aReuCEFIC1,202205053areuniaoCEFICv2,
+11/05/2022,4ª,ordinária,deliberação por e-mail,Ata4aReu_CEFIC1,,
+18/05/2022,5ª,extraordinária,deliberação por e-mail,Ata5aReu_CEFICv4,,
+31/05/2022,6ª,ordinária,videoconferência,Atada6reuniaoCEFIC.v2,,duas reuniões distintas na mesma data
+31/05/2022,7ª,ordinária,deliberação por e-mail,Atada7reuniaoCEFIC.v2,,duas reuniões distintas na mesma data
+11/08/2022,8ª,ordinária,videoconferência,ATA8reudacefic11,,
+05/04/2023,1ª,ordinária,presencial,1reuniao_Cefic_06_04_2023-,,"nome do arquivo indica 06/04/2023; o cabeçalho, 05/04/2023"
+21/07/2023,,extraordinária,"virtual, para votação",1_reunicextra_cefic_21_07_2023,,cabeçalho sem ordem; nome do arquivo indica 1ª extraordinária
+10/08/2023,1ª,ordinária,presencial,3_reuniao_cefic_10_08_2023,,"cabeçalho declara 1ª ordinária de 2023, ordem já atribuída à reunião de 05/04/2023; nome do arquivo indica 3ª"
+21/08/2023,2ª,extraordinária,"virtual, para votação",2_reunicextra_cefic_21_08_2023,,
+11/10/2023,4ª,ordinária,presencial,4___reuniao_CEFIC_11_10_2023,,
+21/12/2023,5ª,ordinária,presencial,5_reuniao_cefic_2023_12_21,,
+15/05/2024,1ª,extraordinária,presencial,1-reunic-ordinaria-15_05_2024,,cabeçalho declara 1ª extraordinária; nome do arquivo indica 1ª ordinária; a reunião de 27/05/2024 também se declara 1ª extraordinária
+27/05/2024,1ª,extraordinária,"virtual, para votação",2024-05-27_memoria-de-reuniao-1a-reuniao-extradordinaria-cefic,,
+02/07/2024,,,presencial,2024-07-02_memoria-de-reuniao-2a-reuniao-ordinaria-cefic,,cabeçalho sem ordem nem tipo; nome do arquivo indica 2ª ordinária
+06/08/2024,2ª,ordinária,presencial,2024-08-06_memoria-de-reuniao-3a-reuniao-ordinaria-cefic,,cabeçalho declara 2ª ordinária; nome do arquivo indica 3ª
+20/08/2024,2ª,extraordinária,"virtual, para votação",2024-08-20_memoria-de-reuniao-2a-reuniao-extraordinaria-cefic,,
+01/10/2024,5ª,extraordinária,presencial,2024-10-01_memoria-de-reuniao-4a-reuniao-cefic,,cabeçalho declara 5ª extraordinária; nome do arquivo indica 4ª reunião
+03/12/2024,5ª,ordinária,presencial,2024-12-03_memoria-de-reuniao-5a-reuniao-cefic,,
+19/12/2024,3ª,extraordinária,presencial,2024-12-19_memoria-de-reuniao-3a-reuniao-extraordinaria-cefic,,
+11/03/2025,1ª,ordinária,presencial e videoconferência,Memoria1aReuniaoCEFIC20250311v2,,
+22/04/2025,2ª,ordinária,presencial,Memoria2aReuniaoCEFIC20250422,,
+13/05/2025,3ª,ordinária,presencial,Memoria3aReuniaoCEFIC202505131,,
+10/06/2025,4ª,ordinária,presencial,2025.06.10MemriadaReunioCEFICFINAL,,
+10/07/2025,5ª,ordinária,presencial,2025.07.10MemriadaReunioCEFIC_FINAL,,
+15/08/2025,6ª,ordinária,presencial,2025.08.15MemriadaReunioCEFIC,,
+09/09/2025,7ª,ordinária,presencial,2025.09.09MemriadaReunioCEFIC,,
+09/12/2025,8ª,ordinária,presencial,2025.12.09MemriaCefic,,
+16/12/2025,1ª,extraordinária,"virtual, para votação",2025.12.16CEFICMemriadareunio,,
+11/02/2026,1ª,ordinária,presencial,2026.02.11CEFICMemriadareuniov2,,
+26/02/2026,1ª,extraordinária,"virtual, para votação",2026.02.26CEFICMemriadeReunioVirtual,,
+12/03/2026,2ª,ordinária,presencial,2026.03.12MemriadaReunioCEFIC1,,
+16/04/2026,3ª,ordinária,presencial,2026.04.16MemriadaReunioCEFIC1,,
+17/04/2026,2ª,extraordinária,"virtual, para votação",2026.04.17MemriadaReunioVirtualCEFIC,,
+13/05/2026,4ª,ordinária,presencial,2026-05-13-memoria-da-reuniao-cefic,,
+16/06/2026,5ª,ordinária,presencial,2026-06-16-memoria-da-reuniao-cefic,,
+14/07/2026,6ª,ordinária,presencial,2026.07.14MemriadaReunioCEFIC,,
+11/08/2026,7ª,ordinária,presencial,2026.08.11MemriadaReunioCEFIC,,
