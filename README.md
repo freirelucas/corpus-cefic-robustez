@@ -9,7 +9,7 @@ tecnológico nacional. Versão 1.2.1; coleta dos documentos em 14/09/2026.
 
 ## Busca no corpus
 
-**[Abrir a ferramenta de busca](https://rawcdn.githack.com/freirelucas/corpus-cefic-robustez/v1.2.1/busca_corpus_cefic.html)**
+**[Abrir a ferramenta de busca](https://raw.githack.com/freirelucas/corpus-cefic-robustez/main/busca_corpus_cefic.html)**
 
 A ferramenta pesquisa o texto integral dos 105 documentos e exibe cada ocorrência com o
 documento, a página e o trecho em que consta. Selecionada uma ocorrência, o documento
