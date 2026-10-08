@@ -1,31 +1,31 @@
-﻿familia,estrito_ocorrencias,estrito_documentos,estrito_documentos_cefic,ampliado_ocorrencias,ampliado_documentos,sem_ocorrencia_no_recorte_declarado,situacao
-padrao_aberto,0,0,0,0,0,True,ausente nos dois níveis
-substituicao_fornecedor,0,0,0,0,0,True,ausente nos dois níveis
-desenvolvimento_nacional,0,0,0,0,0,True,ausente nos dois níveis
-empresa_industria_nacional,0,0,0,0,0,True,ausente nos dois níveis
-nova_industria_brasil,0,0,0,0,0,True,ausente nos dois níveis
-margem_preferencia,0,0,0,0,0,True,ausente nos dois níveis
-conteudo_local,0,0,0,0,0,True,ausente nos dois níveis
-encomenda_tecnologica,0,0,0,0,0,True,ausente nos dois níveis
-software_livre_codigo_aberto,0,0,0,0,0,True,ausente nos dois níveis
-codigo_fonte,0,0,0,0,0,True,ausente nos dois níveis
-propriedade_intelectual,0,0,0,2,2,True,ausente no nível estrito; termos vizinhos no ampliado
-transferencia_tecnologia,0,0,0,0,0,True,ausente nos dois níveis
-capacitacao_tecnologica,0,0,0,4,4,True,ausente no nível estrito; termos vizinhos no ampliado
-aprisionamento_lockin,0,0,0,0,0,True,ausente nos dois níveis
-interoperabilidade,27,15,9,27,15,False,presente
-multifornecedor_segundo_motor,2,2,2,25,12,False,presente
-concorrencia,3,2,1,4,3,False,presente
-soberania,3,2,1,3,2,False,presente
-territorio_nacional,31,12,7,31,12,False,presente
-blockchain,5,2,2,5,2,False,presente
-bancos,6,2,1,6,2,False,presente
-fomento,4,3,2,4,3,False,presente
-acuracia,3,3,3,3,3,False,presente
-nist_nfiq,9,5,5,10,5,False,presente
-policiafederal_aditivo,2,2,2,55,26,False,presente
-graficas,32,17,16,71,21,False,presente
-fala_brasil,7,1,0,449,73,False,presente
-tier_iii,1,1,1,1,1,False,presente
-sitios_operacionais,1,1,1,1,1,False,presente
-preferencia_normativa,9,7,5,15,7,False,presente
+﻿familia,artigo_estrito_ocorrencias,artigo_estrito_documentos,artigo_ampliado_ocorrencias,artigo_ampliado_documentos,corpus_estrito_ocorrencias,corpus_estrito_documentos,corpus_ampliado_ocorrencias,corpus_ampliado_documentos,sem_ocorrencia_no_recorte_declarado,situacao_artigo,situacao_corpus
+padrao_aberto,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+substituicao_fornecedor,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+desenvolvimento_nacional,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+empresa_industria_nacional,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+nova_industria_brasil,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+margem_preferencia,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+conteudo_local,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+encomenda_tecnologica,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+software_livre_codigo_aberto,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+codigo_fonte,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+propriedade_intelectual,0,0,0,0,0,0,2,2,True,ausente nos dois níveis,ausente no nível estrito; termos vizinhos no ampliado
+transferencia_tecnologia,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+capacitacao_tecnologica,0,0,3,3,0,0,4,4,True,ausente no nível estrito; termos vizinhos no ampliado,ausente no nível estrito; termos vizinhos no ampliado
+aprisionamento_lockin,0,0,0,0,0,0,0,0,True,ausente nos dois níveis,ausente nos dois níveis
+interoperabilidade,13,9,13,9,27,15,27,15,False,presente,presente
+multifornecedor_segundo_motor,2,2,19,11,2,2,25,12,False,presente,presente
+concorrencia,1,1,2,2,3,2,4,3,False,presente,presente
+soberania,1,1,1,1,3,2,3,2,False,presente,presente
+territorio_nacional,11,6,11,6,31,12,31,12,False,presente,presente
+blockchain,5,2,5,2,5,2,5,2,False,presente,presente
+bancos,5,1,5,1,6,2,6,2,False,presente,presente
+fomento,2,2,2,2,4,3,4,3,False,presente,presente
+acuracia,3,3,3,3,3,3,3,3,False,presente,presente
+nist_nfiq,8,4,9,4,9,5,10,5,False,presente,presente
+policiafederal_aditivo,2,2,32,18,2,2,55,26,False,presente,presente
+graficas,21,14,27,15,32,17,71,21,False,presente,presente
+fala_brasil,0,0,160,45,7,1,449,73,False,ausente no nível estrito; termos vizinhos no ampliado,presente
+tier_iii,1,1,1,1,1,1,1,1,False,presente,presente
+sitios_operacionais,1,1,1,1,1,1,1,1,False,presente,presente
+preferencia_normativa,5,5,6,5,9,7,15,7,False,presente,presente

@@ -5,20 +5,24 @@ Gerado por `reproduzir.py` a partir de `datapackage.json`.
 
 ## `resultados_por_familia.csv`
 
-Resultado por família de termos nos dois níveis de busca, com a situação de cada família. Gerado por reproduzir.py.
+Resultado por família de termos nos dois níveis de busca, no corpus do artigo (73 documentos) e no corpus completo (105). Gerado por reproduzir.py.
 
 30 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
 | `familia` | texto | Família de termos (conceito) |
-| `estrito_ocorrencias` | inteiro | Ocorrências no nível estrito |
-| `estrito_documentos` | inteiro | Documentos com ocorrência no nível estrito |
-| `estrito_documentos_cefic` | inteiro | Documentos da CEFIC com ocorrência no nível estrito |
-| `ampliado_ocorrencias` | inteiro | Ocorrências no nível ampliado, com sinônimos e variantes |
-| `ampliado_documentos` | inteiro | Documentos com ocorrência no nível ampliado |
-| `sem_ocorrencia_no_recorte_declarado` | booleano | Família sem ocorrência no recorte de termos declarado na pesquisa |
-| `situacao` | texto | presente; ausente nos dois níveis; ou ausente no nível estrito, com termos vizinhos no ampliado |
+| `artigo_estrito_ocorrencias` | inteiro | Ocorrências no nível estrito, no corpus do artigo: as 33 resoluções e os registros das 40 reuniões |
+| `artigo_estrito_documentos` | inteiro | Documentos com ocorrência no nível estrito, no corpus do artigo: as 33 resoluções e os registros das 40 reuniões |
+| `artigo_ampliado_ocorrencias` | inteiro | Ocorrências no nível ampliado, no corpus do artigo: as 33 resoluções e os registros das 40 reuniões |
+| `artigo_ampliado_documentos` | inteiro | Documentos com ocorrência no nível ampliado, no corpus do artigo: as 33 resoluções e os registros das 40 reuniões |
+| `corpus_estrito_ocorrencias` | inteiro | Ocorrências no nível estrito, no corpus completo |
+| `corpus_estrito_documentos` | inteiro | Documentos com ocorrência no nível estrito, no corpus completo |
+| `corpus_ampliado_ocorrencias` | inteiro | Ocorrências no nível ampliado, no corpus completo |
+| `corpus_ampliado_documentos` | inteiro | Documentos com ocorrência no nível ampliado, no corpus completo |
+| `sem_ocorrencia_no_recorte_declarado` | booleano | Família sem ocorrência no nível estrito no corpus completo |
+| `situacao_artigo` | texto | presente; ausente nos dois níveis; ou ausente no nível estrito, com termos vizinhos no ampliado — no corpus do artigo |
+| `situacao_corpus` | texto | Mesma classificação, no corpus completo |
 
 ## `kwic_estrito.csv`
 
@@ -33,6 +37,7 @@ Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e c
 | `pagina` | inteiro | Página do documento em que a ocorrência aparece |
 | `termo` | texto | Trecho exato do documento que casou com o padrão de busca |
 | `trecho` | texto | Janela de contexto ao redor da ocorrência, no texto original acentuado |
+| `corpus_do_artigo` | booleano | Indica se o documento integra o corpus do artigo: as 33 resoluções e os registros das 40 reuniões |
 
 ## `kwic_ampliado.csv`
 
@@ -47,6 +52,7 @@ Uma linha por ocorrência encontrada no nível ampliado.
 | `pagina` | inteiro | Página do documento em que a ocorrência aparece |
 | `termo` | texto | Trecho exato do documento que casou com o padrão de busca |
 | `trecho` | texto | Janela de contexto ao redor da ocorrência, no texto original acentuado |
+| `corpus_do_artigo` | booleano | Indica se o documento integra o corpus do artigo: as 33 resoluções e os registros das 40 reuniões |
 
 ## `termos_buscados_conferencia.csv`
 
@@ -58,9 +64,10 @@ As 100 expressões das 14 famílias sem ocorrência no recorte declarado, em for
 |---|---|---|
 | `conceito` | texto | Família de termos a que a expressão pertence |
 | `termo` | texto | Expressão buscada, na forma literal |
-| `situacao` | texto | presente ou ausente no corpus |
-| `ocorrencias` | inteiro | Número de ocorrências no corpus |
-| `documentos` | inteiro | Número de documentos em que o termo ocorre |
+| `situacao_artigo` | texto | presente ou ausente no corpus do artigo: as 33 resoluções e os registros das 40 reuniões |
+| `documentos_artigo` | inteiro | Documentos do corpus do artigo em que a expressão ocorre |
+| `situacao_corpus` | texto | presente ou ausente no corpus completo |
+| `documentos_corpus` | inteiro | Documentos do corpus completo em que a expressão ocorre |
 | `aviso` | texto | Observação sobre como conferir o termo manualmente |
 
 ## `fundamentacao_do_quadro.csv`
@@ -73,17 +80,18 @@ Liga cada item do quadro de dimensões analíticas do artigo aos termos buscados
 |---|---|---|
 | `dimensao` | texto | Dimensão analítica do artigo |
 | `item_do_quadro` | texto | Item tal como declarado no quadro de dimensões |
-| `termos_buscados` | texto | Termos literais efetivamente buscados |
-| `n_termos` | inteiro | Quantidade de termos buscados para o item |
-| `ocorrencias` | inteiro | Ocorrências no nível estrito |
-| `ocorrencias_lexico_ampliado` | inteiro | Ocorrências sob o léxico ampliado, com sinônimos |
-| `documentos` | inteiro | Número de documentos com ocorrência no nível estrito |
+| `termos_buscados` | texto | Expressões efetivamente buscadas |
+| `n_termos` | inteiro | Quantidade de expressões buscadas para o item |
+| `ocorrencias_artigo` | inteiro | Ocorrências no nível estrito, no corpus do artigo (33 resoluções e 40 registros de reunião) |
+| `documentos_artigo` | inteiro | Documentos do corpus do artigo com ocorrência |
+| `ocorrencias_corpus` | inteiro | Ocorrências no nível estrito, no corpus completo |
+| `documentos_corpus` | inteiro | Documentos do corpus completo com ocorrência |
 | `resultado` | texto | Se o item ocorre no corpus e, quando necessário, em que forma |
 | `onde_conferir` | texto | Arquivo em que a evidência pode ser inspecionada |
 
 ## `sonda_vocabulario_nativo.csv`
 
-Termos empregados pelos próprios documentos que o recorte declarado não cobre, com contagens no corpus e nos atos da CEFIC.
+Termos empregados pelos próprios documentos que o recorte declarado não cobre, com contagens no corpus do artigo e no corpus completo.
 
 22 linhas.
 
@@ -91,10 +99,10 @@ Termos empregados pelos próprios documentos que o recorte declarado não cobre,
 |---|---|---|
 | `termo` | texto | Termo do vocabulário dos documentos, fora do recorte declarado |
 | `padrao` | texto | Expressão regular aplicada ao texto normalizado, ancorada no início da palavra |
-| `ocorrencias` | inteiro | Ocorrências no corpus inteiro |
-| `documentos` | inteiro | Documentos com ocorrência |
-| `ocorrencias_cefic` | inteiro | Ocorrências em documentos da CEFIC |
-| `documentos_cefic` | inteiro | Documentos da CEFIC com ocorrência |
+| `ocorrencias_artigo` | inteiro | Ocorrências no corpus do artigo: as 33 resoluções e os registros das 40 reuniões |
+| `documentos_artigo` | inteiro | Documentos do corpus do artigo com ocorrência |
+| `ocorrencias_corpus` | inteiro | Ocorrências no corpus completo |
+| `documentos_corpus` | inteiro | Documentos do corpus completo com ocorrência |
 
 ## `proveniencia.csv`
 

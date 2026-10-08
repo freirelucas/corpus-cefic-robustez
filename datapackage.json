@@ -3,7 +3,7 @@
   "name": "corpus-cefic-robustez",
   "title": "Corpus CEFIC — dados, código e verificação da análise documental",
   "description": "Corpus documental da CEFIC em texto, inventários, código de varredura lexical em dois níveis e verificação automatizada das ocorrências e ausências reportadas no artigo.",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "created": "2026-10-07",
   "licenses": [
     {
@@ -31,7 +31,7 @@
     {
       "name": "resultados-por-familia",
       "path": "dados/resultados_por_familia.csv",
-      "description": "Resultado por família de termos nos dois níveis de busca, com a situação de cada família. Gerado por reproduzir.py.",
+      "description": "Resultado por família de termos nos dois níveis de busca, no corpus do artigo (73 documentos) e no corpus completo (105). Gerado por reproduzir.py.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
@@ -42,39 +42,59 @@
             "description": "Família de termos (conceito)"
           },
           {
-            "name": "estrito_ocorrencias",
+            "name": "artigo_estrito_ocorrencias",
             "type": "integer",
-            "description": "Ocorrências no nível estrito"
+            "description": "Ocorrências no nível estrito, no corpus do artigo: as 33 resoluções e os registros das 40 reuniões"
           },
           {
-            "name": "estrito_documentos",
+            "name": "artigo_estrito_documentos",
             "type": "integer",
-            "description": "Documentos com ocorrência no nível estrito"
+            "description": "Documentos com ocorrência no nível estrito, no corpus do artigo: as 33 resoluções e os registros das 40 reuniões"
           },
           {
-            "name": "estrito_documentos_cefic",
+            "name": "artigo_ampliado_ocorrencias",
             "type": "integer",
-            "description": "Documentos da CEFIC com ocorrência no nível estrito"
+            "description": "Ocorrências no nível ampliado, no corpus do artigo: as 33 resoluções e os registros das 40 reuniões"
           },
           {
-            "name": "ampliado_ocorrencias",
+            "name": "artigo_ampliado_documentos",
             "type": "integer",
-            "description": "Ocorrências no nível ampliado, com sinônimos e variantes"
+            "description": "Documentos com ocorrência no nível ampliado, no corpus do artigo: as 33 resoluções e os registros das 40 reuniões"
           },
           {
-            "name": "ampliado_documentos",
+            "name": "corpus_estrito_ocorrencias",
             "type": "integer",
-            "description": "Documentos com ocorrência no nível ampliado"
+            "description": "Ocorrências no nível estrito, no corpus completo"
+          },
+          {
+            "name": "corpus_estrito_documentos",
+            "type": "integer",
+            "description": "Documentos com ocorrência no nível estrito, no corpus completo"
+          },
+          {
+            "name": "corpus_ampliado_ocorrencias",
+            "type": "integer",
+            "description": "Ocorrências no nível ampliado, no corpus completo"
+          },
+          {
+            "name": "corpus_ampliado_documentos",
+            "type": "integer",
+            "description": "Documentos com ocorrência no nível ampliado, no corpus completo"
           },
           {
             "name": "sem_ocorrencia_no_recorte_declarado",
             "type": "boolean",
-            "description": "Família sem ocorrência no recorte de termos declarado na pesquisa"
+            "description": "Família sem ocorrência no nível estrito no corpus completo"
           },
           {
-            "name": "situacao",
+            "name": "situacao_artigo",
             "type": "string",
-            "description": "presente; ausente nos dois níveis; ou ausente no nível estrito, com termos vizinhos no ampliado"
+            "description": "presente; ausente nos dois níveis; ou ausente no nível estrito, com termos vizinhos no ampliado — no corpus do artigo"
+          },
+          {
+            "name": "situacao_corpus",
+            "type": "string",
+            "description": "Mesma classificação, no corpus completo"
           }
         ]
       }
@@ -111,6 +131,11 @@
             "name": "trecho",
             "type": "string",
             "description": "Janela de contexto ao redor da ocorrência, no texto original acentuado"
+          },
+          {
+            "name": "corpus_do_artigo",
+            "type": "boolean",
+            "description": "Indica se o documento integra o corpus do artigo: as 33 resoluções e os registros das 40 reuniões"
           }
         ]
       }
@@ -147,6 +172,11 @@
             "name": "trecho",
             "type": "string",
             "description": "Janela de contexto ao redor da ocorrência, no texto original acentuado"
+          },
+          {
+            "name": "corpus_do_artigo",
+            "type": "boolean",
+            "description": "Indica se o documento integra o corpus do artigo: as 33 resoluções e os registros das 40 reuniões"
           }
         ]
       }
@@ -170,19 +200,24 @@
             "description": "Expressão buscada, na forma literal"
           },
           {
-            "name": "situacao",
+            "name": "situacao_artigo",
             "type": "string",
-            "description": "presente ou ausente no corpus"
+            "description": "presente ou ausente no corpus do artigo: as 33 resoluções e os registros das 40 reuniões"
           },
           {
-            "name": "ocorrencias",
+            "name": "documentos_artigo",
             "type": "integer",
-            "description": "Número de ocorrências no corpus"
+            "description": "Documentos do corpus do artigo em que a expressão ocorre"
           },
           {
-            "name": "documentos",
+            "name": "situacao_corpus",
+            "type": "string",
+            "description": "presente ou ausente no corpus completo"
+          },
+          {
+            "name": "documentos_corpus",
             "type": "integer",
-            "description": "Número de documentos em que o termo ocorre"
+            "description": "Documentos do corpus completo em que a expressão ocorre"
           },
           {
             "name": "aviso",
@@ -213,27 +248,32 @@
           {
             "name": "termos_buscados",
             "type": "string",
-            "description": "Termos literais efetivamente buscados"
+            "description": "Expressões efetivamente buscadas"
           },
           {
             "name": "n_termos",
             "type": "integer",
-            "description": "Quantidade de termos buscados para o item"
+            "description": "Quantidade de expressões buscadas para o item"
           },
           {
-            "name": "ocorrencias",
+            "name": "ocorrencias_artigo",
             "type": "integer",
-            "description": "Ocorrências no nível estrito"
+            "description": "Ocorrências no nível estrito, no corpus do artigo (33 resoluções e 40 registros de reunião)"
           },
           {
-            "name": "ocorrencias_lexico_ampliado",
+            "name": "documentos_artigo",
             "type": "integer",
-            "description": "Ocorrências sob o léxico ampliado, com sinônimos"
+            "description": "Documentos do corpus do artigo com ocorrência"
           },
           {
-            "name": "documentos",
+            "name": "ocorrencias_corpus",
             "type": "integer",
-            "description": "Número de documentos com ocorrência no nível estrito"
+            "description": "Ocorrências no nível estrito, no corpus completo"
+          },
+          {
+            "name": "documentos_corpus",
+            "type": "integer",
+            "description": "Documentos do corpus completo com ocorrência"
           },
           {
             "name": "resultado",
@@ -251,7 +291,7 @@
     {
       "name": "sonda-vocabulario-nativo",
       "path": "dados/sonda_vocabulario_nativo.csv",
-      "description": "Termos empregados pelos próprios documentos que o recorte declarado não cobre, com contagens no corpus e nos atos da CEFIC.",
+      "description": "Termos empregados pelos próprios documentos que o recorte declarado não cobre, com contagens no corpus do artigo e no corpus completo.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
@@ -267,24 +307,24 @@
             "description": "Expressão regular aplicada ao texto normalizado, ancorada no início da palavra"
           },
           {
-            "name": "ocorrencias",
+            "name": "ocorrencias_artigo",
             "type": "integer",
-            "description": "Ocorrências no corpus inteiro"
+            "description": "Ocorrências no corpus do artigo: as 33 resoluções e os registros das 40 reuniões"
           },
           {
-            "name": "documentos",
+            "name": "documentos_artigo",
             "type": "integer",
-            "description": "Documentos com ocorrência"
+            "description": "Documentos do corpus do artigo com ocorrência"
           },
           {
-            "name": "ocorrencias_cefic",
+            "name": "ocorrencias_corpus",
             "type": "integer",
-            "description": "Ocorrências em documentos da CEFIC"
+            "description": "Ocorrências no corpus completo"
           },
           {
-            "name": "documentos_cefic",
+            "name": "documentos_corpus",
             "type": "integer",
-            "description": "Documentos da CEFIC com ocorrência"
+            "description": "Documentos do corpus completo com ocorrência"
           }
         ]
       }

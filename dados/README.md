@@ -6,12 +6,12 @@ O significado de cada coluna consta de [DICIONARIO_DE_DADOS.md](../DICIONARIO_DE
 
 | arquivo | conteúdo | linhas |
 |---|---|---|
-| [`resultados_por_familia.csv`](resultados_por_familia.csv) | Resultado por família de termos nos dois níveis de busca, com a situação de cada família. Gerado por reproduzir.py. | 30 |
+| [`resultados_por_familia.csv`](resultados_por_familia.csv) | Resultado por família de termos nos dois níveis de busca, no corpus do artigo (73 documentos) e no corpus completo (105). Gerado por reproduzir.py. | 30 |
 | [`kwic_estrito.csv`](kwic_estrito.csv) | Uma linha por ocorrência encontrada no nível estrito, com arquivo, página e contexto. | 145 |
 | [`kwic_ampliado.csv`](kwic_ampliado.csv) | Uma linha por ocorrência encontrada no nível ampliado. | 716 |
 | [`termos_buscados_conferencia.csv`](termos_buscados_conferencia.csv) | As 100 expressões das 14 famílias sem ocorrência no recorte declarado, em forma literal, com o resultado de cada uma. As contagens são geradas por reproduzir.py. | 100 |
 | [`fundamentacao_do_quadro.csv`](fundamentacao_do_quadro.csv) | Liga cada item do quadro de dimensões analíticas do artigo aos termos buscados e ao resultado obtido. | 9 |
-| [`sonda_vocabulario_nativo.csv`](sonda_vocabulario_nativo.csv) | Termos empregados pelos próprios documentos que o recorte declarado não cobre, com contagens no corpus e nos atos da CEFIC. | 22 |
+| [`sonda_vocabulario_nativo.csv`](sonda_vocabulario_nativo.csv) | Termos empregados pelos próprios documentos que o recorte declarado não cobre, com contagens no corpus do artigo e no corpus completo. | 22 |
 | [`proveniencia.csv`](proveniencia.csv) | Origem, hash e data de coleta do PDF de que cada texto do corpus foi extraído. | 105 |
 | [`integridade_texto.csv`](integridade_texto.csv) | Correspondência entre cada texto e o PDF de origem. | 105 |
 | [`lacunas_cobertura.csv`](lacunas_cobertura.csv) | Documentos sem camada de texto, inalcançáveis por qualquer busca. | 1 |

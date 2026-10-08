@@ -58,6 +58,8 @@ def main() -> int:
     confere("documentos da CEFIC", len(cefic), ref["documentos_cefic"])
     confere("documentos de outros orgaos ou de autoria nao determinada", len(inv) - len(cefic),
             ref["documentos_outros"])
+    artigo = {a for a, r in inv.items() if r["categoria"] in ("resolucao", "registro_reuniao")}
+    confere("documentos do corpus do artigo", len(artigo), ref["documentos_artigo"])
     numeros = sorted(int(r["numero"]) for r in inv.values() if r["categoria"] == "resolucao")
     confere("resolucoes, numeros distintos", len(set(numeros)), ref["resolucoes_numeros_distintos"])
     if len(numeros) != len(set(numeros)):
@@ -118,6 +120,10 @@ def main() -> int:
             ref["familias_zeradas_recorte_original"])
     confere("familias ainda zeradas no nivel ampliado", zerad_ampl,
             ref["familias_ainda_zeradas_nivel_ampliado"])
+    zerad_artigo = sum(1 for fam in ZERADAS if not any(
+        re.search("|".join(LEXICO[fam]["ampliado"]), docs[a].norm) for a in artigo))
+    confere("familias ainda zeradas no nivel ampliado, corpus do artigo", zerad_artigo,
+            ref["familias_ainda_zeradas_nivel_ampliado_artigo"])
 
     print("Lacunas declaradas")
     sem_texto = sum(1 for d in docs.values()
@@ -128,8 +134,10 @@ def main() -> int:
     with (DADOS / "termos_buscados_conferencia.csv").open(encoding="utf-8-sig") as f:
         linhas = list(csv.DictReader(f))
     confere("termos literais", len(linhas), ref["termos_literais"])
-    confere("termos ausentes", sum(1 for r in linhas if r["situacao"] == "ausente"),
+    confere("termos ausentes", sum(1 for r in linhas if r["situacao_corpus"] == "ausente"),
             ref["termos_ausentes"])
+    confere("termos ausentes, corpus do artigo",
+            sum(1 for r in linhas if r["situacao_artigo"] == "ausente"), ref["termos_ausentes_artigo"])
 
     print("Listas do README")
     from reproduzir import MARCA_FIM, MARCA_INICIO, listas
@@ -139,6 +147,21 @@ def main() -> int:
         falhas.append("listas de resolucoes e reunioes no README divergem dos inventarios")
     else:
         print("  ok  listas de resolucoes e reunioes conferem com os inventarios")
+    from reproduzir import MARCA_RES_FIM, MARCA_RES_INICIO, tabelas_resultados
+    for nome in ("README.md", "TERMOS_BUSCADOS.md"):
+        texto = (BASE / nome).read_text(encoding="utf-8").replace("\r\n", "\n")
+        bloco = texto[texto.index(MARCA_RES_INICIO):texto.index(MARCA_RES_FIM) + len(MARCA_RES_FIM)]
+        if bloco != tabelas_resultados():
+            falhas.append(f"tabelas de resultados em {nome} divergem de resultados_por_familia.csv")
+        else:
+            print(f"  ok  tabelas de resultados em {nome} conferem com os dados")
+    from reproduzir import MARCA_TERMOS_FIM, MARCA_TERMOS_INICIO, tabelas_termos
+    texto = (BASE / "TERMOS_BUSCADOS.md").read_text(encoding="utf-8").replace("\r\n", "\n")
+    bloco = texto[texto.index(MARCA_TERMOS_INICIO):texto.index(MARCA_TERMOS_FIM) + len(MARCA_TERMOS_FIM)]
+    if bloco != tabelas_termos():
+        falhas.append("tabelas de termos em TERMOS_BUSCADOS.md divergem dos dados")
+    else:
+        print("  ok  tabelas de termos conferem com os dados")
 
     print("Cobertura da documentacao")
     dp = json.loads((BASE / "datapackage.json").read_text(encoding="utf-8"))

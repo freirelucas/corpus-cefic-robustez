@@ -40,6 +40,12 @@ registros.
 as resoluções nº 1 a 33, sem lacuna, e duas retificações, com os dados de publicação no
 Diário Oficial.
 
+**Corpus do artigo e corpus completo.** O artigo analisa as 33 resoluções e os registros das
+40 reuniões — 73 documentos, o corpus do artigo. Os demais 32 documentos — retificações,
+apresentações, relatórios técnicos, anexo, portarias, leis, decretos, norma técnica e
+relatório de outro órgão — formam com eles o corpus completo, de 105 documentos. Os
+resultados são apresentados para os dois conjuntos.
+
 ## Procedimento de busca
 
 O artigo analisa duas dimensões: concorrência e contestabilidade, e capacidades tecnológicas
@@ -93,7 +99,12 @@ trecho KWIC exibido seja o texto real, acentuado, e não a forma achatada usada 
 nem autoria verificáveis. Todas as 33 resoluções têm texto pesquisável.
 
 **A busca é lexical.** Encontra o termo, não a ideia expressa por outras palavras. O nível
-ampliado mitiga o problema sem eliminá-lo.
+ampliado mitiga o problema sem eliminá-lo. Caso identificado: o registro da reunião de
+22/04/2025 menciona a proposta de "um teste nacional de acurácia de motores biométricos para
+reduzir a dependência de padrões internacionais no sistema biométrico brasileiro", que o
+léxico da família de aprisionamento ("dependência tecnológica", "dependência de fornecedor")
+não alcança. A passagem está registrada em
+[FUNDAMENTACAO_DO_QUADRO.md](FUNDAMENTACAO_DO_QUADRO.md).
 
 **O vocabulário provém da literatura, não do corpus.** Termos que os próprios documentos
 empregam ficaram fora do recorte declarado — entre eles credenciamento, contrato, auditoria,

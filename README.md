@@ -5,20 +5,20 @@ artigo **"Identidade digital e desenvolvimento tecnológico: o papel da Cefic"**
 Radar, Ipea). O artigo examina os atos e registros da Câmara Executiva Federal de
 Identificação do Cidadão (CEFIC), criada pelo Decreto nº 10.900/2021 e mantida pelo Decreto
 nº 11.797/2023, em duas dimensões: concorrência e contestabilidade, e desenvolvimento
-tecnológico nacional. Versão 1.2.1; coleta dos documentos em 14/09/2026.
+tecnológico nacional. Versão 1.3.0; coleta dos documentos em 14/09/2026.
 
 ## Busca no corpus
 
 **[Abrir a ferramenta de busca](https://raw.githack.com/freirelucas/corpus-cefic-robustez/main/busca_corpus_cefic.html)**
 
-A ferramenta pesquisa o texto integral dos 105 documentos e exibe cada ocorrência com o
-documento, a página e o trecho em que consta. Selecionada uma ocorrência, o documento
-inteiro abre ao lado, com todas as ocorrências assinaladas e navegação entre elas. Traz atalhos para os termos cuja ausência
-fundamenta o artigo — *transferência de tecnologia*, *conteúdo local*, *encomenda
-tecnológica*, entre outros — e para termos presentes, como *interoperabilidade* e *território
-nacional*. Um filtro restringe a busca aos documentos da CEFIC. O arquivo
-[`busca_corpus_cefic.html`](busca_corpus_cefic.html) contém o corpus embutido e funciona
-também offline, depois de baixado.
+A ferramenta abre no corpus do artigo — as 33 resoluções e os registros das 40 reuniões — e
+permite estender a busca ao corpus completo, de 105 documentos. Cada ocorrência aparece com o
+documento, a página e o trecho; selecionada, abre o texto integral ao lado, com todas as
+ocorrências assinaladas e navegação entre elas. A aba *Documentos* lista as resoluções, com
+ementa, e as reuniões, com data, ordem e tipo. Atalhos levam aos termos cuja ausência
+fundamenta o artigo e a termos presentes. O endereço da página guarda a busca e o documento
+aberto, e pode ser compartilhado. O arquivo [`busca_corpus_cefic.html`](busca_corpus_cefic.html)
+contém o corpus embutido e funciona também offline, depois de baixado.
 
 ## Corpus
 
@@ -44,81 +44,93 @@ de outros e 25 eram capturas adicionais de documentos já presentes, de que se m
 documento pelo critério descrito em [METODOLOGIA.md](METODOLOGIA.md). Ambos os conjuntos estão
 registrados em [`dados/copias_identicas.csv`](dados/copias_identicas.csv) e
 [`dados/capturas_preteridas.csv`](dados/capturas_preteridas.csv). Todas as contagens são por
-documento. A classificação de cada documento está em
-[`dados/inventario_documentos.csv`](dados/inventario_documentos.csv); afirmações sobre o que a
-CEFIC enuncia referem-se aos 82 documentos da própria CEFIC.
+documento; a classificação de cada um está em
+[`dados/inventario_documentos.csv`](dados/inventario_documentos.csv).
+
+O **corpus do artigo** compreende as 33 resoluções e os registros das 40 reuniões — 73
+documentos. Os resultados são apresentados para ele e para o corpus completo.
 
 ## Resultados
 
-Contagens no nível estrito de busca. O nível ampliado, com sinônimos e variantes, está em
-[`dados/resultados_por_familia.csv`](dados/resultados_por_familia.csv).
+<!-- resultados: gerado por reproduzir.py a partir de dados/ -->
+
+Nível estrito de busca. Corpus do artigo: 33 resoluções e 40 registros de reunião (73 documentos). Corpus completo: 105 documentos.
 
 ### Famílias das duas dimensões analíticas do artigo
 
-| família | ocorrências | documentos | documentos da CEFIC | situação |
-|---|---|---|---|---|
-| Território nacional | 31 | 12 | 7 | presente |
-| Interoperabilidade | 27 | 15 | 9 | presente |
-| Preferência normativa | 9 | 7 | 5 | presente |
-| Multifornecedor / segundo motor | 2 | 2 | 2 | presente |
-| Soberania | 3 | 2 | 1 | presente |
-| Concorrência | 3 | 2 | 1 | presente |
-| Capacitação tecnológica | 0 | 0 | 0 | ausente no nível estrito; termos vizinhos no ampliado |
-| Propriedade intelectual | 0 | 0 | 0 | ausente no nível estrito; termos vizinhos no ampliado |
-| Aprisionamento / lock-in | 0 | 0 | 0 | ausente nos dois níveis |
-| Conteúdo local | 0 | 0 | 0 | ausente nos dois níveis |
-| Código-fonte | 0 | 0 | 0 | ausente nos dois níveis |
-| Desenvolvimento nacional | 0 | 0 | 0 | ausente nos dois níveis |
-| Empresa/indústria nacional | 0 | 0 | 0 | ausente nos dois níveis |
-| Encomenda tecnológica | 0 | 0 | 0 | ausente nos dois níveis |
-| Margem de preferência | 0 | 0 | 0 | ausente nos dois níveis |
-| Nova Indústria Brasil | 0 | 0 | 0 | ausente nos dois níveis |
-| Padrão aberto | 0 | 0 | 0 | ausente nos dois níveis |
-| Software livre / código aberto | 0 | 0 | 0 | ausente nos dois níveis |
-| Substituição de fornecedor | 0 | 0 | 0 | ausente nos dois níveis |
-| Transferência de tecnologia | 0 | 0 | 0 | ausente nos dois níveis |
+| família | ocorrências (artigo) | documentos (artigo) | ocorrências (completo) | documentos (completo) | situação no corpus do artigo |
+|---|---|---|---|---|---|
+| Território nacional | 11 | 6 | 31 | 12 | presente |
+| Interoperabilidade | 13 | 9 | 27 | 15 | presente |
+| Preferência normativa | 5 | 5 | 9 | 7 | presente |
+| Multifornecedor / segundo motor | 2 | 2 | 2 | 2 | presente |
+| Soberania | 1 | 1 | 3 | 2 | presente |
+| Concorrência | 1 | 1 | 3 | 2 | presente |
+| Capacitação tecnológica | 0 | 0 | 0 | 0 | ausente no nível estrito; termos vizinhos no ampliado |
+| Aprisionamento / lock-in | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Conteúdo local | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Código-fonte | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Desenvolvimento nacional | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Empresa/indústria nacional | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Encomenda tecnológica | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Margem de preferência | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Nova Indústria Brasil | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Padrão aberto | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Propriedade intelectual | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Software livre / código aberto | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Substituição de fornecedor | 0 | 0 | 0 | 0 | ausente nos dois níveis |
+| Transferência de tecnologia | 0 | 0 | 0 | 0 | ausente nos dois níveis |
 
 ### Termos que sustentam afirmações do texto fora do quadro
 
-| família | ocorrências | documentos | documentos da CEFIC |
-|---|---|---|---|
-| NIST / NFIQ | 9 | 5 | 5 |
-| Tier III | 1 | 1 | 1 |
-| Sítios operacionais | 1 | 1 | 1 |
+| família | ocorrências (artigo) | documentos (artigo) | ocorrências (completo) | documentos (completo) | situação no corpus do artigo |
+|---|---|---|---|---|---|
+| NIST / NFIQ | 8 | 4 | 9 | 5 | presente |
+| Tier III | 1 | 1 | 1 | 1 | presente |
+| Sítios operacionais | 1 | 1 | 1 | 1 | presente |
 
 ### Demais famílias do levantamento
 
 Famílias auxiliares do levantamento, fora das dimensões analíticas do artigo.
 
-| família | ocorrências | documentos | documentos da CEFIC |
-|---|---|---|---|
-| Gráficas | 32 | 17 | 16 |
-| Fala.BR | 7 | 1 | 0 |
-| Bancos / sistema financeiro | 6 | 2 | 1 |
-| Blockchain | 5 | 2 | 2 |
-| Fomento | 4 | 3 | 2 |
-| Acurácia | 3 | 3 | 3 |
-| Polícia Federal / aditivo | 2 | 2 | 2 |
+| família | ocorrências (artigo) | documentos (artigo) | ocorrências (completo) | documentos (completo) | situação no corpus do artigo |
+|---|---|---|---|---|---|
+| Gráficas | 21 | 14 | 32 | 17 | presente |
+| Bancos / sistema financeiro | 5 | 1 | 6 | 2 | presente |
+| Blockchain | 5 | 2 | 5 | 2 | presente |
+| Acurácia | 3 | 3 | 3 | 3 | presente |
+| Fomento | 2 | 2 | 4 | 3 | presente |
+| Polícia Federal / aditivo | 2 | 2 | 2 | 2 | presente |
+| Fala.BR | 0 | 0 | 7 | 1 | ausente no nível estrito; termos vizinhos no ampliado |
+
+<!-- fim dos resultados -->
+
+O nível ampliado está em [`dados/resultados_por_familia.csv`](dados/resultados_por_familia.csv).
 
 ### Ausências
 
-Das 14 famílias sem ocorrência no nível estrito, 12 também não ocorrem no nível ampliado:
-padrão aberto, substituição de fornecedor, desenvolvimento nacional, empresa/indústria
-nacional, Nova Indústria Brasil, margem de preferência, conteúdo local, encomenda
-tecnológica, software livre e código aberto, código-fonte, transferência de tecnologia e
-aprisionamento/*lock-in*.
+No corpus do artigo, 13 das 14 famílias sem ocorrência no nível estrito também não ocorrem no
+nível ampliado: padrão aberto, substituição de fornecedor, desenvolvimento nacional,
+empresa/indústria nacional, Nova Indústria Brasil, margem de preferência, conteúdo local,
+encomenda tecnológica, software livre e código aberto, código-fonte, propriedade
+intelectual, transferência de tecnologia e aprisionamento/*lock-in*. Na restante,
+capacitação tecnológica, o nível ampliado encontra "capacitação" em três registros de
+reunião, referida à capacitação de órgãos emissores, de estados e de equipes.
 
-Nas duas restantes, o nível ampliado encontra apenas termos vizinhos:
+No corpus completo, acrescentam-se termos vizinhos em documentos que não integram o corpus do
+artigo: "patente", na norma ABNT NBR 17225 e em relatório de visita técnica às gráficas, e
+"treinamento", na Lei de Acesso à Informação. São 12 as famílias sem ocorrência nos dois
+níveis.
 
-- **capacitação tecnológica** — "capacitação" em três registros de reunião, referida à
-  capacitação de órgãos emissores, de estados e de equipes; "treinamento" na Lei de Acesso à
-  Informação;
-- **propriedade intelectual** — "patente" em relatório de visita técnica às gráficas e em
-  cláusula padrão da norma ABNT NBR 17225.
+As 14 famílias reúnem 100 expressões, listadas em [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md). No
+corpus do artigo, 99 não ocorrem; a que ocorre é "capacitação". No corpus completo, 97 não
+ocorrem.
 
-As 14 famílias reúnem 100 expressões, listadas em [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md).
-Noventa e sete não ocorrem em nenhum documento; as três que ocorrem são "patente",
-"capacitação" e "treinamento", nos contextos acima.
+A busca é lexical e não alcança a mesma ideia expressa em outros termos. O caso documentado é
+o registro da reunião de 22/04/2025, em que "foi proposta a criação de um teste nacional de
+acurácia de motores biométricos para reduzir a dependência de padrões internacionais no
+sistema biométrico brasileiro". A proposta não figura em nenhuma das 33 resoluções nem nos
+registros posteriores. Ver [METODOLOGIA.md](METODOLOGIA.md).
 
 ## Resoluções e reuniões
 

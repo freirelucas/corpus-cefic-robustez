@@ -5,6 +5,7 @@
  "documentos": 105,
  "documentos_cefic": 82,
  "documentos_outros": 23,
+ "documentos_artigo": 73,
  "resolucoes_numeros_distintos": 33,
  "serie_resolucoes": "1-33",
  "reunioes_com_registro": 40,
@@ -18,9 +19,11 @@
  "documentos_com_ligadura": 49,
  "termos_literais": 100,
  "termos_ausentes": 97,
+ "termos_ausentes_artigo": 99,
  "familias": 30,
  "familias_zeradas_recorte_original": 14,
  "familias_ainda_zeradas_nivel_ampliado": 12,
+ "familias_ainda_zeradas_nivel_ampliado_artigo": 13,
  "documentos_sem_camada_texto": 1,
  "corte": "14/09/2026"
 }

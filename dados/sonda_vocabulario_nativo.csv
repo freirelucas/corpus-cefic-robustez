@@ -1,23 +1,23 @@
-﻿termo,padrao,ocorrencias,documentos,ocorrencias_cefic,documentos_cefic
-dados pessoais,\bdados\s+pessoais,332,12,16,7
-credenciamento,\bcredenciament,68,23,61,20
-orçamento,\borcament,47,15,42,13
-contrato,\bcontratos?\b,38,13,14,10
-auditoria,\bauditorias?\b,29,15,20,12
-exterior,\bexterior\b,28,9,25,8
-dispensa,\bdispensa,25,8,2,2
-infraestrutura,\binfraestrutura,18,9,17,8
-custo,\bcustos?\b,16,8,7,5
-certificação,\bcertificac,14,7,11,5
-convênio,\bconvenios?\b,13,8,2,2
-homologação,\bhomologac,11,8,9,7
-autonomia,\bautonomia,10,4,1,1
-contratação,\bcontratac,9,7,7,6
-estrangeiro,\bestrangeir,9,6,3,3
-acordo de cooperação,\bacordos?\s+de\s+cooperacao,6,5,5,4
+﻿termo,padrao,ocorrencias_artigo,documentos_artigo,ocorrencias_corpus,documentos_corpus
+credenciamento,\bcredenciament,39,16,68,23
+orçamento,\borcament,29,10,47,15
+auditoria,\bauditorias?\b,19,11,29,15
+exterior,\bexterior\b,19,7,28,9
+dados pessoais,\bdados\s+pessoais,14,5,332,12
+contrato,\bcontratos?\b,13,9,38,13
+infraestrutura,\binfraestrutura,10,6,18,9
+homologação,\bhomologac,8,6,11,8
+custo,\bcustos?\b,7,5,16,8
+contratação,\bcontratac,7,6,9,7
+certificação,\bcertificac,5,2,14,7
+acordo de cooperação,\bacordos?\s+de\s+cooperacao,5,4,6,5
 investimento,\binvestiment,5,3,5,3
-nuvem,\bnuvem\b,5,1,0,0
-licitação,\blicitac,4,3,1,1
-licitatório,\blicitatori,3,3,2,2
-capacidade técnica,\bcapacidade\s+tecnica,3,3,3,3
-importação,\bimportac,2,1,2,1
+dispensa,\bdispensa,2,2,25,8
+convênio,\bconvenios?\b,2,2,13,8
+estrangeiro,\bestrangeir,2,2,9,6
+licitatório,\blicitatori,2,2,3,3
+autonomia,\bautonomia,1,1,10,4
+licitação,\blicitac,1,1,4,3
+nuvem,\bnuvem\b,0,0,5,1
+capacidade técnica,\bcapacidade\s+tecnica,0,0,3,3
+importação,\bimportac,0,0,2,1

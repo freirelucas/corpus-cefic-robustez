@@ -48,6 +48,9 @@ SONDA = {
 }
 
 
+CATEGORIAS_ARTIGO = ("resolucao", "registro_reuniao")
+
+
 def dobra(texto: str) -> str:
     return Doc(texto).norm
 
@@ -158,11 +161,99 @@ def listas() -> str:
     return "\n".join(out)
 
 
-def atualiza_readme() -> None:
-    caminho = BASE / "README.md"
+NOMES = {
+    "territorio_nacional": "Território nacional", "interoperabilidade": "Interoperabilidade",
+    "preferencia_normativa": "Preferência normativa",
+    "multifornecedor_segundo_motor": "Multifornecedor / segundo motor",
+    "soberania": "Soberania", "concorrencia": "Concorrência",
+    "capacitacao_tecnologica": "Capacitação tecnológica",
+    "propriedade_intelectual": "Propriedade intelectual",
+    "aprisionamento_lockin": "Aprisionamento / lock-in", "codigo_fonte": "Código-fonte",
+    "conteudo_local": "Conteúdo local", "desenvolvimento_nacional": "Desenvolvimento nacional",
+    "empresa_industria_nacional": "Empresa/indústria nacional",
+    "encomenda_tecnologica": "Encomenda tecnológica", "margem_preferencia": "Margem de preferência",
+    "nova_industria_brasil": "Nova Indústria Brasil", "padrao_aberto": "Padrão aberto",
+    "software_livre_codigo_aberto": "Software livre / código aberto",
+    "substituicao_fornecedor": "Substituição de fornecedor",
+    "transferencia_tecnologia": "Transferência de tecnologia",
+    "nist_nfiq": "NIST / NFIQ", "tier_iii": "Tier III", "sitios_operacionais": "Sítios operacionais",
+    "graficas": "Gráficas", "fala_brasil": "Fala.BR", "blockchain": "Blockchain",
+    "bancos": "Bancos / sistema financeiro", "acuracia": "Acurácia", "fomento": "Fomento",
+    "policiafederal_aditivo": "Polícia Federal / aditivo",
+}
+DIMENSOES_PRESENTES = ["territorio_nacional", "interoperabilidade", "preferencia_normativa",
+                       "multifornecedor_segundo_motor", "soberania", "concorrencia"]
+AUXILIARES = ["nist_nfiq", "tier_iii", "sitios_operacionais"]
+MARCA_RES_INICIO = "<!-- resultados: gerado por reproduzir.py a partir de dados/ -->"
+MARCA_RES_FIM = "<!-- fim dos resultados -->"
+
+
+def tabelas_resultados() -> str:
+    with (DADOS / "resultados_por_familia.csv").open(encoding="utf-8-sig") as f:
+        res = {r["familia"]: r for r in csv.DictReader(f)}
+    zeradas = sorted((f for f in res if res[f]["sem_ocorrencia_no_recorte_declarado"] == "True"),
+                     key=lambda f: (res[f]["situacao_artigo"] != "presente"
+                                    and res[f]["artigo_ampliado_ocorrencias"] == "0", NOMES[f]))
+    outras = sorted((f for f in res if f not in DIMENSOES_PRESENTES + AUXILIARES + zeradas),
+                    key=lambda f: (-int(res[f]["artigo_estrito_ocorrencias"]), NOMES[f]))
+    cab = ["| família | ocorrências (artigo) | documentos (artigo) | ocorrências (completo) "
+           "| documentos (completo) | situação no corpus do artigo |",
+           "|---|---|---|---|---|---|"]
+
+    def linha(f):
+        r = res[f]
+        return (f"| {NOMES[f]} | {r['artigo_estrito_ocorrencias']} | {r['artigo_estrito_documentos']} | "
+                f"{r['corpus_estrito_ocorrencias']} | {r['corpus_estrito_documentos']} | "
+                f"{r['situacao_artigo']} |")
+
+    out = [MARCA_RES_INICIO, "",
+           "Nível estrito de busca. Corpus do artigo: 33 resoluções e 40 registros de reunião (73 "
+           "documentos). Corpus completo: 105 documentos.", "",
+           "### Famílias das duas dimensões analíticas do artigo", ""] + cab
+    out += [linha(f) for f in DIMENSOES_PRESENTES + zeradas]
+    out += ["", "### Termos que sustentam afirmações do texto fora do quadro", ""] + cab
+    out += [linha(f) for f in AUXILIARES]
+    out += ["", "### Demais famílias do levantamento", "",
+            "Famílias auxiliares do levantamento, fora das dimensões analíticas do artigo.", ""] + cab
+    out += [linha(f) for f in outras]
+    out += ["", MARCA_RES_FIM]
+    return "\n".join(out)
+
+
+def substitui_bloco(caminho, inicio: str, fim: str, bloco: str) -> None:
     texto = caminho.read_text(encoding="utf-8").replace("\r\n", "\n")
-    ini, fim = texto.index(MARCA_INICIO), texto.index(MARCA_FIM) + len(MARCA_FIM)
-    caminho.write_text(texto[:ini] + listas() + texto[fim:], encoding="utf-8", newline="\n")
+    if inicio not in texto:
+        return
+    ini, fi = texto.index(inicio), texto.index(fim) + len(fim)
+    caminho.write_text(texto[:ini] + bloco + texto[fi:], encoding="utf-8", newline="\n")
+
+
+MARCA_TERMOS_INICIO = "<!-- termos: gerado por reproduzir.py a partir de dados/ -->"
+MARCA_TERMOS_FIM = "<!-- fim dos termos -->"
+
+
+def tabelas_termos() -> str:
+    with (DADOS / "termos_buscados_conferencia.csv").open(encoding="utf-8-sig") as f:
+        linhas = list(csv.DictReader(f))
+    out, atual = [MARCA_TERMOS_INICIO], None
+    for r in linhas:
+        if r["conceito"] != atual:
+            atual = r["conceito"]
+            out += ["", f"**{atual}**", "", "| termo | documentos (artigo) | documentos (completo) |",
+                    "|---|---|---|"]
+        art = r["documentos_artigo"] if r["documentos_artigo"] != "0" else "—"
+        cor = r["documentos_corpus"] if r["documentos_corpus"] != "0" else "—"
+        out.append(f"| {r['termo']} | {art} | {cor} |")
+    out += ["", MARCA_TERMOS_FIM]
+    return "\n".join(out)
+
+
+def atualiza_readme() -> None:
+    substitui_bloco(BASE / "README.md", MARCA_INICIO, MARCA_FIM, listas())
+    for nome in ("README.md", "TERMOS_BUSCADOS.md"):
+        substitui_bloco(BASE / nome, MARCA_RES_INICIO, MARCA_RES_FIM, tabelas_resultados())
+    substitui_bloco(BASE / "TERMOS_BUSCADOS.md", MARCA_TERMOS_INICIO, MARCA_TERMOS_FIM,
+                    tabelas_termos())
 
 
 def main() -> None:
@@ -171,33 +262,36 @@ def main() -> None:
     inv = inventario()
     est = varre(docs, "estrito")
     amp = varre(docs, "ampliado")
-    campos = ["familia", "arquivo", "pagina", "termo", "trecho"]
+
+    # corpus do artigo: as resolucoes e os registros de reuniao da CEFIC
+    artigo = {a for a, r in inv.items() if r["categoria"] in CATEGORIAS_ARTIGO}
+    for linha in est + amp:
+        linha["corpus_do_artigo"] = linha["arquivo"] in artigo
+    campos = ["familia", "arquivo", "pagina", "termo", "trecho", "corpus_do_artigo"]
     escreve("kwic_estrito.csv", est, campos)
     escreve("kwic_ampliado.csv", amp, campos)
 
+    def conta(linhas, fam, escopo):
+        sel = [r for r in linhas if r["familia"] == fam and (escopo is None or r["arquivo"] in escopo)]
+        return len(sel), len({r["arquivo"] for r in sel})
 
-    def agrega(linhas):
-        tot, dd = {}, {}
-        for r in linhas:
-            tot[r["familia"]] = tot.get(r["familia"], 0) + 1
-            dd.setdefault(r["familia"], set()).add(r["arquivo"])
-        return tot, dd
-
-    def situacao(fam, estrito, ampliado):
+    def situacao(estrito, ampliado):
         if estrito:
             return "presente"
         if not ampliado:
             return "ausente nos dois níveis"
         return "ausente no nível estrito; termos vizinhos no ampliado"
 
-    te, de = agrega(est)
-    ta, da = agrega(amp)
-    freq = [{"familia": f,
-             "estrito_ocorrencias": te.get(f, 0), "estrito_documentos": len(de.get(f, ())),
-             "estrito_documentos_cefic": sum(1 for a in de.get(f, ()) if inv[a]["orgao"] == "CEFIC"),
-             "ampliado_ocorrencias": ta.get(f, 0), "ampliado_documentos": len(da.get(f, ())),
-             "sem_ocorrencia_no_recorte_declarado": f in ZERADAS,
-             "situacao": situacao(f, te.get(f, 0), ta.get(f, 0))} for f in LEXICO]
+    freq = []
+    for f in LEXICO:
+        r = {"familia": f}
+        for nome, escopo in (("artigo", artigo), ("corpus", None)):
+            r[f"{nome}_estrito_ocorrencias"], r[f"{nome}_estrito_documentos"] = conta(est, f, escopo)
+            r[f"{nome}_ampliado_ocorrencias"], r[f"{nome}_ampliado_documentos"] = conta(amp, f, escopo)
+        r["sem_ocorrencia_no_recorte_declarado"] = f in ZERADAS
+        r["situacao_artigo"] = situacao(r["artigo_estrito_ocorrencias"], r["artigo_ampliado_ocorrencias"])
+        r["situacao_corpus"] = situacao(r["corpus_estrito_ocorrencias"], r["corpus_ampliado_ocorrencias"])
+        freq.append(r)
     escreve("resultados_por_familia.csv", freq, list(freq[0]))
 
     termos = []
@@ -208,26 +302,27 @@ def main() -> None:
                             + r"(?![a-z0-9])")
             por_doc = {a: len(rx.findall(d.norm)) for a, d in docs.items()}
             por_doc = {a: n for a, n in por_doc.items() if n}
+            no_artigo = [a for a in por_doc if a in artigo]
             termos.append({"conceito": r["conceito"], "termo": r["termo"],
-                           "situacao": "presente" if por_doc else "ausente",
-                           "ocorrencias": sum(por_doc.values()), "documentos": len(por_doc),
+                           "documentos_artigo": len(no_artigo), "documentos_corpus": len(por_doc),
+                           "situacao_artigo": "presente" if no_artigo else "ausente",
+                           "situacao_corpus": "presente" if por_doc else "ausente",
                            "aviso": r["aviso"]})
     escreve("termos_buscados_conferencia.csv", termos,
-            ["conceito", "termo", "situacao", "ocorrencias", "documentos", "aviso"])
+            ["conceito", "termo", "situacao_artigo", "documentos_artigo", "situacao_corpus",
+             "documentos_corpus", "aviso"])
 
     sonda = []
     for termo, padrao in SONDA.items():
         rx = re.compile(padrao)
         por_doc = {a: len(rx.findall(d.norm)) for a, d in docs.items()}
         por_doc = {a: n for a, n in por_doc.items() if n}
-        cefic = {a: n for a, n in por_doc.items() if inv[a]["orgao"] == "CEFIC"}
+        no_artigo = {a: n for a, n in por_doc.items() if a in artigo}
         sonda.append({"termo": termo, "padrao": padrao,
-                      "ocorrencias": sum(por_doc.values()), "documentos": len(por_doc),
-                      "ocorrencias_cefic": sum(cefic.values()), "documentos_cefic": len(cefic)})
-    sonda.sort(key=lambda r: -r["ocorrencias"])
-    escreve("sonda_vocabulario_nativo.csv", sonda,
-            ["termo", "padrao", "ocorrencias", "documentos", "ocorrencias_cefic",
-             "documentos_cefic"])
+                      "ocorrencias_artigo": sum(no_artigo.values()), "documentos_artigo": len(no_artigo),
+                      "ocorrencias_corpus": sum(por_doc.values()), "documentos_corpus": len(por_doc)})
+    sonda.sort(key=lambda r: (-r["ocorrencias_artigo"], -r["ocorrencias_corpus"]))
+    escreve("sonda_vocabulario_nativo.csv", sonda, list(sonda[0]))
 
     documenta()
     atualiza_readme()
@@ -238,7 +333,8 @@ def main() -> None:
               "familias": len(LEXICO), "kwic_estrito": len(est), "kwic_ampliado": len(amp),
               "familias_zeradas_no_recorte_original": len(ZERADAS),
               "familias_que_seguem_zeradas_no_nivel_ampliado":
-                  sum(1 for f in ZERADAS if ta.get(f, 0) == 0)}
+                  sum(1 for r in freq if r["sem_ocorrencia_no_recorte_declarado"]
+                      and not r["corpus_ampliado_ocorrencias"])}
     for k, v in resumo.items():
         print(f"{k}: {v}")
 
