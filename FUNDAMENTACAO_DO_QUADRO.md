@@ -21,8 +21,8 @@ e registra documento e página de cada ocorrência.
 Composição do terceiro item. Nenhuma das expressões de substituição de fornecedor ocorre, nem
 no nível ampliado. As duas ocorrências vêm da Resolução nº 21/2025, cujo item 3.2 do Anexo I
 estabelece que o Serviço Biométrico Federal deve "ter, preferencialmente, mais de um
-fornecedor dos algoritmos do motor biométrico", e do registro
-da reunião de 13/05/2026, que informa que "o segundo motor está sendo adquirido". O item
+fornecedor dos algoritmos do motor biométrico", e do registro da reunião de 13/05/2026, que
+informa que "o segundo motor está sendo adquirido". O item
 está presente como pluralidade de fornecedores, não como regra de substituição.
 
 ## Dimensão 2 — Desenvolvimento tecnológico nacional

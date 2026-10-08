@@ -38,7 +38,7 @@ CABECALHO = """<!DOCTYPE html>
   *{box-sizing:border-box}
   body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--serif);
        line-height:1.55;font-size:16px}
-  .area{max-width:980px;margin:0 auto;padding:28px 20px 80px}
+  .area{max-width:1500px;margin:0 auto;padding:28px 20px 40px}
   header{border-bottom:3px double var(--linha-forte);padding-bottom:18px;margin-bottom:22px}
   .chapeu{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
           color:var(--apagado);margin-bottom:6px}
@@ -71,6 +71,32 @@ CABECALHO = """<!DOCTYPE html>
         border-top:1px solid var(--linha);margin-top:34px;padding-top:14px}
   .nota p{margin:0 0 7px;max-width:78ch}
   code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.92em;background:#f0ece4;padding:1px 4px}
+  .divisao{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+  .lista{min-width:0}
+  .oc{cursor:pointer;border-radius:2px}
+  .oc:hover{background:var(--destaque-lavado)}
+  .oc.sel{background:var(--destaque-lavado);border-left-color:var(--destaque)}
+  .visor{position:sticky;top:12px;height:calc(100vh - 24px);display:flex;flex-direction:column;
+         background:#fff;border:1px solid var(--linha);min-width:0}
+  .visor-topo{padding:12px 14px;border-bottom:1px solid var(--linha);font-family:var(--sans);font-size:13px}
+  .visor-topo h3{margin:0 0 4px;font-size:14px}
+  .visor-topo .meta{color:var(--apagado)}
+  .nav{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+  .nav button{font-family:var(--sans);font-size:12.5px;background:var(--papel);border:1px solid var(--linha);
+              padding:4px 10px;cursor:pointer;color:var(--tinta)}
+  .nav button:hover{border-color:var(--destaque)}
+  .fechar{display:none}
+  .texto{position:relative;flex:1;overflow:auto;padding:14px 18px;white-space:pre-wrap;font-size:14.5px;line-height:1.6}
+  .texto .pg{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+             color:var(--apagado);border-top:1px dashed var(--linha);margin:14px 0 6px;padding-top:4px}
+  .texto mark.ativa{background:#e8a33d;outline:2px solid #b4741a}
+  .vazio-visor{color:var(--apagado);font-family:var(--sans);font-size:13px;padding:18px}
+  @media (max-width:900px){
+    .divisao{grid-template-columns:1fr}
+    .visor{display:none;position:fixed;inset:0;height:auto;z-index:10;border:0}
+    .visor.aberto{display:flex}
+    .fechar{display:inline-block}
+  }
 </style>
 </head>
 <body>
@@ -96,8 +122,17 @@ CABECALHO = """<!DOCTYPE html>
   </div>
 </div>
 
-<div id="veredito"></div>
-<div id="saida"></div>
+<div class="divisao">
+  <div class="lista">
+    <div id="veredito"></div>
+    <div id="saida"></div>
+  </div>
+  <aside class="visor" id="visor">
+    <div class="visor-topo" id="visorTopo"></div>
+    <div class="texto" id="visorTexto"><div class="vazio-visor">Selecione uma ocorr&ecirc;ncia
+      para ler o documento inteiro, com todas as ocorr&ecirc;ncias assinaladas.</div></div>
+  </aside>
+</div>
 
 <div class="nota">
 __NOTA__
@@ -161,7 +196,8 @@ function buscar(){
 
   let totalOc = 0, totalDocs = 0;
   const blocos = [];
-  for (const doc of CORPUS.d){
+  resultados = [];
+  for (const [di, doc] of CORPUS.d.entries()){
     if (opCefic.checked && !doc.k) continue;
     const base = usarDobra ? doc.n : doc.t;
     rx.lastIndex = 0;
@@ -173,17 +209,19 @@ function buscar(){
       if (achados.length > 300) break;
     }
     if (!achados.length) continue;
+    resultados[di] = achados;
     totalDocs++; totalOc += achados.length;
     let html = '<div class="doc"><h2>' + escapaHtml(doc.d) +
                ' <span>&middot; ' + escapaHtml(doc.a) +
                (doc.k ? '' : ' &middot; ' + escapaHtml(doc.g)) + '</span></h2>' +
                (doc.o ? '<p class="obs">' + escapaHtml(doc.o) + '</p>' : '');
-    for (const [a,b] of achados){
+    for (const [k, [a,b]] of achados.entries()){
       const ini = Math.max(a-110, 0), fim = Math.min(b+110, doc.t.length);
       const antes = escapaHtml(doc.t.slice(ini, a)).replace(/\s+/g,' ');
       const meio  = escapaHtml(doc.t.slice(a, b)).replace(/\s+/g,' ');
       const dep   = escapaHtml(doc.t.slice(b, fim)).replace(/\s+/g,' ');
-      html += '<p class="oc"><span class="pag">p&aacute;gina ' + paginaDe(doc, a) + '</span>' +
+      html += '<p class="oc" data-d="' + di + '" data-k="' + k + '"><span class="pag">p&aacute;gina ' +
+              paginaDe(doc, a) + '</span>' +
               (ini>0?'&hellip;':'') + antes + '<mark>' + meio + '</mark>' + dep +
               (fim<doc.t.length?'&hellip;':'') + '</p>';
     }
@@ -202,7 +240,72 @@ function buscar(){
       '</strong> documento' + (totalDocs>1?'s':'') + ', de um total de ' + escopo + '.';
   }
   saida.innerHTML = blocos.join('');
+  const primeiro = saida.querySelector('.oc');
+  if (primeiro && window.innerWidth > 900) abre(+primeiro.dataset.d, 0);
+  else if (!primeiro) limpaVisor();
 }
+
+let resultados = [];
+const visor = document.getElementById('visor');
+const visorTopo = document.getElementById('visorTopo');
+const visorTexto = document.getElementById('visorTexto');
+let atual = null;
+
+function limpaVisor(){
+  atual = null;
+  visorTopo.innerHTML = '';
+  visorTexto.innerHTML = '<div class="vazio-visor">Selecione uma ocorr&ecirc;ncia para ler o ' +
+    'documento inteiro, com todas as ocorr&ecirc;ncias assinaladas.</div>';
+}
+
+function renderiza(doc, achados){
+  const ops = [];
+  for (const [pos, pag] of doc.c) ops.push([pos, 1, '<span class="pg">p&aacute;gina ' + pag + '</span>']);
+  achados.forEach(([a, b], k) => {
+    ops.push([a, 2, '<mark id="m' + k + '">']);
+    ops.push([b, 0, '</mark>']);
+  });
+  ops.sort((x, y) => x[0] - y[0] || x[1] - y[1]);
+  let html = '', pos = 0;
+  for (const [p, , tag] of ops){
+    html += escapaHtml(doc.t.slice(pos, p)) + tag;
+    pos = p;
+  }
+  return html + escapaHtml(doc.t.slice(pos));
+}
+
+function abre(di, k){
+  const doc = CORPUS.d[di], achados = resultados[di];
+  if (!achados) return;
+  visor.classList.add('aberto');
+  if (!atual || atual.di !== di){
+    visorTexto.innerHTML = renderiza(doc, achados);
+  }
+  atual = {di, k};
+  const n = achados.length;
+  visorTopo.innerHTML = '<h3>' + escapaHtml(doc.d) + '</h3><div class="meta">' + escapaHtml(doc.a) +
+    ' &middot; ' + escapaHtml(doc.g) + (doc.o ? ' &middot; ' + escapaHtml(doc.o) : '') + '</div>' +
+    '<div class="nav"><button id="ant">&larr; anterior</button><span>ocorr&ecirc;ncia ' + (k + 1) +
+    ' de ' + n + ' &middot; p&aacute;gina ' + paginaDe(doc, achados[k][0]) + '</span>' +
+    '<button id="prox">pr&oacute;xima &rarr;</button><button class="fechar" id="fechar">fechar</button></div>';
+  document.getElementById('ant').onclick = () => abre(di, (k - 1 + n) % n);
+  document.getElementById('prox').onclick = () => abre(di, (k + 1) % n);
+  document.getElementById('fechar').onclick = () => visor.classList.remove('aberto');
+  visorTexto.querySelectorAll('mark.ativa').forEach(m => m.classList.remove('ativa'));
+  const alvo = document.getElementById('m' + k);
+  if (alvo){
+    alvo.classList.add('ativa');
+    visorTexto.scrollTop = alvo.offsetTop - visorTexto.clientHeight / 3;
+  }
+  saida.querySelectorAll('.oc.sel').forEach(e => e.classList.remove('sel'));
+  const item = saida.querySelector('.oc[data-d="' + di + '"][data-k="' + k + '"]');
+  if (item) item.classList.add('sel');
+}
+
+saida.addEventListener('click', e => {
+  const oc = e.target.closest('.oc');
+  if (oc) abre(+oc.dataset.d, +oc.dataset.k);
+});
 
 let timer;
 function agenda(){ clearTimeout(timer); timer = setTimeout(buscar, 140); }
@@ -220,13 +323,13 @@ def prepara(raw: str) -> tuple[str, str, list[list[int]]]:
     Os dois textos tem o mesmo comprimento, caractere a caractere, de modo que
     uma posicao encontrada no normalizado recorta o trecho certo no de exibicao.
     Ligaduras tipograficas sao expandidas no texto de exibicao ("gra\ufb01cas" ->
-    "graficas"), o que corrige a extracao e mantem a busca previsivel.
+    "graficas").
     """
     import unicodedata
 
     marcas = {m.start(): (m.end(), int(m.group(1)))
               for m in re.finditer(r"===== \[pag (\d+)\] =====", raw)}
-    # hifenizacao de fim de linha: "inte-\nroperabilidade" e costurada, como no pipeline
+    # hifenizacao de fim de linha: "inte-\nroperabilidade" e costurada, como na varredura
     suprime = set()
     for m in re.finditer(r"-[ \t]*\r?\n[ \t]*", raw):
         suprime.update(range(m.start(), m.end()))
@@ -276,7 +379,7 @@ def main() -> None:
                 "transfer\u00eancia de tecnologia", "c\u00f3digo-fonte", "software livre",
                 "padr\u00e3o aberto", "aprisionamento", "substitui\u00e7\u00e3o de fornecedor",
                 "desenvolvimento nacional"]
-    presentes = ["credenciamento", "interoperabilidade", "territ\u00f3rio nacional",
+    presentes = ["interoperabilidade", "territ\u00f3rio nacional",
                  "preferencialmente", "soberania"]
     atalhos = "".join(f'<button data-t="{t}">{t}</button>' for t in ausentes)
     atalhos += '<div style="margin-top:10px">Termos presentes, para compara&ccedil;&atilde;o:</div>'
@@ -293,8 +396,8 @@ def main() -> None:
   <p>Nota: a busca percorre o texto integral. Com a op&ccedil;&atilde;o
      <em>ignorar acentos e caixa</em> ativada, <code>resolucao</code> encontra
      &ldquo;Resolu&ccedil;&atilde;o&rdquo;. Com <em>palavras inteiras</em> ativada,
-     <code>NIB</code> deixa de casar dentro de &ldquo;disponibilidade&rdquo; e
-     <code>licitação</code> deixa de casar dentro de &ldquo;solicita&ccedil;&atilde;o&rdquo;.
+     <code>NIB</code> n&atilde;o casa no interior de &ldquo;disponibilidade&rdquo;, nem
+     <code>licita&ccedil;&atilde;o</code> no interior de &ldquo;solicita&ccedil;&atilde;o&rdquo;.
      As ligaduras tipogr&aacute;ficas dos PDFs s&atilde;o expandidas antes da
      compara&ccedil;&atilde;o, de modo que <code>gr&aacute;ficas</code> encontra tamb&eacute;m
      as ocorr&ecirc;ncias grafadas com o caractere &uacute;nico &ldquo;&#64257;&rdquo;.</p>
@@ -311,7 +414,7 @@ def main() -> None:
             .replace("__DADOS__", json.dumps(
                 {"d": docs, "n": len(docs), "kc": sum(x["k"] for x in docs)},
                 ensure_ascii=False, separators=(",", ":"))))
-    SAIDA.write_text(html, encoding="utf-8", newline="\r\n")
+    SAIDA.write_text(html, encoding="utf-8", newline="\n")
     print(f"busca_corpus_cefic.html gerado: {len(html)//1024} KB, {len(docs)} documentos")
 
 

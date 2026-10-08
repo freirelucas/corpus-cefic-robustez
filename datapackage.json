@@ -3,7 +3,7 @@
   "name": "corpus-cefic-robustez",
   "title": "Corpus CEFIC — dados, código e verificação da análise documental",
   "description": "Corpus documental da CEFIC em texto, inventários, código de varredura lexical em dois níveis e verificação automatizada das ocorrências e ausências reportadas no artigo.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "created": "2026-10-07",
   "licenses": [
     {
@@ -74,7 +74,7 @@
           {
             "name": "situacao",
             "type": "string",
-            "description": "Leitura do resultado: presente; ausência robusta a sinônimos e variantes; ou sintagma ausente com termos vizinhos em ocorrências marginais"
+            "description": "presente; ausente nos dois níveis; ou ausente no nível estrito, com termos vizinhos no ampliado"
           }
         ]
       }

@@ -1,18 +1,18 @@
 ﻿familia,estrito_ocorrencias,estrito_documentos,estrito_documentos_cefic,ampliado_ocorrencias,ampliado_documentos,sem_ocorrencia_no_recorte_declarado,situacao
-padrao_aberto,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-substituicao_fornecedor,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-desenvolvimento_nacional,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-empresa_industria_nacional,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-nova_industria_brasil,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-margem_preferencia,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-conteudo_local,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-encomenda_tecnologica,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-software_livre_codigo_aberto,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-codigo_fonte,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-propriedade_intelectual,0,0,0,2,2,True,sintagma ausente; termos vizinhos presentes em ocorrências marginais
-transferencia_tecnologia,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
-capacitacao_tecnologica,0,0,0,4,4,True,sintagma ausente; termos vizinhos presentes em ocorrências marginais
-aprisionamento_lockin,0,0,0,0,0,True,ausência robusta a sinônimos e variantes
+padrao_aberto,0,0,0,0,0,True,ausente nos dois níveis
+substituicao_fornecedor,0,0,0,0,0,True,ausente nos dois níveis
+desenvolvimento_nacional,0,0,0,0,0,True,ausente nos dois níveis
+empresa_industria_nacional,0,0,0,0,0,True,ausente nos dois níveis
+nova_industria_brasil,0,0,0,0,0,True,ausente nos dois níveis
+margem_preferencia,0,0,0,0,0,True,ausente nos dois níveis
+conteudo_local,0,0,0,0,0,True,ausente nos dois níveis
+encomenda_tecnologica,0,0,0,0,0,True,ausente nos dois níveis
+software_livre_codigo_aberto,0,0,0,0,0,True,ausente nos dois níveis
+codigo_fonte,0,0,0,0,0,True,ausente nos dois níveis
+propriedade_intelectual,0,0,0,2,2,True,ausente no nível estrito; termos vizinhos no ampliado
+transferencia_tecnologia,0,0,0,0,0,True,ausente nos dois níveis
+capacitacao_tecnologica,0,0,0,4,4,True,ausente no nível estrito; termos vizinhos no ampliado
+aprisionamento_lockin,0,0,0,0,0,True,ausente nos dois níveis
 interoperabilidade,27,15,9,27,15,False,presente
 multifornecedor_segundo_motor,2,2,2,25,12,False,presente
 concorrencia,3,2,1,4,3,False,presente
@@ -28,4 +28,4 @@ graficas,32,17,16,71,21,False,presente
 fala_brasil,7,1,0,449,73,False,presente
 tier_iii,1,1,1,1,1,False,presente
 sitios_operacionais,1,1,1,1,1,False,presente
-preferencia_normativa,9,7,5,15,7,False,presente; família acrescentada ao léxico no teste de robustez
+preferencia_normativa,9,7,5,15,7,False,presente

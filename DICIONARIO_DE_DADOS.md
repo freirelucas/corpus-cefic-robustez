@@ -18,7 +18,7 @@ Resultado por família de termos nos dois níveis de busca, com a situação de 
 | `ampliado_ocorrencias` | inteiro | Ocorrências no nível ampliado, com sinônimos e variantes |
 | `ampliado_documentos` | inteiro | Documentos com ocorrência no nível ampliado |
 | `sem_ocorrencia_no_recorte_declarado` | booleano | Família sem ocorrência no recorte de termos declarado na pesquisa |
-| `situacao` | texto | Leitura do resultado: presente; ausência robusta a sinônimos e variantes; ou sintagma ausente com termos vizinhos em ocorrências marginais |
+| `situacao` | texto | presente; ausente nos dois níveis; ou ausente no nível estrito, com termos vizinhos no ampliado |
 
 ## `kwic_estrito.csv`
 

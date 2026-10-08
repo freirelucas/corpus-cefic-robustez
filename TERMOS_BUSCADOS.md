@@ -2,10 +2,10 @@
 
 As 100 expressões que compõem as 14 famílias sem ocorrência no recorte declarado, em forma
 literal, com o resultado de cada uma nos 105 documentos do corpus. **97 das 100 expressões
-não ocorrem em nenhum documento**; as três que ocorrem são termos vizinhos em ocorrências marginais,
-descritas no [README](README.md). Os termos das famílias presentes —
-interoperabilidade, território nacional e as demais — não integram esta lista; seus
-resultados constam das tabelas ao final.
+não ocorrem em nenhum documento**; as três que ocorrem — "patente", "capacitação" e
+"treinamento" — são termos vizinhos, com os contextos descritos no README, seção *Ausências*.
+Os termos das famílias presentes não integram esta lista; seus resultados constam das tabelas
+ao final.
 
 A conferência manual em um PDF requer a opção **"Palavras inteiras"** ativada. Sem ela,
 siglas curtas produzem falso positivo: `NIB` casa no interior de *disponibilidade*, `ETEC` no
@@ -203,24 +203,24 @@ tabela completa, com o nível ampliado, está em
 |---|---|---|---|---|
 | Território nacional | 31 | 12 | 7 | presente |
 | Interoperabilidade | 27 | 15 | 9 | presente |
-| Preferência normativa | 9 | 7 | 5 | presente; família acrescentada ao léxico no teste de robustez |
+| Preferência normativa | 9 | 7 | 5 | presente |
 | Multifornecedor / segundo motor | 2 | 2 | 2 | presente |
 | Soberania | 3 | 2 | 1 | presente |
 | Concorrência | 3 | 2 | 1 | presente |
-| Capacitação tecnológica | 0 | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
-| Propriedade intelectual | 0 | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
-| Aprisionamento / lock-in | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Conteúdo local | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Código-fonte | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Desenvolvimento nacional | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Empresa/indústria nacional | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Encomenda tecnológica | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Margem de preferência | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Nova Indústria Brasil | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Padrão aberto | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Software livre / código aberto | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Substituição de fornecedor | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Transferência de tecnologia | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
+| Capacitação tecnológica | 0 | 0 | 0 | ausente no nível estrito; termos vizinhos no ampliado |
+| Propriedade intelectual | 0 | 0 | 0 | ausente no nível estrito; termos vizinhos no ampliado |
+| Aprisionamento / lock-in | 0 | 0 | 0 | ausente nos dois níveis |
+| Conteúdo local | 0 | 0 | 0 | ausente nos dois níveis |
+| Código-fonte | 0 | 0 | 0 | ausente nos dois níveis |
+| Desenvolvimento nacional | 0 | 0 | 0 | ausente nos dois níveis |
+| Empresa/indústria nacional | 0 | 0 | 0 | ausente nos dois níveis |
+| Encomenda tecnológica | 0 | 0 | 0 | ausente nos dois níveis |
+| Margem de preferência | 0 | 0 | 0 | ausente nos dois níveis |
+| Nova Indústria Brasil | 0 | 0 | 0 | ausente nos dois níveis |
+| Padrão aberto | 0 | 0 | 0 | ausente nos dois níveis |
+| Software livre / código aberto | 0 | 0 | 0 | ausente nos dois níveis |
+| Substituição de fornecedor | 0 | 0 | 0 | ausente nos dois níveis |
+| Transferência de tecnologia | 0 | 0 | 0 | ausente nos dois níveis |
 
 ### Termos que sustentam afirmações do texto fora do quadro
 
@@ -232,7 +232,7 @@ tabela completa, com o nível ampliado, está em
 
 ### Demais famílias do levantamento
 
-Não respondem às dimensões analíticas do artigo e ficam registradas por transparência.
+Famílias auxiliares do levantamento, fora das dimensões analíticas do artigo.
 
 | família | ocorrências | documentos | documentos da CEFIC |
 |---|---|---|---|

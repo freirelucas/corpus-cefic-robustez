@@ -98,9 +98,8 @@ def _esp(frase: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Lexico. "estrito" = o conceito tal como buscado no projeto, sem as muletas de
-# acento. "ampliado" = variantes morfologicas, sinonimos e termos vizinhos que
-# um recorte restritivo deixaria de fora.
+# Lexico. "estrito" = o conceito tal como definido no desenho da pesquisa.
+# "ampliado" = variantes morfologicas, sinonimos e termos vizinhos.
 # ---------------------------------------------------------------------------
 LEXICO: dict[str, dict[str, list[str]]] = {
     "padrao_aberto": {
@@ -207,15 +206,14 @@ LEXICO: dict[str, dict[str, list[str]]] = {
     "fala_brasil": {"estrito": [r"fala\s*\.?\s*br"], "ampliado": [r"fala\s*\.?\s*br", r"gov\s*\.?\s*br"]},
     "tier_iii": {"estrito": [r"tier\s*iii"], "ampliado": [r"tier\s*(iii|3)\b", r"\btia\s*942"]},
     "sitios_operacionais": {"estrito": [r"sitios\s+operacionais"], "ampliado": [r"sitios?\s+operacion", r"site\s+de\s+contingencia", r"data\s*center"]},
+    # termo do item 3.2 do Anexo I da Res. 21/2025
     "preferencia_normativa": {
         "estrito": [r"preferencialmente"],
         "ampliado": [r"preferencialmente", r"sempre\s+que\s+possivel", r"dar-?se-?a\s+preferencia"],
     },
 }
 
-# Familia acrescentada no teste de robustez: a preferencia normativa estava fora do
-# recorte original, embora seja o termo do item 3.2 do Anexo I da Res. 21/2025
-# ("ter, preferencialmente, mais de um fornecedor dos algoritmos do motor biometrico").
+# Familias sem ocorrencia no nivel estrito.
 ZERADAS = ["padrao_aberto", "substituicao_fornecedor", "desenvolvimento_nacional",
            "empresa_industria_nacional", "nova_industria_brasil", "margem_preferencia",
            "conteudo_local", "encomenda_tecnologica", "software_livre_codigo_aberto",

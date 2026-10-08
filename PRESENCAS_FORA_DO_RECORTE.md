@@ -16,8 +16,8 @@ de emissão física do documento.
 | gráficas | 32 | 17 | 31 | 16 |
 
 O registro da reunião de 15/05/2024 descreve o tema como "credenciamento de instituições
-públicas e empresas privadas para atuarem como Gráficas da CIN". O Decreto nº 11.797/2023 atribui à CEFIC a edição de normas
-sobre "o credenciamento, a homologação, a auditoria e a fiscalização de entidades públicas e
+públicas e empresas privadas para atuarem como Gráficas da CIN". O Decreto nº 11.797/2023
+atribui à CEFIC a edição de normas sobre "o credenciamento, a homologação, a auditoria e a fiscalização de entidades públicas e
 privadas quanto ao procedimento e à confecção dos modelos da Carteira" (art. 10, VIII, f). As
 ocorrências concentram-se, assim, na camada de emissão física do documento, distinta da
 camada de identificação biométrica analisada no artigo.
@@ -32,7 +32,19 @@ Este termo situa-se dentro do recorte de objeto: o item 3.1 do Anexo I da Resolu
 21/2025 estabelece que o Serviço Biométrico Federal deve "estar hospedado em território
 nacional", no mesmo item que formula a preferência por mais de um fornecedor de algoritmos do
 motor biométrico (item 3.2). O termo consta ainda das Resoluções nº 2, 23 e 24 e do anexo do
-Modelo Informacional da CIN e do registro da reunião de 24/03/2022. O registro da reunião de
+Modelo Informacional da CIN e do registro da reunião de 24/03/2022.
+
+Na Resolução nº 2/2022, que disciplina o credenciamento provisório de gráficas, a exigência
+recai sobre a produção e o desenvolvimento: a impressão de segurança dos espelhos da Carteira
+"deverá ser executado obrigatoriamente, nas dependências de uma única unidade fabril,
+localizada em território nacional, [...] visando a segurança das Cédulas de Identificação",
+e, para a identidade em formato digital, "o desenvolvimento da solução deverá ser executado
+obrigatoriamente nas dependências, localizada em território nacional, da empresa
+credenciada" (Anexo, art. 2º, § 2º). A exigência é de localização das instalações, com
+fundamento declarado na segurança do documento; não há requisito sobre a origem do capital
+ou da tecnologia.
+
+O registro da reunião de
 15/08/2025 menciona a sugestão de migrar a base biométrica "para armazenamento em território
 nacional".
 

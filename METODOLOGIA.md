@@ -12,8 +12,7 @@ regulamentaram, portarias de designação de seus integrantes e documentos de co
 O corpus foi constituído em três passos, cada um com registro próprio:
 
 1. **Cópias byte-idênticas.** Vinte e quatro PDFs eram cópias exatas de outros e foram
-   descartados ([`dados/copias_identicas.csv`](dados/copias_identicas.csv)). Contá-los
-   elevaria as frequências sem acrescentar evidência.
+   descartados ([`dados/copias_identicas.csv`](dados/copias_identicas.csv)).
 2. **Uma captura por documento.** Vinte e cinco PDFs eram capturas adicionais de documentos
    já presentes: a mesma resolução publicada no Diário Oficial e em arquivo próprio, a mesma
    memória de reunião em duas versões, páginas integrais do Diário Oficial que continham uma
@@ -22,8 +21,7 @@ O corpus foi constituído em três passos, cada um com registro próprio:
    camada de texto, com caracteres não decodificados ou com atos de outros órgãos; entre as
    restantes, mantém-se a de texto mais extenso. As capturas preteridas estão em
    [`dados/capturas_preteridas.csv`](dados/capturas_preteridas.csv), com o motivo de cada
-   exclusão. Contar duas capturas do mesmo documento elevaria as frequências do mesmo modo
-   que as cópias idênticas.
+   exclusão.
 3. **Classificação dos documentos.** Cada um dos 105 documentos restantes foi classificado
    por categoria e órgão emissor ([`dados/inventario_documentos.csv`](dados/inventario_documentos.csv)),
    a partir da leitura do cabeçalho de cada texto. A classificação é um dado curado, publicado
@@ -34,8 +32,9 @@ linha por reunião, identificada pela data e, quando há duas na mesma data, pel
 reuniões com registro, de 14/03/2022 a 11/08/2026, ordinárias e extraordinárias, um documento
 por reunião. A ordem e o tipo constam tais como declarados no cabeçalho de cada registro; em
 seis reuniões o cabeçalho omite a ordem ou o tipo, ou diverge do nome do arquivo ou da
-sequência das demais reuniões do ano, e as divergências estão assinaladas. Três documentos de 2022 contêm os slides exibidos em
-reuniões que também têm ata e não são contados como registros.
+sequência das demais reuniões do ano, e as divergências estão assinaladas. Três documentos de
+2022 contêm os slides exibidos em reuniões que também têm ata e não são contados como
+registros.
 
 **Resoluções.** [`dados/inventario_resolucoes.csv`](dados/inventario_resolucoes.csv) registra
 as resoluções nº 1 a 33, sem lacuna, e duas retificações, com os dados de publicação no
@@ -58,8 +57,7 @@ As buscas são feitas em dois níveis. O nível **estrito** procura o conceito t
 no desenho da pesquisa. O nível **ampliado** acrescenta variantes, sinônimos e termos
 vizinhos: para a família de aprisionamento tecnológico, admite "lock-in", "vendor lock",
 "dependência de fornecedor", "fornecedor único", "exclusividade" e "monopólio". O nível
-ampliado não serve para elevar contagens, e sim para testar se uma ausência resiste a critério
-deliberadamente mais generoso.
+ampliado testa se uma ausência se mantém sob critério mais amplo.
 
 ## Cuidados que condicionam o resultado
 
@@ -67,15 +65,14 @@ Documentos em PDF impõem dificuldades à busca textual, tratadas em `robustez_v
 
 **Ligaduras tipográficas.** Programas de diagramação representam os pares "fi" e "fl" por um
 único caractere, ﬁ e ﬂ. Um procedimento que descarte caracteres fora do alfabeto básico parte
-a palavra ao meio: "grá**ﬁ**cas" torna-se "grá cas" e deixa de ser encontrada. O corpus contém
+a palavra ao meio: "grá**ﬁ**cas" tornar-se-ia "grá cas". O corpus contém
 789 ligaduras, distribuídas por 49 documentos. A normalização adotada expande essas
 ligaduras, de modo que a grafia com caractere único e a grafia com dois caracteres sejam
 tratadas como a mesma palavra.
 
-**Acentuação.** A redução do texto a caracteres sem acento é necessária para que "território"
-e "territorio" constituam a mesma busca, mas precisa preservar a integridade da palavra.
-Executada de modo tosco — substituindo cada letra acentuada por um espaço —, torna invisível
-boa parte do vocabulário: "licitação" passa a "licita o" e deixa de ser encontrada.
+**Acentuação.** A busca compara o texto sem diacríticos, para que "território" e
+"territorio" constituam a mesma busca. A normalização remove apenas o diacrítico e preserva a
+letra; substituir a letra acentuada por um espaço partiria a palavra ("licita o").
 
 **Início de palavra.** Expressões curtas casam no interior de outras palavras: "licitação"
 dentro de "solicitação", "NIB" dentro de "disponibilidade", "cativo" dentro de "aplicativo".

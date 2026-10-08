@@ -79,7 +79,7 @@ def varre(docs: dict[str, Doc], nivel: str) -> list[dict]:
 
 def escreve(nome: str, linhas: list[dict], campos: list[str]) -> None:
     with (DADOS / nome).open("w", newline="", encoding="utf-8-sig") as f:
-        w = csv.DictWriter(f, fieldnames=campos)
+        w = csv.DictWriter(f, fieldnames=campos, lineterminator="\n")
         w.writeheader()
         w.writerows(linhas)
 
@@ -112,8 +112,8 @@ def documenta() -> None:
         idx.append(f"| [`{nome}`]({nome}) | {r['description']} | {n} |")
     idx += ["", "`numeros_verificados.json` guarda os números-âncora conferidos por "
             "`teste_reproducao.py`.", ""]
-    (BASE / "DICIONARIO_DE_DADOS.md").write_text("\n".join(dic), encoding="utf-8", newline="\r\n")
-    (DADOS / "README.md").write_text("\n".join(idx), encoding="utf-8", newline="\r\n")
+    (BASE / "DICIONARIO_DE_DADOS.md").write_text("\n".join(dic), encoding="utf-8", newline="\n")
+    (DADOS / "README.md").write_text("\n".join(idx), encoding="utf-8", newline="\n")
 
 
 MARCA_INICIO = "<!-- listas: gerado por reproduzir.py a partir de dados/ -->"
@@ -162,7 +162,7 @@ def atualiza_readme() -> None:
     caminho = BASE / "README.md"
     texto = caminho.read_text(encoding="utf-8").replace("\r\n", "\n")
     ini, fim = texto.index(MARCA_INICIO), texto.index(MARCA_FIM) + len(MARCA_FIM)
-    caminho.write_text(texto[:ini] + listas() + texto[fim:], encoding="utf-8", newline="\r\n")
+    caminho.write_text(texto[:ini] + listas() + texto[fim:], encoding="utf-8", newline="\n")
 
 
 def main() -> None:
@@ -185,11 +185,10 @@ def main() -> None:
 
     def situacao(fam, estrito, ampliado):
         if estrito:
-            return ("presente; família acrescentada ao léxico no teste de robustez"
-                    if fam == "preferencia_normativa" else "presente")
+            return "presente"
         if not ampliado:
-            return "ausência robusta a sinônimos e variantes"
-        return "sintagma ausente; termos vizinhos presentes em ocorrências marginais"
+            return "ausente nos dois níveis"
+        return "ausente no nível estrito; termos vizinhos no ampliado"
 
     te, de = agrega(est)
     ta, da = agrega(amp)

@@ -1,137 +1,129 @@
 # Corpus CEFIC — dados, código e verificação da análise documental
 
-Material de verificação do artigo **"Identidade digital e desenvolvimento tecnológico: o
-papel da Cefic"** (Boletim Radar, Ipea). Reúne o corpus documental em texto, os inventários
-dos documentos e das reuniões, a lista completa dos termos buscados, o código que produz os
-resultados e o registro das limitações do procedimento.
-
-O artigo conclui que a regulamentação da identificação biométrica federal incorpora
-requisitos de concorrência, mas não instrumentos de desenvolvimento tecnológico nacional.
-Essa segunda conclusão apoia-se em ausências. Das famílias de termos associadas às duas
-dimensões do artigo, **14 não registram ocorrência no recorte declarado, e 12 delas
-continuam sem ocorrência quando o léxico é ampliado com sinônimos e variantes**: das 100
-expressões que compõem essas 14 famílias, 97 não ocorrem em nenhum dos 105 documentos do
-corpus, e as três restantes são termos vizinhos em ocorrências marginais. Este repositório publica o corpus e o procedimento para
-que essas ausências — e as presenças — possam ser verificadas de forma independente.
-
-A Câmara Executiva Federal de Identificação do Cidadão (CEFIC) foi criada pelo Decreto nº
-10.900/2021 e mantida pelo Decreto nº 11.797/2023. A coleta dos documentos foi realizada em
-14/09/2026, data registrada na obtenção dos 154 arquivos de origem.
+Corpus documental, inventários, código e resultados que fundamentam a análise documental do
+artigo **"Identidade digital e desenvolvimento tecnológico: o papel da Cefic"** (Boletim
+Radar, Ipea). O artigo examina os atos e registros da Câmara Executiva Federal de
+Identificação do Cidadão (CEFIC), criada pelo Decreto nº 10.900/2021 e mantida pelo Decreto
+nº 11.797/2023, em duas dimensões: concorrência e contestabilidade, e desenvolvimento
+tecnológico nacional. Versão 1.2.1; coleta dos documentos em 14/09/2026.
 
 ## Busca no corpus
 
-O arquivo **[`busca_corpus_cefic.html`](busca_corpus_cefic.html)** é uma ferramenta de busca
-autocontida: um único arquivo HTML, com o corpus embutido, que funciona offline em qualquer
-navegador, sem servidor, sem instalação e sem conexão. O download é feito pelo botão
-*Download raw file* na página do arquivo; a abertura, por duplo clique. Cada ocorrência é
-exibida com o documento, a página e o trecho em que consta.
+**[Abrir a ferramenta de busca](https://rawcdn.githack.com/freirelucas/corpus-cefic-robustez/v1.2.1/busca_corpus_cefic.html)**
 
-A ferramenta traz atalhos para os termos cuja ausência sustenta conclusões do artigo —
-*transferência de tecnologia*, *conteúdo local*, *encomenda tecnológica*, entre outros — e
-para termos presentes, como *interoperabilidade* e *território nacional*, o que permite
-comparar os dois casos. Um filtro restringe a busca aos atos e registros da própria CEFIC.
+A ferramenta pesquisa o texto integral dos 105 documentos e exibe cada ocorrência com o
+documento, a página e o trecho em que consta. Selecionada uma ocorrência, o documento
+inteiro abre ao lado, com todas as ocorrências assinaladas e navegação entre elas. Traz atalhos para os termos cuja ausência
+fundamenta o artigo — *transferência de tecnologia*, *conteúdo local*, *encomenda
+tecnológica*, entre outros — e para termos presentes, como *interoperabilidade* e *território
+nacional*. Um filtro restringe a busca aos documentos da CEFIC. O arquivo
+[`busca_corpus_cefic.html`](busca_corpus_cefic.html) contém o corpus embutido e funciona
+também offline, depois de baixado.
 
-## Orientação
-
-| objetivo | documento |
-|---|---|
-| buscar um termo no corpus | [`busca_corpus_cefic.html`](busca_corpus_cefic.html) |
-| conferir em que se apoia cada item do quadro do artigo | [FUNDAMENTACAO_DO_QUADRO.md](FUNDAMENTACAO_DO_QUADRO.md) |
-| examinar o procedimento de busca e seus limites | [METODOLOGIA.md](METODOLOGIA.md) |
-| consultar os termos buscados, um a um | [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md) |
-| localizar cada ocorrência com arquivo e página | [`dados/kwic_estrito.csv`](dados/kwic_estrito.csv) |
-| identificar cada documento do corpus | [`dados/inventario_documentos.csv`](dados/inventario_documentos.csv) |
-| conferir as 33 resoluções e as 40 reuniões | a seção *Resoluções e reuniões*, adiante |
-| interpretar as colunas das tabelas | [DICIONARIO_DE_DADOS.md](DICIONARIO_DE_DADOS.md) |
-| ler os documentos em texto | [`corpus_txt/`](corpus_txt/) |
-| consultar termos com ocorrência fora do recorte do artigo | [PRESENCAS_FORA_DO_RECORTE.md](PRESENCAS_FORA_DO_RECORTE.md) |
-| rastrear a origem de cada documento | [`dados/proveniencia.csv`](dados/proveniencia.csv) |
-| repetir a análise | a seção *Reprodução*, adiante |
-
-## Por que este repositório existe
-
-Um resultado de busca igual a zero admite duas leituras: o assunto não aparece nos
-documentos, ou o procedimento de busca não era capaz de encontrá-lo. Uma lista de termos
-curta, um tratamento inadequado da acentuação ou uma janela de busca estreita bastam para
-produzir ausência artificial. O procedimento é publicado integralmente para que a distinção
-entre as duas leituras seja verificável.
-
-## O corpus
-
-| | |
-|---|---|
-| PDFs coletados | 154 |
-| Cópias byte-idênticas descartadas | 24 |
-| Capturas adicionais do mesmo documento, preteridas | 25 |
-| **Documentos analisados** | **105** |
-| Páginas | 580 |
-| Linhas de texto | 25.265 |
-| Documentos da própria CEFIC | 82 |
-| Documentos de outros órgãos ou de autoria não determinada | 23 |
-| Resoluções da CEFIC | 33 — série 1 a 33, sem lacuna |
-| Reuniões da CEFIC com registro | 40 — de 14/03/2022 a 11/08/2026 |
-| Coleta | 14/09/2026 |
-
-**Um arquivo por documento.** A coleta reuniu 154 PDFs. Vinte e quatro eram cópias
-byte-idênticas de outros e foram descartados, com registro em
-[`dados/copias_identicas.csv`](dados/copias_identicas.csv). Vinte e cinco eram capturas
-adicionais de documentos já presentes — a mesma resolução publicada no Diário Oficial e em
-arquivo próprio, ou duas versões da mesma memória de reunião. De cada documento manteve-se
-uma única captura: a que tem camada de texto, não contém caracteres corrompidos nem atos de
-outros órgãos e, entre as restantes, o texto mais extenso. As demais estão registradas, com
-o motivo, em [`dados/capturas_preteridas.csv`](dados/capturas_preteridas.csv). O corpus
-reúne 105 documentos, um arquivo de texto para cada, e todas as contagens deste repositório
-são por documento.
-
-**Documentos da CEFIC e de outros órgãos.** Dos 105 documentos, 82 são atos ou registros da
-própria CEFIC: 33 resoluções, 2 retificações, os registros de 40 reuniões, os slides de 3
-reuniões de 2022, 3 relatórios de visita técnica e 1 anexo do Modelo Informacional da CIN. Os
-23 demais são leis e decretos (8), portarias de designação da SGD/MGI (12), a norma ABNT NBR
-17225, um relatório de impacto à proteção de dados do Ministério da Economia e um documento
-sem camada de texto de autoria não determinada. A classificação de cada documento está em
-[`dados/inventario_documentos.csv`](dados/inventario_documentos.csv). A distinção importa na
-leitura, pois afirmações sobre o que a CEFIC enuncia referem-se ao primeiro conjunto.
-
-**Reuniões.** O corpus contém registros — atas ou memórias — de 40 reuniões, ordinárias e
-extraordinárias, realizadas entre 14/03/2022 e 11/08/2026, um documento por reunião. Os
-cabeçalhos dos próprios registros nem sempre concordam entre si quanto à ordem e ao tipo da
-reunião; [`dados/inventario_reunioes.csv`](dados/inventario_reunioes.csv) traz uma linha por
-reunião, com a ordem e o tipo tais como declarados e as divergências assinaladas.
-
-## Composição do corpus
+## Corpus
 
 | categoria | documentos |
 |---|---|
 | Resoluções | 33 |
 | Retificações de resolução | 2 |
-| Registros de reunião | 40 |
-| Apresentações de reunião | 3 |
-| Relatórios técnicos | 3 |
+| Registros de reunião (atas e memórias) | 40 |
+| Apresentações exibidas em reunião | 3 |
+| Relatórios de visita técnica | 3 |
 | Anexo de resolução | 1 |
-| **Subtotal — atos e registros da CEFIC** | **82** |
-| Portarias da SGD/MGI | 12 |
+| **Documentos da CEFIC** | **82** |
+| Portarias de designação da SGD/MGI | 12 |
 | Leis e decretos | 8 |
-| Norma técnica (ABNT) | 1 |
-| Relatório de outro órgão | 1 |
-| Documento sem camada de texto | 1 |
-| **Subtotal — documentos de contexto** | **23** |
+| Norma técnica ABNT NBR 17225 | 1 |
+| Relatório de impacto à proteção de dados (Ministério da Economia) | 1 |
+| Documento sem camada de texto, autoria não determinada | 1 |
+| **Documentos de outros órgãos** | **23** |
 | **Total** | **105** |
 
-As 33 resoluções, as 2 retificações e os 40 registros de reunião somam 75 documentos; os
-demais 7 atos da CEFIC são apresentações levadas às reuniões, relatórios técnicos e um anexo
-de resolução. Os 23 documentos de contexto são normas de outros órgãos incorporadas ao
-corpus por serem referidas nas deliberações, e não constituem manifestação da Câmara —
-afirmações sobre o que a Cefic enuncia referem-se aos 82 primeiros.
+Os 105 documentos somam 580 páginas. A coleta reuniu 154 PDFs; 24 eram cópias byte-idênticas
+de outros e 25 eram capturas adicionais de documentos já presentes, de que se manteve uma por
+documento pelo critério descrito em [METODOLOGIA.md](METODOLOGIA.md). Ambos os conjuntos estão
+registrados em [`dados/copias_identicas.csv`](dados/copias_identicas.csv) e
+[`dados/capturas_preteridas.csv`](dados/capturas_preteridas.csv). Todas as contagens são por
+documento. A classificação de cada documento está em
+[`dados/inventario_documentos.csv`](dados/inventario_documentos.csv); afirmações sobre o que a
+CEFIC enuncia referem-se aos 82 documentos da própria CEFIC.
 
-O inventário documento a documento, com categoria, órgão emissor e data, está em
-[`dados/inventario_documentos.csv`](dados/inventario_documentos.csv).
+## Resultados
+
+Contagens no nível estrito de busca. O nível ampliado, com sinônimos e variantes, está em
+[`dados/resultados_por_familia.csv`](dados/resultados_por_familia.csv).
+
+### Famílias das duas dimensões analíticas do artigo
+
+| família | ocorrências | documentos | documentos da CEFIC | situação |
+|---|---|---|---|---|
+| Território nacional | 31 | 12 | 7 | presente |
+| Interoperabilidade | 27 | 15 | 9 | presente |
+| Preferência normativa | 9 | 7 | 5 | presente |
+| Multifornecedor / segundo motor | 2 | 2 | 2 | presente |
+| Soberania | 3 | 2 | 1 | presente |
+| Concorrência | 3 | 2 | 1 | presente |
+| Capacitação tecnológica | 0 | 0 | 0 | ausente no nível estrito; termos vizinhos no ampliado |
+| Propriedade intelectual | 0 | 0 | 0 | ausente no nível estrito; termos vizinhos no ampliado |
+| Aprisionamento / lock-in | 0 | 0 | 0 | ausente nos dois níveis |
+| Conteúdo local | 0 | 0 | 0 | ausente nos dois níveis |
+| Código-fonte | 0 | 0 | 0 | ausente nos dois níveis |
+| Desenvolvimento nacional | 0 | 0 | 0 | ausente nos dois níveis |
+| Empresa/indústria nacional | 0 | 0 | 0 | ausente nos dois níveis |
+| Encomenda tecnológica | 0 | 0 | 0 | ausente nos dois níveis |
+| Margem de preferência | 0 | 0 | 0 | ausente nos dois níveis |
+| Nova Indústria Brasil | 0 | 0 | 0 | ausente nos dois níveis |
+| Padrão aberto | 0 | 0 | 0 | ausente nos dois níveis |
+| Software livre / código aberto | 0 | 0 | 0 | ausente nos dois níveis |
+| Substituição de fornecedor | 0 | 0 | 0 | ausente nos dois níveis |
+| Transferência de tecnologia | 0 | 0 | 0 | ausente nos dois níveis |
+
+### Termos que sustentam afirmações do texto fora do quadro
+
+| família | ocorrências | documentos | documentos da CEFIC |
+|---|---|---|---|
+| NIST / NFIQ | 9 | 5 | 5 |
+| Tier III | 1 | 1 | 1 |
+| Sítios operacionais | 1 | 1 | 1 |
+
+### Demais famílias do levantamento
+
+Famílias auxiliares do levantamento, fora das dimensões analíticas do artigo.
+
+| família | ocorrências | documentos | documentos da CEFIC |
+|---|---|---|---|
+| Gráficas | 32 | 17 | 16 |
+| Fala.BR | 7 | 1 | 0 |
+| Bancos / sistema financeiro | 6 | 2 | 1 |
+| Blockchain | 5 | 2 | 2 |
+| Fomento | 4 | 3 | 2 |
+| Acurácia | 3 | 3 | 3 |
+| Polícia Federal / aditivo | 2 | 2 | 2 |
+
+### Ausências
+
+Das 14 famílias sem ocorrência no nível estrito, 12 também não ocorrem no nível ampliado:
+padrão aberto, substituição de fornecedor, desenvolvimento nacional, empresa/indústria
+nacional, Nova Indústria Brasil, margem de preferência, conteúdo local, encomenda
+tecnológica, software livre e código aberto, código-fonte, transferência de tecnologia e
+aprisionamento/*lock-in*.
+
+Nas duas restantes, o nível ampliado encontra apenas termos vizinhos:
+
+- **capacitação tecnológica** — "capacitação" em três registros de reunião, referida à
+  capacitação de órgãos emissores, de estados e de equipes; "treinamento" na Lei de Acesso à
+  Informação;
+- **propriedade intelectual** — "patente" em relatório de visita técnica às gráficas e em
+  cláusula padrão da norma ABNT NBR 17225.
+
+As 14 famílias reúnem 100 expressões, listadas em [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md).
+Noventa e sete não ocorrem em nenhum documento; as três que ocorrem são "patente",
+"capacitação" e "treinamento", nos contextos acima.
 
 ## Resoluções e reuniões
 
-Identificação de cada resolução e de cada reunião do corpus, com link para o texto
-correspondente. As listas são geradas a partir de
-[`dados/inventario_resolucoes.csv`](dados/inventario_resolucoes.csv) e
-[`dados/inventario_reunioes.csv`](dados/inventario_reunioes.csv), e a verificação automatizada
+Listas geradas a partir de [`dados/inventario_resolucoes.csv`](dados/inventario_resolucoes.csv)
+e [`dados/inventario_reunioes.csv`](dados/inventario_reunioes.csv); a verificação automatizada
 confere que coincidem com eles.
 
 <!-- listas: gerado por reproduzir.py a partir de dados/ -->
@@ -228,136 +220,43 @@ Ordem e tipo tais como declarados no cabeçalho de cada registro.
 
 <!-- fim das listas -->
 
-## Origem dos textos
+## Arquivos
 
-Os PDFs originais não são redistribuídos. [`dados/sha256_pdfs.csv`](dados/sha256_pdfs.csv) traz
-o hash SHA-256 do PDF de que cada texto foi extraído, o que permite confrontar o texto
-publicado com o documento oficial de origem. Os textos são atos normativos e documentos
-administrativos públicos.
+| arquivo | conteúdo |
+|---|---|
+| [METODOLOGIA.md](METODOLOGIA.md) | constituição do corpus, procedimento de busca e limitações |
+| [FUNDAMENTACAO_DO_QUADRO.md](FUNDAMENTACAO_DO_QUADRO.md) | correspondência entre cada item do quadro do artigo e o resultado da busca |
+| [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md) | as 100 expressões das famílias sem ocorrência, uma a uma |
+| [PRESENCAS_FORA_DO_RECORTE.md](PRESENCAS_FORA_DO_RECORTE.md) | termos com ocorrência fora do recorte do artigo |
+| [DICIONARIO_DE_DADOS.md](DICIONARIO_DE_DADOS.md) | significado de cada coluna de cada tabela |
+| [`corpus_txt/`](corpus_txt/) | os 105 documentos em texto, com marcação de página |
+| [`dados/`](dados/) | inventários, resultados, ocorrências com documento e página, proveniência |
+| `robustez_varredura.py` | normalização, léxico e varredura |
+| `reproduzir.py` | regenera as tabelas de resultado, o dicionário de dados e as listas acima |
+| `gerar_busca.py` | gera a ferramenta de busca |
+| `teste_reproducao.py`, `verificar_checksums.py` | conferem os números declarados e a integridade das tabelas |
+| `CITATION.cff`, `datapackage.json`, `codemeta.json` | metadados de citação e de dados |
 
-## Resultados
-
-Contagens no nível estrito de busca. A tabela completa, com o nível ampliado, está em
-[`dados/resultados_por_familia.csv`](dados/resultados_por_familia.csv).
-
-### Famílias das duas dimensões analíticas do artigo
-
-| família | ocorrências | documentos | documentos da CEFIC | situação |
-|---|---|---|---|---|
-| Território nacional | 31 | 12 | 7 | presente |
-| Interoperabilidade | 27 | 15 | 9 | presente |
-| Preferência normativa | 9 | 7 | 5 | presente; família acrescentada ao léxico no teste de robustez |
-| Multifornecedor / segundo motor | 2 | 2 | 2 | presente |
-| Soberania | 3 | 2 | 1 | presente |
-| Concorrência | 3 | 2 | 1 | presente |
-| Capacitação tecnológica | 0 | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
-| Propriedade intelectual | 0 | 0 | 0 | sintagma ausente; termos vizinhos presentes em ocorrências marginais |
-| Aprisionamento / lock-in | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Conteúdo local | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Código-fonte | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Desenvolvimento nacional | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Empresa/indústria nacional | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Encomenda tecnológica | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Margem de preferência | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Nova Indústria Brasil | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Padrão aberto | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Software livre / código aberto | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Substituição de fornecedor | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-| Transferência de tecnologia | 0 | 0 | 0 | ausência robusta a sinônimos e variantes |
-
-### Termos que sustentam afirmações do texto fora do quadro
-
-| família | ocorrências | documentos | documentos da CEFIC |
-|---|---|---|---|
-| NIST / NFIQ | 9 | 5 | 5 |
-| Tier III | 1 | 1 | 1 |
-| Sítios operacionais | 1 | 1 | 1 |
-
-### Demais famílias do levantamento
-
-Não respondem às dimensões analíticas do artigo e ficam registradas por transparência.
-
-| família | ocorrências | documentos | documentos da CEFIC |
-|---|---|---|---|
-| Gráficas | 32 | 17 | 16 |
-| Fala.BR | 7 | 1 | 0 |
-| Bancos / sistema financeiro | 6 | 2 | 1 |
-| Blockchain | 5 | 2 | 2 |
-| Fomento | 4 | 3 | 2 |
-| Acurácia | 3 | 3 | 3 |
-| Polícia Federal / aditivo | 2 | 2 | 2 |
-
-### Ausências
-
-Das 14 famílias sem ocorrência no recorte declarado, **12 permanecem sem ocorrência** sob
-normalização que expande ligaduras tipográficas e costura hifenização, e sob léxico ampliado
-com sinônimos e variantes: padrão aberto, substituição de fornecedor, desenvolvimento
-nacional, empresa/indústria nacional, Nova Indústria Brasil, margem de preferência, conteúdo
-local, encomenda tecnológica, software livre e código aberto, código-fonte, transferência de
-tecnologia e aprisionamento/*lock-in*. A ausência é propriedade do corpus, não do
-procedimento.
-
-As duas famílias restantes registram apenas termos vizinhos, em ocorrências que não exprimem
-o conceito:
-
-- **capacitação tecnológica** — "capacitação" em três registros de reunião, referida à
-  capacitação de órgãos emissores, de estados e de equipes; "treinamento" na Lei de Acesso à
-  Informação;
-- **propriedade intelectual** — "patente" em relatório de visita técnica às gráficas e em
-  cláusula padrão da norma ABNT NBR 17225.
-
-As 14 famílias reúnem 100 expressões, entre formas estritas e variantes, listadas uma a uma
-em [TERMOS_BUSCADOS.md](TERMOS_BUSCADOS.md). Em termos literais, 97 delas não ocorrem em
-nenhum documento do corpus; as três que ocorrem — "patente", "capacitação" e
-"treinamento" — são os termos vizinhos acima. A lista refere-se apenas às famílias sem
-ocorrência: os termos das famílias presentes constam das tabelas anteriores.
+Os PDFs originais não são redistribuídos;
+[`dados/sha256_pdfs.csv`](dados/sha256_pdfs.csv) traz o hash SHA-256 de cada um, para
+conferência contra a fonte oficial. Cinco arquivos de nome longo foram encurtados;
+[`dados/mapa_arquivos.csv`](dados/mapa_arquivos.csv) dá a correspondência com os nomes
+originais.
 
 ## Reprodução
 
 ```bash
 python reproduzir.py          # refaz as buscas e reescreve as tabelas de dados/
-python teste_reproducao.py    # confere os números-âncora; falha se algum divergir
+python teste_reproducao.py    # confere os números declarados; falha se algum divergir
 python verificar_checksums.py # confere a integridade das tabelas publicadas
 python gerar_busca.py         # regenera a ferramenta de busca
 ```
 
-Não há dependências além da biblioteca padrão do Python, versão 3.10 ou superior. A
-verificação é executada automaticamente a cada alteração enviada ao repositório e confere,
-além das buscas, a composição do corpus — documentos, resoluções e reuniões — a partir dos
-inventários.
+Requer apenas Python 3.10 ou superior, sem bibliotecas externas. A verificação é executada
+automaticamente a cada alteração do repositório.
 
-## Estrutura
+## Citação e licença
 
-```
-busca_corpus_cefic.html          ferramenta de busca autocontida
-README.md                         este documento
-METODOLOGIA.md                    procedimento de busca, cuidados técnicos e limitações
-FUNDAMENTACAO_DO_QUADRO.md        liga cada item do quadro do artigo à evidência
-PRESENCAS_FORA_DO_RECORTE.md      termos com ocorrência fora do recorte declarado
-TERMOS_BUSCADOS.md                as 100 expressões das famílias sem ocorrência, uma a uma
-DICIONARIO_DE_DADOS.md            significado de cada coluna de cada tabela
-corpus_txt/                       os 105 documentos em texto
-dados/                            inventários, resultados, proveniência e verificação
-robustez_varredura.py             normalização, léxico e varredura
-reproduzir.py                     regenera as tabelas de resultado e o dicionário de dados
-gerar_busca.py                    gera a ferramenta de busca
-teste_reproducao.py               confere os números-âncora
-verificar_checksums.py            confere a integridade das tabelas
-CITATION.cff                      forma de citação
-datapackage.json / codemeta.json  metadados legíveis por máquina
-CHECKSUMS.sha256                  hash de cada tabela publicada
-```
-
-Cinco arquivos de nome excessivamente longo foram encurtados, para que o repositório funcione
-em Windows sem configuração adicional; [`dados/mapa_arquivos.csv`](dados/mapa_arquivos.csv) dá
-a correspondência com os nomes originais.
-
-## Citação
-
-Ver [CITATION.cff](CITATION.cff). O GitHub gera a citação formatada a partir desse arquivo,
-pelo botão *Cite this repository*.
-
-## Licença
-
-Código sob licença MIT. Dados e textos derivados de documentos oficiais, sob CC BY 4.0. Ver
+Citação conforme [CITATION.cff](CITATION.cff) (botão *Cite this repository*). Código sob
+licença MIT; dados e textos derivados de documentos oficiais, sob CC BY 4.0. Ver
 [LICENSE](LICENSE).
