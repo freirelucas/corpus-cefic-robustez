@@ -31,11 +31,12 @@ camada de identificação biométrica analisada no artigo.
 Este termo situa-se dentro do recorte de objeto: o item 3.1 do Anexo I da Resolução nº
 21/2025 estabelece que o Serviço Biométrico Federal deve "estar hospedado em território
 nacional", no mesmo item que formula a preferência por mais de um fornecedor de algoritmos do
-motor biométrico (item 3.2). Nos demais documentos da CEFIC, o termo tem três sentidos: exigência
-de localização de instalações (Resolução nº 2/2022, adiante); campo de dados sobre o titular
-nascido "fora do território nacional" (Resoluções nº 23 e 24 e anexo do Modelo Informacional
-da CIN); e validade de documentos no país (registro da reunião de 24/03/2022). Requisitos de
-localização constam, portanto, de duas resoluções: nº 2/2022 e nº 21/2025.
+motor biométrico (item 3.2). Nos demais documentos da CEFIC, o termo aparece em quatro
+contextos: exigência de localização de instalações (Resolução nº 2/2022); campo de dados
+sobre o titular nascido "fora do território nacional" (Resoluções nº 23 e 24 e anexo do
+Modelo Informacional da CIN); validade de documentos no país (registro da reunião de
+24/03/2022); e sugestão de armazenar a base biométrica no país (registro da reunião de
+15/08/2025). Requisitos de localização constam de duas resoluções: nº 2/2022 e nº 21/2025.
 
 Na Resolução nº 2/2022, que disciplina o credenciamento provisório de gráficas, a exigência
 recai sobre a produção e o desenvolvimento: a impressão de segurança dos espelhos da Carteira
@@ -47,9 +48,9 @@ credenciada" (Anexo, art. 2º, § 2º). A exigência é de localização das ins
 fundamento declarado na segurança do documento; não há requisito sobre a origem do capital
 ou da tecnologia.
 
-O registro da reunião de
-15/08/2025 menciona a sugestão de migrar a base biométrica "para armazenamento em território
-nacional".
+O registro da reunião de 15/08/2025, no debate sobre "a questão da soberania digital da base
+de dados", registra a sugestão de migrá-la "para armazenamento em território nacional" e o
+agendamento de reunião específica para avaliação técnica da base biométrica nacional.
 
 As 17 ocorrências fora dos atos da CEFIC provêm de leis e de decreto incorporados ao corpus e
 do relatório de impacto à proteção de dados do Ministério da Economia.
