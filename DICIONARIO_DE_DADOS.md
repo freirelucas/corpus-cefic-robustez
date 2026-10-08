@@ -175,26 +175,22 @@ Correspondência entre nomes encurtados e nomes originais.
 
 ## `inventario_resolucoes.csv`
 
-Uma linha por resolução ou retificação da CEFIC, com número, datas e dados de publicação no Diário Oficial.
+Uma linha por resolução ou retificação da CEFIC, com data, ementa, dados de publicação no Diário Oficial da União e signatário.
 
 35 linhas.
 
 | coluna | tipo | descrição |
 |---|---|---|
+| `tipo` | texto | resolução ou retificação |
+| `numero` | inteiro | Número da resolução |
+| `data` | texto | Data do ato, DD/MM/AAAA |
+| `ementa` | texto | Ementa transcrita do ato; para retificações, a resolução retificada |
+| `publicacao_dou` | texto | Data de publicação no Diário Oficial da União, DD/MM/AAAA |
+| `edicao_dou` | inteiro | Edição do Diário Oficial da União |
+| `secao_dou` | inteiro | Seção do Diário Oficial da União |
+| `pagina_dou` | inteiro | Página do Diário Oficial da União |
+| `signatario` | texto | Autoridade signatária; vazio nas retificações, que não trazem assinatura |
 | `arquivo` | texto | Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt |
-| `sha12` | texto | Primeiros 12 caracteres do hash SHA-256 do PDF |
-| `paginas` | inteiro | Número de páginas do texto extraído |
-| `bytes` | inteiro | Tamanho do PDF em bytes |
-| `num` | texto | Número da resolução |
-| `data_doc` | texto | Data do documento no formato DD/MM/AAAA |
-| `sem_texto` | texto | "sim" quando o PDF não possui camada de texto |
-| `minuta` | texto | "sim" quando a captura é versão de minuta |
-| `dou` | texto | Data de publicação no Diário Oficial da União |
-| `dou_edicao` | número | Número da edição do Diário Oficial da União |
-| `dou_secao` | número | Seção do Diário Oficial da União |
-| `dou_pagina` | número | Página do Diário Oficial da União |
-| `ementa_raw` | texto | Ementa da norma, transcrita do documento |
-| `signatario` | texto | Autoridade signatária da norma |
 
 ## `inventario_documentos.csv`
 

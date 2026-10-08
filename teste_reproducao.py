@@ -131,6 +131,15 @@ def main() -> int:
     confere("termos ausentes", sum(1 for r in linhas if r["situacao"] == "ausente"),
             ref["termos_ausentes"])
 
+    print("Listas do README")
+    from reproduzir import MARCA_FIM, MARCA_INICIO, listas
+    readme = (BASE / "README.md").read_text(encoding="utf-8").replace("\r\n", "\n")
+    bloco = readme[readme.index(MARCA_INICIO):readme.index(MARCA_FIM) + len(MARCA_FIM)]
+    if bloco != listas():
+        falhas.append("listas de resolucoes e reunioes no README divergem dos inventarios")
+    else:
+        print("  ok  listas de resolucoes e reunioes conferem com os inventarios")
+
     print("Cobertura da documentacao")
     dp = json.loads((BASE / "datapackage.json").read_text(encoding="utf-8"))
     declarados = {r["path"] for r in dp["resources"]}

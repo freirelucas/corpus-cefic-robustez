@@ -473,80 +473,60 @@
     {
       "name": "inventario-resolucoes",
       "path": "dados/inventario_resolucoes.csv",
-      "description": "Uma linha por resolução ou retificação da CEFIC, com número, datas e dados de publicação no Diário Oficial.",
+      "description": "Uma linha por resolução ou retificação da CEFIC, com data, ementa, dados de publicação no Diário Oficial da União e signatário.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
         "fields": [
           {
-            "name": "arquivo",
+            "name": "tipo",
             "type": "string",
-            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "resolução ou retificação"
           },
           {
-            "name": "sha12",
-            "type": "string",
-            "description": "Primeiros 12 caracteres do hash SHA-256 do PDF"
-          },
-          {
-            "name": "paginas",
+            "name": "numero",
             "type": "integer",
-            "description": "Número de páginas do texto extraído"
-          },
-          {
-            "name": "bytes",
-            "type": "integer",
-            "description": "Tamanho do PDF em bytes"
-          },
-          {
-            "name": "num",
-            "type": "string",
             "description": "Número da resolução"
           },
           {
-            "name": "data_doc",
+            "name": "data",
             "type": "string",
-            "description": "Data do documento no formato DD/MM/AAAA"
+            "description": "Data do ato, DD/MM/AAAA"
           },
           {
-            "name": "sem_texto",
+            "name": "ementa",
             "type": "string",
-            "description": "\"sim\" quando o PDF não possui camada de texto"
+            "description": "Ementa transcrita do ato; para retificações, a resolução retificada"
           },
           {
-            "name": "minuta",
+            "name": "publicacao_dou",
             "type": "string",
-            "description": "\"sim\" quando a captura é versão de minuta"
+            "description": "Data de publicação no Diário Oficial da União, DD/MM/AAAA"
           },
           {
-            "name": "dou",
-            "type": "string",
-            "description": "Data de publicação no Diário Oficial da União"
+            "name": "edicao_dou",
+            "type": "integer",
+            "description": "Edição do Diário Oficial da União"
           },
           {
-            "name": "dou_edicao",
-            "type": "number",
-            "description": "Número da edição do Diário Oficial da União"
-          },
-          {
-            "name": "dou_secao",
-            "type": "number",
+            "name": "secao_dou",
+            "type": "integer",
             "description": "Seção do Diário Oficial da União"
           },
           {
-            "name": "dou_pagina",
-            "type": "number",
+            "name": "pagina_dou",
+            "type": "integer",
             "description": "Página do Diário Oficial da União"
-          },
-          {
-            "name": "ementa_raw",
-            "type": "string",
-            "description": "Ementa da norma, transcrita do documento"
           },
           {
             "name": "signatario",
             "type": "string",
-            "description": "Autoridade signatária da norma"
+            "description": "Autoridade signatária; vazio nas retificações, que não trazem assinatura"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           }
         ]
       }

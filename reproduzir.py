@@ -116,6 +116,55 @@ def documenta() -> None:
     (DADOS / "README.md").write_text("\n".join(idx), encoding="utf-8", newline="\r\n")
 
 
+MARCA_INICIO = "<!-- listas: gerado por reproduzir.py a partir de dados/ -->"
+MARCA_FIM = "<!-- fim das listas -->"
+
+
+def listas() -> str:
+    """Listas das resolucoes e das reunioes, com link para o texto de cada uma."""
+    def le(nome: str) -> list[dict]:
+        with (DADOS / nome).open(encoding="utf-8-sig") as f:
+            return list(csv.DictReader(f))
+
+    def link(arq: str) -> str:
+        return f"[`{arq}`](corpus_txt/{arq.replace(' ', '%20')}.txt)"
+
+    res = le("inventario_resolucoes.csv")
+    out = [MARCA_INICIO, "", "### As 33 resoluções", "",
+           "| nº | data | ementa | publicação no DOU | texto |", "|---|---|---|---|---|"]
+    for r in res:
+        if r["tipo"] != "resolução":
+            continue
+        dou = (f"{r['publicacao_dou']}, ed. {r['edicao_dou']}, seç. {r['secao_dou']}, "
+               f"p. {r['pagina_dou']}")
+        out.append(f"| {r['numero']} | {r['data']} | {r['ementa']} | {dou} | {link(r['arquivo'])} |")
+    out += ["", "Retificações publicadas:", ""]
+    for r in res:
+        if r["tipo"] == "retificação":
+            out.append(f"- Resolução nº {r['numero']}: DOU de {r['publicacao_dou']}, "
+                       f"ed. {r['edicao_dou']}, seç. {r['secao_dou']}, p. {r['pagina_dou']} — "
+                       f"{link(r['arquivo'])}")
+    reunioes = sorted(le("inventario_reunioes.csv"),
+                      key=lambda r: (r["data"][6:], r["data"][3:5], r["data"][:2], r["ordem_declarada"]))
+    out += ["", "### As 40 reuniões com registro", "",
+            "Ordem e tipo tais como declarados no cabeçalho de cada registro.", "",
+            "| | data | ordem e tipo declarados | modalidade | registro | observação |",
+            "|---|---|---|---|---|---|"]
+    for i, r in enumerate(reunioes, 1):
+        decl = " ".join(x for x in (r["ordem_declarada"], r["tipo_declarado"]) if x) or "não declarados"
+        out.append(f"| {i} | {r['data']} | {decl} | {r['modalidade']} | "
+                   f"{link(r['arquivos_registro'])} | {r['observacao']} |")
+    out += ["", MARCA_FIM]
+    return "\n".join(out)
+
+
+def atualiza_readme() -> None:
+    caminho = BASE / "README.md"
+    texto = caminho.read_text(encoding="utf-8").replace("\r\n", "\n")
+    ini, fim = texto.index(MARCA_INICIO), texto.index(MARCA_FIM) + len(MARCA_FIM)
+    caminho.write_text(texto[:ini] + listas() + texto[fim:], encoding="utf-8", newline="\r\n")
+
+
 def main() -> None:
     DADOS.mkdir(exist_ok=True)
     docs = carrega()
@@ -182,6 +231,7 @@ def main() -> None:
              "documentos_cefic"])
 
     documenta()
+    atualiza_readme()
 
     paginas = sum(len(re.findall(r"===== \[pag \d+\] =====", d.raw)) or 1 for d in docs.values())
     linhas_txt = sum(d.raw.count("\n") + 1 for d in docs.values())
