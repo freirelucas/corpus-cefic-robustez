@@ -48,6 +48,10 @@ SONDA = {
 }
 
 
+def dobra(texto: str) -> str:
+    return Doc(texto).norm
+
+
 def carrega() -> dict[str, Doc]:
     return {f.stem: Doc(f.read_text(encoding="utf-8", errors="replace"))
             for f in sorted(TEXTOS.glob("*.txt"), key=lambda f: f.name.lower())}
@@ -115,24 +119,20 @@ def documenta() -> None:
 def main() -> None:
     DADOS.mkdir(exist_ok=True)
     docs = carrega()
+    inv = inventario()
     est = varre(docs, "estrito")
     amp = varre(docs, "ampliado")
     campos = ["familia", "arquivo", "pagina", "termo", "trecho"]
     escreve("kwic_estrito.csv", est, campos)
     escreve("kwic_ampliado.csv", amp, campos)
 
-    inv = inventario()
 
     def agrega(linhas):
-        tot, arqs = {}, {}
+        tot, dd = {}, {}
         for r in linhas:
             tot[r["familia"]] = tot.get(r["familia"], 0) + 1
-            arqs.setdefault(r["familia"], set()).add(r["arquivo"])
-        return tot, arqs
-
-    def documentos(arqs, so_cefic=False):
-        return len({inv[a]["documento"] for a in arqs
-                    if not so_cefic or inv[a]["orgao"] == "CEFIC"})
+            dd.setdefault(r["familia"], set()).add(r["arquivo"])
+        return tot, dd
 
     def situacao(fam, estrito, ampliado):
         if estrito:
@@ -142,43 +142,44 @@ def main() -> None:
             return "ausência robusta a sinônimos e variantes"
         return "sintagma ausente; termos vizinhos presentes em ocorrências marginais"
 
-    te, ae = agrega(est)
-    ta, aa = agrega(amp)
+    te, de = agrega(est)
+    ta, da = agrega(amp)
     freq = [{"familia": f,
-             "estrito_ocorrencias": te.get(f, 0), "estrito_arquivos": len(ae.get(f, ())),
-             "estrito_documentos": documentos(ae.get(f, ())),
-             "estrito_documentos_cefic": documentos(ae.get(f, ()), so_cefic=True),
-             "ampliado_ocorrencias": ta.get(f, 0), "ampliado_arquivos": len(aa.get(f, ())),
-             "ampliado_documentos": documentos(aa.get(f, ())),
+             "estrito_ocorrencias": te.get(f, 0), "estrito_documentos": len(de.get(f, ())),
+             "estrito_documentos_cefic": sum(1 for a in de.get(f, ()) if inv[a]["orgao"] == "CEFIC"),
+             "ampliado_ocorrencias": ta.get(f, 0), "ampliado_documentos": len(da.get(f, ())),
              "sem_ocorrencia_no_recorte_declarado": f in ZERADAS,
              "situacao": situacao(f, te.get(f, 0), ta.get(f, 0))} for f in LEXICO]
     escreve("resultados_por_familia.csv", freq, list(freq[0]))
 
-    # arquivos que correspondem ao mesmo documento, em capturas distintas
-    grupos: dict[str, list[str]] = {}
-    for arq, r in inv.items():
-        grupos.setdefault(r["documento"], []).append(arq)
-    versoes = [{"documento": doc, "arquivo": arq, "chars": len(docs[arq].raw),
-                "caracteres_corrompidos": docs[arq].raw.count("\ufffd")}
-               for doc, arqs in sorted(grupos.items()) if len(arqs) > 1 for arq in sorted(arqs)]
-    escreve("versoes_mesmo_documento.csv", versoes,
-            ["documento", "arquivo", "chars", "caracteres_corrompidos"])
+    termos = []
+    with (DADOS / "termos_buscados_conferencia.csv").open(encoding="utf-8-sig") as f:
+        for r in csv.DictReader(f):
+            # forma literal, palavra inteira, sobre o texto normalizado
+            rx = re.compile(r"(?<![a-z0-9])" + r"\s+".join(map(re.escape, dobra(r["termo"]).split()))
+                            + r"(?![a-z0-9])")
+            por_doc = {a: len(rx.findall(d.norm)) for a, d in docs.items()}
+            por_doc = {a: n for a, n in por_doc.items() if n}
+            termos.append({"conceito": r["conceito"], "termo": r["termo"],
+                           "situacao": "presente" if por_doc else "ausente",
+                           "ocorrencias": sum(por_doc.values()), "documentos": len(por_doc),
+                           "aviso": r["aviso"]})
+    escreve("termos_buscados_conferencia.csv", termos,
+            ["conceito", "termo", "situacao", "ocorrencias", "documentos", "aviso"])
 
     sonda = []
     for termo, padrao in SONDA.items():
         rx = re.compile(padrao)
-        por_arq = {a: len(rx.findall(d.norm)) for a, d in docs.items()}
-        por_arq = {a: n for a, n in por_arq.items() if n}
-        cefic = {a: n for a, n in por_arq.items() if inv[a]["orgao"] == "CEFIC"}
+        por_doc = {a: len(rx.findall(d.norm)) for a, d in docs.items()}
+        por_doc = {a: n for a, n in por_doc.items() if n}
+        cefic = {a: n for a, n in por_doc.items() if inv[a]["orgao"] == "CEFIC"}
         sonda.append({"termo": termo, "padrao": padrao,
-                      "ocorrencias": sum(por_arq.values()), "arquivos": len(por_arq),
-                      "documentos": len({inv[a]["documento"] for a in por_arq}),
-                      "ocorrencias_cefic": sum(cefic.values()),
-                      "documentos_cefic": len({inv[a]["documento"] for a in cefic})})
+                      "ocorrencias": sum(por_doc.values()), "documentos": len(por_doc),
+                      "ocorrencias_cefic": sum(cefic.values()), "documentos_cefic": len(cefic)})
     sonda.sort(key=lambda r: -r["ocorrencias"])
     escreve("sonda_vocabulario_nativo.csv", sonda,
-            ["termo", "padrao", "ocorrencias", "arquivos", "documentos",
-             "ocorrencias_cefic", "documentos_cefic"])
+            ["termo", "padrao", "ocorrencias", "documentos", "ocorrencias_cefic",
+             "documentos_cefic"])
 
     documenta()
 

@@ -14,32 +14,32 @@ O corpus foi constituído em três passos, cada um com registro próprio:
 1. **Cópias byte-idênticas.** Vinte e quatro PDFs eram cópias exatas de outros e foram
    descartados ([`dados/copias_identicas.csv`](dados/copias_identicas.csv)). Contá-los
    elevaria as frequências sem acrescentar evidência.
-2. **Capturas preteridas.** O registro da reunião de 10/06/2025 constava em dois PDFs
-   distintos; a extração de texto de um deles saiu com caracteres não decodificados, e o texto
-   publicado provém do outro ([`dados/capturas_preteridas.csv`](dados/capturas_preteridas.csv)).
-3. **Identificação dos documentos.** Cada um dos 129 arquivos de texto restantes foi
-   atribuído ao documento a que corresponde, com categoria e órgão emissor
-   ([`dados/inventario_documentos.csv`](dados/inventario_documentos.csv)). Os 129 arquivos
-   correspondem a 105 documentos: 24 documentos constam em duas capturas de conteúdo distinto
-   — a resolução publicada no Diário Oficial e em arquivo próprio, ou duas versões da mesma
-   memória de reunião. Nenhuma delas foi descartada, pois os textos diferem; as tabelas de
-   resultado contam por arquivo e por documento.
-
-A atribuição de cada arquivo ao documento, à categoria e ao órgão emissor resulta de leitura
-do cabeçalho de cada texto e é, portanto, um dado curado, publicado para conferência. Dela
-derivam todas as contagens por documento e o recorte dos atos da CEFIC.
+2. **Uma captura por documento.** Vinte e cinco PDFs eram capturas adicionais de documentos
+   já presentes: a mesma resolução publicada no Diário Oficial e em arquivo próprio, a mesma
+   memória de reunião em duas versões, páginas integrais do Diário Oficial que continham uma
+   resolução ao lado de atos de outros órgãos e uma captura sem camada de texto. De cada
+   documento manteve-se uma única captura, pela seguinte regra: excluem-se as capturas sem
+   camada de texto, com caracteres não decodificados ou com atos de outros órgãos; entre as
+   restantes, mantém-se a de texto mais extenso. As capturas preteridas estão em
+   [`dados/capturas_preteridas.csv`](dados/capturas_preteridas.csv), com o motivo de cada
+   exclusão. Contar duas capturas do mesmo documento elevaria as frequências do mesmo modo
+   que as cópias idênticas.
+3. **Classificação dos documentos.** Cada um dos 105 documentos restantes foi classificado
+   por categoria e órgão emissor ([`dados/inventario_documentos.csv`](dados/inventario_documentos.csv)),
+   a partir da leitura do cabeçalho de cada texto. A classificação é um dado curado, publicado
+   para conferência, e dela deriva o recorte dos atos da CEFIC.
 
 **Reuniões.** [`dados/inventario_reunioes.csv`](dados/inventario_reunioes.csv) registra uma
 linha por reunião, identificada pela data e, quando há duas na mesma data, pela ordem. São 40
-reuniões com registro, de 14/03/2022 a 11/08/2026, ordinárias e extraordinárias. A ordem e o
-tipo constam tais como declarados no cabeçalho de cada registro; em seis reuniões o cabeçalho
-omite a ordem ou o tipo, ou diverge do nome do arquivo ou da sequência das demais reuniões do
-ano, e as divergências estão assinaladas. Três arquivos de 2022 contêm os slides exibidos em reuniões que também têm ata e
-não são contados como registros.
+reuniões com registro, de 14/03/2022 a 11/08/2026, ordinárias e extraordinárias, um documento
+por reunião. A ordem e o tipo constam tais como declarados no cabeçalho de cada registro; em
+seis reuniões o cabeçalho omite a ordem ou o tipo, ou diverge do nome do arquivo ou da
+sequência das demais reuniões do ano, e as divergências estão assinaladas. Três documentos de 2022 contêm os slides exibidos em
+reuniões que também têm ata e não são contados como registros.
 
 **Resoluções.** [`dados/inventario_resolucoes.csv`](dados/inventario_resolucoes.csv) registra
-os 54 arquivos de resolução e retificação, que correspondem às resoluções nº 1 a 33, sem
-lacuna, e a duas retificações.
+as resoluções nº 1 a 33, sem lacuna, e duas retificações, com os dados de publicação no
+Diário Oficial.
 
 ## Procedimento de busca
 
@@ -48,7 +48,7 @@ nacionais. Para cada uma, o procedimento parte de uma lista de termos agrupados 
 conjuntos de expressões que designam um mesmo conceito. "Transferência de tecnologia",
 "transferência tecnológica" e "absorção tecnológica" pertencem à mesma família.
 
-Cada arquivo é percorrido integralmente em busca dessas expressões. Toda ocorrência
+Cada documento é percorrido integralmente em busca dessas expressões. Toda ocorrência
 encontrada é registrada com **arquivo e página**, acompanhada do trecho de texto ao redor — o
 formato que a linguística de corpus denomina KWIC, *key word in context*. Cada afirmação do
 artigo baseada no corpus pode assim ser rastreada até uma linha de
@@ -68,7 +68,7 @@ Documentos em PDF impõem dificuldades à busca textual, tratadas em `robustez_v
 **Ligaduras tipográficas.** Programas de diagramação representam os pares "fi" e "fl" por um
 único caractere, ﬁ e ﬂ. Um procedimento que descarte caracteres fora do alfabeto básico parte
 a palavra ao meio: "grá**ﬁ**cas" torna-se "grá cas" e deixa de ser encontrada. O corpus contém
-1.171 ligaduras, distribuídas por 65 arquivos. A normalização adotada expande essas
+789 ligaduras, distribuídas por 49 documentos. A normalização adotada expande essas
 ligaduras, de modo que a grafia com caractere único e a grafia com dois caracteres sejam
 tratadas como a mesma palavra.
 
@@ -91,17 +91,9 @@ trecho KWIC exibido seja o texto real, acentuado, e não a forma achatada usada 
 
 ## Limitações declaradas
 
-**Dois arquivos não possuem camada de texto** e nenhuma busca os alcança
-([`dados/lacunas_cobertura.csv`](dados/lacunas_cobertura.csv)). Um deles, `Resoluo23`, é
-captura da Resolução nº 23, cujo conteúdo consta de outra captura, `res23`; nenhuma
-resolução fica, portanto, fora do alcance da busca. O outro, `Fluxo_CIN_V7`, não tem
-conteúdo nem autoria verificáveis.
-
-**Três capturas são páginas inteiras do Diário Oficial.** Contêm as resoluções nº 1, 15 e
-16 ao lado de atos de outros órgãos publicados na mesma página. Ocorrências nesses arquivos
-podem pertencer a esses outros atos; por isso eles ficam fora das contagens da CEFIC, sem
-perda, pois as três resoluções constam de capturas próprias. Na contagem do corpus inteiro,
-permanecem.
+**Um documento não possui camada de texto** e nenhuma busca o alcança
+([`dados/lacunas_cobertura.csv`](dados/lacunas_cobertura.csv)): `Fluxo_CIN_V7`, sem conteúdo
+nem autoria verificáveis. Todas as 33 resoluções têm texto pesquisável.
 
 **A busca é lexical.** Encontra o termo, não a ideia expressa por outras palavras. O nível
 ampliado mitiga o problema sem eliminá-lo.
@@ -129,10 +121,10 @@ ordinárias e extraordinárias, sim, e por isso não é declarada como resultado
 ## Verificação
 
 `teste_reproducao.py` refaz a varredura sobre o corpus e confere os números declarados —
-arquivos, documentos, páginas, linhas, ligaduras, documentos da CEFIC, resoluções, reuniões,
-cópias descartadas, famílias sem ocorrência no nível ampliado, arquivos sem camada de texto e
-total de termos ausentes —, falhando se algum divergir. Confere também a correspondência
-entre o inventário e os arquivos do corpus, a coerência entre o inventário de documentos e o
-de reuniões, a inexistência de cópias idênticas no corpus, a declaração de todo arquivo com
-caractere não decodificado e a descrição, no dicionário de dados, de toda tabela e coluna
-publicada. A verificação é executada a cada alteração enviada ao repositório.
+documentos, páginas, linhas, ligaduras, documentos da CEFIC, resoluções, reuniões, cópias
+descartadas, capturas preteridas, famílias sem ocorrência no nível ampliado, documentos sem
+camada de texto e total de termos ausentes —, falhando se algum divergir. Confere também a
+correspondência entre o inventário e o corpus, a existência de um único arquivo por
+documento, a coerência entre o inventário de documentos e o de reuniões, a inexistência de
+texto com caractere não decodificado e a descrição, no dicionário de dados, de toda tabela e
+coluna publicada. A verificação é executada a cada alteração enviada ao repositório.

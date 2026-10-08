@@ -1,23 +1,23 @@
-﻿termo,padrao,ocorrencias,arquivos,documentos,ocorrencias_cefic,documentos_cefic
-dados pessoais,\bdados\s+pessoais,344,16,12,27,7
-credenciamento,\bcredenciament,81,28,23,74,20
-orçamento,\borcament,55,18,16,46,13
-contrato,\bcontratos?\b,49,17,15,18,10
-auditoria,\bauditorias?\b,40,20,16,28,12
-exterior,\bexterior\b,35,13,9,32,8
-infraestrutura,\binfraestrutura,28,14,12,23,8
-dispensa,\bdispensa,28,11,9,4,2
-certificação,\bcertificac,18,8,7,15,5
-custo,\bcustos?\b,16,8,8,7,5
-convênio,\bconvenios?\b,14,9,8,3,2
-homologação,\bhomologac,13,10,9,10,7
-contratação,\bcontratac,12,10,7,10,6
-estrangeiro,\bestrangeir,10,7,6,4,3
-autonomia,\bautonomia,10,4,4,1,1
-acordo de cooperação,\bacordos?\s+de\s+cooperacao,9,7,5,8,4
-investimento,\binvestiment,6,4,3,6,3
-nuvem,\bnuvem\b,5,1,1,0,0
-licitação,\blicitac,4,3,3,1,1
-licitatório,\blicitatori,3,3,3,2,2
-capacidade técnica,\bcapacidade\s+tecnica,3,3,3,3,3
-importação,\bimportac,2,1,1,2,1
+﻿termo,padrao,ocorrencias,documentos,ocorrencias_cefic,documentos_cefic
+dados pessoais,\bdados\s+pessoais,332,12,16,7
+credenciamento,\bcredenciament,68,23,61,20
+orçamento,\borcament,47,15,42,13
+contrato,\bcontratos?\b,38,13,14,10
+auditoria,\bauditorias?\b,29,15,20,12
+exterior,\bexterior\b,28,9,25,8
+dispensa,\bdispensa,25,8,2,2
+infraestrutura,\binfraestrutura,18,9,17,8
+custo,\bcustos?\b,16,8,7,5
+certificação,\bcertificac,14,7,11,5
+convênio,\bconvenios?\b,13,8,2,2
+homologação,\bhomologac,11,8,9,7
+autonomia,\bautonomia,10,4,1,1
+contratação,\bcontratac,9,7,7,6
+estrangeiro,\bestrangeir,9,6,3,3
+acordo de cooperação,\bacordos?\s+de\s+cooperacao,6,5,5,4
+investimento,\binvestiment,5,3,5,3
+nuvem,\bnuvem\b,5,1,0,0
+licitação,\blicitac,4,3,1,1
+licitatório,\blicitatori,3,3,2,2
+capacidade técnica,\bcapacidade\s+tecnica,3,3,3,3
+importação,\bimportac,2,1,2,1

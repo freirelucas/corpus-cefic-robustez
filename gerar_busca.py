@@ -194,12 +194,12 @@ function buscar(){
   if (!totalOc){
     veredito.className = 'veredito vazio';
     veredito.innerHTML = 'Nenhuma ocorr&ecirc;ncia de <strong>' + escapaHtml(bruto) +
-      '</strong> nos ' + escopo + ' arquivos pesquisados.';
+      '</strong> nos ' + escopo + ' documentos pesquisados.';
   } else {
     veredito.className = 'veredito';
     veredito.innerHTML = '<strong>' + totalOc + '</strong> ocorr&ecirc;ncia' + (totalOc>1?'s':'') +
       ' de <strong>' + escapaHtml(bruto) + '</strong> em <strong>' + totalDocs +
-      '</strong> arquivo' + (totalDocs>1?'s':'') + ', de um total de ' + escopo + '.';
+      '</strong> documento' + (totalDocs>1?'s':'') + ', de um total de ' + escopo + '.';
   }
   saida.innerHTML = blocos.join('');
 }
@@ -282,14 +282,14 @@ def main() -> None:
     atalhos += '<div style="margin-top:10px">Termos presentes, para compara&ccedil;&atilde;o:</div>'
     atalhos += "".join(f'<button data-t="{t}">{t}</button>' for t in presentes)
 
-    resumo = (f"Pesquisa direta nos {num['arquivos_texto']} arquivos de texto do corpus da "
+    resumo = (f"Pesquisa direta nos {num['documentos']} documentos do corpus da "
               f"C&acirc;mara Executiva Federal de Identifica&ccedil;&atilde;o do Cidad&atilde;o "
-              f"(CEFIC), correspondentes a {num['documentos']} documentos e {num['paginas']} "
-              f"p&aacute;ginas, com coleta em {num['corte']}. Cada ocorr&ecirc;ncia &eacute; "
-              "exibida com o documento, o arquivo, a p&aacute;gina e o trecho em que aparece.")
+              f"(CEFIC), {num['paginas']} p&aacute;ginas, com coleta em {num['corte']}. Cada "
+              "ocorr&ecirc;ncia &eacute; exibida com o documento, a p&aacute;gina e o trecho em "
+              "que aparece.")
 
-    nota = f"""  <p>Fonte: corpus documental da CEFIC, {num['arquivos_texto']} arquivos de texto,
-     {num['documentos']} documentos, {num['paginas']} p&aacute;ginas, coleta em {num['corte']}.</p>
+    nota = f"""  <p>Fonte: corpus documental da CEFIC, {num['documentos']} documentos,
+     {num['paginas']} p&aacute;ginas, coleta em {num['corte']}.</p>
   <p>Nota: a busca percorre o texto integral. Com a op&ccedil;&atilde;o
      <em>ignorar acentos e caixa</em> ativada, <code>resolucao</code> encontra
      &ldquo;Resolu&ccedil;&atilde;o&rdquo;. Com <em>palavras inteiras</em> ativada,
@@ -298,14 +298,10 @@ def main() -> None:
      As ligaduras tipogr&aacute;ficas dos PDFs s&atilde;o expandidas antes da
      compara&ccedil;&atilde;o, de modo que <code>gr&aacute;ficas</code> encontra tamb&eacute;m
      as ocorr&ecirc;ncias grafadas com o caractere &uacute;nico &ldquo;&#64257;&rdquo;.</p>
-  <p>Obs.: dos {num['arquivos_texto']} arquivos, {num['arquivos_cefic']} s&atilde;o atos ou
+  <p>Obs.: dos {num['documentos']} documentos, {num['documentos_cefic']} s&atilde;o atos ou
      registros da pr&oacute;pria CEFIC, conforme <code>dados/inventario_documentos.csv</code>;
-     o filtro restringe a busca a eles. Um mesmo documento pode constar em mais de uma
-     captura, de modo que o n&uacute;mero de arquivos com ocorr&ecirc;ncia pode exceder o de
-     documentos. Tr&ecirc;s capturas s&atilde;o p&aacute;ginas inteiras do Di&aacute;rio
-     Oficial, com atos de outros &oacute;rg&atilde;os, e ficam fora do filtro; as
-     resolu&ccedil;&otilde;es que cont&ecirc;m constam de capturas pr&oacute;prias. Dois arquivos n&atilde;o possuem camada de texto, conforme
-     <code>dados/lacunas_cobertura.csv</code>.</p>"""
+     o filtro restringe a busca a eles. Um documento n&atilde;o possui camada de texto,
+     conforme <code>dados/lacunas_cobertura.csv</code>.</p>"""
 
     html = (CABECALHO
             .replace("__RESUMO__", resumo)
@@ -316,7 +312,7 @@ def main() -> None:
                 {"d": docs, "n": len(docs), "kc": sum(x["k"] for x in docs)},
                 ensure_ascii=False, separators=(",", ":"))))
     SAIDA.write_text(html, encoding="utf-8", newline="\r\n")
-    print(f"busca_corpus_cefic.html gerado: {len(html)//1024} KB, {len(docs)} arquivos")
+    print(f"busca_corpus_cefic.html gerado: {len(html)//1024} KB, {len(docs)} documentos")
 
 
 

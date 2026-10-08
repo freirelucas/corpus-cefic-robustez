@@ -37,14 +37,14 @@ def main() -> int:
             for f in sorted(TEXTOS.glob("*.txt"), key=lambda f: f.name.lower())}
 
     print("Corpus")
-    confere("arquivos de texto", len(docs), ref["arquivos_texto"])
+    confere("documentos", len(docs), ref["documentos"])
     paginas = sum(len(re.findall(r"===== \[pag \d+\] =====", d.raw)) or 1 for d in docs.values())
     confere("paginas", paginas, ref["paginas"])
     confere("linhas", sum(d.raw.count("\n") + 1 for d in docs.values()), ref["linhas"])
     ligaduras = {n: sum(1 for ch in d.raw if "\ufb00" <= ch <= "\ufb06") for n, d in docs.items()}
     confere("ligaduras tipograficas", sum(ligaduras.values()), ref["ligaduras_tipograficas"])
-    confere("arquivos com ligadura", sum(1 for v in ligaduras.values() if v),
-            ref["arquivos_com_ligadura"])
+    confere("documentos com ligadura", sum(1 for v in ligaduras.values() if v),
+            ref["documentos_com_ligadura"])
 
     print("Composicao")
     with (DADOS / "inventario_documentos.csv").open(encoding="utf-8-sig") as f:
@@ -52,33 +52,27 @@ def main() -> int:
     if set(inv) != set(docs):
         falhas.append("inventario_documentos.csv nao corresponde a corpus_txt/: "
                       + ", ".join(sorted(set(inv) ^ set(docs))))
+    if len({r["documento"] for r in inv.values()}) != len(inv):
+        falhas.append("o mesmo documento consta em mais de um arquivo do corpus")
     cefic = [a for a in inv if inv[a]["orgao"] == "CEFIC"]
-    demais = [a for a in inv if inv[a]["orgao"] != "CEFIC"]
-    confere("documentos", len({r["documento"] for r in inv.values()}), ref["documentos"])
-    grupos: dict[str, int] = {}
-    for r in inv.values():
-        grupos[r["documento"]] = grupos.get(r["documento"], 0) + 1
-    confere("grupos de versoes do mesmo documento", sum(1 for n in grupos.values() if n > 1),
-            ref["grupos_versoes_mesmo_documento"])
-    confere("arquivos da CEFIC", len(cefic), ref["arquivos_cefic"])
-    confere("documentos da CEFIC", len({inv[a]["documento"] for a in cefic}), ref["documentos_cefic"])
-    confere("arquivos dos demais emissores", len(demais), ref["arquivos_demais"])
-    confere("documentos sem captura da CEFIC",
-            len({inv[a]["documento"] for a in demais} - {inv[a]["documento"] for a in cefic}),
-            ref["documentos_demais"])
-    numeros = sorted({int(r["numero"]) for r in inv.values() if r["categoria"] == "resolucao"})
-    confere("resolucoes, numeros distintos", len(numeros), ref["resolucoes_numeros_distintos"])
+    confere("documentos da CEFIC", len(cefic), ref["documentos_cefic"])
+    confere("documentos de outros orgaos ou de autoria nao determinada", len(inv) - len(cefic),
+            ref["documentos_outros"])
+    numeros = sorted(int(r["numero"]) for r in inv.values() if r["categoria"] == "resolucao")
+    confere("resolucoes, numeros distintos", len(set(numeros)), ref["resolucoes_numeros_distintos"])
+    if len(numeros) != len(set(numeros)):
+        falhas.append("resolucao com mais de um documento no corpus")
     confere("serie de resolucoes", f"{numeros[0]}-{numeros[-1]}"
             if numeros == list(range(numeros[0], numeros[-1] + 1)) else "com lacuna",
             ref["serie_resolucoes"])
     with (DADOS / "inventario_reunioes.csv").open(encoding="utf-8-sig") as f:
         reunioes = list(csv.DictReader(f))
     confere("reunioes com registro", len(reunioes), ref["reunioes_com_registro"])
-    registros = [a.strip() for r in reunioes for a in r["arquivos_registro"].split(";")]
+    registros = [r["arquivos_registro"] for r in reunioes]
     apresentacoes = [r["arquivo_apresentacao"] for r in reunioes if r["arquivo_apresentacao"]]
-    confere("arquivos de registro de reuniao", len(registros), ref["arquivos_registro_reuniao"])
-    confere("arquivos de apresentacao de reuniao", len(apresentacoes),
-            ref["arquivos_apresentacao_reuniao"])
+    confere("documentos de registro de reuniao", len(registros), ref["documentos_registro_reuniao"])
+    confere("documentos de apresentacao de reuniao", len(apresentacoes),
+            ref["documentos_apresentacao_reuniao"])
     por_categoria = {c: {a for a, r in inv.items() if r["categoria"] == c}
                      for c in ("registro_reuniao", "apresentacao_reuniao")}
     if set(registros) != por_categoria["registro_reuniao"]:
@@ -108,18 +102,11 @@ def main() -> int:
     print(f"  ok  nenhuma duplicata residual ({len(vistos)} conteudos distintos)")
 
     print("Qualidade do texto")
-    corrompidos = {n: d.raw.count("\ufffd") for n, d in docs.items() if "\ufffd" in d.raw}
-    declarados = set()
-    caminho_versoes = DADOS / "versoes_mesmo_documento.csv"
-    if caminho_versoes.exists():
-        with caminho_versoes.open(encoding="utf-8-sig") as f:
-            declarados = {r["arquivo"] for r in csv.DictReader(f)
-                          if int(r["caracteres_corrompidos"]) > 0}
-    nao_declarados = set(corrompidos) - declarados
-    if nao_declarados:
-        falhas.append("texto corrompido nao declarado: " + ", ".join(sorted(nao_declarados)))
+    corrompidos = sorted(n for n, d in docs.items() if "\ufffd" in d.raw)
+    if corrompidos:
+        falhas.append("texto com caractere nao decodificado: " + ", ".join(corrompidos))
     else:
-        print(f"  ok  {len(corrompidos)} documento(s) com caractere corrompido, todos declarados")
+        print("  ok  nenhum documento com caractere nao decodificado")
 
     print("Varredura")
     zerad_ampl = 0

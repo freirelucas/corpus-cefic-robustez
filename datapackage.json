@@ -31,7 +31,7 @@
     {
       "name": "resultados-por-familia",
       "path": "dados/resultados_por_familia.csv",
-      "description": "Resultado por família de termos nos dois níveis de busca, contado por ocorrência, por arquivo e por documento, com a situação de cada família. Gerado por reproduzir.py.",
+      "description": "Resultado por família de termos nos dois níveis de busca, com a situação de cada família. Gerado por reproduzir.py.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
@@ -47,14 +47,9 @@
             "description": "Ocorrências no nível estrito"
           },
           {
-            "name": "estrito_arquivos",
-            "type": "integer",
-            "description": "Arquivos distintos com ocorrência no nível estrito"
-          },
-          {
             "name": "estrito_documentos",
             "type": "integer",
-            "description": "Documentos distintos com ocorrência no nível estrito, agregando capturas do mesmo documento"
+            "description": "Documentos com ocorrência no nível estrito"
           },
           {
             "name": "estrito_documentos_cefic",
@@ -67,14 +62,9 @@
             "description": "Ocorrências no nível ampliado, com sinônimos e variantes"
           },
           {
-            "name": "ampliado_arquivos",
-            "type": "integer",
-            "description": "Arquivos distintos com ocorrência no nível ampliado"
-          },
-          {
             "name": "ampliado_documentos",
             "type": "integer",
-            "description": "Documentos distintos com ocorrência no nível ampliado"
+            "description": "Documentos com ocorrência no nível ampliado"
           },
           {
             "name": "sem_ocorrencia_no_recorte_declarado",
@@ -105,7 +95,7 @@
           {
             "name": "arquivo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "pagina",
@@ -141,7 +131,7 @@
           {
             "name": "arquivo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "pagina",
@@ -164,7 +154,7 @@
     {
       "name": "termos-buscados-conferencia",
       "path": "dados/termos_buscados_conferencia.csv",
-      "description": "Os termos de busca em forma literal, com o resultado de cada um.",
+      "description": "As 100 expressões das 14 famílias sem ocorrência no recorte declarado, em forma literal, com o resultado de cada uma. As contagens são geradas por reproduzir.py.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
@@ -192,7 +182,7 @@
           {
             "name": "documentos",
             "type": "integer",
-            "description": "Número de arquivos distintos em que o termo ocorre"
+            "description": "Número de documentos em que o termo ocorre"
           },
           {
             "name": "aviso",
@@ -243,7 +233,7 @@
           {
             "name": "documentos",
             "type": "integer",
-            "description": "Número de arquivos distintos com ocorrência no nível estrito"
+            "description": "Número de documentos com ocorrência no nível estrito"
           },
           {
             "name": "resultado",
@@ -282,19 +272,14 @@
             "description": "Ocorrências no corpus inteiro"
           },
           {
-            "name": "arquivos",
-            "type": "integer",
-            "description": "Arquivos distintos com ocorrência"
-          },
-          {
             "name": "documentos",
             "type": "integer",
-            "description": "Documentos distintos com ocorrência, agregando capturas do mesmo documento"
+            "description": "Documentos com ocorrência"
           },
           {
             "name": "ocorrencias_cefic",
             "type": "integer",
-            "description": "Ocorrências em arquivos cujo órgão emissor é a CEFIC"
+            "description": "Ocorrências em documentos da CEFIC"
           },
           {
             "name": "documentos_cefic",
@@ -315,7 +300,7 @@
           {
             "name": "arquivo_repo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "arquivo_origem",
@@ -356,7 +341,7 @@
           {
             "name": "arquivo_repo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "sha256_pdf",
@@ -389,7 +374,7 @@
     {
       "name": "lacunas-cobertura",
       "path": "dados/lacunas_cobertura.csv",
-      "description": "Arquivos sem camada de texto, inalcançáveis por qualquer busca.",
+      "description": "Documentos sem camada de texto, inalcançáveis por qualquer busca.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
@@ -397,7 +382,7 @@
           {
             "name": "arquivo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "chars_uteis",
@@ -433,43 +418,12 @@
           {
             "name": "identico_a",
             "type": "string",
-            "description": "PDF de conteúdo idêntico, mantido ou registrado em capturas_preteridas.csv"
+            "description": "PDF de conteúdo idêntico, mantido no corpus ou registrado em capturas_preteridas.csv"
           },
           {
             "name": "sha256_pdf",
             "type": "string",
             "description": "Hash SHA-256 comum aos dois PDFs"
-          }
-        ]
-      }
-    },
-    {
-      "name": "versoes-mesmo-documento",
-      "path": "dados/versoes_mesmo_documento.csv",
-      "description": "Arquivos que correspondem ao mesmo documento em capturas distintas; os conteúdos diferem e nenhum foi descartado. Gerado a partir de inventario_documentos.csv.",
-      "format": "csv",
-      "encoding": "utf-8-sig",
-      "schema": {
-        "fields": [
-          {
-            "name": "documento",
-            "type": "string",
-            "description": "Documento a que os arquivos do grupo correspondem, conforme inventario_documentos.csv"
-          },
-          {
-            "name": "arquivo",
-            "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
-          },
-          {
-            "name": "chars",
-            "type": "integer",
-            "description": "Número de caracteres do texto extraído"
-          },
-          {
-            "name": "caracteres_corrompidos",
-            "type": "integer",
-            "description": "Número de caracteres que não puderam ser decodificados do PDF (U+FFFD)"
           }
         ]
       }
@@ -485,7 +439,7 @@
           {
             "name": "arquivo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "sha256",
@@ -519,7 +473,7 @@
     {
       "name": "inventario-resolucoes",
       "path": "dados/inventario_resolucoes.csv",
-      "description": "Uma linha por arquivo de resolução ou retificação da CEFIC, com número, datas e dados de publicação no Diário Oficial.",
+      "description": "Uma linha por resolução ou retificação da CEFIC, com número, datas e dados de publicação no Diário Oficial.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
@@ -527,7 +481,7 @@
           {
             "name": "arquivo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "sha12",
@@ -600,7 +554,7 @@
     {
       "name": "inventario-documentos",
       "path": "dados/inventario_documentos.csv",
-      "description": "Classificação de cada arquivo do corpus: documento a que corresponde, categoria e órgão emissor. Base das contagens por documento e do recorte dos atos da CEFIC.",
+      "description": "Classificação de cada documento do corpus: categoria e órgão emissor. Base do recorte dos atos da CEFIC.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
@@ -608,12 +562,12 @@
           {
             "name": "arquivo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "documento",
             "type": "string",
-            "description": "Documento a que o arquivo corresponde; arquivos com o mesmo valor são capturas distintas do mesmo documento"
+            "description": "Identificação do documento"
           },
           {
             "name": "categoria",
@@ -623,7 +577,7 @@
           {
             "name": "orgao",
             "type": "string",
-            "description": "Órgão emissor; CEFIC para atos e registros da própria Câmara; \"página mista do DOU\" para página integral do Diário Oficial que contém ato da CEFIC e atos de outros órgãos"
+            "description": "Órgão emissor; CEFIC para atos e registros da própria Câmara"
           },
           {
             "name": "numero",
@@ -674,7 +628,7 @@
           {
             "name": "arquivos_registro",
             "type": "string",
-            "description": "Arquivo(s) de ata ou memória da reunião, separados por ponto e vírgula"
+            "description": "Documento de ata ou memória da reunião"
           },
           {
             "name": "arquivo_apresentacao",
@@ -692,7 +646,7 @@
     {
       "name": "capturas-preteridas",
       "path": "dados/capturas_preteridas.csv",
-      "description": "PDFs distintos que não deram origem a texto do corpus por existir outra captura do mesmo documento com extração íntegra.",
+      "description": "PDFs distintos de documentos que constavam em mais de uma captura; de cada documento mantém-se uma única captura, e as demais são registradas aqui com o motivo.",
       "format": "csv",
       "encoding": "utf-8-sig",
       "schema": {
@@ -715,22 +669,22 @@
           {
             "name": "substituido_por",
             "type": "string",
-            "description": "PDF de que o texto publicado foi extraído"
+            "description": "PDF da captura mantida no corpus"
           },
           {
             "name": "sha256_substituto",
             "type": "string",
-            "description": "Hash SHA-256 do PDF adotado"
+            "description": "Hash SHA-256 do PDF da captura mantida"
           },
           {
             "name": "arquivo_repo",
             "type": "string",
-            "description": "Nome do arquivo no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
+            "description": "Nome do documento no repositório, sem extensão; corresponde a corpus_txt/<arquivo>.txt"
           },
           {
             "name": "motivo",
             "type": "string",
-            "description": "Razão da substituição"
+            "description": "Razão pela qual a captura foi preterida"
           }
         ]
       }

@@ -8,15 +8,12 @@ O recorte de objeto do artigo são os motores biométricos do Serviço Biométri
 Nenhuma conclusão do texto depende dos dois primeiros termos abaixo, que pertencem à camada
 de emissão física do documento.
 
-As contagens da CEFIC excluem as três páginas inteiras do Diário Oficial que contêm atos de
-outros órgãos; ver [METODOLOGIA.md](METODOLOGIA.md).
-
 ## Credenciamento e gráficas
 
-| termo | ocorrências no corpus | arquivos | documentos | ocorrências em atos da CEFIC | documentos da CEFIC |
-|---|---|---|---|---|---|
-| credenciamento | 81 | 28 | 23 | 74 | 20 |
-| gráficas | 39 | 21 | 17 | 38 | 16 |
+| termo | ocorrências no corpus | documentos | ocorrências em atos da CEFIC | documentos da CEFIC |
+|---|---|---|---|---|
+| credenciamento | 68 | 23 | 61 | 20 |
+| gráficas | 32 | 17 | 31 | 16 |
 
 O registro da reunião de 15/05/2024 descreve o tema como "credenciamento de instituições
 públicas e empresas privadas para atuarem como Gráficas da CIN". O Decreto nº 11.797/2023 atribui à CEFIC a edição de normas
@@ -27,9 +24,9 @@ camada de identificação biométrica analisada no artigo.
 
 ## Território nacional
 
-| termo | ocorrências no corpus | arquivos | documentos | ocorrências em atos da CEFIC | documentos da CEFIC |
-|---|---|---|---|---|---|
-| território nacional | 38 | 16 | 13 | 20 | 7 |
+| termo | ocorrências no corpus | documentos | ocorrências em atos da CEFIC | documentos da CEFIC |
+|---|---|---|---|---|
+| território nacional | 31 | 12 | 14 | 7 |
 
 Este termo situa-se dentro do recorte de objeto: o item 3.1 do Anexo I da Resolução nº
 21/2025 estabelece que o Serviço Biométrico Federal deve "estar hospedado em território
@@ -39,9 +36,8 @@ Modelo Informacional da CIN e do registro da reunião de 24/03/2022. O registro 
 15/08/2025 menciona a sugestão de migrar a base biométrica "para armazenamento em território
 nacional".
 
-As 18 ocorrências fora dos atos da CEFIC provêm de leis e decretos incorporados ao corpus, do
-relatório de impacto à proteção de dados do Ministério da Economia e de ato de outro órgão
-publicado na mesma página do Diário Oficial que a Resolução nº 1.
+As 17 ocorrências fora dos atos da CEFIC provêm de leis e de decreto incorporados ao corpus e
+do relatório de impacto à proteção de dados do Ministério da Economia.
 
 ## Demais termos nativos do corpus
 
